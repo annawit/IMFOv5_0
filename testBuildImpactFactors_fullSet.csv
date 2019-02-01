@@ -1,0 +1,1189 @@
+material,LCstage,disposition,impactCategory,impactUnits,impactFactor,corporateSource,impactFactorID
+Aluminum,endOfLife,incinerationNoER,Primary energy demand from ren. and non ren. resources (gross cal. value),MJ,2482.589408,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER,Primary energy demand from ren. and non ren. resources (net cal. value),MJ,2313.947187,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER,Primary energy from non renewable resources (gross cal. value),MJ,2109.671999,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER,Primary energy from non renewable resources (net cal. value),MJ,1941.029779,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER,Primary energy from renewable resources (gross cal. value),MJ,372.9174089,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER,Primary energy from renewable resources (net cal. value),MJ,372.9174089,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER,"Global Warming Air, excl biogenic carbon, incl LUC, no norm/weight",kg CO2 eq.,138.5456994,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER,"Global Warming Air, incl biogenic carbon, incl LUC, no norm/weight",kg CO2 eq.,149.438748,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER,"Global Warming Air, LUC only, no norm/weight",kg CO2 eq.,0.101220807,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER,Acidification,kg SO2 eq.,0.381104678,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER,Ecotoxicity (recommended),CTUe,6.151056699,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER,Eutrophication,kg N eq.,0.030589723,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER,"Global Warming Air, excl. biogenic carbon",kg CO2 eq.,138.4444786,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER,"Global Warming Air, incl. biogenic carbon",kg CO2 eq.,149.3375272,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER,Human Health Particulate Air,kg PM2.5 eq.,0.230944121,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER,"Human toxicity, cancer (recommended)",CTUh,1.51E-07,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER,"Human toxicity, non-canc. (recommended)",CTUh,1.40E-05,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER,Ozone Depletion Air,kg CFC 11 eq.,8.78E-09,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER,"Resources, Fossil fuels",MJ surplus energy,220.3472392,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER,Smog Air,kg O3 eq.,8.79524616,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER,Ecotoxicity (recommended and interim),CTUe,3900.807905,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER,Ecotoxicity (recommended only),CTUe,0.383277102,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER,"Human toxicity, cancer (recommended and interim)",CTUh,1.45E-05,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER,"Human toxicity, cancer (recommended only)",CTUh,5.58E-09,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER,"Human toxicity, non-canc. (recommended and interim)",CTUh,2.12E-05,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER,"Human toxicity, non-canc. (recommended only)",CTUh,1.97E-10,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER,high characterization factor for unspecified water,m3 world equiv.,130.8253678,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER,low characterization factor for unspecified water,m3 world equiv.,48.05821511,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER,OECD+BRIC average for unspecified water,m3 world equiv.,96.92172879,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER,Blue water consumption,kg,2872.749987,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER,Blue water use,kg,281197.0186,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER,Total freshwater consumption (including rainwater),kg,3183.861069,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER,Total freshwater use,kg,282089.3899,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER,high characterization factor for unspecified water,m3 equiv.,1.872514929,WSI,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER,low characterization factor for unspecified water,m3 equiv.,0.822449964,WSI,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER,OECD+BRIC average for unspecified water,m3 equiv.,1.183861324,WSI,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER_transport,Primary energy demand from ren. and non ren. resources (gross cal. value),MJ,356.5402158,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER_transport,Primary energy demand from ren. and non ren. resources (net cal. value),MJ,332.3647002,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER_transport,Primary energy from non renewable resources (gross cal. value),MJ,348.6432676,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER_transport,Primary energy from non renewable resources (net cal. value),MJ,324.4677521,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER_transport,Primary energy from renewable resources (gross cal. value),MJ,7.896948128,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER_transport,Primary energy from renewable resources (net cal. value),MJ,7.896948128,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER_transport,"Global Warming Air, excl biogenic carbon, incl LUC, no norm/weight",kg CO2 eq.,22.87079102,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER_transport,"Global Warming Air, incl biogenic carbon, incl LUC, no norm/weight",kg CO2 eq.,22.9869726,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER_transport,"Global Warming Air, LUC only, no norm/weight",kg CO2 eq.,0.026023649,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER_transport,Acidification,kg SO2 eq.,0.091179481,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER_transport,Ecotoxicity (recommended),CTUe,2.863706382,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER_transport,Eutrophication,kg N eq.,0.007808717,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER_transport,"Global Warming Air, excl. biogenic carbon",kg CO2 eq.,22.84476737,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER_transport,"Global Warming Air, incl. biogenic carbon",kg CO2 eq.,22.96094895,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER_transport,Human Health Particulate Air,kg PM2.5 eq.,0.005211376,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER_transport,"Human toxicity, cancer (recommended)",CTUh,1.22E-08,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER_transport,"Human toxicity, non-canc. (recommended)",CTUh,9.04E-07,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER_transport,Ozone Depletion Air,kg CFC 11 eq.,1.58E-10,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER_transport,"Resources, Fossil fuels",MJ surplus energy,43.56263032,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER_transport,Smog Air,kg O3 eq.,2.987853996,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER_transport,Ecotoxicity (recommended and interim),CTUe,277.6319978,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER_transport,Ecotoxicity (recommended only),CTUe,0.122390793,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER_transport,"Human toxicity, cancer (recommended and interim)",CTUh,3.43E-07,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER_transport,"Human toxicity, cancer (recommended only)",CTUh,1.03E-10,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER_transport,"Human toxicity, non-canc. (recommended and interim)",CTUh,1.04E-06,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER_transport,"Human toxicity, non-canc. (recommended only)",CTUh,3.35E-11,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER_transport,high characterization factor for unspecified water,m3 world equiv.,1.251647126,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER_transport,low characterization factor for unspecified water,m3 world equiv.,1.176105775,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER_transport,OECD+BRIC average for unspecified water,m3 world equiv.,1.220703368,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER_transport,Blue water consumption,kg,39.13192257,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER_transport,Blue water use,kg,673.2348049,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER_transport,Total freshwater consumption (including rainwater),kg,252.5370488,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER_transport,Total freshwater use,kg,886.6488855,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER_transport,high characterization factor for unspecified water,m3 equiv.,0.018637582,WSI,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER_transport,low characterization factor for unspecified water,m3 equiv.,0.017679191,WSI,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,incinerationNoER_transport,OECD+BRIC average for unspecified water,m3 equiv.,0.01800905,WSI,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling,Primary energy demand from ren. and non ren. resources (gross cal. value),MJ,732.2974495,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling,Primary energy demand from ren. and non ren. resources (net cal. value),MJ,680.4311394,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling,Primary energy from non renewable resources (gross cal. value),MJ,688.6626402,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling,Primary energy from non renewable resources (net cal. value),MJ,636.7963302,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling,Primary energy from renewable resources (gross cal. value),MJ,43.63480929,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling,Primary energy from renewable resources (net cal. value),MJ,43.63480929,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling,"Global Warming Air, excl biogenic carbon, incl LUC, no norm/weight",kg CO2 eq.,40.52220872,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling,"Global Warming Air, incl biogenic carbon, incl LUC, no norm/weight",kg CO2 eq.,39.7640939,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling,"Global Warming Air, LUC only, no norm/weight",kg CO2 eq.,0.029445647,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling,Acidification,kg SO2 eq.,0.185538123,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling,Ecotoxicity (recommended),CTUe,3.494179452,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling,Eutrophication,kg N eq.,0.009416569,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling,"Global Warming Air, excl. biogenic carbon",kg CO2 eq.,40.49276307,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling,"Global Warming Air, incl. biogenic carbon",kg CO2 eq.,39.73464826,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling,Human Health Particulate Air,kg PM2.5 eq.,0.133330895,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling,"Human toxicity, cancer (recommended)",CTUh,1.73E-07,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling,"Human toxicity, non-canc. (recommended)",CTUh,1.97E-05,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling,Ozone Depletion Air,kg CFC 11 eq.,6.20E-10,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling,"Resources, Fossil fuels",MJ surplus energy,79.69702569,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling,Smog Air,kg O3 eq.,3.660878546,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling,Ecotoxicity (recommended and interim),CTUe,1034.942389,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling,Ecotoxicity (recommended only),CTUe,0.170312366,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling,"Human toxicity, cancer (recommended and interim)",CTUh,2.14E-06,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling,"Human toxicity, cancer (recommended only)",CTUh,7.25E-10,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling,"Human toxicity, non-canc. (recommended and interim)",CTUh,2.97E-05,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling,"Human toxicity, non-canc. (recommended only)",CTUh,5.28E-11,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling,high characterization factor for unspecified water,m3 world equiv.,2.778447062,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling,low characterization factor for unspecified water,m3 world equiv.,1.113406877,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling,OECD+BRIC average for unspecified water,m3 world equiv.,2.096402068,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling,Blue water consumption,kg,78.62329956,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling,Blue water use,kg,18626.95116,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling,Total freshwater consumption (including rainwater),kg,-176.3912247,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling,Total freshwater use,kg,20430.23678,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling,high characterization factor for unspecified water,m3 equiv.,0.04132702,WSI,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling,low characterization factor for unspecified water,m3 equiv.,0.020202693,WSI,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling,OECD+BRIC average for unspecified water,m3 equiv.,0.027473264,WSI,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling_transport,Primary energy demand from ren. and non ren. resources (gross cal. value),MJ,356.5402158,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling_transport,Primary energy demand from ren. and non ren. resources (net cal. value),MJ,332.3647002,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling_transport,Primary energy from non renewable resources (gross cal. value),MJ,348.6432676,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling_transport,Primary energy from non renewable resources (net cal. value),MJ,324.4677521,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling_transport,Primary energy from renewable resources (gross cal. value),MJ,7.896948128,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling_transport,Primary energy from renewable resources (net cal. value),MJ,7.896948128,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling_transport,"Global Warming Air, excl biogenic carbon, incl LUC, no norm/weight",kg CO2 eq.,22.87079102,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling_transport,"Global Warming Air, incl biogenic carbon, incl LUC, no norm/weight",kg CO2 eq.,22.9869726,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling_transport,"Global Warming Air, LUC only, no norm/weight",kg CO2 eq.,0.026023649,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling_transport,Acidification,kg SO2 eq.,0.091179481,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling_transport,Ecotoxicity (recommended),CTUe,2.863706382,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling_transport,Eutrophication,kg N eq.,0.007808717,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling_transport,"Global Warming Air, excl. biogenic carbon",kg CO2 eq.,22.84476737,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling_transport,"Global Warming Air, incl. biogenic carbon",kg CO2 eq.,22.96094895,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling_transport,Human Health Particulate Air,kg PM2.5 eq.,0.005211376,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling_transport,"Human toxicity, cancer (recommended)",CTUh,1.22E-08,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling_transport,"Human toxicity, non-canc. (recommended)",CTUh,9.04E-07,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling_transport,Ozone Depletion Air,kg CFC 11 eq.,1.58E-10,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling_transport,"Resources, Fossil fuels",MJ surplus energy,43.56263032,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling_transport,Smog Air,kg O3 eq.,2.987853996,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling_transport,Ecotoxicity (recommended and interim),CTUe,277.6319978,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling_transport,Ecotoxicity (recommended only),CTUe,0.122390793,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling_transport,"Human toxicity, cancer (recommended and interim)",CTUh,3.43E-07,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling_transport,"Human toxicity, cancer (recommended only)",CTUh,1.03E-10,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling_transport,"Human toxicity, non-canc. (recommended and interim)",CTUh,1.04E-06,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling_transport,"Human toxicity, non-canc. (recommended only)",CTUh,3.35E-11,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling_transport,high characterization factor for unspecified water,m3 world equiv.,1.251647126,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling_transport,low characterization factor for unspecified water,m3 world equiv.,1.176105775,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling_transport,OECD+BRIC average for unspecified water,m3 world equiv.,1.220703368,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling_transport,Blue water consumption,kg,39.13192257,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling_transport,Blue water use,kg,673.2348049,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling_transport,Total freshwater consumption (including rainwater),kg,252.5370488,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling_transport,Total freshwater use,kg,886.6488855,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling_transport,high characterization factor for unspecified water,m3 equiv.,0.018637582,WSI,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling_transport,low characterization factor for unspecified water,m3 equiv.,0.017679191,WSI,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,landfilling_transport,OECD+BRIC average for unspecified water,m3 equiv.,0.01800905,WSI,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric,Primary energy demand from ren. and non ren. resources (gross cal. value),MJ,-31942.66791,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric,Primary energy demand from ren. and non ren. resources (net cal. value),MJ,-30251.28191,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric,Primary energy from non renewable resources (gross cal. value),MJ,-16653.12312,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric,Primary energy from non renewable resources (net cal. value),MJ,-14961.73713,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric,Primary energy from renewable resources (gross cal. value),MJ,-15289.54479,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric,Primary energy from renewable resources (net cal. value),MJ,-15289.54479,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric,"Global Warming Air, excl biogenic carbon, incl LUC, no norm/weight",kg CO2 eq.,-2068.250811,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric,"Global Warming Air, incl biogenic carbon, incl LUC, no norm/weight",kg CO2 eq.,-2095.081959,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric,"Global Warming Air, LUC only, no norm/weight",kg CO2 eq.,0,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric,Acidification,kg SO2 eq.,-16.06463206,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric,Ecotoxicity (recommended),CTUe,-12.40291251,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric,Eutrophication,kg N eq.,-0.207070163,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric,"Global Warming Air, excl. biogenic carbon",kg CO2 eq.,-2068.250811,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric,"Global Warming Air, incl. biogenic carbon",kg CO2 eq.,-2095.081959,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric,Human Health Particulate Air,kg PM2.5 eq.,-2.794975042,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric,"Human toxicity, cancer (recommended)",CTUh,-2.23E-05,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric,"Human toxicity, non-canc. (recommended)",CTUh,-0.002618533,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric,Ozone Depletion Air,kg CFC 11 eq.,2.66E-08,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric,"Resources, Fossil fuels",MJ surplus energy,-475.2210651,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric,Smog Air,kg O3 eq.,-114.5623099,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric,Ecotoxicity (recommended and interim),CTUe,-3692148.037,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric,Ecotoxicity (recommended only),CTUe,-0.246762782,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric,"Human toxicity, cancer (recommended and interim)",CTUh,-3.49E-05,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric,"Human toxicity, cancer (recommended only)",CTUh,-1.32E-08,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric,"Human toxicity, non-canc. (recommended and interim)",CTUh,-0.003990991,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric,"Human toxicity, non-canc. (recommended only)",CTUh,-1.81E-09,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric,high characterization factor for unspecified water,m3 world equiv.,-4111.917653,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric,low characterization factor for unspecified water,m3 world equiv.,-124.9240725,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric,OECD+BRIC average for unspecified water,m3 world equiv.,-2478.73844,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric,Blue water consumption,kg,-72261.28004,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric,Blue water use,kg,-17962604.23,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric,Total freshwater consumption (including rainwater),kg,-72539.70878,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric,Total freshwater use,kg,-17962882.66,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric,high characterization factor for unspecified water,m3 equiv.,-57.80902404,WSI,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric,low characterization factor for unspecified water,m3 equiv.,-7.226128004,WSI,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric,OECD+BRIC average for unspecified water,m3 equiv.,-24.63574916,WSI,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric_transport,Primary energy demand from ren. and non ren. resources (gross cal. value),MJ,520.8614558,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric_transport,Primary energy demand from ren. and non ren. resources (net cal. value),MJ,485.5417982,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric_transport,Primary energy from non renewable resources (gross cal. value),MJ,509.3553592,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric_transport,Primary energy from non renewable resources (net cal. value),MJ,474.0357016,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric_transport,Primary energy from renewable resources (gross cal. value),MJ,11.50609663,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric_transport,Primary energy from renewable resources (net cal. value),MJ,11.50609663,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric_transport,"Global Warming Air, excl biogenic carbon, incl LUC, no norm/weight",kg CO2 eq.,33.34090747,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric_transport,"Global Warming Air, incl biogenic carbon, incl LUC, no norm/weight",kg CO2 eq.,33.56663769,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric_transport,"Global Warming Air, LUC only, no norm/weight",kg CO2 eq.,0.037910286,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric_transport,Acidification,kg SO2 eq.,0.156724652,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric_transport,Ecotoxicity (recommended),CTUe,4.183602093,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric_transport,Eutrophication,kg N eq.,0.012781037,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric_transport,"Global Warming Air, excl. biogenic carbon",kg CO2 eq.,33.30299718,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric_transport,"Global Warming Air, incl. biogenic carbon",kg CO2 eq.,33.5287274,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric_transport,Human Health Particulate Air,kg PM2.5 eq.,0.009804752,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric_transport,"Human toxicity, cancer (recommended)",CTUh,1.77E-08,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric_transport,"Human toxicity, non-canc. (recommended)",CTUh,1.32E-06,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric_transport,Ozone Depletion Air,kg CFC 11 eq.,2.31E-10,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric_transport,"Resources, Fossil fuels",MJ surplus energy,63.6432118,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric_transport,Smog Air,kg O3 eq.,5.147979229,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric_transport,Ecotoxicity (recommended and interim),CTUe,405.6393229,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric_transport,Ecotoxicity (recommended only),CTUe,0.178806474,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric_transport,"Human toxicity, cancer (recommended and interim)",CTUh,5.01E-07,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric_transport,"Human toxicity, cancer (recommended only)",CTUh,1.50E-10,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric_transport,"Human toxicity, non-canc. (recommended and interim)",CTUh,1.51E-06,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric_transport,"Human toxicity, non-canc. (recommended only)",CTUh,4.89E-11,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric_transport,high characterization factor for unspecified water,m3 world equiv.,1.823574521,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric_transport,low characterization factor for unspecified water,m3 world equiv.,1.713239532,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric_transport,OECD+BRIC average for unspecified water,m3 world equiv.,1.778378359,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric_transport,Blue water consumption,kg,57.01161647,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric_transport,Blue water use,kg,983.454907,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric_transport,Total freshwater consumption (including rainwater),kg,367.819126,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric_transport,Total freshwater use,kg,1294.275471,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric_transport,high characterization factor for unspecified water,m3 equiv.,0.027153611,WSI,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric_transport,low characterization factor for unspecified water,m3 equiv.,0.025753794,WSI,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,endOfLife,recyclingGeneric_transport,OECD+BRIC average for unspecified water,m3 equiv.,0.026235583,WSI,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production,Primary energy demand from ren. and non ren. resources (gross cal. value),MJ,78471.25122,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production,Primary energy demand from ren. and non ren. resources (net cal. value),MJ,73366.80729,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production,Primary energy from non renewable resources (gross cal. value),MJ,57180.37255,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production,Primary energy from non renewable resources (net cal. value),MJ,52075.92863,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production,Primary energy from renewable resources (gross cal. value),MJ,21290.87867,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production,Primary energy from renewable resources (net cal. value),MJ,21290.87867,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production,"Global Warming Air, excl biogenic carbon, incl LUC, no norm/weight",kg CO2 eq.,4663.241603,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production,"Global Warming Air, incl biogenic carbon, incl LUC, no norm/weight",kg CO2 eq.,4652.712986,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production,"Global Warming Air, LUC only, no norm/weight",kg CO2 eq.,0,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production,Acidification,kg SO2 eq.,25.89418936,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production,Ecotoxicity (recommended),CTUe,231.1884931,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production,Eutrophication,kg N eq.,0.487520189,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production,"Global Warming Air, excl. biogenic carbon",kg CO2 eq.,4663.241603,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production,"Global Warming Air, incl. biogenic carbon",kg CO2 eq.,4652.712986,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production,Human Health Particulate Air,kg PM2.5 eq.,4.095062557,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production,"Human toxicity, cancer (recommended)",CTUh,2.87E-05,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production,"Human toxicity, non-canc. (recommended)",CTUh,0.003453893,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production,Ozone Depletion Air,kg CFC 11 eq.,3.54E-07,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production,"Resources, Fossil fuels",MJ surplus energy,4435.906905,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production,Smog Air,kg O3 eq.,224.1269104,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production,Ecotoxicity (recommended and interim),CTUe,5148503.534,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production,Ecotoxicity (recommended only),CTUe,0.528450816,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production,"Human toxicity, cancer (recommended and interim)",CTUh,4.66E-05,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production,"Human toxicity, cancer (recommended only)",CTUh,1.20E-07,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production,"Human toxicity, non-canc. (recommended and interim)",CTUh,0.005168929,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production,"Human toxicity, non-canc. (recommended only)",CTUh,5.82E-09,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production,high characterization factor for unspecified water,m3 world equiv.,5648.998145,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production,low characterization factor for unspecified water,m3 world equiv.,171.6220784,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production,OECD+BRIC average for unspecified water,m3 world equiv.,3405.318401,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production,Blue water consumption,kg,99273.34916,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production,Blue water use,kg,23502483.14,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production,Total freshwater consumption (including rainwater),kg,101388.6422,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production,Total freshwater use,kg,23504598.43,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production,high characterization factor for unspecified water,m3 equiv.,79.41867933,WSI,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production,low characterization factor for unspecified water,m3 equiv.,9.927334916,WSI,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production,OECD+BRIC average for unspecified water,m3 equiv.,33.84486583,WSI,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production_transport,Primary energy demand from ren. and non ren. resources (gross cal. value),MJ,520.8614558,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production_transport,Primary energy demand from ren. and non ren. resources (net cal. value),MJ,485.5417982,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production_transport,Primary energy from non renewable resources (gross cal. value),MJ,509.3553592,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production_transport,Primary energy from non renewable resources (net cal. value),MJ,474.0357016,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production_transport,Primary energy from renewable resources (gross cal. value),MJ,11.50609663,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production_transport,Primary energy from renewable resources (net cal. value),MJ,11.50609663,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production_transport,"Global Warming Air, excl biogenic carbon, incl LUC, no norm/weight",kg CO2 eq.,33.34090747,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production_transport,"Global Warming Air, incl biogenic carbon, incl LUC, no norm/weight",kg CO2 eq.,33.56663769,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production_transport,"Global Warming Air, LUC only, no norm/weight",kg CO2 eq.,0.037910286,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production_transport,Acidification,kg SO2 eq.,0.156724652,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production_transport,Ecotoxicity (recommended),CTUe,4.183602093,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production_transport,Eutrophication,kg N eq.,0.012781037,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production_transport,"Global Warming Air, excl. biogenic carbon",kg CO2 eq.,33.30299718,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production_transport,"Global Warming Air, incl. biogenic carbon",kg CO2 eq.,33.5287274,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production_transport,Human Health Particulate Air,kg PM2.5 eq.,0.009804752,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production_transport,"Human toxicity, cancer (recommended)",CTUh,1.77E-08,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production_transport,"Human toxicity, non-canc. (recommended)",CTUh,1.32E-06,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production_transport,Ozone Depletion Air,kg CFC 11 eq.,2.31E-10,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production_transport,"Resources, Fossil fuels",MJ surplus energy,63.6432118,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production_transport,Smog Air,kg O3 eq.,5.147979229,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production_transport,Ecotoxicity (recommended and interim),CTUe,405.6393229,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production_transport,Ecotoxicity (recommended only),CTUe,0.178806474,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production_transport,"Human toxicity, cancer (recommended and interim)",CTUh,5.01E-07,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production_transport,"Human toxicity, cancer (recommended only)",CTUh,1.50E-10,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production_transport,"Human toxicity, non-canc. (recommended and interim)",CTUh,1.51E-06,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production_transport,"Human toxicity, non-canc. (recommended only)",CTUh,4.89E-11,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production_transport,high characterization factor for unspecified water,m3 world equiv.,1.823574521,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production_transport,low characterization factor for unspecified water,m3 world equiv.,1.713239532,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production_transport,OECD+BRIC average for unspecified water,m3 world equiv.,1.778378359,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production_transport,Blue water consumption,kg,57.01161647,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production_transport,Blue water use,kg,983.454907,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production_transport,Total freshwater consumption (including rainwater),kg,367.819126,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production_transport,Total freshwater use,kg,1294.275471,NA,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production_transport,high characterization factor for unspecified water,m3 equiv.,0.027153611,WSI,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production_transport,low characterization factor for unspecified water,m3 equiv.,0.025753794,WSI,IMFO - Phase III_2018-02-16 09:16:41
+Aluminum,production,production_transport,OECD+BRIC average for unspecified water,m3 equiv.,0.026235583,WSI,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion,Primary energy demand from ren. and non ren. resources (gross cal. value),MJ,-5959.575345,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion,Primary energy demand from ren. and non ren. resources (net cal. value),MJ,-5316.37705,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion,Primary energy from non renewable resources (gross cal. value),MJ,-6101.726184,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion,Primary energy from non renewable resources (net cal. value),MJ,-5457.633787,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion,Primary energy from renewable resources (gross cal. value),MJ,142.1508392,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion,Primary energy from renewable resources (net cal. value),MJ,141.256737,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion,"Global Warming Air, excl biogenic carbon, incl LUC, no norm/weight",kg CO2 eq.,149.4294006,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion,"Global Warming Air, incl biogenic carbon, incl LUC, no norm/weight",kg CO2 eq.,171.7787707,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion,"Global Warming Air, LUC only, no norm/weight",kg CO2 eq.,-0.023020864,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion,Acidification,kg SO2 eq.,0.728056041,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion,Ecotoxicity (recommended),CTUe,1163.481529,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion,Eutrophication,kg N eq.,0.307660669,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion,"Global Warming Air, excl. biogenic carbon",kg CO2 eq.,149.4524214,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion,"Global Warming Air, incl. biogenic carbon",kg CO2 eq.,171.8017915,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion,Human Health Particulate Air,kg PM2.5 eq.,0.202373407,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion,"Human toxicity, cancer (recommended)",CTUh,3.85E-05,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion,"Human toxicity, non-canc. (recommended)",CTUh,7.10E-05,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion,Ozone Depletion Air,kg CFC 11 eq.,5.84E-06,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion,"Resources, Fossil fuels",MJ surplus energy,-892.0950515,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion,Smog Air,kg O3 eq.,2.819398109,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion,Ecotoxicity (recommended and interim),CTUe,661469.9223,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion,Ecotoxicity (recommended only),CTUe,-1.49060401,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion,"Human toxicity, cancer (recommended and interim)",CTUh,-4.06E-05,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion,"Human toxicity, cancer (recommended only)",CTUh,7.82E-09,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion,"Human toxicity, non-canc. (recommended and interim)",CTUh,6.40E-05,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion,"Human toxicity, non-canc. (recommended only)",CTUh,1.03E-08,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion,high characterization factor for unspecified water,m3 world equiv.,-28.84960013,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion,low characterization factor for unspecified water,m3 world equiv.,13.6096878,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion,OECD+BRIC average for unspecified water,m3 world equiv.,-11.45713991,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion,Blue water consumption,kg,1304.378974,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion,Blue water use,kg,235955.9556,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion,Total freshwater consumption (including rainwater),kg,1294.138072,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion,Total freshwater use,kg,235945.9699,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion,high characterization factor for unspecified water,m3 equiv.,-0.395190723,WSI,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion,low characterization factor for unspecified water,m3 equiv.,0.143489288,WSI,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion,OECD+BRIC average for unspecified water,m3 equiv.,-0.041913599,WSI,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion_transport,Primary energy demand from ren. and non ren. resources (gross cal. value),MJ,356.5402158,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion_transport,Primary energy demand from ren. and non ren. resources (net cal. value),MJ,332.3647002,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion_transport,Primary energy from non renewable resources (gross cal. value),MJ,348.6432676,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion_transport,Primary energy from non renewable resources (net cal. value),MJ,324.4677521,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion_transport,Primary energy from renewable resources (gross cal. value),MJ,7.896948128,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion_transport,Primary energy from renewable resources (net cal. value),MJ,7.896948128,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion_transport,"Global Warming Air, excl biogenic carbon, incl LUC, no norm/weight",kg CO2 eq.,22.87079102,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion_transport,"Global Warming Air, incl biogenic carbon, incl LUC, no norm/weight",kg CO2 eq.,22.9869726,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion_transport,"Global Warming Air, LUC only, no norm/weight",kg CO2 eq.,0.026023649,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion_transport,Acidification,kg SO2 eq.,0.091179481,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion_transport,Ecotoxicity (recommended),CTUe,2.863706382,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion_transport,Eutrophication,kg N eq.,0.007808717,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion_transport,"Global Warming Air, excl. biogenic carbon",kg CO2 eq.,22.84476737,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion_transport,"Global Warming Air, incl. biogenic carbon",kg CO2 eq.,22.96094895,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion_transport,Human Health Particulate Air,kg PM2.5 eq.,0.005211376,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion_transport,"Human toxicity, cancer (recommended)",CTUh,1.22E-08,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion_transport,"Human toxicity, non-canc. (recommended)",CTUh,9.04E-07,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion_transport,Ozone Depletion Air,kg CFC 11 eq.,1.58E-10,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion_transport,"Resources, Fossil fuels",MJ surplus energy,43.56263032,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion_transport,Smog Air,kg O3 eq.,2.987853996,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion_transport,Ecotoxicity (recommended and interim),CTUe,277.6319978,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion_transport,Ecotoxicity (recommended only),CTUe,0.122390793,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion_transport,"Human toxicity, cancer (recommended and interim)",CTUh,3.43E-07,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion_transport,"Human toxicity, cancer (recommended only)",CTUh,1.03E-10,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion_transport,"Human toxicity, non-canc. (recommended and interim)",CTUh,1.04E-06,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion_transport,"Human toxicity, non-canc. (recommended only)",CTUh,3.35E-11,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion_transport,high characterization factor for unspecified water,m3 world equiv.,1.251647126,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion_transport,low characterization factor for unspecified water,m3 world equiv.,1.176105775,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion_transport,OECD+BRIC average for unspecified water,m3 world equiv.,1.220703368,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion_transport,Blue water consumption,kg,39.13192257,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion_transport,Blue water use,kg,673.2348049,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion_transport,Total freshwater consumption (including rainwater),kg,252.5370488,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion_transport,Total freshwater use,kg,886.6488855,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion_transport,high characterization factor for unspecified water,m3 equiv.,0.018637582,WSI,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion_transport,low characterization factor for unspecified water,m3 equiv.,0.017679191,WSI,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,anaerobicDigestion_transport,OECD+BRIC average for unspecified water,m3 equiv.,0.01800905,WSI,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting,Primary energy demand from ren. and non ren. resources (gross cal. value),MJ,-4005.405776,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting,Primary energy demand from ren. and non ren. resources (net cal. value),MJ,-3963.416211,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting,Primary energy from non renewable resources (gross cal. value),MJ,-710.179086,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting,Primary energy from non renewable resources (net cal. value),MJ,-668.1895203,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting,Primary energy from renewable resources (gross cal. value),MJ,-3295.22669,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting,Primary energy from renewable resources (net cal. value),MJ,-3295.22669,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting,"Global Warming Air, excl biogenic carbon, incl LUC, no norm/weight",kg CO2 eq.,-89.15382628,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting,"Global Warming Air, incl biogenic carbon, incl LUC, no norm/weight",kg CO2 eq.,533.7869477,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting,"Global Warming Air, LUC only, no norm/weight",kg CO2 eq.,0.016230338,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting,Acidification,kg SO2 eq.,0.263085144,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting,Ecotoxicity (recommended),CTUe,2135.663861,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting,Eutrophication,kg N eq.,0.013730616,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting,"Global Warming Air, excl. biogenic carbon",kg CO2 eq.,-89.17005661,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting,"Global Warming Air, incl. biogenic carbon",kg CO2 eq.,533.7707173,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting,Human Health Particulate Air,kg PM2.5 eq.,-0.110306629,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting,"Human toxicity, cancer (recommended)",CTUh,6.28E-07,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting,"Human toxicity, non-canc. (recommended)",CTUh,0.001769581,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting,Ozone Depletion Air,kg CFC 11 eq.,-1.62E-10,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting,"Resources, Fossil fuels",MJ surplus energy,-28.96162547,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting,Smog Air,kg O3 eq.,-0.809296238,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting,Ecotoxicity (recommended and interim),CTUe,7417818.164,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting,Ecotoxicity (recommended only),CTUe,-0.076482896,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting,"Human toxicity, cancer (recommended and interim)",CTUh,1.18E-06,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting,"Human toxicity, cancer (recommended only)",CTUh,-5.96E-09,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting,"Human toxicity, non-canc. (recommended and interim)",CTUh,0.000977914,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting,"Human toxicity, non-canc. (recommended only)",CTUh,-1.45E-10,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting,high characterization factor for unspecified water,m3 world equiv.,14.70540161,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting,low characterization factor for unspecified water,m3 world equiv.,0.140885749,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting,OECD+BRIC average for unspecified water,m3 world equiv.,8.739386367,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting,Blue water consumption,kg,106.7477306,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting,Blue water use,kg,-569161.6959,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting,Total freshwater consumption (including rainwater),kg,-545.181372,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting,Total freshwater use,kg,-569813.9863,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting,high characterization factor for unspecified water,m3 equiv.,0.193157289,WSI,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting,low characterization factor for unspecified water,m3 equiv.,0.008377611,WSI,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting,OECD+BRIC average for unspecified water,m3 equiv.,0.071975081,WSI,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting_transport,Primary energy demand from ren. and non ren. resources (gross cal. value),MJ,356.5402158,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting_transport,Primary energy demand from ren. and non ren. resources (net cal. value),MJ,332.3647002,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting_transport,Primary energy from non renewable resources (gross cal. value),MJ,348.6432676,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting_transport,Primary energy from non renewable resources (net cal. value),MJ,324.4677521,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting_transport,Primary energy from renewable resources (gross cal. value),MJ,7.896948128,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting_transport,Primary energy from renewable resources (net cal. value),MJ,7.896948128,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting_transport,"Global Warming Air, excl biogenic carbon, incl LUC, no norm/weight",kg CO2 eq.,22.87079102,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting_transport,"Global Warming Air, incl biogenic carbon, incl LUC, no norm/weight",kg CO2 eq.,22.9869726,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting_transport,"Global Warming Air, LUC only, no norm/weight",kg CO2 eq.,0.026023649,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting_transport,Acidification,kg SO2 eq.,0.091179481,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting_transport,Ecotoxicity (recommended),CTUe,2.863706382,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting_transport,Eutrophication,kg N eq.,0.007808717,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting_transport,"Global Warming Air, excl. biogenic carbon",kg CO2 eq.,22.84476737,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting_transport,"Global Warming Air, incl. biogenic carbon",kg CO2 eq.,22.96094895,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting_transport,Human Health Particulate Air,kg PM2.5 eq.,0.005211376,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting_transport,"Human toxicity, cancer (recommended)",CTUh,1.22E-08,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting_transport,"Human toxicity, non-canc. (recommended)",CTUh,9.04E-07,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting_transport,Ozone Depletion Air,kg CFC 11 eq.,1.58E-10,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting_transport,"Resources, Fossil fuels",MJ surplus energy,43.56263032,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting_transport,Smog Air,kg O3 eq.,2.987853996,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting_transport,Ecotoxicity (recommended and interim),CTUe,277.6319978,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting_transport,Ecotoxicity (recommended only),CTUe,0.122390793,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting_transport,"Human toxicity, cancer (recommended and interim)",CTUh,3.43E-07,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting_transport,"Human toxicity, cancer (recommended only)",CTUh,1.03E-10,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting_transport,"Human toxicity, non-canc. (recommended and interim)",CTUh,1.04E-06,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting_transport,"Human toxicity, non-canc. (recommended only)",CTUh,3.35E-11,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting_transport,high characterization factor for unspecified water,m3 world equiv.,1.251647126,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting_transport,low characterization factor for unspecified water,m3 world equiv.,1.176105775,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting_transport,OECD+BRIC average for unspecified water,m3 world equiv.,1.220703368,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting_transport,Blue water consumption,kg,39.13192257,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting_transport,Blue water use,kg,673.2348049,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting_transport,Total freshwater consumption (including rainwater),kg,252.5370488,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting_transport,Total freshwater use,kg,886.6488855,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting_transport,high characterization factor for unspecified water,m3 equiv.,0.018637582,WSI,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting_transport,low characterization factor for unspecified water,m3 equiv.,0.017679191,WSI,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,composting_transport,OECD+BRIC average for unspecified water,m3 equiv.,0.01800905,WSI,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER,Primary energy demand from ren. and non ren. resources (gross cal. value),MJ,-507.7632795,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER,Primary energy demand from ren. and non ren. resources (net cal. value),MJ,-544.6218111,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER,Primary energy from non renewable resources (gross cal. value),MJ,92.72953929,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER,Primary energy from non renewable resources (net cal. value),MJ,55.87100768,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER,Primary energy from renewable resources (gross cal. value),MJ,-600.4928188,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER,Primary energy from renewable resources (net cal. value),MJ,-600.4928188,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER,"Global Warming Air, excl biogenic carbon, incl LUC, no norm/weight",kg CO2 eq.,-1.626519967,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER,"Global Warming Air, incl biogenic carbon, incl LUC, no norm/weight",kg CO2 eq.,566.0137428,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER,"Global Warming Air, LUC only, no norm/weight",kg CO2 eq.,-0.005929315,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER,Acidification,kg SO2 eq.,0.403735195,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER,Ecotoxicity (recommended),CTUe,0.795042154,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER,Eutrophication,kg N eq.,0.023741873,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER,"Global Warming Air, excl. biogenic carbon",kg CO2 eq.,-1.620590652,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER,"Global Warming Air, incl. biogenic carbon",kg CO2 eq.,566.0196722,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER,Human Health Particulate Air,kg PM2.5 eq.,0.027402629,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER,"Human toxicity, cancer (recommended)",CTUh,2.86E-08,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER,"Human toxicity, non-canc. (recommended)",CTUh,2.88E-06,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER,Ozone Depletion Air,kg CFC 11 eq.,-3.43E-09,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER,"Resources, Fossil fuels",MJ surplus energy,68.19635431,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER,Smog Air,kg O3 eq.,12.83379807,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER,Ecotoxicity (recommended and interim),CTUe,1402.770949,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER,Ecotoxicity (recommended only),CTUe,0.115900211,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER,"Human toxicity, cancer (recommended and interim)",CTUh,5.61E-06,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER,"Human toxicity, cancer (recommended only)",CTUh,1.20E-09,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER,"Human toxicity, non-canc. (recommended and interim)",CTUh,4.27E-06,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER,"Human toxicity, non-canc. (recommended only)",CTUh,3.83E-11,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER,high characterization factor for unspecified water,m3 world equiv.,28.17023446,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER,low characterization factor for unspecified water,m3 world equiv.,-78.3690537,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER,OECD+BRIC average for unspecified water,m3 world equiv.,-15.47110876,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER,Blue water consumption,kg,-501.0348258,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER,Blue water use,kg,-492046.0762,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER,Total freshwater consumption (including rainwater),kg,-600.3922011,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER,Total freshwater use,kg,-492074.6445,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER,high characterization factor for unspecified water,m3 equiv.,0.339062151,WSI,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER,low characterization factor for unspecified water,m3 equiv.,-1.012599352,WSI,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER,OECD+BRIC average for unspecified water,m3 equiv.,-0.547384496,WSI,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER_transport,Primary energy demand from ren. and non ren. resources (gross cal. value),MJ,356.5402158,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER_transport,Primary energy demand from ren. and non ren. resources (net cal. value),MJ,332.3647002,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER_transport,Primary energy from non renewable resources (gross cal. value),MJ,348.6432676,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER_transport,Primary energy from non renewable resources (net cal. value),MJ,324.4677521,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER_transport,Primary energy from renewable resources (gross cal. value),MJ,7.896948128,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER_transport,Primary energy from renewable resources (net cal. value),MJ,7.896948128,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER_transport,"Global Warming Air, excl biogenic carbon, incl LUC, no norm/weight",kg CO2 eq.,22.87079102,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER_transport,"Global Warming Air, incl biogenic carbon, incl LUC, no norm/weight",kg CO2 eq.,22.9869726,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER_transport,"Global Warming Air, LUC only, no norm/weight",kg CO2 eq.,0.026023649,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER_transport,Acidification,kg SO2 eq.,0.091179481,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER_transport,Ecotoxicity (recommended),CTUe,2.863706382,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER_transport,Eutrophication,kg N eq.,0.007808717,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER_transport,"Global Warming Air, excl. biogenic carbon",kg CO2 eq.,22.84476737,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER_transport,"Global Warming Air, incl. biogenic carbon",kg CO2 eq.,22.96094895,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER_transport,Human Health Particulate Air,kg PM2.5 eq.,0.005211376,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER_transport,"Human toxicity, cancer (recommended)",CTUh,1.22E-08,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER_transport,"Human toxicity, non-canc. (recommended)",CTUh,9.04E-07,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER_transport,Ozone Depletion Air,kg CFC 11 eq.,1.58E-10,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER_transport,"Resources, Fossil fuels",MJ surplus energy,43.56263032,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER_transport,Smog Air,kg O3 eq.,2.987853996,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER_transport,Ecotoxicity (recommended and interim),CTUe,277.6319978,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER_transport,Ecotoxicity (recommended only),CTUe,0.122390793,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER_transport,"Human toxicity, cancer (recommended and interim)",CTUh,3.43E-07,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER_transport,"Human toxicity, cancer (recommended only)",CTUh,1.03E-10,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER_transport,"Human toxicity, non-canc. (recommended and interim)",CTUh,1.04E-06,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER_transport,"Human toxicity, non-canc. (recommended only)",CTUh,3.35E-11,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER_transport,high characterization factor for unspecified water,m3 world equiv.,1.251647126,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER_transport,low characterization factor for unspecified water,m3 world equiv.,1.176105775,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER_transport,OECD+BRIC average for unspecified water,m3 world equiv.,1.220703368,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER_transport,Blue water consumption,kg,39.13192257,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER_transport,Blue water use,kg,673.2348049,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER_transport,Total freshwater consumption (including rainwater),kg,252.5370488,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER_transport,Total freshwater use,kg,886.6488855,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER_transport,high characterization factor for unspecified water,m3 equiv.,0.018637582,WSI,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER_transport,low characterization factor for unspecified water,m3 equiv.,0.017679191,WSI,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationER_transport,OECD+BRIC average for unspecified water,m3 equiv.,0.01800905,WSI,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER,Primary energy demand from ren. and non ren. resources (gross cal. value),MJ,974.5911339,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER,Primary energy demand from ren. and non ren. resources (net cal. value),MJ,893.2688559,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER,Primary energy from non renewable resources (gross cal. value),MJ,948.5308148,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER,Primary energy from non renewable resources (net cal. value),MJ,867.2085368,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER,Primary energy from renewable resources (gross cal. value),MJ,26.06031904,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER,Primary energy from renewable resources (net cal. value),MJ,26.06031904,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER,"Global Warming Air, excl biogenic carbon, incl LUC, no norm/weight",kg CO2 eq.,62.98765731,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER,"Global Warming Air, incl biogenic carbon, incl LUC, no norm/weight",kg CO2 eq.,630.6034522,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER,"Global Warming Air, LUC only, no norm/weight",kg CO2 eq.,0.017525868,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER,Acidification,kg SO2 eq.,0.537708472,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER,Ecotoxicity (recommended),CTUe,2.033628458,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER,Eutrophication,kg N eq.,0.033586032,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER,"Global Warming Air, excl. biogenic carbon",kg CO2 eq.,62.97013145,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER,"Global Warming Air, incl. biogenic carbon",kg CO2 eq.,630.5859263,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER,Human Health Particulate Air,kg PM2.5 eq.,0.037600451,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER,"Human toxicity, cancer (recommended)",CTUh,3.94E-08,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER,"Human toxicity, non-canc. (recommended)",CTUh,3.62E-06,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER,Ozone Depletion Air,kg CFC 11 eq.,4.75E-09,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER,"Resources, Fossil fuels",MJ surplus energy,106.9636355,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER,Smog Air,kg O3 eq.,14.81447201,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER,Ecotoxicity (recommended and interim),CTUe,3213.808799,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER,Ecotoxicity (recommended only),CTUe,0.19463484,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER,"Human toxicity, cancer (recommended and interim)",CTUh,8.00E-06,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER,"Human toxicity, cancer (recommended only)",CTUh,2.54E-09,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER,"Human toxicity, non-canc. (recommended and interim)",CTUh,5.46E-06,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER,"Human toxicity, non-canc. (recommended only)",CTUh,1.15E-10,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER,high characterization factor for unspecified water,m3 world equiv.,112.6817629,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER,low characterization factor for unspecified water,m3 world equiv.,5.590523093,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER,OECD+BRIC average for unspecified water,m3 world equiv.,68.81432666,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER,Blue water consumption,kg,2012.041103,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER,Blue water use,kg,12189.45839,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER,Total freshwater consumption (including rainwater),kg,2070.575406,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER,Total freshwater use,kg,12319.03755,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER,high characterization factor for unspecified water,m3 equiv.,1.58600273,WSI,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER,low characterization factor for unspecified water,m3 equiv.,0.227338629,WSI,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER,OECD+BRIC average for unspecified water,m3 equiv.,0.694963639,WSI,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER_transport,Primary energy demand from ren. and non ren. resources (gross cal. value),MJ,356.5402158,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER_transport,Primary energy demand from ren. and non ren. resources (net cal. value),MJ,332.3647002,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER_transport,Primary energy from non renewable resources (gross cal. value),MJ,348.6432676,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER_transport,Primary energy from non renewable resources (net cal. value),MJ,324.4677521,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER_transport,Primary energy from renewable resources (gross cal. value),MJ,7.896948128,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER_transport,Primary energy from renewable resources (net cal. value),MJ,7.896948128,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER_transport,"Global Warming Air, excl biogenic carbon, incl LUC, no norm/weight",kg CO2 eq.,22.87079102,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER_transport,"Global Warming Air, incl biogenic carbon, incl LUC, no norm/weight",kg CO2 eq.,22.9869726,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER_transport,"Global Warming Air, LUC only, no norm/weight",kg CO2 eq.,0.026023649,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER_transport,Acidification,kg SO2 eq.,0.091179481,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER_transport,Ecotoxicity (recommended),CTUe,2.863706382,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER_transport,Eutrophication,kg N eq.,0.007808717,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER_transport,"Global Warming Air, excl. biogenic carbon",kg CO2 eq.,22.84476737,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER_transport,"Global Warming Air, incl. biogenic carbon",kg CO2 eq.,22.96094895,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER_transport,Human Health Particulate Air,kg PM2.5 eq.,0.005211376,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER_transport,"Human toxicity, cancer (recommended)",CTUh,1.22E-08,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER_transport,"Human toxicity, non-canc. (recommended)",CTUh,9.04E-07,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER_transport,Ozone Depletion Air,kg CFC 11 eq.,1.58E-10,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER_transport,"Resources, Fossil fuels",MJ surplus energy,43.56263032,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER_transport,Smog Air,kg O3 eq.,2.987853996,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER_transport,Ecotoxicity (recommended and interim),CTUe,277.6319978,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER_transport,Ecotoxicity (recommended only),CTUe,0.122390793,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER_transport,"Human toxicity, cancer (recommended and interim)",CTUh,3.43E-07,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER_transport,"Human toxicity, cancer (recommended only)",CTUh,1.03E-10,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER_transport,"Human toxicity, non-canc. (recommended and interim)",CTUh,1.04E-06,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER_transport,"Human toxicity, non-canc. (recommended only)",CTUh,3.35E-11,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER_transport,high characterization factor for unspecified water,m3 world equiv.,1.251647126,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER_transport,low characterization factor for unspecified water,m3 world equiv.,1.176105775,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER_transport,OECD+BRIC average for unspecified water,m3 world equiv.,1.220703368,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER_transport,Blue water consumption,kg,39.13192257,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER_transport,Blue water use,kg,673.2348049,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER_transport,Total freshwater consumption (including rainwater),kg,252.5370488,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER_transport,Total freshwater use,kg,886.6488855,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER_transport,high characterization factor for unspecified water,m3 equiv.,0.018637582,WSI,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER_transport,low characterization factor for unspecified water,m3 equiv.,0.017679191,WSI,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,incinerationNoER_transport,OECD+BRIC average for unspecified water,m3 equiv.,0.01800905,WSI,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling,Primary energy demand from ren. and non ren. resources (gross cal. value),MJ,394.668481,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling,Primary energy demand from ren. and non ren. resources (net cal. value),MJ,358.1466001,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling,Primary energy from non renewable resources (gross cal. value),MJ,461.1603103,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling,Primary energy from non renewable resources (net cal. value),MJ,424.6384294,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling,Primary energy from renewable resources (gross cal. value),MJ,-66.49182937,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling,Primary energy from renewable resources (net cal. value),MJ,-66.49182937,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling,"Global Warming Air, excl biogenic carbon, incl LUC, no norm/weight",kg CO2 eq.,279.6510112,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling,"Global Warming Air, incl biogenic carbon, incl LUC, no norm/weight",kg CO2 eq.,426.5587688,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling,"Global Warming Air, LUC only, no norm/weight",kg CO2 eq.,0.024990786,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling,Acidification,kg SO2 eq.,3.028373323,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling,Ecotoxicity (recommended),CTUe,3.601142497,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling,Eutrophication,kg N eq.,1.583694395,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling,"Global Warming Air, excl. biogenic carbon",kg CO2 eq.,279.6260204,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling,"Global Warming Air, incl. biogenic carbon",kg CO2 eq.,426.5337781,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling,Human Health Particulate Air,kg PM2.5 eq.,0.153878115,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling,"Human toxicity, cancer (recommended)",CTUh,2.05E-07,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling,"Human toxicity, non-canc. (recommended)",CTUh,2.00E-05,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling,Ozone Depletion Air,kg CFC 11 eq.,-8.18E-10,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling,"Resources, Fossil fuels",MJ surplus energy,62.50044262,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling,Smog Air,kg O3 eq.,6.783977384,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling,Ecotoxicity (recommended and interim),CTUe,792.2963895,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling,Ecotoxicity (recommended only),CTUe,0.249391288,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling,"Human toxicity, cancer (recommended and interim)",CTUh,9.32E-07,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling,"Human toxicity, cancer (recommended only)",CTUh,3.11E-08,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling,"Human toxicity, non-canc. (recommended and interim)",CTUh,2.98E-05,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling,"Human toxicity, non-canc. (recommended only)",CTUh,1.86E-08,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling,high characterization factor for unspecified water,m3 world equiv.,-9.357550063,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling,low characterization factor for unspecified water,m3 world equiv.,-13.55594826,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling,OECD+BRIC average for unspecified water,m3 world equiv.,-11.07732646,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling,Blue water consumption,kg,-315.3042594,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling,Blue water use,kg,-69904.89785,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling,Total freshwater consumption (including rainwater),kg,-598.7855038,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling,Total freshwater use,kg,-68130.13346,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling,high characterization factor for unspecified water,m3 equiv.,-0.13962416,WSI,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling,low characterization factor for unspecified water,m3 equiv.,-0.192889142,WSI,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling,OECD+BRIC average for unspecified water,m3 equiv.,-0.1745564,WSI,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling_transport,Primary energy demand from ren. and non ren. resources (gross cal. value),MJ,356.5402158,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling_transport,Primary energy demand from ren. and non ren. resources (net cal. value),MJ,332.3647002,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling_transport,Primary energy from non renewable resources (gross cal. value),MJ,348.6432676,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling_transport,Primary energy from non renewable resources (net cal. value),MJ,324.4677521,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling_transport,Primary energy from renewable resources (gross cal. value),MJ,7.896948128,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling_transport,Primary energy from renewable resources (net cal. value),MJ,7.896948128,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling_transport,"Global Warming Air, excl biogenic carbon, incl LUC, no norm/weight",kg CO2 eq.,22.87079102,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling_transport,"Global Warming Air, incl biogenic carbon, incl LUC, no norm/weight",kg CO2 eq.,22.9869726,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling_transport,"Global Warming Air, LUC only, no norm/weight",kg CO2 eq.,0.026023649,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling_transport,Acidification,kg SO2 eq.,0.091179481,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling_transport,Ecotoxicity (recommended),CTUe,2.863706382,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling_transport,Eutrophication,kg N eq.,0.007808717,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling_transport,"Global Warming Air, excl. biogenic carbon",kg CO2 eq.,22.84476737,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling_transport,"Global Warming Air, incl. biogenic carbon",kg CO2 eq.,22.96094895,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling_transport,Human Health Particulate Air,kg PM2.5 eq.,0.005211376,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling_transport,"Human toxicity, cancer (recommended)",CTUh,1.22E-08,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling_transport,"Human toxicity, non-canc. (recommended)",CTUh,9.04E-07,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling_transport,Ozone Depletion Air,kg CFC 11 eq.,1.58E-10,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling_transport,"Resources, Fossil fuels",MJ surplus energy,43.56263032,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling_transport,Smog Air,kg O3 eq.,2.987853996,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling_transport,Ecotoxicity (recommended and interim),CTUe,277.6319978,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling_transport,Ecotoxicity (recommended only),CTUe,0.122390793,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling_transport,"Human toxicity, cancer (recommended and interim)",CTUh,3.43E-07,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling_transport,"Human toxicity, cancer (recommended only)",CTUh,1.03E-10,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling_transport,"Human toxicity, non-canc. (recommended and interim)",CTUh,1.04E-06,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling_transport,"Human toxicity, non-canc. (recommended only)",CTUh,3.35E-11,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling_transport,high characterization factor for unspecified water,m3 world equiv.,1.251647126,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling_transport,low characterization factor for unspecified water,m3 world equiv.,1.176105775,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling_transport,OECD+BRIC average for unspecified water,m3 world equiv.,1.220703368,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling_transport,Blue water consumption,kg,39.13192257,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling_transport,Blue water use,kg,673.2348049,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling_transport,Total freshwater consumption (including rainwater),kg,252.5370488,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling_transport,Total freshwater use,kg,886.6488855,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling_transport,high characterization factor for unspecified water,m3 equiv.,0.018637582,WSI,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling_transport,low characterization factor for unspecified water,m3 equiv.,0.017679191,WSI,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,endOfLife,landfilling_transport,OECD+BRIC average for unspecified water,m3 equiv.,0.01800905,WSI,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,production,production,Primary energy demand from ren. and non ren. resources (gross cal. value),MJ,40233.99106,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,production,production,Primary energy demand from ren. and non ren. resources (net cal. value),MJ,37482.19494,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,production,production,Primary energy from non renewable resources (gross cal. value),MJ,10905.02815,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,production,production,Primary energy from non renewable resources (net cal. value),MJ,10259.56249,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,production,production,Primary energy from renewable resources (gross cal. value),MJ,29328.96291,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,production,production,Primary energy from renewable resources (net cal. value),MJ,27222.63245,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,production,production,"Global Warming Air, excl biogenic carbon, incl LUC, no norm/weight",kg CO2 eq.,1661.35229,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,production,production,"Global Warming Air, incl biogenic carbon, incl LUC, no norm/weight",kg CO2 eq.,278.5880298,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,production,production,"Global Warming Air, LUC only, no norm/weight",kg CO2 eq.,0.068003265,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,production,production,Acidification,kg SO2 eq.,15.62044599,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,production,production,Ecotoxicity (recommended),CTUe,12698.81685,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,production,production,Eutrophication,kg N eq.,16.37648074,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,production,production,"Global Warming Air, excl. biogenic carbon",kg CO2 eq.,1661.284286,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,production,production,"Global Warming Air, incl. biogenic carbon",kg CO2 eq.,278.5200265,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,production,production,Human Health Particulate Air,kg PM2.5 eq.,2.645130126,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,production,production,"Human toxicity, cancer (recommended)",CTUh,5.90E-05,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,production,production,"Human toxicity, non-canc. (recommended)",CTUh,-3.23E-05,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,production,production,Ozone Depletion Air,kg CFC 11 eq.,8.90E-05,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,production,production,"Resources, Fossil fuels",MJ surplus energy,990.3717394,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,production,production,Smog Air,kg O3 eq.,85.90103898,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,production,production,Ecotoxicity (recommended and interim),CTUe,4250294.873,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,production,production,Ecotoxicity (recommended only),CTUe,767.9416787,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,production,production,"Human toxicity, cancer (recommended and interim)",CTUh,6.80E-05,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,production,production,"Human toxicity, cancer (recommended only)",CTUh,9.23E-06,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,production,production,"Human toxicity, non-canc. (recommended and interim)",CTUh,7.32E-05,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,production,production,"Human toxicity, non-canc. (recommended only)",CTUh,2.01E-06,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,production,production,high characterization factor for unspecified water,m3 world equiv.,-5214.952055,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,production,production,low characterization factor for unspecified water,m3 world equiv.,-141.8724041,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,production,production,OECD+BRIC average for unspecified water,m3 world equiv.,-3136.882937,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,production,production,Blue water consumption,kg,131944.2922,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,production,production,Blue water use,kg,2464761.29,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,production,production,Total freshwater consumption (including rainwater),kg,133979.8789,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,production,production,Total freshwater use,kg,2466797.066,NA,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,production,production,high characterization factor for unspecified water,m3 equiv.,-73.30403172,WSI,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,production,production,low characterization factor for unspecified water,m3 equiv.,-8.941986655,WSI,IMFO - Phase III_2018-02-16 09:16:41
+FoodWaste,production,production,OECD+BRIC average for unspecified water,m3 equiv.,-31.09411532,WSI,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER,Primary energy demand from ren. and non ren. resources (gross cal. value),MJ,2482.589408,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER,Primary energy demand from ren. and non ren. resources (net cal. value),MJ,2313.947187,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER,Primary energy from non renewable resources (gross cal. value),MJ,2109.671999,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER,Primary energy from non renewable resources (net cal. value),MJ,1941.029779,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER,Primary energy from renewable resources (gross cal. value),MJ,372.9174089,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER,Primary energy from renewable resources (net cal. value),MJ,372.9174089,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER,"Global Warming Air, excl biogenic carbon, incl LUC, no norm/weight",kg CO2 eq.,138.5456994,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER,"Global Warming Air, incl biogenic carbon, incl LUC, no norm/weight",kg CO2 eq.,149.438748,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER,"Global Warming Air, LUC only, no norm/weight",kg CO2 eq.,0.101220807,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER,Acidification,kg SO2 eq.,0.381104678,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER,Ecotoxicity (recommended),CTUe,6.151056699,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER,Eutrophication,kg N eq.,0.030589723,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER,"Global Warming Air, excl. biogenic carbon",kg CO2 eq.,138.4444786,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER,"Global Warming Air, incl. biogenic carbon",kg CO2 eq.,149.3375272,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER,Human Health Particulate Air,kg PM2.5 eq.,0.230944121,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER,"Human toxicity, cancer (recommended)",CTUh,1.51E-07,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER,"Human toxicity, non-canc. (recommended)",CTUh,1.40E-05,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER,Ozone Depletion Air,kg CFC 11 eq.,8.78E-09,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER,"Resources, Fossil fuels",MJ surplus energy,220.3472392,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER,Smog Air,kg O3 eq.,8.79524616,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER,Ecotoxicity (recommended and interim),CTUe,3900.807905,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER,Ecotoxicity (recommended only),CTUe,0.383277102,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER,"Human toxicity, cancer (recommended and interim)",CTUh,1.45E-05,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER,"Human toxicity, cancer (recommended only)",CTUh,5.58E-09,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER,"Human toxicity, non-canc. (recommended and interim)",CTUh,2.12E-05,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER,"Human toxicity, non-canc. (recommended only)",CTUh,1.97E-10,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER,high characterization factor for unspecified water,m3 world equiv.,130.8253678,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER,low characterization factor for unspecified water,m3 world equiv.,48.05821511,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER,OECD+BRIC average for unspecified water,m3 world equiv.,96.92172879,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER,Blue water consumption,kg,2872.749987,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER,Blue water use,kg,281197.0186,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER,Total freshwater consumption (including rainwater),kg,3183.861069,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER,Total freshwater use,kg,282089.3899,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER,high characterization factor for unspecified water,m3 equiv.,1.872514929,WSI,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER,low characterization factor for unspecified water,m3 equiv.,0.822449964,WSI,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER,OECD+BRIC average for unspecified water,m3 equiv.,1.183861324,WSI,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER_transport,Primary energy demand from ren. and non ren. resources (gross cal. value),MJ,356.5402158,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER_transport,Primary energy demand from ren. and non ren. resources (net cal. value),MJ,332.3647002,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER_transport,Primary energy from non renewable resources (gross cal. value),MJ,348.6432676,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER_transport,Primary energy from non renewable resources (net cal. value),MJ,324.4677521,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER_transport,Primary energy from renewable resources (gross cal. value),MJ,7.896948128,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER_transport,Primary energy from renewable resources (net cal. value),MJ,7.896948128,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER_transport,"Global Warming Air, excl biogenic carbon, incl LUC, no norm/weight",kg CO2 eq.,22.87079102,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER_transport,"Global Warming Air, incl biogenic carbon, incl LUC, no norm/weight",kg CO2 eq.,22.9869726,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER_transport,"Global Warming Air, LUC only, no norm/weight",kg CO2 eq.,0.026023649,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER_transport,Acidification,kg SO2 eq.,0.091179481,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER_transport,Ecotoxicity (recommended),CTUe,2.863706382,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER_transport,Eutrophication,kg N eq.,0.007808717,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER_transport,"Global Warming Air, excl. biogenic carbon",kg CO2 eq.,22.84476737,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER_transport,"Global Warming Air, incl. biogenic carbon",kg CO2 eq.,22.96094895,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER_transport,Human Health Particulate Air,kg PM2.5 eq.,0.005211376,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER_transport,"Human toxicity, cancer (recommended)",CTUh,1.22E-08,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER_transport,"Human toxicity, non-canc. (recommended)",CTUh,9.04E-07,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER_transport,Ozone Depletion Air,kg CFC 11 eq.,1.58E-10,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER_transport,"Resources, Fossil fuels",MJ surplus energy,43.56263032,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER_transport,Smog Air,kg O3 eq.,2.987853996,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER_transport,Ecotoxicity (recommended and interim),CTUe,277.6319978,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER_transport,Ecotoxicity (recommended only),CTUe,0.122390793,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER_transport,"Human toxicity, cancer (recommended and interim)",CTUh,3.43E-07,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER_transport,"Human toxicity, cancer (recommended only)",CTUh,1.03E-10,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER_transport,"Human toxicity, non-canc. (recommended and interim)",CTUh,1.04E-06,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER_transport,"Human toxicity, non-canc. (recommended only)",CTUh,3.35E-11,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER_transport,high characterization factor for unspecified water,m3 world equiv.,1.251647126,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER_transport,low characterization factor for unspecified water,m3 world equiv.,1.176105775,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER_transport,OECD+BRIC average for unspecified water,m3 world equiv.,1.220703368,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER_transport,Blue water consumption,kg,39.13192257,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER_transport,Blue water use,kg,673.2348049,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER_transport,Total freshwater consumption (including rainwater),kg,252.5370488,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER_transport,Total freshwater use,kg,886.6488855,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER_transport,high characterization factor for unspecified water,m3 equiv.,0.018637582,WSI,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER_transport,low characterization factor for unspecified water,m3 equiv.,0.017679191,WSI,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,incinerationNoER_transport,OECD+BRIC average for unspecified water,m3 equiv.,0.01800905,WSI,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling,Primary energy demand from ren. and non ren. resources (gross cal. value),MJ,732.2974495,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling,Primary energy demand from ren. and non ren. resources (net cal. value),MJ,680.4311394,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling,Primary energy from non renewable resources (gross cal. value),MJ,688.6626402,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling,Primary energy from non renewable resources (net cal. value),MJ,636.7963302,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling,Primary energy from renewable resources (gross cal. value),MJ,43.63480929,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling,Primary energy from renewable resources (net cal. value),MJ,43.63480929,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling,"Global Warming Air, excl biogenic carbon, incl LUC, no norm/weight",kg CO2 eq.,40.52220872,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling,"Global Warming Air, incl biogenic carbon, incl LUC, no norm/weight",kg CO2 eq.,39.7640939,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling,"Global Warming Air, LUC only, no norm/weight",kg CO2 eq.,0.029445647,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling,Acidification,kg SO2 eq.,0.185538123,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling,Ecotoxicity (recommended),CTUe,3.494179452,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling,Eutrophication,kg N eq.,0.009416569,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling,"Global Warming Air, excl. biogenic carbon",kg CO2 eq.,40.49276307,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling,"Global Warming Air, incl. biogenic carbon",kg CO2 eq.,39.73464826,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling,Human Health Particulate Air,kg PM2.5 eq.,0.133330895,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling,"Human toxicity, cancer (recommended)",CTUh,1.73E-07,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling,"Human toxicity, non-canc. (recommended)",CTUh,1.97E-05,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling,Ozone Depletion Air,kg CFC 11 eq.,6.20E-10,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling,"Resources, Fossil fuels",MJ surplus energy,79.69702569,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling,Smog Air,kg O3 eq.,3.660878546,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling,Ecotoxicity (recommended and interim),CTUe,1034.942389,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling,Ecotoxicity (recommended only),CTUe,0.170312366,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling,"Human toxicity, cancer (recommended and interim)",CTUh,2.14E-06,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling,"Human toxicity, cancer (recommended only)",CTUh,7.25E-10,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling,"Human toxicity, non-canc. (recommended and interim)",CTUh,2.97E-05,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling,"Human toxicity, non-canc. (recommended only)",CTUh,5.28E-11,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling,high characterization factor for unspecified water,m3 world equiv.,2.778447062,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling,low characterization factor for unspecified water,m3 world equiv.,1.113406877,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling,OECD+BRIC average for unspecified water,m3 world equiv.,2.096402068,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling,Blue water consumption,kg,78.62329956,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling,Blue water use,kg,18626.95116,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling,Total freshwater consumption (including rainwater),kg,-176.3912247,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling,Total freshwater use,kg,20430.23678,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling,high characterization factor for unspecified water,m3 equiv.,0.04132702,WSI,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling,low characterization factor for unspecified water,m3 equiv.,0.020202693,WSI,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling,OECD+BRIC average for unspecified water,m3 equiv.,0.027473264,WSI,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling_transport,Primary energy demand from ren. and non ren. resources (gross cal. value),MJ,356.5402158,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling_transport,Primary energy demand from ren. and non ren. resources (net cal. value),MJ,332.3647002,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling_transport,Primary energy from non renewable resources (gross cal. value),MJ,348.6432676,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling_transport,Primary energy from non renewable resources (net cal. value),MJ,324.4677521,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling_transport,Primary energy from renewable resources (gross cal. value),MJ,7.896948128,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling_transport,Primary energy from renewable resources (net cal. value),MJ,7.896948128,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling_transport,"Global Warming Air, excl biogenic carbon, incl LUC, no norm/weight",kg CO2 eq.,22.87079102,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling_transport,"Global Warming Air, incl biogenic carbon, incl LUC, no norm/weight",kg CO2 eq.,22.9869726,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling_transport,"Global Warming Air, LUC only, no norm/weight",kg CO2 eq.,0.026023649,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling_transport,Acidification,kg SO2 eq.,0.091179481,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling_transport,Ecotoxicity (recommended),CTUe,2.863706382,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling_transport,Eutrophication,kg N eq.,0.007808717,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling_transport,"Global Warming Air, excl. biogenic carbon",kg CO2 eq.,22.84476737,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling_transport,"Global Warming Air, incl. biogenic carbon",kg CO2 eq.,22.96094895,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling_transport,Human Health Particulate Air,kg PM2.5 eq.,0.005211376,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling_transport,"Human toxicity, cancer (recommended)",CTUh,1.22E-08,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling_transport,"Human toxicity, non-canc. (recommended)",CTUh,9.04E-07,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling_transport,Ozone Depletion Air,kg CFC 11 eq.,1.58E-10,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling_transport,"Resources, Fossil fuels",MJ surplus energy,43.56263032,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling_transport,Smog Air,kg O3 eq.,2.987853996,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling_transport,Ecotoxicity (recommended and interim),CTUe,277.6319978,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling_transport,Ecotoxicity (recommended only),CTUe,0.122390793,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling_transport,"Human toxicity, cancer (recommended and interim)",CTUh,3.43E-07,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling_transport,"Human toxicity, cancer (recommended only)",CTUh,1.03E-10,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling_transport,"Human toxicity, non-canc. (recommended and interim)",CTUh,1.04E-06,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling_transport,"Human toxicity, non-canc. (recommended only)",CTUh,3.35E-11,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling_transport,high characterization factor for unspecified water,m3 world equiv.,1.251647126,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling_transport,low characterization factor for unspecified water,m3 world equiv.,1.176105775,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling_transport,OECD+BRIC average for unspecified water,m3 world equiv.,1.220703368,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling_transport,Blue water consumption,kg,39.13192257,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling_transport,Blue water use,kg,673.2348049,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling_transport,Total freshwater consumption (including rainwater),kg,252.5370488,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling_transport,Total freshwater use,kg,886.6488855,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling_transport,high characterization factor for unspecified water,m3 equiv.,0.018637582,WSI,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling_transport,low characterization factor for unspecified water,m3 equiv.,0.017679191,WSI,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,landfilling_transport,OECD+BRIC average for unspecified water,m3 equiv.,0.01800905,WSI,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate,Primary energy demand from ren. and non ren. resources (gross cal. value),MJ,-157.0078417,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate,Primary energy demand from ren. and non ren. resources (net cal. value),MJ,-151.4526963,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate,Primary energy from non renewable resources (gross cal. value),MJ,-118.5137149,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate,Primary energy from non renewable resources (net cal. value),MJ,-112.944955,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate,Primary energy from renewable resources (gross cal. value),MJ,-38.49412682,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate,Primary energy from renewable resources (net cal. value),MJ,-38.50774127,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate,"Global Warming Air, excl biogenic carbon, incl LUC, no norm/weight",kg CO2 eq.,12.56038052,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate,"Global Warming Air, incl biogenic carbon, incl LUC, no norm/weight",kg CO2 eq.,18.54629783,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate,"Global Warming Air, LUC only, no norm/weight",kg CO2 eq.,-0.037044187,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate,Acidification,kg SO2 eq.,0.152648899,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate,Ecotoxicity (recommended),CTUe,20.61933136,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate,Eutrophication,kg N eq.,0.069028615,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate,"Global Warming Air, excl. biogenic carbon",kg CO2 eq.,12.59742471,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate,"Global Warming Air, incl. biogenic carbon",kg CO2 eq.,18.58334202,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate,Human Health Particulate Air,kg PM2.5 eq.,-0.98277771,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate,"Human toxicity, cancer (recommended)",CTUh,5.81E-07,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate,"Human toxicity, non-canc. (recommended)",CTUh,0.000118996,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate,Ozone Depletion Air,kg CFC 11 eq.,3.67E-08,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate,"Resources, Fossil fuels",MJ surplus energy,-3.566770748,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate,Smog Air,kg O3 eq.,0.036317077,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate,Ecotoxicity (recommended and interim),CTUe,6810.262027,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate,Ecotoxicity (recommended only),CTUe,0.003054772,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate,"Human toxicity, cancer (recommended and interim)",CTUh,1.09E-06,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate,"Human toxicity, cancer (recommended only)",CTUh,2.08E-09,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate,"Human toxicity, non-canc. (recommended and interim)",CTUh,0.000223073,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate,"Human toxicity, non-canc. (recommended only)",CTUh,1.62E-09,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate,high characterization factor for unspecified water,m3 world equiv.,-11.04987275,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate,low characterization factor for unspecified water,m3 world equiv.,-1.209797018,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate,OECD+BRIC average for unspecified water,m3 world equiv.,-7.019114536,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate,Blue water consumption,kg,0.680145322,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate,Blue water use,kg,-26840.0952,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate,Total freshwater consumption (including rainwater),kg,-114.9165074,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate,Total freshwater use,kg,-26816.64783,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate,high characterization factor for unspecified water,m3 equiv.,-0.153420024,WSI,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate,low characterization factor for unspecified water,m3 equiv.,-0.028579209,WSI,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate,OECD+BRIC average for unspecified water,m3 equiv.,-0.071546921,WSI,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate_transport,Primary energy demand from ren. and non ren. resources (gross cal. value),MJ,560.0539865,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate_transport,Primary energy demand from ren. and non ren. resources (net cal. value),MJ,522.0766804,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate_transport,Primary energy from non renewable resources (gross cal. value),MJ,547.6821032,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate_transport,Primary energy from non renewable resources (net cal. value),MJ,509.7047972,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate_transport,Primary energy from renewable resources (gross cal. value),MJ,12.37188322,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate_transport,Primary energy from renewable resources (net cal. value),MJ,12.37188322,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate_transport,"Global Warming Air, excl biogenic carbon, incl LUC, no norm/weight",kg CO2 eq.,35.84965455,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate_transport,"Global Warming Air, incl biogenic carbon, incl LUC, no norm/weight",kg CO2 eq.,36.09237389,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate_transport,"Global Warming Air, LUC only, no norm/weight",kg CO2 eq.,0.040762881,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate_transport,Acidification,kg SO2 eq.,0.16852146,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate_transport,Ecotoxicity (recommended),CTUe,4.498399717,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate_transport,Eutrophication,kg N eq.,0.013743019,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate_transport,"Global Warming Air, excl. biogenic carbon",kg CO2 eq.,35.80889167,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate_transport,"Global Warming Air, incl. biogenic carbon",kg CO2 eq.,36.05161101,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate_transport,Human Health Particulate Air,kg PM2.5 eq.,0.010542524,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate_transport,"Human toxicity, cancer (recommended)",CTUh,1.91E-08,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate_transport,"Human toxicity, non-canc. (recommended)",CTUh,1.42E-06,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate_transport,Ozone Depletion Air,kg CFC 11 eq.,2.49E-10,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate_transport,"Resources, Fossil fuels",MJ surplus energy,68.43208279,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate_transport,Smog Air,kg O3 eq.,5.535494281,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate_transport,Ecotoxicity (recommended and interim),CTUe,436.1618894,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate_transport,Ecotoxicity (recommended only),CTUe,0.192260873,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate_transport,"Human toxicity, cancer (recommended and interim)",CTUh,5.39E-07,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate_transport,"Human toxicity, cancer (recommended only)",CTUh,1.61E-10,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate_transport,"Human toxicity, non-canc. (recommended and interim)",CTUh,1.63E-06,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate_transport,"Human toxicity, non-canc. (recommended only)",CTUh,5.25E-11,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate_transport,high characterization factor for unspecified water,m3 world equiv.,1.96079104,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate_transport,low characterization factor for unspecified water,m3 world equiv.,1.842153826,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate_transport,OECD+BRIC average for unspecified water,m3 world equiv.,1.912194064,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate_transport,Blue water consumption,kg,61.30150739,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate_transport,Blue water use,kg,1057.455564,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate_transport,Total freshwater consumption (including rainwater),kg,395.4960225,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate_transport,Total freshwater use,kg,1391.664116,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate_transport,high characterization factor for unspecified water,m3 equiv.,0.02919681,WSI,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate_transport,low characterization factor for unspecified water,m3 equiv.,0.027691662,WSI,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingAggregate_transport,OECD+BRIC average for unspecified water,m3 equiv.,0.028209704,WSI,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass,Primary energy demand from ren. and non ren. resources (gross cal. value),MJ,-2219.699669,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass,Primary energy demand from ren. and non ren. resources (net cal. value),MJ,-2087.587169,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass,Primary energy from non renewable resources (gross cal. value),MJ,-2154.133244,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass,Primary energy from non renewable resources (net cal. value),MJ,-2022.42904,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass,Primary energy from renewable resources (gross cal. value),MJ,-65.56642502,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass,Primary energy from renewable resources (net cal. value),MJ,-65.15812869,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass,"Global Warming Air, excl biogenic carbon, incl LUC, no norm/weight",kg CO2 eq.,-155.7534364,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass,"Global Warming Air, incl biogenic carbon, incl LUC, no norm/weight",kg CO2 eq.,-150.1660428,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass,"Global Warming Air, LUC only, no norm/weight",kg CO2 eq.,-0.071391719,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass,Acidification,kg SO2 eq.,-0.844900569,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass,Ecotoxicity (recommended),CTUe,-73.75666764,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass,Eutrophication,kg N eq.,-0.07082138,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass,"Global Warming Air, excl. biogenic carbon",kg CO2 eq.,-155.6820447,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass,"Global Warming Air, incl. biogenic carbon",kg CO2 eq.,-150.0946511,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass,Human Health Particulate Air,kg PM2.5 eq.,-4.117517809,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass,"Human toxicity, cancer (recommended)",CTUh,-2.09E-07,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass,"Human toxicity, non-canc. (recommended)",CTUh,0.000109384,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass,Ozone Depletion Air,kg CFC 11 eq.,-9.63E-07,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass,"Resources, Fossil fuels",MJ surplus energy,-137.0894116,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass,Smog Air,kg O3 eq.,-11.43873859,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass,Ecotoxicity (recommended and interim),CTUe,-68836.14432,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass,Ecotoxicity (recommended only),CTUe,-0.256360913,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass,"Human toxicity, cancer (recommended and interim)",CTUh,-6.62E-06,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass,"Human toxicity, cancer (recommended only)",CTUh,-3.85E-10,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass,"Human toxicity, non-canc. (recommended and interim)",CTUh,0.000213804,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass,"Human toxicity, non-canc. (recommended only)",CTUh,1.04E-09,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass,high characterization factor for unspecified water,m3 world equiv.,-3.150674315,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass,low characterization factor for unspecified water,m3 world equiv.,-1.934626356,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass,OECD+BRIC average for unspecified water,m3 world equiv.,-2.652548549,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass,Blue water consumption,kg,-694.657359,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass,Blue water use,kg,-68428.9116,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass,Total freshwater consumption (including rainwater),kg,-1122.342833,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass,Total freshwater use,kg,-68724.77996,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass,high characterization factor for unspecified water,m3 equiv.,-0.048000524,WSI,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass,low characterization factor for unspecified water,m3 equiv.,-0.032572552,WSI,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass,OECD+BRIC average for unspecified water,m3 equiv.,-0.037882552,WSI,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass_transport,Primary energy demand from ren. and non ren. resources (gross cal. value),MJ,560.0539865,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass_transport,Primary energy demand from ren. and non ren. resources (net cal. value),MJ,522.0766804,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass_transport,Primary energy from non renewable resources (gross cal. value),MJ,547.6821032,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass_transport,Primary energy from non renewable resources (net cal. value),MJ,509.7047972,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass_transport,Primary energy from renewable resources (gross cal. value),MJ,12.37188322,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass_transport,Primary energy from renewable resources (net cal. value),MJ,12.37188322,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass_transport,"Global Warming Air, excl biogenic carbon, incl LUC, no norm/weight",kg CO2 eq.,35.84965455,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass_transport,"Global Warming Air, incl biogenic carbon, incl LUC, no norm/weight",kg CO2 eq.,36.09237389,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass_transport,"Global Warming Air, LUC only, no norm/weight",kg CO2 eq.,0.040762881,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass_transport,Acidification,kg SO2 eq.,0.16852146,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass_transport,Ecotoxicity (recommended),CTUe,4.498399717,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass_transport,Eutrophication,kg N eq.,0.013743019,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass_transport,"Global Warming Air, excl. biogenic carbon",kg CO2 eq.,35.80889167,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass_transport,"Global Warming Air, incl. biogenic carbon",kg CO2 eq.,36.05161101,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass_transport,Human Health Particulate Air,kg PM2.5 eq.,0.010542524,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass_transport,"Human toxicity, cancer (recommended)",CTUh,1.91E-08,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass_transport,"Human toxicity, non-canc. (recommended)",CTUh,1.42E-06,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass_transport,Ozone Depletion Air,kg CFC 11 eq.,2.49E-10,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass_transport,"Resources, Fossil fuels",MJ surplus energy,68.43208279,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass_transport,Smog Air,kg O3 eq.,5.535494281,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass_transport,Ecotoxicity (recommended and interim),CTUe,436.1618894,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass_transport,Ecotoxicity (recommended only),CTUe,0.192260873,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass_transport,"Human toxicity, cancer (recommended and interim)",CTUh,5.39E-07,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass_transport,"Human toxicity, cancer (recommended only)",CTUh,1.61E-10,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass_transport,"Human toxicity, non-canc. (recommended and interim)",CTUh,1.63E-06,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass_transport,"Human toxicity, non-canc. (recommended only)",CTUh,5.25E-11,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass_transport,high characterization factor for unspecified water,m3 world equiv.,1.96079104,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass_transport,low characterization factor for unspecified water,m3 world equiv.,1.842153826,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass_transport,OECD+BRIC average for unspecified water,m3 world equiv.,1.912194064,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass_transport,Blue water consumption,kg,61.30150739,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass_transport,Blue water use,kg,1057.455564,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass_transport,Total freshwater consumption (including rainwater),kg,395.4960225,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass_transport,Total freshwater use,kg,1391.664116,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass_transport,high characterization factor for unspecified water,m3 equiv.,0.02919681,WSI,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass_transport,low characterization factor for unspecified water,m3 equiv.,0.027691662,WSI,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingFiberglass_transport,OECD+BRIC average for unspecified water,m3 equiv.,0.028209704,WSI,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric,Primary energy demand from ren. and non ren. resources (gross cal. value),MJ,-2219.699669,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric,Primary energy demand from ren. and non ren. resources (net cal. value),MJ,-2087.587169,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric,Primary energy from non renewable resources (gross cal. value),MJ,-2154.133244,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric,Primary energy from non renewable resources (net cal. value),MJ,-2022.42904,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric,Primary energy from renewable resources (gross cal. value),MJ,-65.56642502,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric,Primary energy from renewable resources (net cal. value),MJ,-65.15812869,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric,"Global Warming Air, excl biogenic carbon, incl LUC, no norm/weight",kg CO2 eq.,-155.7534364,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric,"Global Warming Air, incl biogenic carbon, incl LUC, no norm/weight",kg CO2 eq.,-150.1660428,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric,"Global Warming Air, LUC only, no norm/weight",kg CO2 eq.,-0.071391719,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric,Acidification,kg SO2 eq.,-0.844900569,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric,Ecotoxicity (recommended),CTUe,-73.75666764,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric,Eutrophication,kg N eq.,-0.07082138,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric,"Global Warming Air, excl. biogenic carbon",kg CO2 eq.,-155.6820447,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric,"Global Warming Air, incl. biogenic carbon",kg CO2 eq.,-150.0946511,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric,Human Health Particulate Air,kg PM2.5 eq.,-4.117517809,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric,"Human toxicity, cancer (recommended)",CTUh,-2.09E-07,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric,"Human toxicity, non-canc. (recommended)",CTUh,0.000109384,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric,Ozone Depletion Air,kg CFC 11 eq.,-9.63E-07,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric,"Resources, Fossil fuels",MJ surplus energy,-137.0894116,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric,Smog Air,kg O3 eq.,-11.43873859,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric,Ecotoxicity (recommended and interim),CTUe,-68836.14432,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric,Ecotoxicity (recommended only),CTUe,-0.256360913,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric,"Human toxicity, cancer (recommended and interim)",CTUh,-6.62E-06,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric,"Human toxicity, cancer (recommended only)",CTUh,-3.85E-10,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric,"Human toxicity, non-canc. (recommended and interim)",CTUh,0.000213804,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric,"Human toxicity, non-canc. (recommended only)",CTUh,1.04E-09,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric,high characterization factor for unspecified water,m3 world equiv.,-3.150674315,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric,low characterization factor for unspecified water,m3 world equiv.,-1.934626356,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric,OECD+BRIC average for unspecified water,m3 world equiv.,-2.652548549,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric,Blue water consumption,kg,-694.657359,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric,Blue water use,kg,-68428.9116,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric,Total freshwater consumption (including rainwater),kg,-1122.342833,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric,Total freshwater use,kg,-68724.77996,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric,high characterization factor for unspecified water,m3 equiv.,-0.048000524,WSI,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric,low characterization factor for unspecified water,m3 equiv.,-0.032572552,WSI,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric,OECD+BRIC average for unspecified water,m3 equiv.,-0.037882552,WSI,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric_transport,Primary energy demand from ren. and non ren. resources (gross cal. value),MJ,560.0539865,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric_transport,Primary energy demand from ren. and non ren. resources (net cal. value),MJ,522.0766804,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric_transport,Primary energy from non renewable resources (gross cal. value),MJ,547.6821032,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric_transport,Primary energy from non renewable resources (net cal. value),MJ,509.7047972,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric_transport,Primary energy from renewable resources (gross cal. value),MJ,12.37188322,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric_transport,Primary energy from renewable resources (net cal. value),MJ,12.37188322,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric_transport,"Global Warming Air, excl biogenic carbon, incl LUC, no norm/weight",kg CO2 eq.,35.84965455,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric_transport,"Global Warming Air, incl biogenic carbon, incl LUC, no norm/weight",kg CO2 eq.,36.09237389,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric_transport,"Global Warming Air, LUC only, no norm/weight",kg CO2 eq.,0.040762881,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric_transport,Acidification,kg SO2 eq.,0.16852146,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric_transport,Ecotoxicity (recommended),CTUe,4.498399717,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric_transport,Eutrophication,kg N eq.,0.013743019,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric_transport,"Global Warming Air, excl. biogenic carbon",kg CO2 eq.,35.80889167,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric_transport,"Global Warming Air, incl. biogenic carbon",kg CO2 eq.,36.05161101,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric_transport,Human Health Particulate Air,kg PM2.5 eq.,0.010542524,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric_transport,"Human toxicity, cancer (recommended)",CTUh,1.91E-08,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric_transport,"Human toxicity, non-canc. (recommended)",CTUh,1.42E-06,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric_transport,Ozone Depletion Air,kg CFC 11 eq.,2.49E-10,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric_transport,"Resources, Fossil fuels",MJ surplus energy,68.43208279,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric_transport,Smog Air,kg O3 eq.,5.535494281,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric_transport,Ecotoxicity (recommended and interim),CTUe,436.1618894,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric_transport,Ecotoxicity (recommended only),CTUe,0.192260873,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric_transport,"Human toxicity, cancer (recommended and interim)",CTUh,5.39E-07,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric_transport,"Human toxicity, cancer (recommended only)",CTUh,1.61E-10,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric_transport,"Human toxicity, non-canc. (recommended and interim)",CTUh,1.63E-06,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric_transport,"Human toxicity, non-canc. (recommended only)",CTUh,5.25E-11,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric_transport,high characterization factor for unspecified water,m3 world equiv.,1.96079104,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric_transport,low characterization factor for unspecified water,m3 world equiv.,1.842153826,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric_transport,OECD+BRIC average for unspecified water,m3 world equiv.,1.912194064,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric_transport,Blue water consumption,kg,61.30150739,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric_transport,Blue water use,kg,1057.455564,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric_transport,Total freshwater consumption (including rainwater),kg,395.4960225,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric_transport,Total freshwater use,kg,1391.664116,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric_transport,high characterization factor for unspecified water,m3 equiv.,0.02919681,WSI,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric_transport,low characterization factor for unspecified water,m3 equiv.,0.027691662,WSI,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,recyclingGeneric_transport,OECD+BRIC average for unspecified water,m3 equiv.,0.028209704,WSI,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse,Primary energy demand from ren. and non ren. resources (gross cal. value),MJ,-14217.38725,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse,Primary energy demand from ren. and non ren. resources (net cal. value),MJ,-13257.84099,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse,Primary energy from non renewable resources (gross cal. value),MJ,-12536.84035,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse,Primary energy from non renewable resources (net cal. value),MJ,-11688.82256,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse,Primary energy from renewable resources (gross cal. value),MJ,-1680.546908,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse,Primary energy from renewable resources (net cal. value),MJ,-1569.018435,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse,"Global Warming Air, excl biogenic carbon, incl LUC, no norm/weight",kg CO2 eq.,-906.3342952,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse,"Global Warming Air, incl biogenic carbon, incl LUC, no norm/weight",kg CO2 eq.,-845.1132991,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse,"Global Warming Air, LUC only, no norm/weight",kg CO2 eq.,0.004370027,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse,Acidification,kg SO2 eq.,-7.769895845,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse,Ecotoxicity (recommended),CTUe,-3661.859621,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse,Eutrophication,kg N eq.,-1.730232027,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse,"Global Warming Air, excl. biogenic carbon",kg CO2 eq.,-906.3386652,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse,"Global Warming Air, incl. biogenic carbon",kg CO2 eq.,-845.1176691,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse,Human Health Particulate Air,kg PM2.5 eq.,-1.371943115,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse,"Human toxicity, cancer (recommended)",CTUh,-3.40E-05,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse,"Human toxicity, non-canc. (recommended)",CTUh,-0.000216592,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse,Ozone Depletion Air,kg CFC 11 eq.,-0.00011618,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse,"Resources, Fossil fuels",MJ surplus energy,-1367.756279,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse,Smog Air,kg O3 eq.,-75.48475482,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse,Ecotoxicity (recommended and interim),CTUe,-14135376.99,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse,Ecotoxicity (recommended only),CTUe,-4.423376398,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse,"Human toxicity, cancer (recommended and interim)",CTUh,-3.04E-05,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse,"Human toxicity, cancer (recommended only)",CTUh,-5.50E-08,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse,"Human toxicity, non-canc. (recommended and interim)",CTUh,-0.00016901,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse,"Human toxicity, non-canc. (recommended only)",CTUh,-3.33E-08,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse,high characterization factor for unspecified water,m3 world equiv.,1205.87564,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse,low characterization factor for unspecified water,m3 world equiv.,40.57445667,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse,OECD+BRIC average for unspecified water,m3 world equiv.,728.537106,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse,Blue water consumption,kg,-6603.729476,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse,Blue water use,kg,-1850093.964,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse,Total freshwater consumption (including rainwater),kg,-6582.599312,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse,Total freshwater use,kg,-1850069.512,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse,high characterization factor for unspecified water,m3 equiv.,16.95619158,WSI,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse,low characterization factor for unspecified water,m3 equiv.,2.17204223,WSI,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse,OECD+BRIC average for unspecified water,m3 equiv.,7.260450755,WSI,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse_transport,Primary energy demand from ren. and non ren. resources (gross cal. value),MJ,0,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse_transport,Primary energy demand from ren. and non ren. resources (net cal. value),MJ,0,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse_transport,Primary energy from non renewable resources (gross cal. value),MJ,0,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse_transport,Primary energy from non renewable resources (net cal. value),MJ,0,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse_transport,Primary energy from renewable resources (gross cal. value),MJ,0,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse_transport,Primary energy from renewable resources (net cal. value),MJ,0,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse_transport,"Global Warming Air, excl biogenic carbon, incl LUC, no norm/weight",kg CO2 eq.,0,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse_transport,"Global Warming Air, incl biogenic carbon, incl LUC, no norm/weight",kg CO2 eq.,0,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse_transport,"Global Warming Air, LUC only, no norm/weight",kg CO2 eq.,0,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse_transport,Acidification,kg SO2 eq.,0,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse_transport,Ecotoxicity (recommended),CTUe,0,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse_transport,Eutrophication,kg N eq.,0,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse_transport,"Global Warming Air, excl. biogenic carbon",kg CO2 eq.,0,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse_transport,"Global Warming Air, incl. biogenic carbon",kg CO2 eq.,0,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse_transport,Human Health Particulate Air,kg PM2.5 eq.,0,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse_transport,"Human toxicity, cancer (recommended)",CTUh,0,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse_transport,"Human toxicity, non-canc. (recommended)",CTUh,0,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse_transport,Ozone Depletion Air,kg CFC 11 eq.,0,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse_transport,"Resources, Fossil fuels",MJ surplus energy,0,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse_transport,Smog Air,kg O3 eq.,0,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse_transport,Ecotoxicity (recommended and interim),CTUe,0,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse_transport,Ecotoxicity (recommended only),CTUe,0,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse_transport,"Human toxicity, cancer (recommended and interim)",CTUh,0,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse_transport,"Human toxicity, cancer (recommended only)",CTUh,0,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse_transport,"Human toxicity, non-canc. (recommended and interim)",CTUh,0,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse_transport,"Human toxicity, non-canc. (recommended only)",CTUh,0,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse_transport,high characterization factor for unspecified water,m3 world equiv.,0,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse_transport,low characterization factor for unspecified water,m3 world equiv.,0,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse_transport,OECD+BRIC average for unspecified water,m3 world equiv.,0,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse_transport,Blue water consumption,kg,0,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse_transport,Blue water use,kg,0,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse_transport,Total freshwater consumption (including rainwater),kg,0,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse_transport,Total freshwater use,kg,0,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse_transport,high characterization factor for unspecified water,m3 equiv.,0,WSI,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse_transport,low characterization factor for unspecified water,m3 equiv.,0,WSI,IMFO - Phase III_2018-02-16 09:16:41
+Glass,endOfLife,reuse_transport,OECD+BRIC average for unspecified water,m3 equiv.,0,WSI,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production,Primary energy demand from ren. and non ren. resources (gross cal. value),MJ,14716.83976,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production,Primary energy demand from ren. and non ren. resources (net cal. value),MJ,13716.03497,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production,Primary energy from non renewable resources (gross cal. value),MJ,13003.31989,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production,Primary energy from non renewable resources (net cal. value),MJ,12114.06742,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production,Primary energy from renewable resources (gross cal. value),MJ,1713.519875,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production,Primary energy from renewable resources (net cal. value),MJ,1601.967541,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production,"Global Warming Air, excl biogenic carbon, incl LUC, no norm/weight",kg CO2 eq.,951.1398113,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production,"Global Warming Air, incl biogenic carbon, incl LUC, no norm/weight",kg CO2 eq.,891.2260271,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production,"Global Warming Air, LUC only, no norm/weight",kg CO2 eq.,0,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production,Acidification,kg SO2 eq.,7.824348614,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production,Ecotoxicity (recommended),CTUe,3665.256477,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production,Eutrophication,kg N eq.,1.758919528,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production,"Global Warming Air, excl. biogenic carbon",kg CO2 eq.,951.1398113,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production,"Global Warming Air, incl. biogenic carbon",kg CO2 eq.,891.2260271,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production,Human Health Particulate Air,kg PM2.5 eq.,1.375933952,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production,"Human toxicity, cancer (recommended)",CTUh,3.41E-05,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production,"Human toxicity, non-canc. (recommended)",CTUh,0.000217074,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production,Ozone Depletion Air,kg CFC 11 eq.,0.000116206,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production,"Resources, Fossil fuels",MJ surplus energy,1422.528657,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production,Smog Air,kg O3 eq.,76.14112749,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production,Ecotoxicity (recommended and interim),CTUe,14139283.07,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production,Ecotoxicity (recommended only),CTUe,4.537920708,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production,"Human toxicity, cancer (recommended and interim)",CTUh,3.47E-05,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production,"Human toxicity, cancer (recommended only)",CTUh,5.62E-08,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production,"Human toxicity, non-canc. (recommended and interim)",CTUh,0.000169655,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production,"Human toxicity, non-canc. (recommended only)",CTUh,3.35E-08,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production,high characterization factor for unspecified water,m3 world equiv.,-1199.94693,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production,low characterization factor for unspecified water,m3 world equiv.,-36.45555917,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production,OECD+BRIC average for unspecified water,m3 world equiv.,-723.3497439,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production,Blue water consumption,kg,6764.870344,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production,Blue water use,kg,1874632.389,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production,Total freshwater consumption (including rainwater),kg,6764.870344,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production,Total freshwater use,kg,1874632.389,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production,high characterization factor for unspecified water,m3 equiv.,-16.8699295,WSI,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production,low characterization factor for unspecified water,m3 equiv.,-2.108741188,WSI,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production,OECD+BRIC average for unspecified water,m3 equiv.,-7.189246981,WSI,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production_transport,Primary energy demand from ren. and non ren. resources (gross cal. value),MJ,560.1738076,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production_transport,Primary energy demand from ren. and non ren. resources (net cal. value),MJ,522.1883765,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production_transport,Primary energy from non renewable resources (gross cal. value),MJ,547.7992775,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production_transport,Primary energy from non renewable resources (net cal. value),MJ,509.8138464,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production_transport,Primary energy from renewable resources (gross cal. value),MJ,12.37453013,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production_transport,Primary energy from renewable resources (net cal. value),MJ,12.37453013,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production_transport,"Global Warming Air, excl biogenic carbon, incl LUC, no norm/weight",kg CO2 eq.,35.85732443,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production_transport,"Global Warming Air, incl biogenic carbon, incl LUC, no norm/weight",kg CO2 eq.,36.1000957,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production_transport,"Global Warming Air, LUC only, no norm/weight",kg CO2 eq.,0.040771602,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production_transport,Acidification,kg SO2 eq.,0.168557515,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production_transport,Ecotoxicity (recommended),CTUe,4.499362131,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production_transport,Eutrophication,kg N eq.,0.013745959,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production_transport,"Global Warming Air, excl. biogenic carbon",kg CO2 eq.,35.81655283,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production_transport,"Global Warming Air, incl. biogenic carbon",kg CO2 eq.,36.0593241,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production_transport,Human Health Particulate Air,kg PM2.5 eq.,0.01054478,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production_transport,"Human toxicity, cancer (recommended)",CTUh,1.91E-08,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production_transport,"Human toxicity, non-canc. (recommended)",CTUh,1.42E-06,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production_transport,Ozone Depletion Air,kg CFC 11 eq.,2.49E-10,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production_transport,"Resources, Fossil fuels",MJ surplus energy,68.44672355,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production_transport,Smog Air,kg O3 eq.,5.536678577,TRACI 2.1,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production_transport,Ecotoxicity (recommended and interim),CTUe,436.2552044,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production_transport,Ecotoxicity (recommended only),CTUe,0.192302006,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production_transport,"Human toxicity, cancer (recommended and interim)",CTUh,5.39E-07,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production_transport,"Human toxicity, cancer (recommended only)",CTUh,1.61E-10,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production_transport,"Human toxicity, non-canc. (recommended and interim)",CTUh,1.63E-06,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production_transport,"Human toxicity, non-canc. (recommended only)",CTUh,5.25E-11,USEtox 2.01,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production_transport,high characterization factor for unspecified water,m3 world equiv.,1.961210543,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production_transport,low characterization factor for unspecified water,m3 world equiv.,1.842547947,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production_transport,OECD+BRIC average for unspecified water,m3 world equiv.,1.91260317,AWARE,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production_transport,Blue water consumption,kg,61.31462259,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production_transport,Blue water use,kg,1057.681802,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production_transport,Total freshwater consumption (including rainwater),kg,395.5806372,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production_transport,Total freshwater use,kg,1391.961857,NA,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production_transport,high characterization factor for unspecified water,m3 equiv.,0.029203056,WSI,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production_transport,low characterization factor for unspecified water,m3 equiv.,0.027697586,WSI,IMFO - Phase III_2018-02-16 09:16:41
+Glass,production,production_transport,OECD+BRIC average for unspecified water,m3 equiv.,0.028215739,WSI,IMFO - Phase III_2018-02-16 09:16:41
