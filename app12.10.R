@@ -12,12 +12,13 @@ library(viridis)
 library(shinyjs)
 
 
-m1 <- read_csv("sampleInteractiveIMFOinput.csv")
+# m1 <- read_csv("sampleInteractiveIMFOinput.csv")
+m1 <- read_csv("imfoAppMassProfiles.csv")
 mass <- m1 %>%
   mutate(Weight = round(tons, digits = -2)) %>% 
   select(-"tons")
-I1 <- read_csv("testBuildImpactFactors_small.csv")
-
+# I1 <- read_csv("testBuildImpactFactors_small.csv")
+I1 <- read_csv("imfoAppImpactFactors.csv")
 wastesheds <- sort(unique(mass$wasteshed))
 materials <- sort(unique(mass$material))
 
