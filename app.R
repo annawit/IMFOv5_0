@@ -12,7 +12,6 @@ library(viridis)
 library(shinyjs)
 
 
-# m1 <- read_csv("sampleInteractiveIMFOinput.csv")
 m1 <- read_csv("imfoAppMassProfiles.csv")
 mass <- m1 %>%
   mutate(`Umbrella Disposition` = ifelse(disposition %in% "landfilling", "Disposal", "Recovery")) %>% 
@@ -22,17 +21,21 @@ mass <- m1 %>%
   mutate(`2015 Weight` = round(tons, digits = -2)) %>% 
   rename(Wasteshed = wasteshed, Disposition = disposition) %>% 
   select(Wasteshed, Material, Disposition, `Life Cycle Stage`, `Umbrella Disposition`, `2015 Weight`)
-# I1 <- read_csv("testBuildImpactFactors_small.csv")
+
+
 I <- read_csv("imfoAppImpactFactors.csv")
 
 I1 <- I %>% 
-  mutate(`Umbrella Disposition` = ifelse(disposition %in% "landfilling", "Disposal", "Recovery")) %>% 
   mutate(Material = recode(material, "FoodWaste" = "Food Waste")) %>% 
-  mutate(`Life Cycle Stage` = ifelse(LCstage %in% "endOfLifeTransport", "EOL Transport", "EOL")) %>% 
+  mutate(`Life Cycle Stage` = ifelse(LCstage %in% "endOfLifeTransport", "EOL Transport", 
+                                     ifelse(LCstage %in% "endOfLife", "EOL",
+                                            ifelse(LCstage %in% "production", "Production",
+                                                   "other")))
+  ) %>% 
   rename(Disposition = disposition, `Impact Category` = impactCategory,
          `Impact Units` = impactUnits, `Impact Factor` = impactFactor,
          `Implied Miles` = impliedMiles) %>% 
-  select(Material, Disposition, `Life Cycle Stage`, `Umbrella Disposition`, `Impact Category`,
+  select(Material, Disposition, `Life Cycle Stage`, `Impact Category`,
          `Impact Units`, `Impact Factor`, `Implied Miles`)
 
 Wastesheds <- sort(unique(mass$Wasteshed))
@@ -52,7 +55,8 @@ ui <- fluidPage(
   navbarPage("Material Impact Visualizer",
 
 # Introduction tab -------------------------------------------------------
-    tabPanel("Introduction"),
+    tabPanel("Introduction",
+             img(src = 'greenpic.jpeg', align = "center")),
 
 # User Input Tab ---------------------------------------------------------------
 
@@ -114,23 +118,33 @@ ui <- fluidPage(
                   tabPanel("Disposition weights in separate plots",
                            tags$br(),
                            tags$div(class = "header",
-                                    tags$p("Existing weights are shown in the light colors. Moving the sliders generates a new scenario, shown in the darker colors.")),
+                                    tags$p("Existing weights are shown in the
+                                           light colors. Moving the sliders generates
+                                           a new scenario, shown in the darker colors.")),
                                     plotOutput("weightsplot3")),
                   tabPanel("Stacked by disposition",
                            tags$br(),
                            tags$div(class = "header",
-                                    tags$p("Existing weights are shown in the light colors. Moving the sliders generates a new scenario, shown in the darker colors.")),
+                                    tags$p("Existing weights are shown in the light colors.
+                                           Moving the sliders generates a new scenario,
+                                           shown in the darker colors.")),
                            plotOutput("weightsplot4")),
                   tabPanel("Impacts", plotOutput("impactplot")),
                   # tabPanel("impact2", plotOutput("impactplot2")),
 
 # Tables tab --------------------------------------------------------------
 
-                                   tabPanel("Tables", 
-                           DT::dataTableOutput("table1"),
-                           DT::dataTableOutput("table2"),
-                           DT::dataTableOutput("table3"),
-                           DT::dataTableOutput("table4")),
+tabPanel("Tables",
+         hr(),
+         tags$div(HTML("A reactive table created from the selected wasteshed 
+                         and selected materials:")),
+         DT::dataTableOutput("table1"),
+         hr(),
+         tags$div(HTML("A reactive table created from the above table and
+                         the sliders:")),
+         DT::dataTableOutput("table2"),
+         DT::dataTableOutput("table3"),
+         DT::dataTableOutput("table4")),
 
 # Download button ---------------------------------------------------------
                   
@@ -497,15 +511,12 @@ server <- function(input, output, session) {
   output$table1 <- DT::renderDataTable({
     if (is.null(input$selectedwasteshed))
       return()
-    
     userwastemat()
   })
   
-  # observe({print(userwastemat)
-  # })
-  
   newnew <- reactive({
     df <- mass %>%
+    
       filter(Wasteshed == input$selectedwasteshed) %>%
       filter(Material %in% input$usermaterials) %>%
       mutate(`New Weight` = `2015 Weight`)
@@ -523,8 +534,6 @@ server <- function(input, output, session) {
                           input$slider9L, input$slider9R, 
                           input$slider10AD, input$slider10cb,
                           input$slider10cp, input$slider10L) 
-      # df <- df %>% filter(Material %in% input$usermaterials)
-      # 
     df
   })
   
@@ -532,13 +541,37 @@ server <- function(input, output, session) {
     newnew()
   })
   
+  allLC <- reactive({
+    nT <- newnew() %>% 
+      select(-`Life Cycle Stage`) %>% 
+      mutate(`Life Cycle Stage` = "EOL Transportation")
+    
+    nP <- newnew() %>% 
+      select(-`Life Cycle Stage`) %>% 
+      mutate(`Life Cycle Stage` = "Production")
+    
+    nn <- newnew() %>% 
+      rbind(nT) %>% 
+      rbind(nP)
+    
+    nn
+  })
+  
   newimpacts <- reactive({
-   n <- newnew() %>% 
-     left_join(I1, by = c("Material", "Disposition",
-                          "Life Cycle Stage", "Umbrella Disposition")) %>% 
-     mutate(old_impact = round(`2015 Weight`*`Impact Factor`),
-            new_impact = round(`New Weight`*`Impact Factor`))
-     n
+    n <- allLC() %>% 
+      left_join(I1, by = c("Material", "Disposition",
+                           "Life Cycle Stage")) %>% 
+      mutate(`2015 Impact` = round(`2015 Weight`*`Impact Factor`),
+             `New Impact` = round(`New Weight`*`Impact Factor`))
+    
+    
+    n
+    # n <- newnew() %>% 
+    #  left_join(I1, by = c("Material", "Disposition",
+    #                       "Life Cycle Stage")) %>% 
+    #  mutate(`2015 Impact` = round(`2015 Weight`*`Impact Factor`),
+    #         `New Impact` = round(`New Weight`*`Impact Factor`))
+    #  n
   })
   
   output$table3 <- DT::renderDataTable({
@@ -552,13 +585,20 @@ server <- function(input, output, session) {
     # print(test)
   })
   
-  meltedimpacts <- reactive({
-    t <- newimpacts() %>% 
-      select(-c(`2015 Weight`, `New Weight`, `Impact Factor`)) %>% 
-      melt(id.vars = c('Material', 'Disposition', `Impact Factor`, `Impact Units`)) %>% 
-      filter(!is.na(`Impact Factor`))
-    t
+  # meltedimpacts <- reactive({
+  #   t <- newimpacts() %>% 
+  #     select(-c(`2015 Weight`, `New Weight`, `Impact Factor`)) %>% 
+  #     melt(id.vars = c('Material', 'Disposition', `Impact Factor`, `Impact Units`)) %>% 
+  #     filter(!is.na(`Impact Factor`))
+  #   t
+  # })
+ 
+  meltedimpacts <- reactive({ 
+  t <- newimpacts() %>% 
+    select(Material, Disposition, `Life Cycle Stage`, `Umbrella Disposition`, `Impact Category`, `Impact Units`, `2015 Impact`, `New Impact`) %>% 
+    gather(key = "Scenario", value = "Impact", -c(Material, Disposition, `Life Cycle Stage`, `Umbrella Disposition`, `Impact Category`, `Impact Units`))
   })
+  
   output$table4 <- DT::renderDataTable({
     meltedimpacts()
   })
@@ -566,24 +606,25 @@ server <- function(input, output, session) {
 
 # Impacts plot ------------------------------------------------------------
   output$impactplot <- renderPlot({
-
+    
     pl <- ggplot(meltedimpacts(),
-                 aes(y = value,
+                 aes(y = Impact,
                      x = Material,
                      fill = Material,
-                     alpha = variable)) +
+                     alpha = Scenario)) +
       geom_bar(position = "dodge", stat = "identity") +
       theme_bw(base_size = 16) +
-      facet_wrap(~impactCategory, ncol = 3, scales = "free_y"
-                 ) +
+      facet_wrap(~`Impact Category`, ncol = 3, scales = "free_y"
+      ) +
       scale_fill_viridis_d(direction = -1) +
       scale_alpha_discrete(range = c(0.5, 1))
     pl + theme(axis.text.x = element_text(angle = 50, hjust = 1
-                                          ))+
+    )) +
       geom_hline(mapping = NULL, data = NULL, size = 1, yintercept = 0,
                  na.rm = FALSE, show.legend = NA)
   }, height = 750, width = 1000)
 
+  
   output$impactplot2 <- renderPlot({
     
     pl <- ggplot(meltedimpacts(), aes(y = value, x = impactCategory, fill = impactCategory, alpha = variable)) +
@@ -635,15 +676,19 @@ output$weightsplot3 <- renderPlot({
 
 output$weightsplot4 <- renderPlot({
   req(meltedusermass)
-  ggplot(meltedusermass(), aes(y = value, x = variable, fill = Disposition, alpha = variable)) +
+  ggplot(meltedusermass(),
+         aes(y = value,
+             x = variable,
+             fill = Disposition,
+             alpha = variable)) +
     geom_bar(stat = "identity") +
     theme_bw(base_size = 16) +
     theme(axis.text.x = element_text(angle = 50, hjust = 1)) +
     facet_wrap(~Material, nrow = 2) +
-    scale_fill_viridis_d(begin = 0.5, direction = 1) +
-    scale_alpha_discrete(range = c(0.5, 1)) +
+    scale_fill_viridis_d(begin = 0.3, direction = 1) +
+    scale_alpha_discrete(range = c(0.4, 1)) +
     scale_y_continuous(labels = scales::comma)
-})
+}, height = 750, width = 1000)
 
 
 
