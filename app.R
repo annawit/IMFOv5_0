@@ -129,7 +129,10 @@ ui <- fluidPage(
                                            Moving the sliders generates a new scenario,
                                            shown in the darker colors.")),
                            plotOutput("weightsplot4")),
-                  tabPanel("Impacts", plotOutput("impactplot")),
+                  tabPanel("Impacts",
+                           plotOutput("impactplot")),
+                  tabPanel("ImpactsB",
+                           plotOutput("impactplot_b")),
                   # tabPanel("impact2", plotOutput("impactplot2")),
 
 # Tables tab --------------------------------------------------------------
@@ -206,14 +209,18 @@ server <- function(input, output, session) {
   
   #widget that filters dataframe to display chosen materials
   output$choose_materials <- renderUI({
-    um <- mass %>%
-      filter(Wasteshed == input$selectedwasteshed)
+    selectInput(inputId = "usermaterials",
+                label = 'Select up to six materials:',
+                choices = Materials,
+                multiple = TRUE,
+                selectize = TRUE)
     
-    selectizeInput(inputId = "usermaterials",
-                   label = "Select up to six materials:",
-                   choices = Materials,
-                   options = list(placeholder = "Select materials",
-                                  maxItems = 6))
+    # selectizeInput(inputId = "usermaterials",
+    #                label = "Select up to six materials:",
+    #                choices = Materials,
+    #                selected = NULL,
+    #                options = list(placeholder = "Select materials",
+    #                               maxItems = 6))
     # checkboxGroupInput(inputId = "usermaterials",
     #                    label = "Choose materials:",
     #                    choices  = unique(userwasteshed()$material),
@@ -541,31 +548,40 @@ server <- function(input, output, session) {
     newnew()
   })
   
-  allLC <- reactive({
+  # allLC <- reactive({
+  #   nT <- newnew() %>% 
+  #     select(-`Life Cycle Stage`) %>% 
+  #     mutate(`Life Cycle Stage` = "EOL Transportation")
+  #   
+  #   nP <- newnew() %>% 
+  #     select(-`Life Cycle Stage`) %>% 
+  #     mutate(`Life Cycle Stage` = "Production")
+  #   
+  #   nn <- newnew() %>% 
+  #     rbind(nT) %>% 
+  #     rbind(nP)
+  #   
+  #   nn
+  # })
+  
+  newimpacts <- reactive({
     nT <- newnew() %>% 
-      select(-`Life Cycle Stage`) %>% 
-      mutate(`Life Cycle Stage` = "EOL Transportation")
+      mutate(`Life Cycle Stage` = "EOL Transport")
     
     nP <- newnew() %>% 
-      select(-`Life Cycle Stage`) %>% 
-      mutate(`Life Cycle Stage` = "Production")
+      mutate(`Life Cycle Stage` = "Production",
+             Disposition = "production")
     
     nn <- newnew() %>% 
       rbind(nT) %>% 
-      rbind(nP)
-    
-    nn
-  })
-  
-  newimpacts <- reactive({
-    n <- allLC() %>% 
+      rbind(nP) %>% 
       left_join(I1, by = c("Material", "Disposition",
                            "Life Cycle Stage")) %>% 
       mutate(`2015 Impact` = round(`2015 Weight`*`Impact Factor`),
              `New Impact` = round(`New Weight`*`Impact Factor`))
     
     
-    n
+    nn
     # n <- newnew() %>% 
     #  left_join(I1, by = c("Material", "Disposition",
     #                       "Life Cycle Stage")) %>% 
@@ -577,6 +593,7 @@ server <- function(input, output, session) {
   output$table3 <- DT::renderDataTable({
     newimpacts()
   })
+  
 
   meltedusermass <- reactive({
     test <- newnew() %>% 
@@ -610,20 +627,50 @@ server <- function(input, output, session) {
     pl <- ggplot(meltedimpacts(),
                  aes(y = Impact,
                      x = Material,
-                     fill = Material,
-                     alpha = Scenario)) +
-      geom_bar(position = "dodge", stat = "identity") +
+                     fill = `Life Cycle Stage`,
+                     alpha = Scenario
+                     )) +
+      geom_bar(position = "dodge",
+               stat = "identity") +
       theme_bw(base_size = 16) +
       facet_wrap(~`Impact Category`, ncol = 3, scales = "free_y"
       ) +
-      scale_fill_viridis_d(direction = -1) +
-      scale_alpha_discrete(range = c(0.5, 1))
+      scale_fill_viridis_d(begin = 0.5, direction = -1) 
+    # +
+    #   scale_alpha_discrete(range = c(0.5, 1))
     pl + theme(axis.text.x = element_text(angle = 50, hjust = 1
     )) +
+      # scale_y_continuous(limits = c(min(meltedimpacts()$Impact), max(meltedimpacts()$Impact))) +
       geom_hline(mapping = NULL, data = NULL, size = 1, yintercept = 0,
                  na.rm = FALSE, show.legend = NA)
   }, height = 750, width = 1000)
 
+  
+  output$impactplot_b <- renderPlot({
+    
+    pl <- ggplot(meltedimpacts() %>% 
+                   filter(Scenario %in% "New Impact"),
+                 aes(y = Impact,
+                     x = Material,
+                     fill = `Life Cycle Stage`)) +
+      geom_bar(
+        stat = "identity") +
+      theme_bw(base_size = 16) +
+      facet_wrap(~`Impact Category`, ncol = 3, scales = "free_y"
+      ) +
+      scale_fill_viridis_d(begin = 0.5, direction = -1) 
+    # +
+    #   scale_alpha_discrete(range = c(0.5, 1))
+    pl + theme(axis.text.x = element_text(angle = 50, hjust = 1
+    )) +
+      # scale_y_continuous(limits = c(min(meltedimpacts()$Impact), max(meltedimpacts()$Impact))) +
+      geom_hline(mapping = NULL, data = NULL, size = 1, yintercept = 0,
+                 na.rm = FALSE, show.legend = NA)
+  }, height = 750, width = 1000)
+  
+  
+  
+  
   
   output$impactplot2 <- renderPlot({
     
