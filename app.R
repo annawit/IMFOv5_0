@@ -121,14 +121,14 @@ ui <- fluidPage(
                                     tags$p("Existing weights are shown in the
                                            light colors. Moving the sliders generates
                                            a new scenario, shown in the darker colors.")),
-                                    plotOutput("weightsplot3")),
+                                    plotOutput("weightsplot1")),
                   tabPanel("Stacked by disposition",
                            tags$br(),
                            tags$div(class = "header",
                                     tags$p("Existing weights are shown in the light colors.
                                            Moving the sliders generates a new scenario,
                                            shown in the darker colors.")),
-                           plotOutput("weightsplot4")),
+                           plotOutput("weightsplot2")),
                   tabPanel("Impacts",
                            plotOutput("impactplot")),
                   tabPanel("ImpactsB",
@@ -693,49 +693,68 @@ server <- function(input, output, session) {
 # Weights plot ------------------------------------------------------------
 
   
+# output$weightsplot2 <- renderPlot({
+#   if (values$starting)
+#     return(NULL)
+#   ggplot(meltedusermass(),
+#          aes(y = value,
+#              x = variable,
+#              fill = Material,
+#              alpha = variable)) +
+#     geom_bar(stat = "identity") +
+#     theme_bw(base_size = 16) +
+#     theme(axis.text.x = element_text(angle = 50, hjust = 1)) +
+#     facet_wrap(~Material, nrow = 2) +
+#     scale_fill_viridis_d(direction = -1) +
+#     scale_alpha_discrete(range = c(0.5, 1)) +
+#     scale_y_continuous(labels = scales::comma)
+# })
+  output$weightsplot1 <- renderPlot({
+    req(meltedusermass())
+    
+  
+    ggplot(meltedusermass(),
+           aes(y = value,
+               x = variable,
+               fill = Disposition,
+               alpha = variable)) +
+      geom_bar(stat = "identity") +
+      theme_minimal(base_size = 18) +
+      theme(axis.title.x = element_blank(),
+            axis.title.y = element_text(
+              margin = margin(t = 0, r = 20, b = 0, l = 0),
+              size = 16,
+              vjust = -0.65),
+            axis.text = element_text(size = 16),
+            panel.grid.minor = element_blank(),
+            panel.grid.major.x = element_blank(),
+            axis.text.x = element_text(angle = 50, hjust = 1)) +
+      labs(y = "Weight, in Tons",
+           alpha = "") +
+      facet_wrap(~Material, nrow = 2) +
+      scale_fill_viridis_d(direction = 1, end = 0.85) +
+      scale_alpha_discrete(range = c(0.3, 1)) +
+      scale_y_continuous(labels = scales::comma,
+                         limits = c(0, 20000))
+    
+  }, height = 600, width = 1000)
+  
+  
 output$weightsplot2 <- renderPlot({
-  if (values$starting)
-    return(NULL)
-  ggplot(meltedusermass(),
-         aes(y = value,
-             x = variable,
-             fill = Material,
-             alpha = variable)) +
-    geom_bar(stat = "identity") +
-    theme_bw(base_size = 16) +
-    theme(axis.text.x = element_text(angle = 50, hjust = 1)) +
-    facet_wrap(~Material, nrow = 2) +
-    scale_fill_viridis_d(direction = -1) +
-    scale_alpha_discrete(range = c(0.5, 1)) +
-    scale_y_continuous(labels = scales::comma)
-})
-
-output$weightsplot3 <- renderPlot({
   ggplot(meltedusermass(), aes(y = value, x = Disposition, fill = Material, alpha = variable)) +
     geom_bar(position = "dodge", stat = "identity") +
-    theme_bw(base_size = 16) +
-    theme(axis.text.x = element_text(angle = 50, hjust = 1)) +
+    theme_minimal(base_size = 20) +
+    labs(y = "Weight, in Tons") +
+    theme(
+      panel.grid.minor = element_blank(),
+      axis.text.x = element_text(angle = 50, hjust = 1)) +
     facet_wrap(~Material, ncol = 3) +
-    scale_fill_viridis_d(direction = -1) +
+    scale_fill_viridis_d(direction = 1) +
     scale_alpha_discrete(range = c(0.5, 1)) +
-    scale_y_continuous(labels = scales::comma)
-}, height = 750, width = 1000)
+    scale_y_continuous(labels = scales::comma) 
+}, height = 600, width = 1000)
 
-output$weightsplot4 <- renderPlot({
-  req(meltedusermass)
-  ggplot(meltedusermass(),
-         aes(y = value,
-             x = variable,
-             fill = Disposition,
-             alpha = variable)) +
-    geom_bar(stat = "identity") +
-    theme_bw(base_size = 16) +
-    theme(axis.text.x = element_text(angle = 50, hjust = 1)) +
-    facet_wrap(~Material, nrow = 2) +
-    scale_fill_viridis_d(begin = 0.3, direction = 1) +
-    scale_alpha_discrete(range = c(0.4, 1)) +
-    scale_y_continuous(labels = scales::comma)
-}, height = 750, width = 1000)
+
 
 
 
