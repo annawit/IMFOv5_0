@@ -729,7 +729,7 @@ server <- function(input, output, session) {
             panel.grid.minor = element_blank(),
             panel.grid.major.x = element_blank(),
             axis.text.x = element_text(angle = 50, hjust = 1)) +
-      labs(y = "Weight, in Tons",
+      labs(y = "Weight in Tons",
            alpha = "") +
       facet_wrap(~Material, nrow = 2) +
       scale_fill_viridis_d(direction = 1, end = 0.85) +
@@ -744,7 +744,7 @@ output$weightsplot2 <- renderPlot({
   ggplot(meltedusermass(), aes(y = value, x = Disposition, fill = Material, alpha = variable)) +
     geom_bar(position = "dodge", stat = "identity") +
     theme_minimal(base_size = 20) +
-    labs(y = "Weight, in Tons") +
+    labs(y = "Weight in Tons") +
     theme(
       panel.grid.minor = element_blank(),
       axis.text.x = element_text(angle = 50, hjust = 1)) +
