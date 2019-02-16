@@ -111,13 +111,18 @@ tabPanel("Start here!",
            mainPanel(
              style = "width:inherit;",
              width = 9,
+             hr(),
+             plotlyOutput("simpleplot"),
+             hr(),
+             hr(),
+             hr(),
              htmlOutput("slidervalueoutput"),
              hr(),
              htmlOutput("slidervalueoutputwithproduction"),
              hr(),
              tableOutput("simpledf"),
-             tableOutput("plotdftable"),
-             plotlyOutput("simpleplot"))
+             tableOutput("plotdftable")
+             )
            
          )
 ),
