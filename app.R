@@ -77,7 +77,7 @@ ui <- fluidPage(
                # h2("Interactive Visualizer!", align = "center"),
                # div(img(src = 'greenpic.jpeg', height="50%", width="50%"), style = "text-align: center;"),
                br(),
-               HTML('<iframe width="560" height="315" src="https://www.youtube.com/embed/spE6D3Dpzb8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'),
+               HTML('<iframe width="560" height="315" src="https://www.youtube.com/embed/-9JRowyICbo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'),
                br(),
                br(),
                div( style = "width:500px; text-align:center;",
