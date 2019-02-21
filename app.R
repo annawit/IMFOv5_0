@@ -140,7 +140,7 @@ tabPanel("Start here!",
            )
          )
 ),
-
+tabPanel("New More Impacts"),
 tabPanel("Visualize More Impacts",
          sidebarLayout(
            sidebarPanel(
@@ -152,17 +152,9 @@ tabPanel("Visualize More Impacts",
                        "right", options = list(container = "body")),
              uiOutput("choose_materials"),
              actionButton("submitbutton", "Submit"),
-             br(),
-             br(),
-             materialSwitch(inputId = "materialconstraints",
-                            label = "Keep original material weights?"),
-             # hr(),
+
              conditionalPanel(
                condition = "input.submitbutton > 0",
-               
-               # tags$div(class = "header",
-               #          tags$p(tags$b("Sliders are set to the 2015 weights for each material. Move sliders to generate a new scenario for this wasteshed.")),
-               #          tags$p("The overall weight for each material can be more or less than the 2015 amount, which would reflect a change in production.")),
                
                #scrolling well panel
                wellPanel(id = "tPanel",style = "overflow-y:scroll; max-height: 300px",
@@ -517,6 +509,58 @@ output$simplemassplot <- renderPlotly({
   })
 
 
+# New Sliders -------------------------------------------------------------
+
+  observeEvent({
+    input$RPCombustion
+    input$RPRecycling
+  }, {
+    updateSliderInput(session = session, 
+                      inputId = "RPLandfilling", 
+                      value = round((100 * input$RPLandfilling/(input$RPCombustion + input$RPLandfilling + input$RPRecycling)), digits = 2)
+    )
+  })
+  
+  # when air change, update water
+  observeEvent({
+    input$RPLandfilling
+    input$RPRecycling
+  },  {
+    updateSliderInput(session = session,
+                      inputId = "RPCombustion",
+                      value = round((100 * input$RPCombustion/(input$RPCombustion + input$RPLandfilling + input$RPRecycling)), digits = 2)
+    )
+  })
+  
+  observeEvent({
+    input$RPCombustion
+    input$RPLandfilling
+  },  {
+    updateSliderInput(session = session,
+                      inputId = "RPRecycling",
+                      value = round((100 * input$RPRecycling/(input$RPCombustion + input$RPLandfilling + input$RPRecycling)), digits = 2)
+    )
+  })
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   # Sliders ----------------------------------------------------------------
   
   output$cardboardsliders <- renderUI({
