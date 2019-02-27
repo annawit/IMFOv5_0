@@ -72,8 +72,10 @@ ui <- fluidPage(
 tabPanel("Start here!",
          fluidPage(
            column(4,
-                  absolutePanel(
-                    draggable = TRUE,
+                  fixedPanel(
+                    width = "30%",
+                    left = 20,
+                    # draggable = TRUE,
                     wellPanel(
                       div(img(src = 'icon-milk-jug.png', height = "12%", width = "12%"), style = "text-align: center;",
                           h3("Rigid Plastic Containers")),
@@ -321,6 +323,10 @@ tabPanel("Glossary",
                     ))
          )
 ),
+
+# More dropdown -----------------------------------------------------------
+
+
 navbarMenu("More",
            tabPanel("Resources",
                     tags$div(
