@@ -1,0 +1,351 @@
+Wasteshed,Material,Disposition,Life Cycle Stage,Umbrella Disposition,2015 Weight
+Baker,Cardboard/Kraft,combustion,EOL,Recovery,0
+Baker,Cardboard/Kraft,landfilling,EOL,Disposal,400
+Baker,Cardboard/Kraft,recycling,EOL,Recovery,900
+Baker,Carpeting-used,combustion,EOL,Recovery,0
+Baker,Carpeting-used,landfilling,EOL,Disposal,300
+Baker,Carpeting-used,recycling,EOL,Recovery,0
+Baker,Electronics,landfilling,EOL,Disposal,100
+Baker,Electronics,recycling,EOL,Recovery,100
+Baker,Food Waste,anaerobicDigestion,EOL,Recovery,0
+Baker,Food Waste,composting,EOL,Recovery,0
+Baker,Food Waste,landfilling,EOL,Disposal,1900
+Baker,Glass Containers,landfilling,EOL,Disposal,100
+Baker,Glass Containers,recycling,EOL,Recovery,300
+Baker,Glass Containers,useAsAggregate,EOL,Recovery,0
+Baker,Nonrecyclables,combustion,EOL,Recovery,0
+Baker,Nonrecyclables,landfilling,EOL,Disposal,2100
+Baker,Paper Fiber,combustion,EOL,Recovery,0
+Baker,Paper Fiber,landfilling,EOL,Disposal,1500
+Baker,Paper Fiber,recycling,EOL,Recovery,300
+Baker,Plastic Film,combustion,EOL,Recovery,0
+Baker,Plastic Film,landfilling,EOL,Disposal,700
+Baker,Plastic Film,recycling,EOL,Recovery,0
+Baker,Rigid Plastic Cont.,combustion,EOL,Recovery,0
+Baker,Rigid Plastic Cont.,landfilling,EOL,Disposal,200
+Baker,Rigid Plastic Cont.,recycling,EOL,Recovery,100
+Baker,Scrap Metal - Other,landfilling,EOL,Disposal,400
+Baker,Scrap Metal - Other,recycling,EOL,Recovery,200
+Baker,Wood Waste,combustion,EOL,Recovery,0
+Baker,Wood Waste,composting,EOL,Recovery,0
+Baker,Wood Waste,landfilling,EOL,Disposal,1900
+Baker,Wood Waste,recycling,EOL,Recovery,0
+Baker,Yard Debris,anaerobicDigestion,EOL,Recovery,0
+Baker,Yard Debris,combustion,EOL,Recovery,0
+Baker,Yard Debris,composting,EOL,Recovery,800
+Baker,Yard Debris,landfilling,EOL,Disposal,400
+Benton,Cardboard/Kraft,combustion,EOL,Recovery,0
+Benton,Cardboard/Kraft,landfilling,EOL,Disposal,2200
+Benton,Cardboard/Kraft,recycling,EOL,Recovery,6600
+Benton,Carpeting-used,combustion,EOL,Recovery,0
+Benton,Carpeting-used,landfilling,EOL,Disposal,1500
+Benton,Carpeting-used,recycling,EOL,Recovery,0
+Benton,Electronics,landfilling,EOL,Disposal,500
+Benton,Electronics,recycling,EOL,Recovery,400
+Benton,Food Waste,anaerobicDigestion,EOL,Recovery,0
+Benton,Food Waste,composting,EOL,Recovery,600
+Benton,Food Waste,landfilling,EOL,Disposal,9200
+Benton,Glass Containers,landfilling,EOL,Disposal,700
+Benton,Glass Containers,recycling,EOL,Recovery,1800
+Benton,Glass Containers,useAsAggregate,EOL,Recovery,0
+Benton,Nonrecyclables,combustion,EOL,Recovery,0
+Benton,Nonrecyclables,landfilling,EOL,Disposal,10400
+Benton,Paper Fiber,combustion,EOL,Recovery,0
+Benton,Paper Fiber,landfilling,EOL,Disposal,7500
+Benton,Paper Fiber,recycling,EOL,Recovery,4400
+Benton,Plastic Film,combustion,EOL,Recovery,0
+Benton,Plastic Film,landfilling,EOL,Disposal,3300
+Benton,Plastic Film,recycling,EOL,Recovery,300
+Benton,Rigid Plastic Cont.,combustion,EOL,Recovery,0
+Benton,Rigid Plastic Cont.,landfilling,EOL,Disposal,1200
+Benton,Rigid Plastic Cont.,recycling,EOL,Recovery,500
+Benton,Scrap Metal - Other,landfilling,EOL,Disposal,2100
+Benton,Scrap Metal - Other,recycling,EOL,Recovery,3200
+Benton,Wood Waste,combustion,EOL,Recovery,400
+Benton,Wood Waste,composting,EOL,Recovery,100
+Benton,Wood Waste,landfilling,EOL,Disposal,9500
+Benton,Wood Waste,recycling,EOL,Recovery,0
+Benton,Yard Debris,anaerobicDigestion,EOL,Recovery,0
+Benton,Yard Debris,combustion,EOL,Recovery,0
+Benton,Yard Debris,composting,EOL,Recovery,13600
+Benton,Yard Debris,landfilling,EOL,Disposal,2000
+Clatsop,Cardboard/Kraft,combustion,EOL,Recovery,0
+Clatsop,Cardboard/Kraft,landfilling,EOL,Disposal,1200
+Clatsop,Cardboard/Kraft,recycling,EOL,Recovery,4100
+Clatsop,Carpeting-used,combustion,EOL,Recovery,0
+Clatsop,Carpeting-used,landfilling,EOL,Disposal,800
+Clatsop,Carpeting-used,recycling,EOL,Recovery,0
+Clatsop,Electronics,landfilling,EOL,Disposal,300
+Clatsop,Electronics,recycling,EOL,Recovery,100
+Clatsop,Food Waste,anaerobicDigestion,EOL,Recovery,0
+Clatsop,Food Waste,composting,EOL,Recovery,0
+Clatsop,Food Waste,landfilling,EOL,Disposal,5100
+Clatsop,Glass Containers,landfilling,EOL,Disposal,400
+Clatsop,Glass Containers,recycling,EOL,Recovery,1300
+Clatsop,Glass Containers,useAsAggregate,EOL,Recovery,0
+Clatsop,Nonrecyclables,combustion,EOL,Recovery,0
+Clatsop,Nonrecyclables,landfilling,EOL,Disposal,5700
+Clatsop,Paper Fiber,combustion,EOL,Recovery,0
+Clatsop,Paper Fiber,landfilling,EOL,Disposal,4100
+Clatsop,Paper Fiber,recycling,EOL,Recovery,1800
+Clatsop,Plastic Film,combustion,EOL,Recovery,0
+Clatsop,Plastic Film,landfilling,EOL,Disposal,1800
+Clatsop,Plastic Film,recycling,EOL,Recovery,200
+Clatsop,Rigid Plastic Cont.,combustion,EOL,Recovery,0
+Clatsop,Rigid Plastic Cont.,landfilling,EOL,Disposal,600
+Clatsop,Rigid Plastic Cont.,recycling,EOL,Recovery,200
+Clatsop,Scrap Metal - Other,landfilling,EOL,Disposal,1100
+Clatsop,Scrap Metal - Other,recycling,EOL,Recovery,2900
+Clatsop,Wood Waste,combustion,EOL,Recovery,3900
+Clatsop,Wood Waste,composting,EOL,Recovery,0
+Clatsop,Wood Waste,landfilling,EOL,Disposal,5200
+Clatsop,Wood Waste,recycling,EOL,Recovery,0
+Clatsop,Yard Debris,anaerobicDigestion,EOL,Recovery,0
+Clatsop,Yard Debris,combustion,EOL,Recovery,3900
+Clatsop,Yard Debris,composting,EOL,Recovery,500
+Clatsop,Yard Debris,landfilling,EOL,Disposal,1100
+Coos,Cardboard/Kraft,combustion,EOL,Recovery,0
+Coos,Cardboard/Kraft,landfilling,EOL,Disposal,1600
+Coos,Cardboard/Kraft,recycling,EOL,Recovery,3800
+Coos,Carpeting-used,combustion,EOL,Recovery,0
+Coos,Carpeting-used,landfilling,EOL,Disposal,1100
+Coos,Carpeting-used,recycling,EOL,Recovery,0
+Coos,Electronics,landfilling,EOL,Disposal,400
+Coos,Electronics,recycling,EOL,Recovery,200
+Coos,Food Waste,anaerobicDigestion,EOL,Recovery,0
+Coos,Food Waste,composting,EOL,Recovery,100
+Coos,Food Waste,landfilling,EOL,Disposal,6800
+Coos,Glass Containers,landfilling,EOL,Disposal,500
+Coos,Glass Containers,recycling,EOL,Recovery,1000
+Coos,Glass Containers,useAsAggregate,EOL,Recovery,0
+Coos,Nonrecyclables,combustion,EOL,Recovery,0
+Coos,Nonrecyclables,landfilling,EOL,Disposal,7700
+Coos,Paper Fiber,combustion,EOL,Recovery,0
+Coos,Paper Fiber,landfilling,EOL,Disposal,5500
+Coos,Paper Fiber,recycling,EOL,Recovery,2100
+Coos,Plastic Film,combustion,EOL,Recovery,0
+Coos,Plastic Film,landfilling,EOL,Disposal,2400
+Coos,Plastic Film,recycling,EOL,Recovery,0
+Coos,Rigid Plastic Cont.,combustion,EOL,Recovery,0
+Coos,Rigid Plastic Cont.,landfilling,EOL,Disposal,900
+Coos,Rigid Plastic Cont.,recycling,EOL,Recovery,400
+Coos,Scrap Metal - Other,landfilling,EOL,Disposal,1500
+Coos,Scrap Metal - Other,recycling,EOL,Recovery,3900
+Coos,Wood Waste,combustion,EOL,Recovery,0
+Coos,Wood Waste,composting,EOL,Recovery,0
+Coos,Wood Waste,landfilling,EOL,Disposal,7000
+Coos,Wood Waste,recycling,EOL,Recovery,0
+Coos,Yard Debris,anaerobicDigestion,EOL,Recovery,0
+Coos,Yard Debris,combustion,EOL,Recovery,0
+Coos,Yard Debris,composting,EOL,Recovery,0
+Coos,Yard Debris,landfilling,EOL,Disposal,1400
+Hood River,Cardboard/Kraft,combustion,EOL,Recovery,0
+Hood River,Cardboard/Kraft,landfilling,EOL,Disposal,700
+Hood River,Cardboard/Kraft,recycling,EOL,Recovery,2200
+Hood River,Carpeting-used,combustion,EOL,Recovery,0
+Hood River,Carpeting-used,landfilling,EOL,Disposal,500
+Hood River,Carpeting-used,recycling,EOL,Recovery,0
+Hood River,Electronics,landfilling,EOL,Disposal,200
+Hood River,Electronics,recycling,EOL,Recovery,100
+Hood River,Food Waste,anaerobicDigestion,EOL,Recovery,0
+Hood River,Food Waste,composting,EOL,Recovery,100
+Hood River,Food Waste,landfilling,EOL,Disposal,3000
+Hood River,Glass Containers,landfilling,EOL,Disposal,200
+Hood River,Glass Containers,recycling,EOL,Recovery,1300
+Hood River,Glass Containers,useAsAggregate,EOL,Recovery,0
+Hood River,Nonrecyclables,combustion,EOL,Recovery,0
+Hood River,Nonrecyclables,landfilling,EOL,Disposal,3400
+Hood River,Paper Fiber,combustion,EOL,Recovery,0
+Hood River,Paper Fiber,landfilling,EOL,Disposal,2400
+Hood River,Paper Fiber,recycling,EOL,Recovery,1100
+Hood River,Plastic Film,combustion,EOL,Recovery,0
+Hood River,Plastic Film,landfilling,EOL,Disposal,1100
+Hood River,Plastic Film,recycling,EOL,Recovery,200
+Hood River,Rigid Plastic Cont.,combustion,EOL,Recovery,0
+Hood River,Rigid Plastic Cont.,landfilling,EOL,Disposal,400
+Hood River,Rigid Plastic Cont.,recycling,EOL,Recovery,200
+Hood River,Scrap Metal - Other,landfilling,EOL,Disposal,700
+Hood River,Scrap Metal - Other,recycling,EOL,Recovery,200
+Hood River,Wood Waste,combustion,EOL,Recovery,100
+Hood River,Wood Waste,composting,EOL,Recovery,0
+Hood River,Wood Waste,landfilling,EOL,Disposal,3100
+Hood River,Wood Waste,recycling,EOL,Recovery,0
+Hood River,Yard Debris,anaerobicDigestion,EOL,Recovery,0
+Hood River,Yard Debris,combustion,EOL,Recovery,0
+Hood River,Yard Debris,composting,EOL,Recovery,1000
+Hood River,Yard Debris,landfilling,EOL,Disposal,600
+Josephine,Cardboard/Kraft,combustion,EOL,Recovery,0
+Josephine,Cardboard/Kraft,landfilling,EOL,Disposal,2500
+Josephine,Cardboard/Kraft,recycling,EOL,Recovery,6800
+Josephine,Carpeting-used,combustion,EOL,Recovery,0
+Josephine,Carpeting-used,landfilling,EOL,Disposal,1700
+Josephine,Carpeting-used,recycling,EOL,Recovery,0
+Josephine,Electronics,landfilling,EOL,Disposal,600
+Josephine,Electronics,recycling,EOL,Recovery,500
+Josephine,Food Waste,anaerobicDigestion,EOL,Recovery,0
+Josephine,Food Waste,composting,EOL,Recovery,400
+Josephine,Food Waste,landfilling,EOL,Disposal,10500
+Josephine,Glass Containers,landfilling,EOL,Disposal,800
+Josephine,Glass Containers,recycling,EOL,Recovery,2000
+Josephine,Glass Containers,useAsAggregate,EOL,Recovery,0
+Josephine,Nonrecyclables,combustion,EOL,Recovery,0
+Josephine,Nonrecyclables,landfilling,EOL,Disposal,11800
+Josephine,Paper Fiber,combustion,EOL,Recovery,0
+Josephine,Paper Fiber,landfilling,EOL,Disposal,8500
+Josephine,Paper Fiber,recycling,EOL,Recovery,3900
+Josephine,Plastic Film,combustion,EOL,Recovery,0
+Josephine,Plastic Film,landfilling,EOL,Disposal,3700
+Josephine,Plastic Film,recycling,EOL,Recovery,200
+Josephine,Rigid Plastic Cont.,combustion,EOL,Recovery,0
+Josephine,Rigid Plastic Cont.,landfilling,EOL,Disposal,1300
+Josephine,Rigid Plastic Cont.,recycling,EOL,Recovery,600
+Josephine,Scrap Metal - Other,landfilling,EOL,Disposal,2300
+Josephine,Scrap Metal - Other,recycling,EOL,Recovery,6900
+Josephine,Wood Waste,combustion,EOL,Recovery,2800
+Josephine,Wood Waste,composting,EOL,Recovery,500
+Josephine,Wood Waste,landfilling,EOL,Disposal,10700
+Josephine,Wood Waste,recycling,EOL,Recovery,0
+Josephine,Yard Debris,anaerobicDigestion,EOL,Recovery,0
+Josephine,Yard Debris,combustion,EOL,Recovery,1800
+Josephine,Yard Debris,composting,EOL,Recovery,9400
+Josephine,Yard Debris,landfilling,EOL,Disposal,2200
+Linn,Cardboard/Kraft,combustion,EOL,Recovery,0
+Linn,Cardboard/Kraft,landfilling,EOL,Disposal,3400
+Linn,Cardboard/Kraft,recycling,EOL,Recovery,20100
+Linn,Carpeting-used,combustion,EOL,Recovery,0
+Linn,Carpeting-used,landfilling,EOL,Disposal,2300
+Linn,Carpeting-used,recycling,EOL,Recovery,0
+Linn,Electronics,landfilling,EOL,Disposal,800
+Linn,Electronics,recycling,EOL,Recovery,300
+Linn,Food Waste,anaerobicDigestion,EOL,Recovery,0
+Linn,Food Waste,composting,EOL,Recovery,1300
+Linn,Food Waste,landfilling,EOL,Disposal,14500
+Linn,Glass Containers,landfilling,EOL,Disposal,1100
+Linn,Glass Containers,recycling,EOL,Recovery,2100
+Linn,Glass Containers,useAsAggregate,EOL,Recovery,0
+Linn,Nonrecyclables,combustion,EOL,Recovery,0
+Linn,Nonrecyclables,landfilling,EOL,Disposal,16400
+Linn,Paper Fiber,combustion,EOL,Recovery,0
+Linn,Paper Fiber,landfilling,EOL,Disposal,11800
+Linn,Paper Fiber,recycling,EOL,Recovery,6900
+Linn,Plastic Film,combustion,EOL,Recovery,0
+Linn,Plastic Film,landfilling,EOL,Disposal,5100
+Linn,Plastic Film,recycling,EOL,Recovery,800
+Linn,Rigid Plastic Cont.,combustion,EOL,Recovery,0
+Linn,Rigid Plastic Cont.,landfilling,EOL,Disposal,1800
+Linn,Rigid Plastic Cont.,recycling,EOL,Recovery,1100
+Linn,Scrap Metal - Other,landfilling,EOL,Disposal,3300
+Linn,Scrap Metal - Other,recycling,EOL,Recovery,7800
+Linn,Wood Waste,combustion,EOL,Recovery,1100
+Linn,Wood Waste,composting,EOL,Recovery,100
+Linn,Wood Waste,landfilling,EOL,Disposal,14900
+Linn,Wood Waste,recycling,EOL,Recovery,100
+Linn,Yard Debris,anaerobicDigestion,EOL,Recovery,0
+Linn,Yard Debris,combustion,EOL,Recovery,0
+Linn,Yard Debris,composting,EOL,Recovery,12700
+Linn,Yard Debris,landfilling,EOL,Disposal,3100
+Metro,Cardboard/Kraft,combustion,EOL,Recovery,0
+Metro,Cardboard/Kraft,landfilling,EOL,Disposal,44100
+Metro,Cardboard/Kraft,recycling,EOL,Recovery,180900
+Metro,Carpeting-used,combustion,EOL,Recovery,0
+Metro,Carpeting-used,landfilling,EOL,Disposal,30200
+Metro,Carpeting-used,recycling,EOL,Recovery,0
+Metro,Electronics,landfilling,EOL,Disposal,10500
+Metro,Electronics,recycling,EOL,Recovery,6800
+Metro,Food Waste,anaerobicDigestion,EOL,Recovery,0
+Metro,Food Waste,composting,EOL,Recovery,44600
+Metro,Food Waste,landfilling,EOL,Disposal,187900
+Metro,Glass Containers,landfilling,EOL,Disposal,14200
+Metro,Glass Containers,recycling,EOL,Recovery,57300
+Metro,Glass Containers,useAsAggregate,EOL,Recovery,0
+Metro,Nonrecyclables,combustion,EOL,Recovery,0
+Metro,Nonrecyclables,landfilling,EOL,Disposal,212300
+Metro,Paper Fiber,combustion,EOL,Recovery,0
+Metro,Paper Fiber,landfilling,EOL,Disposal,152200
+Metro,Paper Fiber,recycling,EOL,Recovery,149900
+Metro,Plastic Film,combustion,EOL,Recovery,0
+Metro,Plastic Film,landfilling,EOL,Disposal,66500
+Metro,Plastic Film,recycling,EOL,Recovery,8200
+Metro,Rigid Plastic Cont.,combustion,EOL,Recovery,0
+Metro,Rigid Plastic Cont.,landfilling,EOL,Disposal,23600
+Metro,Rigid Plastic Cont.,recycling,EOL,Recovery,9900
+Metro,Scrap Metal - Other,landfilling,EOL,Disposal,42100
+Metro,Scrap Metal - Other,recycling,EOL,Recovery,206700
+Metro,Wood Waste,combustion,EOL,Recovery,97300
+Metro,Wood Waste,composting,EOL,Recovery,8800
+Metro,Wood Waste,landfilling,EOL,Disposal,192700
+Metro,Wood Waste,recycling,EOL,Recovery,19600
+Metro,Yard Debris,anaerobicDigestion,EOL,Recovery,0
+Metro,Yard Debris,combustion,EOL,Recovery,14300
+Metro,Yard Debris,composting,EOL,Recovery,205800
+Metro,Yard Debris,landfilling,EOL,Disposal,39900
+Oregon total,Cardboard/Kraft,combustion,EOL,Recovery,0
+Oregon total,Cardboard/Kraft,landfilling,EOL,Disposal,106700
+Oregon total,Cardboard/Kraft,recycling,EOL,Recovery,365900
+Oregon total,Carpeting-used,combustion,EOL,Recovery,0
+Oregon total,Carpeting-used,landfilling,EOL,Disposal,73100
+Oregon total,Carpeting-used,recycling,EOL,Recovery,0
+Oregon total,Electronics,landfilling,EOL,Disposal,25500
+Oregon total,Electronics,recycling,EOL,Recovery,18300
+Oregon total,Food Waste,anaerobicDigestion,EOL,Recovery,0
+Oregon total,Food Waste,composting,EOL,Recovery,56100
+Oregon total,Food Waste,landfilling,EOL,Disposal,455000
+Oregon total,Glass Containers,landfilling,EOL,Disposal,34500
+Oregon total,Glass Containers,recycling,EOL,Recovery,107100
+Oregon total,Glass Containers,useAsAggregate,EOL,Recovery,0
+Oregon total,Nonrecyclables,combustion,EOL,Recovery,0
+Oregon total,Nonrecyclables,landfilling,EOL,Disposal,514000
+Oregon total,Paper Fiber,combustion,EOL,Recovery,0
+Oregon total,Paper Fiber,landfilling,EOL,Disposal,368500
+Oregon total,Paper Fiber,recycling,EOL,Recovery,267200
+Oregon total,Plastic Film,combustion,EOL,Recovery,0
+Oregon total,Plastic Film,landfilling,EOL,Disposal,161000
+Oregon total,Plastic Film,recycling,EOL,Recovery,15900
+Oregon total,Rigid Plastic Cont.,combustion,EOL,Recovery,0
+Oregon total,Rigid Plastic Cont.,landfilling,EOL,Disposal,57200
+Oregon total,Rigid Plastic Cont.,recycling,EOL,Recovery,24700
+Oregon total,Scrap Metal - Other,landfilling,EOL,Disposal,101900
+Oregon total,Scrap Metal - Other,recycling,EOL,Recovery,389300
+Oregon total,Wood Waste,combustion,EOL,Recovery,234300
+Oregon total,Wood Waste,composting,EOL,Recovery,21900
+Oregon total,Wood Waste,landfilling,EOL,Disposal,466600
+Oregon total,Wood Waste,recycling,EOL,Recovery,32800
+Oregon total,Yard Debris,anaerobicDigestion,EOL,Recovery,0
+Oregon total,Yard Debris,combustion,EOL,Recovery,32000
+Oregon total,Yard Debris,composting,EOL,Recovery,464000
+Oregon total,Yard Debris,landfilling,EOL,Disposal,96600
+Wheeler,Cardboard/Kraft,combustion,EOL,Recovery,0
+Wheeler,Cardboard/Kraft,landfilling,EOL,Disposal,0
+Wheeler,Cardboard/Kraft,recycling,EOL,Recovery,0
+Wheeler,Carpeting-used,combustion,EOL,Recovery,0
+Wheeler,Carpeting-used,landfilling,EOL,Disposal,0
+Wheeler,Carpeting-used,recycling,EOL,Recovery,0
+Wheeler,Electronics,landfilling,EOL,Disposal,0
+Wheeler,Electronics,recycling,EOL,Recovery,0
+Wheeler,Food Waste,anaerobicDigestion,EOL,Recovery,0
+Wheeler,Food Waste,composting,EOL,Recovery,0
+Wheeler,Food Waste,landfilling,EOL,Disposal,100
+Wheeler,Glass Containers,landfilling,EOL,Disposal,0
+Wheeler,Glass Containers,recycling,EOL,Recovery,0
+Wheeler,Glass Containers,useAsAggregate,EOL,Recovery,0
+Wheeler,Nonrecyclables,combustion,EOL,Recovery,0
+Wheeler,Nonrecyclables,landfilling,EOL,Disposal,100
+Wheeler,Paper Fiber,combustion,EOL,Recovery,0
+Wheeler,Paper Fiber,landfilling,EOL,Disposal,0
+Wheeler,Paper Fiber,recycling,EOL,Recovery,0
+Wheeler,Plastic Film,combustion,EOL,Recovery,0
+Wheeler,Plastic Film,landfilling,EOL,Disposal,0
+Wheeler,Plastic Film,recycling,EOL,Recovery,0
+Wheeler,Rigid Plastic Cont.,combustion,EOL,Recovery,0
+Wheeler,Rigid Plastic Cont.,landfilling,EOL,Disposal,0
+Wheeler,Rigid Plastic Cont.,recycling,EOL,Recovery,0
+Wheeler,Scrap Metal - Other,landfilling,EOL,Disposal,0
+Wheeler,Scrap Metal - Other,recycling,EOL,Recovery,0
+Wheeler,Wood Waste,combustion,EOL,Recovery,0
+Wheeler,Wood Waste,composting,EOL,Recovery,0
+Wheeler,Wood Waste,landfilling,EOL,Disposal,100
+Wheeler,Wood Waste,recycling,EOL,Recovery,0
+Wheeler,Yard Debris,anaerobicDigestion,EOL,Recovery,0
+Wheeler,Yard Debris,combustion,EOL,Recovery,0
+Wheeler,Yard Debris,composting,EOL,Recovery,0
+Wheeler,Yard Debris,landfilling,EOL,Disposal,0
