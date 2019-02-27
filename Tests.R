@@ -427,3 +427,44 @@ df <- f %>%
   gather(key = "Scenario", value = "Impact", c(`Initial Impact`, `Scenario Impact`)) %>%
   spread("Disposition", "Impact") %>%
   mutate(Sum = rowSums(.[2:4]))
+
+
+# for circle packing ------------------------------------------------------
+library(packcircles)
+library(ggplot2)
+library(viridis)
+library(ggiraph)
+
+
+df11 <- df %>% 
+  filter(Scenario == "Scenario Impact") %>% 
+  select(-Scenario) %>% 
+  gather(key = "disposition", value = "value") %>%
+  filter(value != 0) %>% 
+  mutate(neg = ifelse(value < 0, "neg", (ifelse(disposition == "Sum", "sum", "pos")))) %>% 
+  mutate(value = abs(value)) %>% 
+  mutate(text = paste("name: ",df11$disposition, "\n", "value:", round(df11$value), "\n", "!"))
+
+
+packing1 <- circleProgressiveLayout(df11$value, sizetype = 'area')
+df11 = cbind(df11, packing1)
+dat.gg11 <- circleLayoutVertices(packing1, npoints = 50)
+
+q = ggplot() + 
+  geom_polygon_interactive(data = dat.gg11, 
+                           aes(x,
+                               y, 
+                               group = id,
+                               fill= df11$neg[id],
+                               tooltip = df11$text[id],
+                               data_id = id),
+                           colour = "black",
+                           alpha = 0.5) +
+  scale_fill_viridis_d() +
+  geom_text(data = df11, aes(x, y, label = gsub("Group_", "", disposition)), size=2, color="black") +
+  theme_void() + 
+  theme(legend.position="none", plot.margin=unit(c(0,0,0,0),"cm") ) + 
+  coord_equal()
+q
+
+
