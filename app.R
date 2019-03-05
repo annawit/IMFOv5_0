@@ -25,13 +25,13 @@ d <- read_csv("impact_dictionary.csv")
 
 tweight <- mass %>% 
   filter(Wasteshed %in% "Baker") %>% 
-  filter(Material %in% "Rigid Plastic Cont.") %>% 
+  filter(Material %in% "Rigid Plastic") %>% 
   pull(`2015 Weight`)
 
 simplesubset <- I1 %>%
-  filter(Material %in% "Rigid Plastic Cont.") %>% 
+  filter(Material %in% "Rigid Plastic") %>% 
   filter(`Life Cycle Stage` != "EOL Transport") %>% 
-  filter(`Impact Category` %in% "Global warming")
+  filter(Category %in% "Global warming")
 
 Wastesheds <- sort(unique(mass$Wasteshed))
 Materials <- sort(unique(mass$Material))
@@ -78,7 +78,7 @@ tabPanel("Start here!",
                     # draggable = TRUE,
                     wellPanel(
                       div(img(src = 'icon-milk-jug.png', height = "12%", width = "12%"), style = "text-align: center;",
-                          h3("Rigid Plastic Containers")),
+                          h3("Rigid Plastic")),
                       sliderInput(inputId = "Production",
                                   label = "Total Mass, in Tons",
                                   min = 0,
@@ -318,7 +318,7 @@ tabPanel("Glossary",
                       width = 8,
                       selectInput("impacttodefine",
                                   label = "Choose an impact to define:",
-                                  choices = I1$`Impact Category`),
+                                  choices = I1$Category),
                       verbatimTextOutput(outputId = "impactdefinition")
                     ))
          )
@@ -427,17 +427,17 @@ server <- function(input, output, session) {
   output$simpledf <- renderTable({
     simpledf() %>% 
       left_join(simplesubset) %>% 
-      select(Disposition, `Initial Weight`, `Scenario Weight`, `Impact Category`, `Impact Factor`) %>% 
-      mutate(`Initial Impact` = `Initial Weight`*`Impact Factor`,
-             `Scenario Impact` = `Scenario Weight`*`Impact Factor`)
+      select(Disposition, `Initial Weight`, `Scenario Weight`, Category, Factor) %>% 
+      mutate(`Initial Impact` = `Initial Weight`*Factor,
+             `Scenario Impact` = `Scenario Weight`*Factor)
   }, digits = 0)
   
   plotdf <- reactive({
     simpledf() %>% 
       left_join(simplesubset) %>% 
-      select(Disposition, `Initial Weight`, `Scenario Weight`, `Impact Category`, `Impact Factor`) %>% 
-      mutate(`Initial 2016 Impact` = `Initial Weight`*`Impact Factor`,
-             `New Scenario Impact` = `Scenario Weight`*`Impact Factor`) %>% 
+      select(Disposition, `Initial Weight`, `Scenario Weight`, Category, Factor) %>% 
+      mutate(`Initial 2016 Impact` = `Initial Weight`*Factor,
+             `New Scenario Impact` = `Scenario Weight`*Factor) %>% 
       select(Disposition, `Initial 2016 Impact`, `New Scenario Impact`) %>% 
       gather(key = "Scenario", value = "Impact", c(`Initial 2016 Impact`, `New Scenario Impact`)) %>% 
       spread("Disposition", "Impact") %>% 
@@ -604,7 +604,7 @@ output$circleplot <- renderPlot({
     checkboxGroupInput(
       inputId = "userimpacts",
       label = "Select impacts:",
-      choices = unique(I1$`Impact Category`),
+      choices = unique(I1$Category),
       inline = TRUE
     )
     
@@ -1096,16 +1096,16 @@ output$circleplot <- renderPlot({
       rbind(nP) %>% 
       left_join(I1, by = c("Material", "Disposition",
                            "Life Cycle Stage")) %>% 
-      mutate(`2015 Impact` = round(`2015 Weight`*`Impact Factor`),
-             `New Impact` = round(`New Weight`*`Impact Factor`))
+      mutate(`2015 Impact` = round(`2015 Weight`*Factor),
+             `New Impact` = round(`New Weight`*Factor))
     
     
     nn
     # n <- newnew() %>% 
     #  left_join(I1, by = c("Material", "Disposition",
     #                       "Life Cycle Stage")) %>% 
-    #  mutate(`2015 Impact` = round(`2015 Weight`*`Impact Factor`),
-    #         `New Impact` = round(`New Weight`*`Impact Factor`))
+    #  mutate(`2015 Impact` = round(`2015 Weight`*Factor),
+    #         `New Impact` = round(`New Weight`*Factor))
     #  n
   })
   
@@ -1123,16 +1123,16 @@ output$circleplot <- renderPlot({
   
   # meltedimpacts <- reactive({
   #   t <- newimpacts() %>% 
-  #     select(-c(`2015 Weight`, `New Weight`, `Impact Factor`)) %>% 
-  #     melt(id.vars = c('Material', 'Disposition', `Impact Factor`, `Impact Units`)) %>% 
-  #     filter(!is.na(`Impact Factor`))
+  #     select(-c(`2015 Weight`, `New Weight`, Factor)) %>% 
+  #     melt(id.vars = c('Material', 'Disposition', Factor, Units)) %>% 
+  #     filter(!is.na(Factor))
   #   t
   # })
  
   meltedimpacts <- reactive({ 
   t <- newimpacts() %>% 
-    select(Material, Disposition, `Life Cycle Stage`, `Umbrella Disposition`, `Impact Category`, `Impact Units`, `2015 Impact`, `New Impact`) %>% 
-    gather(key = "Scenario", value = "Impact", -c(Material, Disposition, `Life Cycle Stage`, `Umbrella Disposition`, `Impact Category`, `Impact Units`))
+    select(Material, Disposition, `Life Cycle Stage`, `Umbrella Disposition`, Category, Units, `2015 Impact`, `New Impact`) %>% 
+    gather(key = "Scenario", value = "Impact", -c(Material, Disposition, `Life Cycle Stage`, `Umbrella Disposition`, Category, Units))
   })
   
   output$table4 <- DT::renderDataTable({
@@ -1153,7 +1153,7 @@ output$circleplot <- renderPlot({
                stat = "identity",
                width = 1) +
       theme_minimal(base_size = 18) +
-      facet_wrap(~`Impact Category`, ncol = 3, scales = "free_y"
+      facet_wrap(~Category, ncol = 3, scales = "free_y"
       ) +
       scale_fill_viridis_d(end = 0.4, direction = 1) 
     # +
@@ -1183,7 +1183,7 @@ output$circleplot <- renderPlot({
   #     geom_bar(position = "dodge",
   #              stat = "identity") +
   #     theme_bw(base_size = 16) +
-  #     facet_wrap(~`Impact Category`, ncol = 3, scales = "free_y"
+  #     facet_wrap(~Category, ncol = 3, scales = "free_y"
   #     ) +
   #     scale_fill_viridis_d(begin = 0.5, direction = -1) 
   #   # +
@@ -1206,7 +1206,7 @@ output$circleplot <- renderPlot({
       geom_bar(
         stat = "identity") +
       theme_minimal(base_size = 20) +
-      facet_wrap(~`Impact Category`, ncol = 3, scales = "free_y"
+      facet_wrap(~Category, ncol = 3, scales = "free_y"
       ) +
       scale_fill_viridis_d(end = 0.4, direction = 1) 
     # +
