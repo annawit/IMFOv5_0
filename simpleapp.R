@@ -249,13 +249,16 @@ server <- function(input, output, session) {
     
     # https://stackoverflow.com/questions/24265980/reset-inputs-button-in-shiny-app
     
-    tweight <- oregonweights %>% 
-      filter(Material == "Rigid Plastic") %>% 
-      pull(`2015 Weight`)
+    # tweight <- oregonweights %>% 
+    #   filter(Material == "Rigid Plastic") %>% 
+    #   pull(`2015 Weight`)
     
     tagList(
       div(
         id = "panel",
+        tweight <- oregonweights %>% 
+          filter(Material == "Rigid Plastic") %>% 
+          pull(`2015 Weight`),
         setSliderColor(c("#3A6276", "#A7B753", "#492F42", "#389476"), c(1, 2, 3, 4)),
         br(),
         sliderInput(inputId = "Production",
@@ -287,15 +290,17 @@ server <- function(input, output, session) {
     input$RPCombustion
     input$RPRecycling
   }, {
-    updateSliderInput(session = session, 
-                      inputId = "RPLandfilling", 
-                      value = 
-                        round((100 * 
-                                 input$RPLandfilling/(input$RPCombustion + 
-                                                        input$RPLandfilling + 
-                                                        input$RPRecycling)), 
-                              digits = 2)
-    )
+    
+      updateSliderInput(session = session, 
+                        inputId = "RPLandfilling", 
+                        value = 
+                          round((100 * 
+                                   input$RPLandfilling/(input$RPCombustion + 
+                                                          input$RPLandfilling + 
+                                                          input$RPRecycling)), 
+                                digits = 2)
+      )
+                        
   })
   
   
