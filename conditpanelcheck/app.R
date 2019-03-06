@@ -7,10 +7,17 @@
 #    http://shiny.rstudio.com/
 #
 
+# data("faithful")
+# view(faithful)
+
+
 library(shiny)
+library(shinyjs)
+
 
 # Define UI for application that draws a histogram
 ui <- fluidPage(
+  useShinyjs(),
    
    # Application title
    titlePanel("Old Faithful Geyser Data"),
@@ -18,15 +25,9 @@ ui <- fluidPage(
    # Sidebar with a slider input for number of bins 
    sidebarLayout(
       sidebarPanel(
-         sliderInput("bins",
-                     "Number of bins:",
-                     min = 1,
-                     max = 50,
-                     value = 30),
-         conditionalPanel(
-           condition = "input.bins > 30",
+        actionButton("resetsliders", "Reset"),
+
            uiOutput("slider2")
-         )
       ),
       
       # Show a plot of the generated distribution
@@ -37,7 +38,7 @@ ui <- fluidPage(
 )
 
 # Define server logic required to draw a histogram
-server <- function(input, output) {
+server <- function(input, output, session) {
    
    output$distPlot <- renderPlot({
       # generate bins based on input$bins from ui.R
@@ -49,12 +50,116 @@ server <- function(input, output) {
    })
    
   output$slider2 <- renderUI({
-     sliderInput("fun",
+    
+    tw <- faithful %>% 
+      select(waiting) %>% 
+      pull(waiting)
+    div(
+      id = "panel",
+      sliderInput("bins",
+                  "Number of bins:",
+                  min = 1,
+                  max = 50,
+                  value = 30),
+      sliderInput("fun",
                  "How much fun?",
                  min = 0,
                  max = 100,
-                 value = 50)
+                 value = 50),
+    sliderInput("habit",
+                "How much habit?",
+                min = 0,
+                max = 100,
+                value = 50),
+    sliderInput("fate",
+                "How much fate?",
+                min = 0,
+                max = 100,
+                value = 33)
+    )
+    
    })
+  
+  observe({
+    
+    # input$fun
+    # input$habit
+    # 
+    req(input$fun)
+    
+      if (input$fun == 0 & input$habit == 0) 
+        {
+        updateSliderInput(session = session,
+                          inputId = "fate",
+                          value = 99)
+
+      } else {
+        updateSliderInput(session = session, 
+                          inputId = "fate", 
+                          value = 
+                            round((100 * 
+                                     input$fate / (input$fun + 
+                                                     input$habit + 
+                                                     isolate(input$fate))),
+                                  digits = 0)
+        )
+      }
+    })
+  
+  observe({
+      
+    # input$fate
+    # input$fun
+    req(input$fate)
+    
+      if ((input$fun == 100 & input$fate == 0 & input$habit == 0) |
+          (input$fun == 0 & input$fate == 100 & input$habit == 0)) {
+        updateSliderInput(session = session,
+                          inputId = "habit",
+                          value = 0.1)
+      } else {
+        updateSliderInput(session = session, 
+                          inputId = "habit", 
+                          value = 
+                            round((100 * 
+                                     input$habit/(input$fun + 
+                                                    isolate(input$habit) + 
+                                                    input$fate)), 
+                                  digits = 0)
+                          )
+      }
+    })
+  
+  observe({
+      
+    # input$fate
+    # input$habit
+    req(input$habit)
+    
+    
+      if ((input$habit == 0 & input$fate == 100 & input$fun == 0) | 
+           (input$habit == 100 & input$fate == 0 & input$fun == 0) )
+        { updateSliderInput(session = session, 
+                          inputId = "fun", 
+                          value = 0.1)
+      } else {
+        updateSliderInput(session = session, 
+                          inputId = "fun", 
+                          value = 
+                            round((100 * 
+                                     input$fun/(isolate(input$fun) + 
+                                                  input$habit + 
+                                                  input$fate)), 
+                                  digits = 0)
+                          )
+      }
+    })
+  
+  observeEvent(input$resetsliders, {
+    reset("panel")
+  }
+    
+  )
 }
 
 # Run the application 
