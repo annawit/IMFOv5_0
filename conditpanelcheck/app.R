@@ -37,6 +37,7 @@ ui <- fluidPage(
    )
 )
 
+
 # Define server logic required to draw a histogram
 server <- function(input, output, session) {
    
@@ -80,80 +81,67 @@ server <- function(input, output, session) {
     
    })
   
-  observe({
-    
-    # input$fun
-    # input$habit
-    # 
-    req(input$fun)
-    
-      if (input$fun == 0 & input$habit == 0) 
-        {
-        updateSliderInput(session = session,
-                          inputId = "fate",
-                          value = 99)
+  observeEvent({input$fun} ,{
 
-      } else {
-        updateSliderInput(session = session, 
-                          inputId = "fate", 
-                          value = 
-                            round((100 * 
-                                     input$fate / (input$fun + 
-                                                     input$habit + 
-                                                     isolate(input$fate))),
-                                  digits = 0)
-        )
-      }
-    })
+    updateSliderInput(session = session, inputId = "fate", value = input$fate/2) 
+    updateSliderInput(session = session, inputId = "habit", value = input$habit/2)
+
+  })
   
-  observe({
-      
-    # input$fate
-    # input$fun
-    req(input$fate)
-    
-      if ((input$fun == 100 & input$fate == 0 & input$habit == 0) |
-          (input$fun == 0 & input$fate == 100 & input$habit == 0)) {
-        updateSliderInput(session = session,
-                          inputId = "habit",
-                          value = 0.1)
-      } else {
-        updateSliderInput(session = session, 
-                          inputId = "habit", 
-                          value = 
-                            round((100 * 
-                                     input$habit/(input$fun + 
-                                                    isolate(input$habit) + 
-                                                    input$fate)), 
-                                  digits = 0)
-                          )
-      }
-    })
-  
-  observe({
-      
-    # input$fate
-    # input$habit
-    req(input$habit)
-    
-    
-      if ((input$habit == 0 & input$fate == 100 & input$fun == 0) | 
-           (input$habit == 100 & input$fate == 0 & input$fun == 0) )
-        { updateSliderInput(session = session, 
-                          inputId = "fun", 
-                          value = 0.1)
-      } else {
-        updateSliderInput(session = session, 
-                          inputId = "fun", 
-                          value = 
-                            round((100 * 
-                                     input$fun/(isolate(input$fun) + 
-                                                  input$habit + 
-                                                  input$fate)), 
-                                  digits = 0)
-                          )
-      }
-    })
+  observeEvent({input$fate}, {
+
+    updateSliderInput(session = session, inputId = "fun", value = input$fun/2)
+    updateSliderInput(session = session, inputId = "habit", value = input$habit/2)
+
+  })
+  # observe({
+  #     
+  #   # input$fate
+  #   # input$fun
+  #   req(input$fate)
+  #   
+  #     if ((input$fun == 100 & input$fate == 0 & input$habit == 0) |
+  #         (input$fun == 0 & input$fate == 100 & input$habit == 0)) {
+  #       updateSliderInput(session = session,
+  #                         inputId = "habit",
+  #                         value = 0.1)
+  #     } else {
+  #       updateSliderInput(session = session, 
+  #                         inputId = "habit", 
+  #                         value = 
+  #                           round((100 * 
+  #                                    input$habit/(input$fun + 
+  #                                                   isolate(input$habit) + 
+  #                                                   input$fate)), 
+  #                                 digits = 0)
+  #                         )
+  #     }
+  #   })
+  # 
+  # observe({
+  #     
+  #   # input$fate
+  #   # input$habit
+  #   req(input$habit)
+  #   
+  #   
+  #     if ((input$habit == 0 & input$fate == 100 & input$fun == 0) | 
+  #          (input$habit == 100 & input$fate == 0 & input$fun == 0) )
+  #       { updateSliderInput(session = session, 
+  #                         inputId = "fun", 
+  #                         value = 0.1)
+  #     } else {
+  #       updateSliderInput(session = session, 
+  #                         inputId = "fun", 
+  #                         value = 
+  #                           round((100 * 
+  #                                    input$fun/(isolate(input$fun) + 
+  #                                                 input$habit + 
+  #                                                 input$fate)), 
+  #                                 digits = 0)
+  #                         )
+  #     }
+  #   })
   
   observeEvent(input$resetsliders, {
     reset("panel")
