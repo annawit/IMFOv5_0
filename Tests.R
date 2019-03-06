@@ -427,3 +427,68 @@ df <- f %>%
   gather(key = "Scenario", value = "Impact", c(`Initial Impact`, `Scenario Impact`)) %>%
   spread("Disposition", "Impact") %>%
   mutate(Sum = rowSums(.[2:4]))
+
+
+# 2/23/2019 ---------------------------------------------------------------
+
+
+library(shiny)
+library(readr)
+library(dplyr)
+library(stringr)
+library(ggplot2)
+library(tidyr)
+library(reshape2)
+library(plotly)
+library(shinythemes)
+library(shinyWidgets)
+library(viridis)
+library(shinyjs)
+library(shinyBS)
+library(fmsb)
+
+
+m1 <- read_csv("imfoAppMassProfiles.csv")
+mass <- m1 %>%
+  mutate(`Umbrella Disposition` = ifelse(disposition %in% "landfilling", "Disposal", "Recovery")) %>% 
+  mutate(Material = recode(material, "FoodWaste" = "Food Waste")) %>% 
+  mutate(`Life Cycle Stage` = ifelse(LCstage %in% "endOfLifeTransport", "EOL Transport", "EOL")) %>% 
+  filter(`Life Cycle Stage` != "EOL Transport") %>%
+  mutate(`2015 Weight` = round(tons, digits = -2)) %>% 
+  rename(Wasteshed = wasteshed, Disposition = disposition) %>% 
+  select(Wasteshed, Material, Disposition, `Life Cycle Stage`, `Umbrella Disposition`, `2015 Weight`)
+
+
+I <- read_csv("imfoAppImpactFactors.csv")
+
+I1 <- I %>% 
+  mutate(Material = recode(material, "FoodWaste" = "Food Waste")) %>% 
+  mutate(`Life Cycle Stage` = ifelse(LCstage %in% "endOfLifeTransport", "EOL Transport", 
+                                     ifelse(LCstage %in% "endOfLife", "EOL",
+                                            ifelse(LCstage %in% "production", "Production",
+                                                   "other")))
+  ) %>% 
+  rename(Disposition = disposition, `Impact Category` = impactCategory,
+         `Impact Units` = impactUnits, `Impact Factor` = impactFactor,
+         `Implied Miles` = impliedMiles) %>% 
+  select(Material, Disposition, `Life Cycle Stage`, `Impact Category`,
+         `Impact Units`, `Impact Factor`, `Implied Miles`)
+
+
+
+sm <- n %>% 
+  filter(Wasteshed == "Baker",
+         Material == "Cardboard/Kraft",
+         `Life Cycle Stage` == "EOL") %>% 
+  select(-c(Wasteshed, Material, `2015 Weight`, `New Weight`, `Impact Units`,
+            `Impact Factor`, `Implied Miles`, `New Impact`, `Umbrella Disposition`, `Life Cycle Stage`)) %>%
+  spread(key = `Impact Category`, value = `2015 Impact`) %>% 
+  select(-Disposition)
+
+st <- n %>% 
+  filter(Wasteshed == "Baker",
+         Material == "Cardboard/Kraft",
+         `Life Cycle Stage` == "EOL") %>% 
+  select(-c(Wasteshed, Material, `2015 Weight`, `New Weight`, `Impact Units`,
+            `Impact Factor`, `Implied Miles`, `New Impact`, `Umbrella Disposition`, `Life Cycle Stage`)) %>%
+  spread(key = `Impact Category`, value = `2015 Impact`)
