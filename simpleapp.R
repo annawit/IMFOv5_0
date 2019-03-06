@@ -86,7 +86,7 @@ tabPanel("Visualize!",
                     selectInput(inputId = "usermaterials",
                                 label = "Select a material:",
                                 choices = unique(mass$Material),
-                                selected = "Food")
+                                selected = "Rigid Plastic")
                   )
                   )),
            column(4,
