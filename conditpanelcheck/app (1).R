@@ -10,8 +10,8 @@
 library(shiny)
 
 # Define UI for application that draws a histogram
-one <- 50
-two <- 50
+one <- 25
+two <- 25
 three <- 50
 
 ui <- fluidPage(
@@ -71,8 +71,8 @@ server <- function(input, output, session) {
    observeEvent(input$one, {
      print("Observe 1")
      if (input$one != one) {
-       two <<- ceiling(100-input$one)
-       three <<- ceiling(100-input$two)
+       two <<- ceiling(input$two + (one - input$one)*0.5)
+       three <<- ceiling(input$three + (one - input$one)*0.5)
        updateSliderInput(session, "two", value = two)
        updateSliderInput(session, "three", value = three)
        print("Input 1 changed")
@@ -96,8 +96,10 @@ server <- function(input, output, session) {
       observeEvent(input$two, {
         print("Observe 2")
         if (input$two != two) {
-          one <<- ceiling(100-two)
-          three <<- ceiling(100-three)
+          #takes value of one and adds half of the change in slider two
+          one <<- ceiling(input$one + (two - input$two)*0.5)
+          #takes value of three and adds half of the change in slider two
+          three <<- ceiling(input$three + (two - input$two)*0.5)
           updateSliderInput(session, "one", value = one)
           updateSliderInput(session, "three", value = three)
           print("Input 2 changed")
@@ -119,8 +121,8 @@ server <- function(input, output, session) {
          observeEvent(input$three, {
            print("Observe 3")
            if (input$three != three) {
-            one <<- ceiling(100 - two)
-            two <<- ceiling(100 - one)
+            one <<- ceiling(input$one + (three - input$three)*0.5)
+            two <<- ceiling(input$two + (three - input$three)*0.5)
             updateSliderInput(session, "one", value = one)
             updateSliderInput(session, "two", value = two)
             print("Input 3 changed")
