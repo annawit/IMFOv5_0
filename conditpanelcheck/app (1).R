@@ -72,8 +72,8 @@ server <- function(input, output, session) {
    observeEvent(input$one, {
      print("Observe 1")
      if (input$one != one) {
-       two <<- round(100 * input$two/(input$one + input$two + input$three))
-       three <<- round(100 * input$three/(input$one + input$two + input$three))
+       two <<- ceiling(-input$two/(input$two + input$three) * (input$one - one))
+       three <<- ceiling(-input$three/(input$two + input$three) * (input$one - one))
        updateSliderInput(session, "two", value = two)
        updateSliderInput(session, "three", value = three)
        print("Input 1 changed")
@@ -98,8 +98,8 @@ server <- function(input, output, session) {
         print("Observe 2")
         if (input$two != two) {
           
-          one <<- round(100 * input$one/(input$one + input$two + input$three))
-          three <<- round(100 * input$three/(input$one + input$two + input$three))
+          one <<- ceiling(-input$one/(input$one + input$three) * (input$two - two))
+          three <<- ceiling(-input$three/(input$one + input$three) * (input$two - two))
           updateSliderInput(session, "one", value = one)
           updateSliderInput(session, "three", value = three)
           print("Input 2 changed")
@@ -121,8 +121,8 @@ server <- function(input, output, session) {
          observeEvent(input$three, {
            print("Observe 3")
            if (input$three != three) {
-            one <<- round(100 * input$one/(input$one + input$two + input$three))
-            two <<- round(100 * input$two/(input$one + input$two + input$three))
+            one <<- ceiling(-input$one/(input$one + input$two) * (input$three - three))
+            two <<- ceiling(-input$two/(input$one + input$two) * (input$three - three))
             updateSliderInput(session, "one", value = one)
             updateSliderInput(session, "two", value = two)
             print("Input 3 changed")
