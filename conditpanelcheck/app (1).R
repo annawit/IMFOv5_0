@@ -55,40 +55,78 @@ server <- function(input, output, session) {
    })
    
   
+   # observeEvent(input$one, {
+   #   print("Observe 1")
+   #   if (input$one != one) {
+   #    two <<- ceiling(input$two / 2)
+   #    three <<- ceiling(input$three / 2)
+   #    updateSliderInput(session, "two", value = two)
+   #    updateSliderInput(session, "three", value = three)
+   #    print("Input 1 changed")
+   #   }
+   #  }
+   # )
+   
+   
    observeEvent(input$one, {
      print("Observe 1")
      if (input$one != one) {
-      two <<- ceiling(input$two / 2)
-      three <<- ceiling(input$three / 2)
-      updateSliderInput(session, "two", value = two)
-      updateSliderInput(session, "three", value = three)
-      print("Input 1 changed")
+       two <<- ceiling(100-input$one)
+       three <<- ceiling(100-input$two)
+       updateSliderInput(session, "two", value = two)
+       updateSliderInput(session, "three", value = three)
+       print("Input 1 changed")
      }
-    }
+   }
    )
    
-   observeEvent(input$two, {
-     print("Observe 2")
-     if (input$two != two) {
-       one <<- ceiling(input$one / 2)
-       three <<- ceiling(input$three / 2)
-       updateSliderInput(session, "one", value = one)
-       updateSliderInput(session, "three", value = three)
-       print("Input 2 changed")
-     }
-   })
    
-   observeEvent(input$three, {
-     print("Observe 3")
-     if (input$three != three) {
-      one <<- ceiling(input$one / 2)
-      two <<- ceiling(input$two / 2)
-      updateSliderInput(session, "one", value = one)
-      updateSliderInput(session, "two", value = two)
-      print("Input 3 changed")
-     }
-   })
-}
+   
+#    observeEvent(input$two, {
+#      print("Observe 2")
+#      if (input$two != two) {
+#        one <<- ceiling(input$one / 2)
+#        three <<- ceiling(input$three / 2)
+#        updateSliderInput(session, "one", value = one)
+#        updateSliderInput(session, "three", value = three)
+#        print("Input 2 changed")
+#      }
+#    })
+   
+      observeEvent(input$two, {
+        print("Observe 2")
+        if (input$two != two) {
+          one <<- ceiling(100-two)
+          three <<- ceiling(100-three)
+          updateSliderInput(session, "one", value = one)
+          updateSliderInput(session, "three", value = three)
+          print("Input 2 changed")
+        }
+      })
+#    
+#    observeEvent(input$three, {
+#      print("Observe 3")
+#      if (input$three != three) {
+#       one <<- ceiling(input$one / 2)
+#       two <<- ceiling(input$two / 2)
+#       updateSliderInput(session, "one", value = one)
+#       updateSliderInput(session, "two", value = two)
+#       print("Input 3 changed")
+#      }
+#    })
+# }
+      
+         observeEvent(input$three, {
+           print("Observe 3")
+           if (input$three != three) {
+            one <<- ceiling(100 - two)
+            two <<- ceiling(100 - one)
+            updateSliderInput(session, "one", value = one)
+            updateSliderInput(session, "two", value = two)
+            print("Input 3 changed")
+           }
+         })
+      }
 
 
 
