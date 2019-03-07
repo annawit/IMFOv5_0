@@ -30,7 +30,8 @@ ui <- fluidPage(
          
          sliderInput("one", "First", min = 0, max = 100, value = one),
          sliderInput("two", "Second", min = 0, max = 100, value = two),
-         sliderInput("three", "Third", min = 0, max = 100, value = three)
+         sliderInput("three", "Third", min = 0, max = 100, value = three),
+         verbatimTextOutput("slidersum")
       ),
       
       # Show a plot of the generated distribution
@@ -71,8 +72,8 @@ server <- function(input, output, session) {
    observeEvent(input$one, {
      print("Observe 1")
      if (input$one != one) {
-       two <<- ceiling(input$two + (one - input$one)*0.5)
-       three <<- ceiling(input$three + (one - input$one)*0.5)
+       two <<- round(100 * input$two/(input$one + input$two + input$three))
+       three <<- round(100 * input$three/(input$one + input$two + input$three))
        updateSliderInput(session, "two", value = two)
        updateSliderInput(session, "three", value = three)
        print("Input 1 changed")
@@ -96,10 +97,9 @@ server <- function(input, output, session) {
       observeEvent(input$two, {
         print("Observe 2")
         if (input$two != two) {
-          #takes value of one and adds half of the change in slider two
-          one <<- ceiling(input$one + (two - input$two)*0.5)
-          #takes value of three and adds half of the change in slider two
-          three <<- ceiling(input$three + (two - input$two)*0.5)
+          
+          one <<- round(100 * input$one/(input$one + input$two + input$three))
+          three <<- round(100 * input$three/(input$one + input$two + input$three))
           updateSliderInput(session, "one", value = one)
           updateSliderInput(session, "three", value = three)
           print("Input 2 changed")
@@ -121,13 +121,15 @@ server <- function(input, output, session) {
          observeEvent(input$three, {
            print("Observe 3")
            if (input$three != three) {
-            one <<- ceiling(input$one + (three - input$three)*0.5)
-            two <<- ceiling(input$two + (three - input$three)*0.5)
+            one <<- round(100 * input$one/(input$one + input$two + input$three))
+            two <<- round(100 * input$two/(input$one + input$two + input$three))
             updateSliderInput(session, "one", value = one)
             updateSliderInput(session, "two", value = two)
             print("Input 3 changed")
            }
          })
+         
+ output$slidersum <- renderText({ input$one + input$two + input$three })
       }
 
 
