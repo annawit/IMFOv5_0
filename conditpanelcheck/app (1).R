@@ -10,9 +10,9 @@
 library(shiny)
 
 # Define UI for application that draws a histogram
-one <- 25
-two <- 25
-three <- 50
+one <- 30
+two <- 30
+three <- 40
 
 ui <- fluidPage(
    
@@ -72,8 +72,8 @@ server <- function(input, output, session) {
    observeEvent(input$one, {
      print("Observe 1")
      if (input$one != one) {
-       two <<- ceiling(-input$two/(input$two + input$three) * abs(one - input$one))
-       three <<- ceiling(-input$three/(input$two + input$three) * abs(one - input$one))
+       two <<- ceiling(two-(input$two/(input$two + input$three) * (one - input$one)))
+       three <<- ceiling(three-(input$three/(input$two + input$three) * (one - input$one)))
        updateSliderInput(session, "two", value = two)
        updateSliderInput(session, "three", value = three)
        print("Input 1 changed")
@@ -98,8 +98,8 @@ server <- function(input, output, session) {
         print("Observe 2")
         if (input$two != two) {
           
-          one <<- ceiling(-input$one/(input$one + input$three) * abs(two - input$two))
-          three <<- ceiling(-input$three/(input$one + input$three) * abs(two - input$two))
+          one <<- ceiling(one-(input$one/(input$one + input$three) * (two - input$two)))
+          three <<- ceiling(three-(input$three/(input$one + input$three) * (two - input$two)))
           updateSliderInput(session, "one", value = one)
           updateSliderInput(session, "three", value = three)
           print("Input 2 changed")
@@ -121,8 +121,8 @@ server <- function(input, output, session) {
          observeEvent(input$three, {
            print("Observe 3")
            if (input$three != three) {
-            one <<- ceiling(-input$one/(input$one + input$two) * abs(three - input$three))
-            two <<- ceiling(-input$two/(input$one + input$two) * abs(three - input$three))
+            one <<- ceiling(one-(input$one/(input$one + input$two) * (three - input$three)))
+            two <<- ceiling(two-(input$two/(input$one + input$two) * (three - input$three)))
             updateSliderInput(session, "one", value = one)
             updateSliderInput(session, "two", value = two)
             print("Input 3 changed")
