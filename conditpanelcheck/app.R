@@ -84,22 +84,22 @@ server <- function(input, output, session) {
   
   observeEvent({input$fun} ,{
 
-    updateSliderInput(session = session, inputId = "fate", value = 100 - input$fun - input$habit)
-    updateSliderInput(session = session, inputId = "habit", value = 100 - input$fun - input$fate)
+    updateSliderInput(session = session, inputId = "fate", value = 100 - isolate(input$fun) - input$habit)
+    updateSliderInput(session = session, inputId = "habit", value = 100 - isolate(input$fun) - input$fate)
 
   })
 
   observeEvent({input$fate}, {
 
-    updateSliderInput(session = session, inputId = "fun", value = 100 - input$fate - input$habit)
-    updateSliderInput(session = session, inputId = "habit", value = 100 - input$fun - input$fate)
+    updateSliderInput(session = session, inputId = "fun", value = 100 - isolate(input$fate) - input$habit)
+    updateSliderInput(session = session, inputId = "habit", value = 100 - input$fun - isolate(input$fate))
 
   })
   
   observeEvent({input$habit}, {
     
-    updateSliderInput(session = session, inputId = "fun", value = 100 - input$fate - input$habit)
-    updateSliderInput(session = session, inputId = "fate", value = 100 - input$fun - input$habit)
+    updateSliderInput(session = session, inputId = "fun", value = 100 - input$fate - isolate(input$habit))
+    updateSliderInput(session = session, inputId = "fate", value = 100 - input$fun - isolate(input$habit))
     
   })
   
