@@ -103,6 +103,7 @@ server <- function(input, output, session) {
           updateSliderInput(session, "one", value = one)
           updateSliderInput(session, "three", value = three)
           print("Input 2 changed")
+          print(c(one, input$one, two, input$two, three, input$three))
         }
       })
 #    
