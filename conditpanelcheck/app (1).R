@@ -40,8 +40,8 @@ ui <- fluidPage(
       )
    )
 )
-
-
+# suspend resume
+#  https://stackoverflow.com/questions/39330299/probabilistic-multiple-choice-test-sliderinputs-sum-to-1-constraint
 
 # Define server logic required to draw a histogram
 server <- function(input, output, session) {
@@ -72,8 +72,8 @@ server <- function(input, output, session) {
    observeEvent(input$one, {
      print("Observe 1")
      if (input$one != one) {
-       two   <<- ceiling(two - (two  /(two + three)) * (input$one-one))
-       three <<- ceiling(three - (three/(two + three)) * (input$one-one))
+       two   <<- ceiling(two -   (two  / (two + three) * (input$one-one)))
+       three <<- ceiling(three - (three/ (two + three) * (input$one-one)))
        updateSliderInput(session, "two", value = two)
        updateSliderInput(session, "three", value = three)
        print("Input 1 changed")
