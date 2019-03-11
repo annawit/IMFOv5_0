@@ -23,10 +23,6 @@ I1 <- read_csv("I1.csv")
 
 d <- read_csv("impact_dictionary.csv")
 
-oregonweights <- mass %>% 
-  filter(Wasteshed %in% "Oregon total")
-
-
 ui <- fluidPage(
   theme = shinytheme("sandstone"),
   chooseSliderSkin("Modern"),
@@ -68,22 +64,22 @@ tabPanel("Visualize!",
                     left = 20,
                   wellPanel(
                     conditionalPanel(
-                      condition = "input.usermaterials == `Cardboard`",
+                      condition = "input.usermaterial == `Cardboard`",
                       uiOutput("cardboardpanel")
                       ),
                     conditionalPanel(
-                      condition = "input.usermaterials == `Food`",
+                      condition = "input.usermaterial == `Food`",
                       uiOutput("foodpanel")
                     ),
                     conditionalPanel(
-                      condition = "input.usermaterials == `Rigid Plastic`",
+                      condition = "input.usermaterial == `Rigid Plastic`",
                       uiOutput("rppanel")
                     ),
                     actionButton("resetsliders", "Reset")
                     
                   ),
                   wellPanel(
-                    selectInput(inputId = "usermaterials",
+                    selectInput(inputId = "usermaterial",
                                 label = "Select a material:",
                                 choices = unique(mass$Material),
                                 selected = "Rigid Plastic")
@@ -93,7 +89,7 @@ tabPanel("Visualize!",
                   wellPanel(
                     selectInput(inputId = "userregion",
                                 label = "",
-                                choices = unique(mass$wasteshed),
+                                choices = unique(mass$Wasteshed),
                                 selected = "Oregon total")
                   )),
            column(4,
@@ -128,8 +124,9 @@ server <- function(input, output, session) {
 
   output$cardboardpanel <-  renderUI({
     
-    tweight <- oregonweights %>% 
-      filter(Material == "Cardboard") %>% 
+    tweight <- mass %>% 
+      filter(Wasteshed == input$userregion)
+      filter(Material == input$usermaterials) %>% 
       pull(`2015 Weight`)
     
     tagList(
@@ -262,7 +259,8 @@ server <- function(input, output, session) {
     tagList(
       div(
         id = "panel",
-        tweight <- oregonweights %>% 
+        tweight <- mass %>% 
+          filter(Wasteshed == input$userregion) %>% 
           filter(Material == "Rigid Plastic") %>% 
           pull(`2015 Weight`),
         setSliderColor(c("#3A6276", "#A7B753", "#492F42", "#389476"), c(1, 2, 3, 4)),
