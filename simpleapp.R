@@ -31,23 +31,23 @@ ui <- fluidPage(
   navbarPage("Lifecycle Impacts Tool",
              
              # Introduction tab -------------------------------------------------------
-             tabPanel("Introduction",
-                      fluidPage(
-                        column(12,
-                               align = "center",
-                               h3("Welcome to the Lifecycle Impacts Tool!", align = "center"),
-                               # h2("Interactive Visualizer!", align = "center"),
-                               # div(img(src = 'greenpic.jpeg', height="50%", width="50%"), style = "text-align: center;"),
-                               br(),
-                               HTML('<iframe width="560" height="315" src="https://www.youtube.com/embed/-9JRowyICbo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'),
-                               br(),
-                               br(),
-                               div( style = "width:500px; text-align:center;",
-                                    p("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
-                               )
-                        )
-                      )
-             ),
+             # tabPanel("Introduction",
+             #          fluidPage(
+             #            column(12,
+             #                   align = "center",
+             #                   h3("Welcome to the Lifecycle Impacts Tool!", align = "center"),
+             #                   # h2("Interactive Visualizer!", align = "center"),
+             #                   # div(img(src = 'greenpic.jpeg', height="50%", width="50%"), style = "text-align: center;"),
+             #                   br(),
+             #                   HTML('<iframe width="560" height="315" src="https://www.youtube.com/embed/-9JRowyICbo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'),
+             #                   br(),
+             #                   br(),
+             #                   div( style = "width:500px; text-align:center;",
+             #                        p("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
+             #                   )
+             #            )
+             #          )
+             # ),
 
 # Visualize Tab -----------------------------------------------------------
 
@@ -55,25 +55,54 @@ ui <- fluidPage(
 tabPanel("Visualize!",
          fluidPage(
            column(4,
-                  #fixedpanel allows the sliders to scroll with the page and might
-                  #not be necessary in the final version, depending on what is included
-                  #the first two arguments conform it to the column width, it is a little
-                  #finicky
-                  fixedPanel(
-                    width = "30%",
-                    left = 20,
                   wellPanel(
                     conditionalPanel(
                       condition = "input.usermaterial == `Cardboard`",
                       uiOutput("cardboardpanel")
-                      ),
+                    ),
+                    conditionalPanel(
+                      condition = "input.usermaterial == `Carpet`",
+                      uiOutput("carpetpanel")
+                    ),
+                    conditionalPanel(
+                      condition = "input.usermaterial == `Electronics`",
+                      uiOutput("electronicspanel")
+                    ),
                     conditionalPanel(
                       condition = "input.usermaterial == `Food`",
                       uiOutput("foodpanel")
                     ),
                     conditionalPanel(
+                      condition = "input.usermaterial == `Glass`",
+                      uiOutput("glasspanel")
+                    ),
+                    conditionalPanel(
+                      condition = "input.usermaterial == `Trash`",
+                      uiOutput("trashpanel")
+                    ),
+                    conditionalPanel(
+                      condition = "input.usermaterial == `Paper`",
+                      uiOutput("paperpanel")
+                    ),
+                    conditionalPanel(
+                      condition = "input.usermaterial == `Plastic Film`",
+                      uiOutput("plasticffilmpanel")
+                    ),
+                    conditionalPanel(
                       condition = "input.usermaterial == `Rigid Plastic`",
-                      uiOutput("rppanel")
+                      uiOutput("rigidplasticpanel")
+                    ),
+                    conditionalPanel(
+                      condition = "input.usermaterial == `Scrap Metal`",
+                      uiOutput("scrapmetalpanel")
+                    ),
+                    conditionalPanel(
+                      condition = "input.usermaterial == `Wood`",
+                      uiOutput("woodpanel")
+                    ),
+                    conditionalPanel(
+                      condition = "input.usermaterial == `Yard Debris`",
+                      uiOutput("yarddebrispanel")
                     ),
                     actionButton("resetsliders", "Reset")
                     
@@ -84,11 +113,12 @@ tabPanel("Visualize!",
                                 choices = unique(mass$Material),
                                 selected = "Rigid Plastic")
                   )
-                  )),
+           ),
            column(4,
+                  wellPanel(),
                   wellPanel(
                     selectInput(inputId = "userregion",
-                                label = "",
+                                label = "Select a region:",
                                 choices = unique(mass$Wasteshed),
                                 selected = "Oregon total")
                   )),
@@ -119,14 +149,17 @@ tabPanel("Context"),
 
 server <- function(input, output, session) {
 
+  usermass <- reactive({
+    mass %>% 
+      filter(Wasteshed == input$userregion) %>% 
+      filter(Material == input$usermaterial)
+  })
 
 # Cardboard Panel ---------------------------------------------------------
 
   output$cardboardpanel <-  renderUI({
     
-    tweight <- mass %>% 
-      filter(Wasteshed == input$userregion)
-      filter(Material == input$usermaterials) %>% 
+    tweight <- usermass() %>% 
       pull(`2015 Weight`)
     
     tagList(
@@ -240,7 +273,7 @@ server <- function(input, output, session) {
 # Trash -------------------------------------------------------------------
 
 
-# paper -------------------------------------------------------------------
+# Paper -------------------------------------------------------------------
 
 
 # Plastic Film ------------------------------------------------------------
@@ -248,7 +281,7 @@ server <- function(input, output, session) {
 
 # Rigid Plastic -----------------------------------------------------------
 
-  output$rppanel <-  renderUI({
+  output$rigidplasticpanel <-  renderUI({
     
     # https://stackoverflow.com/questions/24265980/reset-inputs-button-in-shiny-app
     
@@ -259,9 +292,7 @@ server <- function(input, output, session) {
     tagList(
       div(
         id = "panel",
-        tweight <- mass %>% 
-          filter(Wasteshed == input$userregion) %>% 
-          filter(Material == "Rigid Plastic") %>% 
+        tweight <- usermass() %>% 
           pull(`2015 Weight`),
         setSliderColor(c("#3A6276", "#A7B753", "#492F42", "#389476"), c(1, 2, 3, 4)),
         br(),
