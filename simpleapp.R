@@ -23,6 +23,8 @@ I1 <- read_csv("I1.csv")
 
 d <- read_csv("impact_dictionary.csv")
 
+
+
 ui <- fluidPage(
   theme = shinytheme("sandstone"),
   chooseSliderSkin("Modern"),
@@ -103,8 +105,7 @@ tabPanel("Visualize!",
                     conditionalPanel(
                       condition = "input.usermaterial == `Yard Debris`",
                       uiOutput("yarddebrispanel")
-                    ),
-                    actionButton("resetsliders", "Reset")
+                    )
                     
                   ),
                   wellPanel(
@@ -148,90 +149,194 @@ tabPanel("Context"),
 
 
 server <- function(input, output, session) {
-
+  
+  adjust <- function(x, y, z, deltax = 0, deltay = 0, deltaz = 0) {
+    
+    if (deltax != 0) {
+      x <- x + deltax
+      diff <- deltax / 2
+      
+      ydiff <- min(y, diff)
+      zdiff <- deltax - ydiff #  min(z, deltax - ydiff)
+      y <- ceiling(y - ydiff)
+      z <- floor(z - zdiff)
+      
+      if (x == 100) {
+        y = 0
+        z = 0
+      }
+    }
+    
+    else if (deltay != 0) {
+      y <- y + deltay
+      diff <- deltay / 2
+      
+      xdiff <- min(x, diff)
+      zdiff <- deltay - xdiff #min(z, deltay - xdiff)
+      x <- ceiling(x - xdiff)
+      z <- floor(z - zdiff)
+      
+      if (y == 100) {
+        x = 0
+        z = 0
+      }
+    }
+    
+    else if (deltaz != 0) {
+      z <- z + deltaz
+      diff <- deltaz / 2
+      
+      xdiff <- min(x, diff)
+      ydiff <- deltaz - xdiff #min(z, deltaz - xdiff)
+      x <- ceiling(x - xdiff)
+      y <- floor(y - ydiff)
+      
+      if (z == 100) {
+        x = 0
+        y = 0
+      }
+    }
+    
+    return( c(x, y, z, x+y+z) )
+  }
+  
+  
+  
+  
   usermass <- reactive({
     mass %>% 
       filter(Wasteshed == input$userregion) %>% 
       filter(Material == input$usermaterial)
   })
+  
+  tweight <- reactive({
+    usermass() %>% 
+      pull(`2015 Weight`)
+  })
 
-# Cardboard Panel ---------------------------------------------------------
-
-  output$cardboardpanel <-  renderUI({
-    
+  one <- reactive({
     tweight <- usermass() %>% 
       pull(`2015 Weight`)
+    tweight[1]/sum(tweight)
+  })
+  
+  two <- reactive({
+    tweight <- usermass() %>% 
+      pull(`2015 Weight`)
+    tweight[2]/sum(tweight)
+  })
+  
+  three <- reactive({
+    tweight <- usermass() %>% 
+      pull(`2015 Weight`)
+    tweight[3]/sum(tweight)
+  })
+  
+  four <- reactive({
+    tweight <- usermass() %>% 
+      pull(`2015 Weight`)
+    tweight[4]/sum(tweight)
+  })
+  
+  five <- reactive({
+    tweight <- usermass() %>% 
+      pull(`2015 Weight`)
+    tweight[5]/sum(tweight)
+  })
+  
+# Cardboard Panel ---------------------------------------------------------
+
+  
+  output$cardboardpanel <-  renderUI({
     
     tagList(
+      
       setSliderColor(c("#3A6276", "#A7B753", "#492F42", "#389476"), c(1, 2, 3, 4)),
       br(),
       sliderInput(inputId = "Production",
                   label = "Total Mass, in Tons",
                   min = 0,
-                  max = sum(tweight)*1.5,
-                  value = sum(tweight)),
-      sliderInput(inputId = "CBCombustion",
+                  max = sum(tweight())*1.5,
+                  value = sum(tweight())),
+      sliderInput(inputId = "one",
                   label = "% Combustion",
                   min = 0,
                   max = 100,
-                  value = tweight[1]/sum(tweight)),
-      sliderInput(inputId = "CBLandfilling",
+                  value = one()),
+      sliderInput(inputId = "two",
                   label = "% Landfilling",
                   min = 0,
                   max = 100,
-                  value = tweight[2]/sum(tweight)),
-      sliderInput(inputId = "CBRecycling",
+                  value = two()),
+      sliderInput(inputId = "three",
                   label = "% Recycling",
                   min = 0,
                   max = 100,
-                  value = tweight[3]/sum(tweight))
-    )
+                  value = three()),
+      actionButton("cardboardreset", "Reset"),
     
-  })
-  
-  observeEvent({
-    input$CBCombustion
-    input$CBRecycling
-  }, {
-    updateSliderInput(session = session, 
-                      inputId = "CBLandfilling", 
-                      value = 
-                        round((100 * 
-                                 input$CBLandfilling/(input$CBCombustion + 
-                                                        input$CBLandfilling + 
-                                                        input$CBRecycling)), 
-                              digits = 2)
+    print(tweight())
     )
   })
   
-  
-  observeEvent({
-    input$CBLandfilling
-    input$CBRecycling
-  },  {
-    updateSliderInput(session = session,
-                      inputId = "CBCombustion",
-                      value = round((100 * 
-                                       input$CBCombustion/(input$CBCombustion + 
-                                                             input$CBLandfilling + 
-                                                             input$CBRecycling)), 
-                                    digits = 2)
-    )
+  observeEvent(input$reset, {
+    one <<- tweight()[1]/sum(tweight())
+    two <<- tweight()[2]/sum(tweight())
+    three <<- tweight()[3]/sum(tweight())
+    
+    updateSliderInput(session, "one", value = one())
+    updateSliderInput(session, "two", value = two())
+    updateSliderInput(session, "three", value = three())
   })
   
-  observeEvent({
-    input$CBCombustion
-    input$CBLandfilling
-  },  {
-    updateSliderInput(session = session,
-                      inputId = "CBRecycling",
-                      value = round((100 * input$CBRecycling/(input$CBCombustion + 
-                                                                input$CBLandfilling + 
-                                                                input$CBRecycling)), 
-                                    digits = 2)
-    )
+  observeEvent(input$one, {
+    print("Observe 1")
+    if (input$one != one()) {
+      delta <- input$one - one()
+      print(delta)
+      changes <- adjust(one(), two(), three(), deltax = delta)
+      one <<- changes[1]
+      two <<- changes[2]
+      three <<- changes[3]
+      
+      updateSliderInput(session, "two", value = two)
+      updateSliderInput(session, "three", value = three)
+      print(changes)
+    }
+  }
+  )
+  
+  observeEvent(input$two, {
+    print("Observe 2")
+    if (input$two != two()) {
+      delta <- input$two - two()
+      print(delta)
+      changes <- adjust(one(), two(), three(), deltay = delta)
+      one <<- changes[1]
+      two <<- changes[2]
+      three <<- changes[3]
+      
+      updateSliderInput(session, "one", value = one)
+      updateSliderInput(session, "three", value = three)
+      print(changes)
+    }
   })
-
+  
+  observeEvent(input$three, {
+    print("Observe 3")
+    if (input$three != three()) {
+      delta <- input$three - three()
+      print(delta)
+      changes <- adjust(one(), two(), three(), deltaz = delta)
+      one <<- changes[1]
+      two <<- changes[2]
+      three <<- changes[3]
+      
+      updateSliderInput(session, "one", value = one())
+      updateSliderInput(session, "two", value = two())
+      print(changes)
+    }
+  })
 # Carpet Panel ------------------------------------------------------------
 
 
