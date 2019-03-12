@@ -23,6 +23,9 @@ I1 <- read_csv("I1.csv")
 
 d <- read_csv("impact_dictionary.csv")
 
+one <- 50
+two <- 20
+three <- 30
 
 
 ui <- fluidPage(
@@ -223,27 +226,27 @@ server <- function(input, output, session) {
   
   
   oner <- reactive({
-    one <- tweight()[1]/sum(tweight())
+    one <- tweight()[[1]]/sum(tweight())
     one
   })
   
   twor <- reactive({
-    two <- tweight()[2]/sum(tweight())
+    two <- tweight()[[2]]/sum(tweight())
     two
   })
   
   threer <- reactive({
-    three <- tweight()[3]/sum(tweight())
+    three <- tweight()[[3]]/sum(tweight())
     three
   })
   
   fourr <- reactive({
-    four <- tweight()[4]/sum(tweight())
+    four <- tweight()[[4]]/sum(tweight())
     four
   })
   
   fiver <- reactive({
-    five <- tweight()[5]/sum(tweight())
+    five <- tweight()[[5]]/sum(tweight())
     five
   })
   
@@ -303,9 +306,9 @@ server <- function(input, output, session) {
       delta <- input$one - one
       print(delta)
       changes <- adjust(one, two, three, deltax = delta)
-      one <<- changes[1]
-      two <<- changes[2]
-      three <<- changes[3]
+      one <<- changes[[1]]
+      two <<- changes[[2]]
+      three <<- changes[[3]]
       
       updateSliderInput(session, "two", value = two)
       updateSliderInput(session, "three", value = three)
@@ -320,9 +323,9 @@ server <- function(input, output, session) {
       delta <- input$two - two
       print(delta)
       changes <- adjust(one, two, three, deltay = delta)
-      one <<- changes[1]
-      two <<- changes[2]
-      three <<- changes[3]
+      one <<- changes[[1]]
+      two <<- changes[[2]]
+      three <<- changes[[3]]
       
       updateSliderInput(session, "one", value = one)
       updateSliderInput(session, "three", value = three)
@@ -336,9 +339,9 @@ server <- function(input, output, session) {
       delta <- input$three - three
       print(delta)
       changes <- adjust(one, two, three, deltaz = delta)
-      one <<- changes[1]
-      two <<- changes[2]
-      three <<- changes[3]
+      one <<- changes[[1]]
+      two <<- changes[[2]]
+      three <<- changes[[3]]
       
       updateSliderInput(session, "one", value = one)
       updateSliderInput(session, "two", value = two)
