@@ -23,9 +23,9 @@ I1 <- read_csv("I1.csv")
 
 d <- read_csv("impact_dictionary.csv")
 
-one <- 50
-two <- 20
-three <- 30
+# one <- 50
+# two <- 20
+# three <- 30
 
 
 ui <- fluidPage(
@@ -218,40 +218,45 @@ server <- function(input, output, session) {
       pull(`2015 Weight`)
   })
 
-  one <- reactiveValues()
-  two <- reactiveValues()
-  three <- reactiveValues()
-  four <- reactiveValues()
-  five <- reactiveValues()
+  one <- reactiveVal()
+  two <- reactiveVal()
+  three <- reactiveVal()
   
+  
+  # one <- reactiveVal(tweight()[[1]]/sum(tweight()))
+  # two <- reactiveVal(tweight()[[2]]/sum(tweight()))
+  # three <- reactiveVal(tweight()[[3]]/sum(tweight()))
+  # four <- reactiveVal()
+  # five <- reactiveVal()
+  # 
   
   oner <- reactive({
-    one <- tweight()[[1]]/sum(tweight())
-    one
+    one() <- one(tweight()[[1]]/sum(tweight()))
+    one()
   })
-  
+
   twor <- reactive({
-    two <- tweight()[[2]]/sum(tweight())
-    two
+    two() <- two(tweight()[[2]]/sum(tweight()))
+    two()
   })
-  
+
   threer <- reactive({
-    three <- tweight()[[3]]/sum(tweight())
-    three
+    three() <- three(tweight()[[3]]/sum(tweight()))
+    three()
   })
   
   fourr <- reactive({
-    four <- tweight()[[4]]/sum(tweight())
+    four <- four(tweight()[[4]]/sum(tweight()))
     four
   })
   
   fiver <- reactive({
-    five <- tweight()[[5]]/sum(tweight())
+    five <- five(tweight()[[5]]/sum(tweight()))
     five
   })
   
   output$vals <- renderText({
-    paste(one, two, three)
+    paste(one(), two(), three())
   })
   
 # Cardboard Panel ---------------------------------------------------------
