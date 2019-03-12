@@ -58,6 +58,7 @@ tabPanel("Visualize!",
          fluidPage(
            column(4,
                   wellPanel(
+                    textOutput("vals"),
                     conditionalPanel(
                       condition = "input.usermaterial == `Cardboard`",
                       uiOutput("cardboardpanel")
@@ -214,34 +215,40 @@ server <- function(input, output, session) {
       pull(`2015 Weight`)
   })
 
-  one <- reactive({
-    tweight <- usermass() %>% 
-      pull(`2015 Weight`)
-    tweight[1]/sum(tweight)
+  one <- reactiveValues()
+  two <- reactiveValues()
+  three <- reactiveValues()
+  four <- reactiveValues()
+  five <- reactiveValues()
+  
+  
+  oner <- reactive({
+    one <- tweight()[1]/sum(tweight())
+    one
   })
   
-  two <- reactive({
-    tweight <- usermass() %>% 
-      pull(`2015 Weight`)
-    tweight[2]/sum(tweight)
+  twor <- reactive({
+    two <- tweight()[2]/sum(tweight())
+    two
   })
   
-  three <- reactive({
-    tweight <- usermass() %>% 
-      pull(`2015 Weight`)
-    tweight[3]/sum(tweight)
+  threer <- reactive({
+    three <- tweight()[3]/sum(tweight())
+    three
   })
   
-  four <- reactive({
-    tweight <- usermass() %>% 
-      pull(`2015 Weight`)
-    tweight[4]/sum(tweight)
+  fourr <- reactive({
+    four <- tweight()[4]/sum(tweight())
+    four
   })
   
-  five <- reactive({
-    tweight <- usermass() %>% 
-      pull(`2015 Weight`)
-    tweight[5]/sum(tweight)
+  fiver <- reactive({
+    five <- tweight()[5]/sum(tweight())
+    five
+  })
+  
+  output$vals <- renderText({
+    paste(one, two, three)
   })
   
 # Cardboard Panel ---------------------------------------------------------
@@ -262,39 +269,40 @@ server <- function(input, output, session) {
                   label = "% Combustion",
                   min = 0,
                   max = 100,
-                  value = one()),
+                  value = one),
       sliderInput(inputId = "two",
                   label = "% Landfilling",
                   min = 0,
                   max = 100,
-                  value = two()),
+                  value = two),
       sliderInput(inputId = "three",
                   label = "% Recycling",
                   min = 0,
                   max = 100,
-                  value = three()),
+                  value = three),
       actionButton("cardboardreset", "Reset"),
     
     print(tweight())
     )
+    
   })
   
   observeEvent(input$reset, {
-    one <<- tweight()[1]/sum(tweight())
-    two <<- tweight()[2]/sum(tweight())
-    three <<- tweight()[3]/sum(tweight())
+    one <<- oner()
+    two <<- twor()
+    three <<- threer()
     
-    updateSliderInput(session, "one", value = one())
-    updateSliderInput(session, "two", value = two())
-    updateSliderInput(session, "three", value = three())
+    updateSliderInput(session, "one", value = one)
+    updateSliderInput(session, "two", value = two)
+    updateSliderInput(session, "three", value = three)
   })
   
   observeEvent(input$one, {
     print("Observe 1")
-    if (input$one != one()) {
-      delta <- input$one - one()
+    if (input$one != one) {
+      delta <- input$one - one
       print(delta)
-      changes <- adjust(one(), two(), three(), deltax = delta)
+      changes <- adjust(one, two, three, deltax = delta)
       one <<- changes[1]
       two <<- changes[2]
       three <<- changes[3]
@@ -308,10 +316,10 @@ server <- function(input, output, session) {
   
   observeEvent(input$two, {
     print("Observe 2")
-    if (input$two != two()) {
-      delta <- input$two - two()
+    if (input$two != two) {
+      delta <- input$two - two
       print(delta)
-      changes <- adjust(one(), two(), three(), deltay = delta)
+      changes <- adjust(one, two, three, deltay = delta)
       one <<- changes[1]
       two <<- changes[2]
       three <<- changes[3]
@@ -324,16 +332,16 @@ server <- function(input, output, session) {
   
   observeEvent(input$three, {
     print("Observe 3")
-    if (input$three != three()) {
-      delta <- input$three - three()
+    if (input$three != three) {
+      delta <- input$three - three
       print(delta)
-      changes <- adjust(one(), two(), three(), deltaz = delta)
+      changes <- adjust(one, two, three, deltaz = delta)
       one <<- changes[1]
       two <<- changes[2]
       three <<- changes[3]
       
-      updateSliderInput(session, "one", value = one())
-      updateSliderInput(session, "two", value = two())
+      updateSliderInput(session, "one", value = one)
+      updateSliderInput(session, "two", value = two)
       print(changes)
     }
   })
