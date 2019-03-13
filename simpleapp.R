@@ -23,10 +23,57 @@ I1 <- read_csv("I1.csv")
 
 d <- read_csv("impact_dictionary.csv")
 
-# one <- 50
-# two <- 20
-# three <- 30
+# This function is used for the sliders
 
+adjust <- function(x, y, z, deltax = 0, deltay = 0, deltaz = 0) {
+  
+  if (deltax != 0) {
+    x <- x + deltax
+    diff <- deltax / 2
+    
+    ydiff <- min(y, diff)
+    zdiff <- deltax - ydiff #  min(z, deltax - ydiff)
+    y <- ceiling(y - ydiff)
+    z <- floor(z - zdiff)
+    
+    if (x == 100) {
+      y = 0
+      z = 0
+    }
+  }
+  
+  else if (deltay != 0) {
+    y <- y + deltay
+    diff <- deltay / 2
+    
+    xdiff <- min(x, diff)
+    zdiff <- deltay - xdiff #min(z, deltay - xdiff)
+    x <- ceiling(x - xdiff)
+    z <- floor(z - zdiff)
+    
+    if (y == 100) {
+      x = 0
+      z = 0
+    }
+  }
+  
+  else if (deltaz != 0) {
+    z <- z + deltaz
+    diff <- deltaz / 2
+    
+    xdiff <- min(x, diff)
+    ydiff <- deltaz - xdiff #min(z, deltaz - xdiff)
+    x <- ceiling(x - xdiff)
+    y <- floor(y - ydiff)
+    
+    if (z == 100) {
+      x = 0
+      y = 0
+    }
+  }
+  
+  return( c(x, y, z, x+y+z) )
+}
 
 ui <- fluidPage(
   theme = shinytheme("sandstone"),
@@ -154,58 +201,8 @@ tabPanel("Context"),
 
 server <- function(input, output, session) {
   
-  adjust <- function(x, y, z, deltax = 0, deltay = 0, deltaz = 0) {
-    
-    if (deltax != 0) {
-      x <- x + deltax
-      diff <- deltax / 2
-      
-      ydiff <- min(y, diff)
-      zdiff <- deltax - ydiff #  min(z, deltax - ydiff)
-      y <- ceiling(y - ydiff)
-      z <- floor(z - zdiff)
-      
-      if (x == 100) {
-        y = 0
-        z = 0
-      }
-    }
-    
-    else if (deltay != 0) {
-      y <- y + deltay
-      diff <- deltay / 2
-      
-      xdiff <- min(x, diff)
-      zdiff <- deltay - xdiff #min(z, deltay - xdiff)
-      x <- ceiling(x - xdiff)
-      z <- floor(z - zdiff)
-      
-      if (y == 100) {
-        x = 0
-        z = 0
-      }
-    }
-    
-    else if (deltaz != 0) {
-      z <- z + deltaz
-      diff <- deltaz / 2
-      
-      xdiff <- min(x, diff)
-      ydiff <- deltaz - xdiff #min(z, deltaz - xdiff)
-      x <- ceiling(x - xdiff)
-      y <- floor(y - ydiff)
-      
-      if (z == 100) {
-        x = 0
-        y = 0
-      }
-    }
-    
-    return( c(x, y, z, x+y+z) )
-  }
-  
-  
-  
+  # this is the initial dataframe created when the user
+  # filters based on their region and material
   
   usermass <- reactive({
     mass %>% 
@@ -213,22 +210,27 @@ server <- function(input, output, session) {
       filter(Material == input$usermaterial)
   })
   
+  # this creates a vector of numbers from the weights of each
+  # disposition.
+  
   tweight <- reactive({
     usermass() %>% 
       pull(`2015 Weight`)
   })
 
+  # initializes the reactive values for the sliders
+  # pct is for the percent value of the sliders, which changes
+  # st is for the starting value, which does not change and is used for the reset
+  
   one <- reactiveValues(pct = 0, st = 0)
   two <- reactiveValues(pct = 0, st = 0)
   three <- reactiveValues(pct = 0, st = 0)
   
-  
-  # one <- reactiveVal(tweight()[[1]]/sum(tweight()))
-  # two <- reactiveVal(tweight()[[2]]/sum(tweight()))
-  # three <- reactiveVal(tweight()[[3]]/sum(tweight()))
-  # four <- reactiveVal()
-  # five <- reactiveVal()
-  # 
+  # These observe event create the percent values for the sliders
+  # one$pct is used over and over again as the sliders change, and becomes the 
+  # value of the slider
+  # one$st is the starting percentage of that disposition, and is used for the 
+  # reset button
   
   observeEvent(input$usermaterial, {
     one$pct <- (tweight()[1]/sum(tweight()))*100
@@ -236,44 +238,19 @@ server <- function(input, output, session) {
     print(one$pct)
   })
   
-  observeEvent(input$usermaterial,{
+  observeEvent(input$usermaterial, {
     two$pct <- (tweight()[2]/sum(tweight()))*100
     two$st <- (tweight()[2]/sum(tweight()))*100
     print(two$pct)
   })
   
-  observeEvent(input$usermaterial,{
+  observeEvent(input$usermaterial, {
     three$pct <- (tweight()[3]/sum(tweight()))*100
     three$st <- (tweight()[3]/sum(tweight()))*100
     print(three$pct)
   })
   
-  
-  # oner <- reactive({
-  #   one() <- tweight()[1]/sum(tweight())*100
-  #   one()
-  # })
-  # 
-  # twor <- reactive({
-  #   two() <- two(tweight()[2]/sum(tweight())*100)
-  #   two()
-  # })
-  # 
-  # threer <- reactive({
-  #   three() <- three(tweight()[3]/sum(tweight())*100)
-  #   three()
-  # })
-  # 
-  # fourr <- reactive({
-  #   four <- four(tweight()[[4]]/sum(tweight())*100)
-  #   four
-  # })
-  # 
-  # fiver <- reactive({
-  #   five <- five(tweight()[[5]]/sum(tweight()))
-  #   five
-  # })
-  
+  #just a test of the output
   output$vals <- renderText({
     paste(one$pct, two$pct, three$pct)
   })
@@ -288,7 +265,7 @@ server <- function(input, output, session) {
       setSliderColor(c("#3A6276", "#A7B753", "#492F42", "#389476"), c(1, 2, 3, 4)),
       br(),
       sliderInput(inputId = "Production",
-                  label = "Total Mass, in Tons",
+                  label = "Total Weight, in Tons",
                   min = 0,
                   max = sum(tweight())*1.5,
                   value = sum(tweight())),
@@ -312,11 +289,9 @@ server <- function(input, output, session) {
     
   })
   
+  # watches for the cardboard reset button, and sets slider values back to original
+  
   observeEvent(input$cardboardreset, {
-    # one1 <<- one$st
-    # two1 <<- two$st
-    # three1 <<- three$st
-    
     updateSliderInput(session, "one", value = one$st)
     updateSliderInput(session, "two", value = two$st)
     updateSliderInput(session, "three", value = three$st)
@@ -370,140 +345,591 @@ server <- function(input, output, session) {
       print(changes)
     }
   })
+  
 # Carpet Panel ------------------------------------------------------------
 
-
+  output$carpetpanel <-  renderUI({
+    
+    tagList(
+      
+      setSliderColor(c("#3A6276", "#A7B753", "#492F42", "#389476"), c(1, 2, 3, 4)),
+      br(),
+      sliderInput(inputId = "Production",
+                  label = "Total Weight, in Tons",
+                  min = 0,
+                  max = sum(tweight())*1.5,
+                  value = sum(tweight())),
+      sliderInput(inputId = "one",
+                  label = "% Combustion",
+                  min = 0,
+                  max = 100,
+                  value = one$pct),
+      sliderInput(inputId = "two",
+                  label = "% Landfilling",
+                  min = 0,
+                  max = 100,
+                  value = two$pct),
+      sliderInput(inputId = "three",
+                  label = "% Recycling",
+                  min = 0,
+                  max = 100,
+                  value = three$pct),
+      actionButton("carpetreset", "Reset")
+    )
+    
+  })
+  
+  # watches for the cardboard reset button, and sets slider values back to original
+  
+  observeEvent(input$carpetreset, {
+    updateSliderInput(session, "one", value = one$st)
+    updateSliderInput(session, "two", value = two$st)
+    updateSliderInput(session, "three", value = three$st)
+  })
+  
+  observeEvent(input$one, {
+    print("Observe 1")
+    if (input$one != one$pct) {
+      delta <- input$one - one$pct
+      print(delta)
+      changes <- adjust(one$pct, two$pct, three$pct, deltax = delta)
+      one$pct <<- changes[1]
+      two$pct <<- changes[2]
+      three$pct <<- changes[3]
+      
+      updateSliderInput(session, "two", value = two$pct)
+      updateSliderInput(session, "three", value = three$pct)
+      print(changes)
+    }
+  }
+  )
+  
+  observeEvent(input$two, {
+    print("Observe 2")
+    if (input$two != two$pct) {
+      delta <- input$two - two$pct
+      print(delta)
+      changes <- adjust(one$pct, two$pct, three$pct, deltay = delta)
+      one$pct <<- changes[1]
+      two$pct <<- changes[2]
+      three$pct <<- changes[3]
+      
+      updateSliderInput(session, "one", value = one$pct)
+      updateSliderInput(session, "three", value = three$pct)
+      print(changes)
+    }
+  })
+  
+  observeEvent(input$three, {
+    print("Observe 3")
+    if (input$three != three$pct) {
+      delta <- input$three - three$pct
+      print(delta)
+      changes <- adjust(one$pct, two$pct, three$pct, deltaz = delta)
+      one$pct <<- changes[1]
+      two$pct <<- changes[2]
+      three$pct <<- changes[3]
+      
+      updateSliderInput(session, "one", value = one$pct)
+      updateSliderInput(session, "two", value = two$pct)
+      print(changes)
+    }
+  })
+  
 # Electronics Panel -------------------------------------------------------
 
 
 # Food Panel --------------------------------------------------------------
 
-  output$foodpanel <- renderUI({
+  output$foodpanel <-  renderUI({
     
-    #tagList binds the items together for output in renderUI
     tagList(
+      
+      setSliderColor(c("#3A6276", "#A7B753", "#492F42", "#389476"), c(1, 2, 3, 4)),
+      br(),
       sliderInput(inputId = "Production",
-                  label = "Total Mass, in Tons",
+                  label = "Total Weight, in Tons",
+                  min = 0,
+                  max = sum(tweight())*1.5,
+                  value = sum(tweight())),
+      sliderInput(inputId = "one",
+                  label = "% Anaerobic Digestion",
                   min = 0,
                   max = 100,
-                  value = 50),
-      sliderInput(inputId = "slider3AD",
-                  label = "Anaerobic Digestion",
-                  min   = 0,
-                  max   = 100,
-                  value = 50),
-      sliderInput(inputId = "slider3cp",
-                  label = "Composting",
-                  min   = 0,
-                  max   = 100,
-                  value = 50),
-      sliderInput(inputId = "slider3L",
-                  label = "Landfilling",
-                  min   = 0,
-                  max   = 100,
-                  value = 50)
+                  value = one$pct),
+      sliderInput(inputId = "two",
+                  label = "% Composting",
+                  min = 0,
+                  max = 100,
+                  value = two$pct),
+      sliderInput(inputId = "three",
+                  label = "% Landfilling",
+                  min = 0,
+                  max = 100,
+                  value = three$pct),
+      actionButton("foodreset", "Reset")
     )
+    
+  })
+  
+  # watches for the food reset button, and sets slider values back to original
+  
+  observeEvent(input$foodreset, {
+    updateSliderInput(session, "one", value = one$st)
+    updateSliderInput(session, "two", value = two$st)
+    updateSliderInput(session, "three", value = three$st)
+  })
+  
+  observeEvent(input$one, {
+    print("Observe 1")
+    if (input$one != one$pct) {
+      delta <- input$one - one$pct
+      print(delta)
+      changes <- adjust(one$pct, two$pct, three$pct, deltax = delta)
+      one$pct <<- changes[1]
+      two$pct <<- changes[2]
+      three$pct <<- changes[3]
+      
+      updateSliderInput(session, "two", value = two$pct)
+      updateSliderInput(session, "three", value = three$pct)
+      print(changes)
+    }
+  }
+  )
+  
+  observeEvent(input$two, {
+    print("Observe 2")
+    if (input$two != two$pct) {
+      delta <- input$two - two$pct
+      print(delta)
+      changes <- adjust(one$pct, two$pct, three$pct, deltay = delta)
+      one$pct <<- changes[1]
+      two$pct <<- changes[2]
+      three$pct <<- changes[3]
+      
+      updateSliderInput(session, "one", value = one$pct)
+      updateSliderInput(session, "three", value = three$pct)
+      print(changes)
+    }
+  })
+  
+  observeEvent(input$three, {
+    print("Observe 3")
+    if (input$three != three$pct) {
+      delta <- input$three - three$pct
+      print(delta)
+      changes <- adjust(one$pct, two$pct, three$pct, deltaz = delta)
+      one$pct <<- changes[1]
+      two$pct <<- changes[2]
+      three$pct <<- changes[3]
+      
+      updateSliderInput(session, "one", value = one$pct)
+      updateSliderInput(session, "two", value = two$pct)
+      print(changes)
+    }
   })
 
 # Glass -------------------------------------------------------------------
 
-
+  output$glasspanel <-  renderUI({
+    
+    tagList(
+      
+      setSliderColor(c("#3A6276", "#A7B753", "#492F42", "#389476"), c(1, 2, 3, 4)),
+      br(),
+      sliderInput(inputId = "Production",
+                  label = "Total Weight, in Tons",
+                  min = 0,
+                  max = sum(tweight())*1.5,
+                  value = sum(tweight())),
+      sliderInput(inputId = "one",
+                  label = "% Landfilling",
+                  min = 0,
+                  max = 100,
+                  value = one$pct),
+      sliderInput(inputId = "two",
+                  label = "% Recycling",
+                  min = 0,
+                  max = 100,
+                  value = two$pct),
+      sliderInput(inputId = "three",
+                  label = "% Use as Aggregate",
+                  min = 0,
+                  max = 100,
+                  value = three$pct),
+      actionButton("glassreset", "Reset")
+    )
+    
+  })
+  
+  # watches for the glass reset button, and sets slider values back to original
+  
+  observeEvent(input$cardboardreset, {
+    updateSliderInput(session, "one", value = one$st)
+    updateSliderInput(session, "two", value = two$st)
+    updateSliderInput(session, "three", value = three$st)
+  })
+  
+  observeEvent(input$one, {
+    print("Observe 1")
+    if (input$one != one$pct) {
+      delta <- input$one - one$pct
+      print(delta)
+      changes <- adjust(one$pct, two$pct, three$pct, deltax = delta)
+      one$pct <<- changes[1]
+      two$pct <<- changes[2]
+      three$pct <<- changes[3]
+      
+      updateSliderInput(session, "two", value = two$pct)
+      updateSliderInput(session, "three", value = three$pct)
+      print(changes)
+    }
+  }
+  )
+  
+  observeEvent(input$two, {
+    print("Observe 2")
+    if (input$two != two$pct) {
+      delta <- input$two - two$pct
+      print(delta)
+      changes <- adjust(one$pct, two$pct, three$pct, deltay = delta)
+      one$pct <<- changes[1]
+      two$pct <<- changes[2]
+      three$pct <<- changes[3]
+      
+      updateSliderInput(session, "one", value = one$pct)
+      updateSliderInput(session, "three", value = three$pct)
+      print(changes)
+    }
+  })
+  
+  observeEvent(input$three, {
+    print("Observe 3")
+    if (input$three != three$pct) {
+      delta <- input$three - three$pct
+      print(delta)
+      changes <- adjust(one$pct, two$pct, three$pct, deltaz = delta)
+      one$pct <<- changes[1]
+      two$pct <<- changes[2]
+      three$pct <<- changes[3]
+      
+      updateSliderInput(session, "one", value = one$pct)
+      updateSliderInput(session, "two", value = two$pct)
+      print(changes)
+    }
+  })
+  
 # Trash -------------------------------------------------------------------
 
 
 # Paper -------------------------------------------------------------------
 
-
+  output$paperpanel <-  renderUI({
+    
+    tagList(
+      
+      setSliderColor(c("#3A6276", "#A7B753", "#492F42", "#389476"), c(1, 2, 3, 4)),
+      br(),
+      sliderInput(inputId = "Production",
+                  label = "Total Weight, in Tons",
+                  min = 0,
+                  max = sum(tweight())*1.5,
+                  value = sum(tweight())),
+      sliderInput(inputId = "one",
+                  label = "% Combustion",
+                  min = 0,
+                  max = 100,
+                  value = one$pct),
+      sliderInput(inputId = "two",
+                  label = "% Landfilling",
+                  min = 0,
+                  max = 100,
+                  value = two$pct),
+      sliderInput(inputId = "three",
+                  label = "% Recycling",
+                  min = 0,
+                  max = 100,
+                  value = three$pct),
+      actionButton("paperreset", "Reset")
+    )
+    
+  })
+  
+  # watches for the paper reset button, and sets slider values back to original
+  
+  observeEvent(input$paperreset, {
+    updateSliderInput(session, "one", value = one$st)
+    updateSliderInput(session, "two", value = two$st)
+    updateSliderInput(session, "three", value = three$st)
+  })
+  
+  observeEvent(input$one, {
+    print("Observe 1")
+    if (input$one != one$pct) {
+      delta <- input$one - one$pct
+      print(delta)
+      changes <- adjust(one$pct, two$pct, three$pct, deltax = delta)
+      one$pct <<- changes[1]
+      two$pct <<- changes[2]
+      three$pct <<- changes[3]
+      
+      updateSliderInput(session, "two", value = two$pct)
+      updateSliderInput(session, "three", value = three$pct)
+      print(changes)
+    }
+  }
+  )
+  
+  observeEvent(input$two, {
+    print("Observe 2")
+    if (input$two != two$pct) {
+      delta <- input$two - two$pct
+      print(delta)
+      changes <- adjust(one$pct, two$pct, three$pct, deltay = delta)
+      one$pct <<- changes[1]
+      two$pct <<- changes[2]
+      three$pct <<- changes[3]
+      
+      updateSliderInput(session, "one", value = one$pct)
+      updateSliderInput(session, "three", value = three$pct)
+      print(changes)
+    }
+  })
+  
+  observeEvent(input$three, {
+    print("Observe 3")
+    if (input$three != three$pct) {
+      delta <- input$three - three$pct
+      print(delta)
+      changes <- adjust(one$pct, two$pct, three$pct, deltaz = delta)
+      one$pct <<- changes[1]
+      two$pct <<- changes[2]
+      three$pct <<- changes[3]
+      
+      updateSliderInput(session, "one", value = one$pct)
+      updateSliderInput(session, "two", value = two$pct)
+      print(changes)
+    }
+  })
+  
 # Plastic Film ------------------------------------------------------------
 
+  output$plasticfilmpanel <-  renderUI({
+    
+    tagList(
+      
+      setSliderColor(c("#3A6276", "#A7B753", "#492F42", "#389476"), c(1, 2, 3, 4)),
+      br(),
+      sliderInput(inputId = "Production",
+                  label = "Total Weight, in Tons",
+                  min = 0,
+                  max = sum(tweight())*1.5,
+                  value = sum(tweight())),
+      sliderInput(inputId = "one",
+                  label = "% Combustion",
+                  min = 0,
+                  max = 100,
+                  value = one$pct),
+      sliderInput(inputId = "two",
+                  label = "% Landfilling",
+                  min = 0,
+                  max = 100,
+                  value = two$pct),
+      sliderInput(inputId = "three",
+                  label = "% Recycling",
+                  min = 0,
+                  max = 100,
+                  value = three$pct),
+      actionButton("plasticfilmreset", "Reset")
+    )
+    
+  })
+  
+  # watches for the plastic film reset button, and sets slider values back to original
+  
+  observeEvent(input$plasticfilmreset, {
+    updateSliderInput(session, "one", value = one$st)
+    updateSliderInput(session, "two", value = two$st)
+    updateSliderInput(session, "three", value = three$st)
+  })
+  
+  observeEvent(input$one, {
+    print("Observe 1")
+    if (input$one != one$pct) {
+      delta <- input$one - one$pct
+      print(delta)
+      changes <- adjust(one$pct, two$pct, three$pct, deltax = delta)
+      one$pct <<- changes[1]
+      two$pct <<- changes[2]
+      three$pct <<- changes[3]
+      
+      updateSliderInput(session, "two", value = two$pct)
+      updateSliderInput(session, "three", value = three$pct)
+      print(changes)
+    }
+  }
+  )
+  
+  observeEvent(input$two, {
+    print("Observe 2")
+    if (input$two != two$pct) {
+      delta <- input$two - two$pct
+      print(delta)
+      changes <- adjust(one$pct, two$pct, three$pct, deltay = delta)
+      one$pct <<- changes[1]
+      two$pct <<- changes[2]
+      three$pct <<- changes[3]
+      
+      updateSliderInput(session, "one", value = one$pct)
+      updateSliderInput(session, "three", value = three$pct)
+      print(changes)
+    }
+  })
+  
+  observeEvent(input$three, {
+    print("Observe 3")
+    if (input$three != three$pct) {
+      delta <- input$three - three$pct
+      print(delta)
+      changes <- adjust(one$pct, two$pct, three$pct, deltaz = delta)
+      one$pct <<- changes[1]
+      two$pct <<- changes[2]
+      three$pct <<- changes[3]
+      
+      updateSliderInput(session, "one", value = one$pct)
+      updateSliderInput(session, "two", value = two$pct)
+      print(changes)
+    }
+  })
 
 # Rigid Plastic -----------------------------------------------------------
 
   output$rigidplasticpanel <-  renderUI({
     
-    # https://stackoverflow.com/questions/24265980/reset-inputs-button-in-shiny-app
-    
-    # tweight <- oregonweights %>% 
-    #   filter(Material == "Rigid Plastic") %>% 
-    #   pull(`2015 Weight`)
+  #   # https://stackoverflow.com/questions/24265980/reset-inputs-button-in-shiny-app
+  #   
+  #   # tweight <- oregonweights %>% 
+  #   #   filter(Material == "Rigid Plastic") %>% 
+  #   #   pull(`2015 Weight`)
+  #   
+  #   tagList(
+  #     div(
+  #       id = "panel",
+  #       tweight <- usermass() %>% 
+  #         pull(`2015 Weight`),
+  #       setSliderColor(c("#3A6276", "#A7B753", "#492F42", "#389476"), c(1, 2, 3, 4)),
+  #       br(),
+  #       sliderInput(inputId = "Production",
+  #                   label = "Total Mass, in Tons",
+  #                   min = 0,
+  #                   max = sum(tweight)*1.5,
+  #                   value = sum(tweight)),
+  #       sliderInput(inputId = "RPCombustion",
+  #                   label = "% Combustion",
+  #                   min = 0,
+  #                   max = 100,
+  #                   value = tweight[1]/sum(tweight)),
+  #       sliderInput(inputId = "RPLandfilling",
+  #                   label = "% Landfilling",
+  #                   min = 0,
+  #                   max = 100,
+  #                   value = tweight[2]/sum(tweight)),
+  #       sliderInput(inputId = "RPRecycling",
+  #                   label = "% Recycling",
+  #                   min = 0,
+  #                   max = 100,
+  #                   value = tweight[3]/sum(tweight))
+  #     )
+  #   )
+  #   
+  # })
+  # 
     
     tagList(
-      div(
-        id = "panel",
-        tweight <- usermass() %>% 
-          pull(`2015 Weight`),
-        setSliderColor(c("#3A6276", "#A7B753", "#492F42", "#389476"), c(1, 2, 3, 4)),
-        br(),
-        sliderInput(inputId = "Production",
-                    label = "Total Mass, in Tons",
-                    min = 0,
-                    max = sum(tweight)*1.5,
-                    value = sum(tweight)),
-        sliderInput(inputId = "RPCombustion",
-                    label = "% Combustion",
-                    min = 0,
-                    max = 100,
-                    value = tweight[1]/sum(tweight)),
-        sliderInput(inputId = "RPLandfilling",
-                    label = "% Landfilling",
-                    min = 0,
-                    max = 100,
-                    value = tweight[2]/sum(tweight)),
-        sliderInput(inputId = "RPRecycling",
-                    label = "% Recycling",
-                    min = 0,
-                    max = 100,
-                    value = tweight[3]/sum(tweight))
-      )
+      
+      setSliderColor(c("#3A6276", "#A7B753", "#492F42", "#389476"), c(1, 2, 3, 4)),
+      br(),
+      sliderInput(inputId = "Production",
+                  label = "Total Weight, in Tons",
+                  min = 0,
+                  max = sum(tweight())*1.5,
+                  value = sum(tweight())),
+      sliderInput(inputId = "one",
+                  label = "% Combustion",
+                  min = 0,
+                  max = 100,
+                  value = one$pct),
+      sliderInput(inputId = "two",
+                  label = "% Landfilling",
+                  min = 0,
+                  max = 100,
+                  value = two$pct),
+      sliderInput(inputId = "three",
+                  label = "% Recycling",
+                  min = 0,
+                  max = 100,
+                  value = three$pct),
+      actionButton("rigidplasticreset", "Reset")
     )
     
   })
   
-  observeEvent({
-    input$RPCombustion
-    input$RPRecycling
-  }, {
-    
-      updateSliderInput(session = session, 
-                        inputId = "RPLandfilling", 
-                        value = 
-                          round((100 * 
-                                   input$RPLandfilling/(input$RPCombustion + 
-                                                          input$RPLandfilling + 
-                                                          input$RPRecycling)), 
-                                digits = 2)
-      )
-                        
+  # watches for the rigid plastic reset button, and sets slider values back to original
+  
+  observeEvent(input$rigidplasticreset, {
+    updateSliderInput(session, "one", value = one$st)
+    updateSliderInput(session, "two", value = two$st)
+    updateSliderInput(session, "three", value = three$st)
   })
   
+  observeEvent(input$one, {
+    print("Observe 1")
+    if (input$one != one$pct) {
+      delta <- input$one - one$pct
+      print(delta)
+      changes <- adjust(one$pct, two$pct, three$pct, deltax = delta)
+      one$pct <<- changes[1]
+      two$pct <<- changes[2]
+      three$pct <<- changes[3]
+      
+      updateSliderInput(session, "two", value = two$pct)
+      updateSliderInput(session, "three", value = three$pct)
+      print(changes)
+    }
+  }
+  )
   
-  observeEvent({
-    input$RPLandfilling
-    input$RPRecycling
-  },  {
-    updateSliderInput(session = session,
-                      inputId = "RPCombustion",
-                      value = round((100 * 
-                                       input$RPCombustion/(input$RPCombustion + 
-                                                             input$RPLandfilling + 
-                                                             input$RPRecycling)), 
-                                    digits = 2)
-    )
+  observeEvent(input$two, {
+    print("Observe 2")
+    if (input$two != two$pct) {
+      delta <- input$two - two$pct
+      print(delta)
+      changes <- adjust(one$pct, two$pct, three$pct, deltay = delta)
+      one$pct <<- changes[1]
+      two$pct <<- changes[2]
+      three$pct <<- changes[3]
+      
+      updateSliderInput(session, "one", value = one$pct)
+      updateSliderInput(session, "three", value = three$pct)
+      print(changes)
+    }
   })
   
-  observeEvent({
-    input$RPCombustion
-    input$RPLandfilling
-  },  {
-    updateSliderInput(session = session,
-                      inputId = "RPRecycling",
-                      value = round((100 * input$RPRecycling/(input$RPCombustion + 
-                                                                input$RPLandfilling + 
-                                                                input$RPRecycling)), 
-                                    digits = 2)
-    )
+  observeEvent(input$three, {
+    print("Observe 3")
+    if (input$three != three$pct) {
+      delta <- input$three - three$pct
+      print(delta)
+      changes <- adjust(one$pct, two$pct, three$pct, deltaz = delta)
+      one$pct <<- changes[1]
+      two$pct <<- changes[2]
+      three$pct <<- changes[3]
+      
+      updateSliderInput(session, "one", value = one$pct)
+      updateSliderInput(session, "two", value = two$pct)
+      print(changes)
+    }
   })
-
 # Scrap Metal -------------------------------------------------------------
 
 
