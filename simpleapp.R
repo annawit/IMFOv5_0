@@ -218,9 +218,9 @@ server <- function(input, output, session) {
       pull(`2015 Weight`)
   })
 
-  one <- reactiveVal()
-  two <- reactiveVal()
-  three <- reactiveVal()
+  one <- reactiveValues(pct = 0, st = 0)
+  two <- reactiveValues(pct = 0, st = 0)
+  three <- reactiveValues(pct = 0, st = 0)
   
   
   # one <- reactiveVal(tweight()[[1]]/sum(tweight()))
@@ -230,33 +230,52 @@ server <- function(input, output, session) {
   # five <- reactiveVal()
   # 
   
-  oner <- reactive({
-    one() <- one(tweight()[[1]]/sum(tweight()))
-    one()
-  })
-
-  twor <- reactive({
-    two() <- two(tweight()[[2]]/sum(tweight()))
-    two()
-  })
-
-  threer <- reactive({
-    three() <- three(tweight()[[3]]/sum(tweight()))
-    three()
+  observeEvent(input$usermaterial, {
+    one$pct <- (tweight()[1]/sum(tweight()))*100
+    one$st <- (tweight()[1]/sum(tweight()))*100
+    print(one$pct)
   })
   
-  fourr <- reactive({
-    four <- four(tweight()[[4]]/sum(tweight()))
-    four
+  observeEvent(input$usermaterial,{
+    two$pct <- (tweight()[2]/sum(tweight()))*100
+    two$st <- (tweight()[2]/sum(tweight()))*100
+    print(two$pct)
   })
   
-  fiver <- reactive({
-    five <- five(tweight()[[5]]/sum(tweight()))
-    five
+  observeEvent(input$usermaterial,{
+    three$pct <- (tweight()[3]/sum(tweight()))*100
+    three$st <- (tweight()[3]/sum(tweight()))*100
+    print(three$pct)
   })
+  
+  
+  # oner <- reactive({
+  #   one() <- tweight()[1]/sum(tweight())*100
+  #   one()
+  # })
+  # 
+  # twor <- reactive({
+  #   two() <- two(tweight()[2]/sum(tweight())*100)
+  #   two()
+  # })
+  # 
+  # threer <- reactive({
+  #   three() <- three(tweight()[3]/sum(tweight())*100)
+  #   three()
+  # })
+  # 
+  # fourr <- reactive({
+  #   four <- four(tweight()[[4]]/sum(tweight())*100)
+  #   four
+  # })
+  # 
+  # fiver <- reactive({
+  #   five <- five(tweight()[[5]]/sum(tweight()))
+  #   five
+  # })
   
   output$vals <- renderText({
-    paste(one(), two(), three())
+    paste(one$pct, two$pct, three$pct)
   })
   
 # Cardboard Panel ---------------------------------------------------------
@@ -277,46 +296,44 @@ server <- function(input, output, session) {
                   label = "% Combustion",
                   min = 0,
                   max = 100,
-                  value = one),
+                  value = one$pct),
       sliderInput(inputId = "two",
                   label = "% Landfilling",
                   min = 0,
                   max = 100,
-                  value = two),
+                  value = two$pct),
       sliderInput(inputId = "three",
                   label = "% Recycling",
                   min = 0,
                   max = 100,
-                  value = three),
-      actionButton("cardboardreset", "Reset"),
-    
-    print(tweight())
+                  value = three$pct),
+      actionButton("cardboardreset", "Reset")
     )
     
   })
   
-  observeEvent(input$reset, {
-    one <<- oner()
-    two <<- twor()
-    three <<- threer()
+  observeEvent(input$cardboardreset, {
+    # one1 <<- one$st
+    # two1 <<- two$st
+    # three1 <<- three$st
     
-    updateSliderInput(session, "one", value = one)
-    updateSliderInput(session, "two", value = two)
-    updateSliderInput(session, "three", value = three)
+    updateSliderInput(session, "one", value = one$st)
+    updateSliderInput(session, "two", value = two$st)
+    updateSliderInput(session, "three", value = three$st)
   })
   
   observeEvent(input$one, {
     print("Observe 1")
-    if (input$one != one) {
-      delta <- input$one - one
+    if (input$one != one$pct) {
+      delta <- input$one - one$pct
       print(delta)
-      changes <- adjust(one, two, three, deltax = delta)
-      one <<- changes[[1]]
-      two <<- changes[[2]]
-      three <<- changes[[3]]
+      changes <- adjust(one$pct, two$pct, three$pct, deltax = delta)
+      one$pct <<- changes[1]
+      two$pct <<- changes[2]
+      three$pct <<- changes[3]
       
-      updateSliderInput(session, "two", value = two)
-      updateSliderInput(session, "three", value = three)
+      updateSliderInput(session, "two", value = two$pct)
+      updateSliderInput(session, "three", value = three$pct)
       print(changes)
     }
   }
@@ -324,32 +341,32 @@ server <- function(input, output, session) {
   
   observeEvent(input$two, {
     print("Observe 2")
-    if (input$two != two) {
-      delta <- input$two - two
+    if (input$two != two$pct) {
+      delta <- input$two - two$pct
       print(delta)
-      changes <- adjust(one, two, three, deltay = delta)
-      one <<- changes[[1]]
-      two <<- changes[[2]]
-      three <<- changes[[3]]
+      changes <- adjust(one$pct, two$pct, three$pct, deltay = delta)
+      one$pct <<- changes[1]
+      two$pct <<- changes[2]
+      three$pct <<- changes[3]
       
-      updateSliderInput(session, "one", value = one)
-      updateSliderInput(session, "three", value = three)
+      updateSliderInput(session, "one", value = one$pct)
+      updateSliderInput(session, "three", value = three$pct)
       print(changes)
     }
   })
   
   observeEvent(input$three, {
     print("Observe 3")
-    if (input$three != three) {
-      delta <- input$three - three
+    if (input$three != three$pct) {
+      delta <- input$three - three$pct
       print(delta)
-      changes <- adjust(one, two, three, deltaz = delta)
-      one <<- changes[[1]]
-      two <<- changes[[2]]
-      three <<- changes[[3]]
+      changes <- adjust(one$pct, two$pct, three$pct, deltaz = delta)
+      one$pct <<- changes[1]
+      two$pct <<- changes[2]
+      three$pct <<- changes[3]
       
-      updateSliderInput(session, "one", value = one)
-      updateSliderInput(session, "two", value = two)
+      updateSliderInput(session, "one", value = one$pct)
+      updateSliderInput(session, "two", value = two$pct)
       print(changes)
     }
   })
