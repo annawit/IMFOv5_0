@@ -252,7 +252,7 @@ server <- function(input, output, session) {
   
   #just a test of the output
   output$vals <- renderText({
-    paste(one$pct, two$pct, three$pct)
+    paste(one$pct, two$pct, three$pct, sum(one$pct, two$pct, three$pct))
   })
   
 # Cardboard Panel ---------------------------------------------------------
@@ -273,17 +273,17 @@ server <- function(input, output, session) {
                   label = "% Combustion",
                   min = 0,
                   max = 100,
-                  value = one$pct),
+                  value = one$st),
       sliderInput(inputId = "two",
                   label = "% Landfilling",
                   min = 0,
                   max = 100,
-                  value = two$pct),
+                  value = two$st),
       sliderInput(inputId = "three",
                   label = "% Recycling",
                   min = 0,
                   max = 100,
-                  value = three$pct),
+                  value = three$st),
       actionButton("cardboardreset", "Reset")
     )
     
