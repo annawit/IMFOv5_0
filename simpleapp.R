@@ -292,23 +292,38 @@ server <- function(input, output, session) {
   # watches for the cardboard reset button, and sets slider values back to original
   
   observeEvent(input$cardboardreset, {
-    updateSliderInput(session, "one", value = one$st)
-    updateSliderInput(session, "two", value = two$st)
-    updateSliderInput(session, "three", value = three$st)
+    isolate({
+      one <- one$st
+      two <- two$st
+      three <- three$st
+    })
+    # one <<- one$st
+    # two <<- two$st
+    # three <<- three$st
+
+
+    
+    updateSliderInput(session, "one", value = one)
+    updateSliderInput(session, "two", value = two)
+    updateSliderInput(session, "three", value = three)
   })
   
   observeEvent(input$one, {
     print("Observe 1")
-    if (input$one != one$pct) {
+    if (input$one == one$st) {
+      NULL
+    } else if (input$one != one$pct & input$one != one$st) {
       delta <- input$one - one$pct
       print(delta)
       changes <- adjust(one$pct, two$pct, three$pct, deltax = delta)
       one$pct <<- changes[1]
       two$pct <<- changes[2]
       three$pct <<- changes[3]
+      isolate({
+        updateSliderInput(session, "two", value = two$pct)
+        updateSliderInput(session, "three", value = three$pct)
+      })
       
-      updateSliderInput(session, "two", value = two$pct)
-      updateSliderInput(session, "three", value = three$pct)
       print(changes)
     }
   }
@@ -316,32 +331,43 @@ server <- function(input, output, session) {
   
   observeEvent(input$two, {
     print("Observe 2")
-    if (input$two != two$pct) {
+    
+    if (input$two == two$st) {
+      NULL
+      # updateSliderInput(session, "one", value = one$st)
+      # updateSliderInput(session, "three", value = three$st)
+    } else if (input$two != two$pct & input$two != two$st) {
       delta <- input$two - two$pct
       print(delta)
       changes <- adjust(one$pct, two$pct, three$pct, deltay = delta)
       one$pct <<- changes[1]
       two$pct <<- changes[2]
       three$pct <<- changes[3]
-      
-      updateSliderInput(session, "one", value = one$pct)
-      updateSliderInput(session, "three", value = three$pct)
+      isolate({
+        updateSliderInput(session, "one", value = one$pct)
+        updateSliderInput(session, "three", value = three$pct)
+      })
       print(changes)
     }
   })
   
   observeEvent(input$three, {
     print("Observe 3")
-    if (input$three != three$pct) {
+    if (input$three == three$st) {
+      NULL
+      # updateSliderInput(session, "one", value = one$st)
+      # updateSliderInput(session, "two", value = two$st)
+    } else if (input$three != three$pct & input$three != three$st) {
       delta <- input$three - three$pct
       print(delta)
       changes <- adjust(one$pct, two$pct, three$pct, deltaz = delta)
       one$pct <<- changes[1]
       two$pct <<- changes[2]
       three$pct <<- changes[3]
-      
-      updateSliderInput(session, "one", value = one$pct)
-      updateSliderInput(session, "two", value = two$pct)
+      isolate({
+        updateSliderInput(session, "one", value = one$pct)
+        updateSliderInput(session, "two", value = two$pct)
+      })
       print(changes)
     }
   })
