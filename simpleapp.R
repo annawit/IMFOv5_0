@@ -23,57 +23,7 @@ I1 <- read_csv("I1.csv")
 
 d <- read_csv("impact_dictionary.csv")
 
-# This function is used for the sliders
 
-adjust <- function(x, y, z, deltax = 0, deltay = 0, deltaz = 0) {
-  
-  if (deltax != 0) {
-    x <- x + deltax
-    diff <- deltax / 2
-    
-    ydiff <- min(y, diff)
-    zdiff <- deltax - ydiff #  min(z, deltax - ydiff)
-    y <- ceiling(y - ydiff)
-    z <- floor(z - zdiff)
-    
-    if (x == 100) {
-      y = 0
-      z = 0
-    }
-  }
-  
-  else if (deltay != 0) {
-    y <- y + deltay
-    diff <- deltay / 2
-    
-    xdiff <- min(x, diff)
-    zdiff <- deltay - xdiff #min(z, deltay - xdiff)
-    x <- ceiling(x - xdiff)
-    z <- floor(z - zdiff)
-    
-    if (y == 100) {
-      x = 0
-      z = 0
-    }
-  }
-  
-  else if (deltaz != 0) {
-    z <- z + deltaz
-    diff <- deltaz / 2
-    
-    xdiff <- min(x, diff)
-    ydiff <- deltaz - xdiff #min(z, deltaz - xdiff)
-    x <- ceiling(x - xdiff)
-    y <- floor(y - ydiff)
-    
-    if (z == 100) {
-      x = 0
-      y = 0
-    }
-  }
-  
-  return( c(x, y, z, x+y+z) )
-}
 
 ui <- fluidPage(
   theme = shinytheme("sandstone"),
@@ -168,6 +118,8 @@ tabPanel("Visualize!",
            ),
            column(4,
                   wellPanel(),
+                  plotlyOutput("massplot"),
+                  tableOutput("df"),
                   wellPanel(
                     selectInput(inputId = "userregion",
                                 label = "Select a region:",
@@ -216,6 +168,11 @@ server <- function(input, output, session) {
   tweight <- reactive({
     usermass() %>% 
       pull(`2015 Weight`)
+  })
+  
+  tdisp <- reactive({
+    usermass() %>% 
+      pull(Disposition)
   })
 
   # initializes the reactive values for the sliders
@@ -321,6 +278,51 @@ server <- function(input, output, session) {
                       inputId = "cbcslide",
                       value = ceiling(100*input$cbcslide/(input$cbcslide + input$cblslide + input$cbrslide)))
   })
+  
+  cbdf <- reactive({
+    
+    Disposition <- c("Combustion", "Landfilling", "Recycling")
+    
+    `Initial Weight` <- c(tweight()[1], tweight()[2], tweight()[3])
+    
+    `Scenario Weight` <- c(input$Production*input$cbcslide/100,
+                           input$Production*input$cblslide/100,
+                           input$Production*input$cbrslide/100)
+    
+    a <- tibble(Disposition, `Initial Weight`, `Scenario Weight`) %>% 
+      gather(key = `Scenario`, value = "Weight", c(`Initial Weight`, `Scenario Weight`)) %>% 
+      spread("Disposition", "Weight") %>% 
+      mutate(Sum = rowSums(.[2:4]))
+    a
+  })
+  
+  output$df <- renderTable({
+    cbdf()
+  }, digits = 0)
+  
+  output$massplot <- renderPlotly({
+    p <- plot_ly(cbdf(),
+                 x = ~Scenario,
+                 y = ~Combustion,
+                 name = "Combustion weight",
+                 marker = list(color = ("#A7B753")),
+                 type = "bar") %>% 
+      add_trace(y = ~Landfilling,
+                name = "Landfilling weight",
+                marker = list(color = ("#492F42"))) %>% 
+      add_trace(y = ~Recycling,
+                name = "Recycling weight",
+                marker = list(color = ("#389476"))) %>% 
+      layout(barmode = "relative")
+    
+    p %>% 
+      layout(yaxis = list(overlaying = "y",
+                          title = "Weight in tons"),
+             xaxis = list(title = ""),
+             legend = list(orientation = 'h')
+      )
+  })
+  
   
 # Carpet Panel ------------------------------------------------------------
 
