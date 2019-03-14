@@ -58,7 +58,7 @@ tabPanel("Visualize!",
          fluidPage(
            column(4,
                   wellPanel(
-                    textOutput("vals"),
+                    # textOutput("vals"),
                     conditionalPanel(
                       condition = "input.usermaterial == `Cardboard`",
                       uiOutput("cardboardpanel")
