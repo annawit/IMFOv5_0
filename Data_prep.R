@@ -29,11 +29,13 @@ mass <- m1 %>%
                            "Rigid Plastic Cont." = "Rigid Plastic",
                            "Scrap Metal - Other" = "Scrap Metal",
                            "Wood Waste" = "Wood")) %>% 
-  mutate(`Life Cycle Stage` = ifelse(LCstage %in% "endOfLifeTransport", "EOL Transport", "EOL")) %>% 
+  mutate(disposition = recode(disposition, "anaerobicDigestion" = "anaerobic digestion",
+                              "useAsAggregate" = "use as aggregate")) %>% 
+  mutate(`Life Cycle Stage` = ifelse(LCstage %in% "endOfLifeTransport", "EOL Transport", "EOL"),
+         Disposition = tools::toTitleCase(disposition),
+         `2015 Weight` = round(tons, digits = -2)) %>% 
   filter(`Life Cycle Stage` != "EOL Transport") %>%
-  mutate(`2015 Weight` = round(tons, digits = -2)) %>% 
-  rename(Wasteshed = wasteshed,
-         Disposition = disposition) %>% 
+  rename(Wasteshed = wasteshed) %>% 
   select(Wasteshed, Material, Disposition, `Life Cycle Stage`, `Umbrella Disposition`, `2015 Weight`)
 write_csv(mass, "mass.csv")
 
