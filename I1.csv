@@ -1,493 +1,283 @@
-Material,Disposition,Life Cycle Stage,Category,Units,Factor,Implied Miles
-Cardboard,combustion,EOL,Energy demand,MJ,-544.621811110032,NA
-Cardboard,combustion,EOL,Excess nutrients,kg N eq.,0.0237418734040536,NA
-Cardboard,combustion,EOL,Global warming,kg CO2 eq.,566.013742841146,NA
-Cardboard,combustion,EOL,Human toxicity,CTUh,2.85951683709566e-8,NA
-Cardboard,combustion,EOL,Smog,kg O3 eq.,12.8337980681661,NA
-Cardboard,combustion,EOL,Water consumption,kg,-501.034825769893,NA
-Cardboard,landfilling,EOL,Energy demand,MJ,358.146600062534,NA
-Cardboard,landfilling,EOL,Excess nutrients,kg N eq.,1.5836943952776,NA
-Cardboard,landfilling,EOL,Global warming,kg CO2 eq.,426.558768844724,NA
-Cardboard,landfilling,EOL,Human toxicity,CTUh,2.045595647272e-7,NA
-Cardboard,landfilling,EOL,Smog,kg O3 eq.,6.78397738421397,NA
-Cardboard,landfilling,EOL,Water consumption,kg,-315.304259435827,NA
-Cardboard,recycling,EOL,Energy demand,MJ,-2087.58716894793,NA
-Cardboard,recycling,EOL,Excess nutrients,kg N eq.,-0.0708213799926024,NA
-Cardboard,recycling,EOL,Global warming,kg CO2 eq.,-150.166042785371,NA
-Cardboard,recycling,EOL,Human toxicity,CTUh,-2.08992223031169e-7,NA
-Cardboard,recycling,EOL,Smog,kg O3 eq.,-11.4387385860775,NA
-Cardboard,recycling,EOL,Water consumption,kg,-694.657358965385,NA
-Cardboard,combustion,EOL Transport,Energy demand,MJ,1.8464705568407,180
-Cardboard,combustion,EOL Transport,Excess nutrients,kg N eq.,4.33817628990274e-5,180
-Cardboard,combustion,EOL Transport,Global warming,kg CO2 eq.,0.127705403332056,180
-Cardboard,combustion,EOL Transport,Human toxicity,CTUh,6.75005513471328e-11,180
-Cardboard,combustion,EOL Transport,Smog,kg O3 eq.,0.0165991888681978,180
-Cardboard,combustion,EOL Transport,Water consumption,kg,0.217399569849707,180
-Cardboard,landfilling,EOL Transport,Energy demand,MJ,1.8464705568407,180
-Cardboard,landfilling,EOL Transport,Excess nutrients,kg N eq.,4.33817628990274e-5,180
-Cardboard,landfilling,EOL Transport,Global warming,kg CO2 eq.,0.127705403332056,180
-Cardboard,landfilling,EOL Transport,Human toxicity,CTUh,6.75005513471328e-11,180
-Cardboard,landfilling,EOL Transport,Smog,kg O3 eq.,0.0165991888681978,180
-Cardboard,landfilling,EOL Transport,Water consumption,kg,0.217399569849707,180
-Cardboard,recycling,EOL Transport,Energy demand,MJ,2.90042600248944,180
-Cardboard,recycling,EOL Transport,Excess nutrients,kg N eq.,7.63501046471128e-5,180
-Cardboard,recycling,EOL Transport,Global warming,kg CO2 eq.,0.200513188271367,180
-Cardboard,recycling,EOL Transport,Human toxicity,CTUh,1.06005249883158e-10,180
-Cardboard,recycling,EOL Transport,Smog,kg O3 eq.,0.0307527460080563,180
-Cardboard,recycling,EOL Transport,Water consumption,kg,0.340563929946618,180
-Cardboard,production,Production,Energy demand,MJ,37482.194939694,NA
-Cardboard,production,Production,Excess nutrients,kg N eq.,16.376480739538,NA
-Cardboard,production,Production,Global warming,kg CO2 eq.,278.588029764997,NA
-Cardboard,production,Production,Human toxicity,CTUh,5.903503467807e-5,NA
-Cardboard,production,Production,Smog,kg O3 eq.,85.9010389778924,NA
-Cardboard,production,Production,Water consumption,kg,131944.292154649,NA
-Carpet,combustion,EOL,Energy demand,MJ,-544.621811110032,NA
-Carpet,combustion,EOL,Excess nutrients,kg N eq.,0.0237418734040536,NA
-Carpet,combustion,EOL,Global warming,kg CO2 eq.,566.013742841146,NA
-Carpet,combustion,EOL,Human toxicity,CTUh,2.85951683709566e-8,NA
-Carpet,combustion,EOL,Smog,kg O3 eq.,12.8337980681661,NA
-Carpet,combustion,EOL,Water consumption,kg,-501.034825769893,NA
-Carpet,landfilling,EOL,Energy demand,MJ,680.431139444944,NA
-Carpet,landfilling,EOL,Excess nutrients,kg N eq.,0.00941656922528107,NA
-Carpet,landfilling,EOL,Global warming,kg CO2 eq.,39.7640939025638,NA
-Carpet,landfilling,EOL,Human toxicity,CTUh,1.73132950465102e-7,NA
-Carpet,landfilling,EOL,Smog,kg O3 eq.,3.66087854611398,NA
-Carpet,landfilling,EOL,Water consumption,kg,78.6232995578284,NA
-Carpet,recycling,EOL,Energy demand,MJ,-2087.58716894793,NA
-Carpet,recycling,EOL,Excess nutrients,kg N eq.,-0.0708213799926024,NA
-Carpet,recycling,EOL,Global warming,kg CO2 eq.,-150.166042785371,NA
-Carpet,recycling,EOL,Human toxicity,CTUh,-2.08992223031169e-7,NA
-Carpet,recycling,EOL,Smog,kg O3 eq.,-11.4387385860775,NA
-Carpet,recycling,EOL,Water consumption,kg,-694.657358965385,NA
-Carpet,combustion,EOL Transport,Energy demand,MJ,1.8464705568407,180
-Carpet,combustion,EOL Transport,Excess nutrients,kg N eq.,4.33817628990274e-5,180
-Carpet,combustion,EOL Transport,Global warming,kg CO2 eq.,0.127705403332056,180
-Carpet,combustion,EOL Transport,Human toxicity,CTUh,6.75005513471328e-11,180
-Carpet,combustion,EOL Transport,Smog,kg O3 eq.,0.0165991888681978,180
-Carpet,combustion,EOL Transport,Water consumption,kg,0.217399569849707,180
-Carpet,landfilling,EOL Transport,Energy demand,MJ,1.8464705568407,180
-Carpet,landfilling,EOL Transport,Excess nutrients,kg N eq.,4.33817628990274e-5,180
-Carpet,landfilling,EOL Transport,Global warming,kg CO2 eq.,0.127705403332056,180
-Carpet,landfilling,EOL Transport,Human toxicity,CTUh,6.75005513471328e-11,180
-Carpet,landfilling,EOL Transport,Smog,kg O3 eq.,0.0165991888681978,180
-Carpet,landfilling,EOL Transport,Water consumption,kg,0.217399569849707,180
-Carpet,recycling,EOL Transport,Energy demand,MJ,2.90042600248944,180
-Carpet,recycling,EOL Transport,Excess nutrients,kg N eq.,7.63501046471128e-5,180
-Carpet,recycling,EOL Transport,Global warming,kg CO2 eq.,0.200513188271367,180
-Carpet,recycling,EOL Transport,Human toxicity,CTUh,1.06005249883158e-10,180
-Carpet,recycling,EOL Transport,Smog,kg O3 eq.,0.0307527460080563,180
-Carpet,recycling,EOL Transport,Water consumption,kg,0.340563929946618,180
-Carpet,production,Production,Energy demand,MJ,73852.3490903196,NA
-Carpet,production,Production,Excess nutrients,kg N eq.,0.500301226383645,NA
-Carpet,production,Production,Global warming,kg CO2 eq.,4686.27962361537,NA
-Carpet,production,Production,Human toxicity,CTUh,2.86908367339473e-5,NA
-Carpet,production,Production,Smog,kg O3 eq.,229.27488958818,NA
-Carpet,production,Production,Water consumption,kg,99330.3607729572,NA
-Electronics,landfilling,EOL,Energy demand,MJ,680.431139444944,NA
-Electronics,landfilling,EOL,Excess nutrients,kg N eq.,0.00941656922528107,NA
-Electronics,landfilling,EOL,Global warming,kg CO2 eq.,39.7640939025638,NA
-Electronics,landfilling,EOL,Human toxicity,CTUh,1.73132950465102e-7,NA
-Electronics,landfilling,EOL,Smog,kg O3 eq.,3.66087854611398,NA
-Electronics,landfilling,EOL,Water consumption,kg,78.6232995578284,NA
-Electronics,recycling,EOL,Energy demand,MJ,-30251.2819148879,NA
-Electronics,recycling,EOL,Excess nutrients,kg N eq.,-0.207070162810331,NA
-Electronics,recycling,EOL,Global warming,kg CO2 eq.,-2095.08195893509,NA
-Electronics,recycling,EOL,Human toxicity,CTUh,-2.22891933653896e-5,NA
-Electronics,recycling,EOL,Smog,kg O3 eq.,-114.56230985136,NA
-Electronics,recycling,EOL,Water consumption,kg,-72261.2800445482,NA
-Electronics,landfilling,EOL Transport,Energy demand,MJ,1.8464705568407,180
-Electronics,landfilling,EOL Transport,Excess nutrients,kg N eq.,4.33817628990274e-5,180
-Electronics,landfilling,EOL Transport,Global warming,kg CO2 eq.,0.127705403332056,180
-Electronics,landfilling,EOL Transport,Human toxicity,CTUh,6.75005513471328e-11,180
-Electronics,landfilling,EOL Transport,Smog,kg O3 eq.,0.0165991888681978,180
-Electronics,landfilling,EOL Transport,Water consumption,kg,0.217399569849707,180
-Electronics,recycling,EOL Transport,Energy demand,MJ,2.69745443452463,180
-Electronics,recycling,EOL Transport,Excess nutrients,kg N eq.,7.10057638120811e-5,180
-Electronics,recycling,EOL Transport,Global warming,kg CO2 eq.,0.186481320494688,180
-Electronics,recycling,EOL Transport,Human toxicity,CTUh,9.85870089900544e-11,180
-Electronics,recycling,EOL Transport,Smog,kg O3 eq.,0.0285998846077565,180
-Electronics,recycling,EOL Transport,Water consumption,kg,0.31673120260829,180
-Electronics,production,Production,Energy demand,MJ,73852.3490903196,NA
-Electronics,production,Production,Excess nutrients,kg N eq.,0.500301226383645,NA
-Electronics,production,Production,Global warming,kg CO2 eq.,4686.27962361537,NA
-Electronics,production,Production,Human toxicity,CTUh,2.86908367339473e-5,NA
-Electronics,production,Production,Smog,kg O3 eq.,229.27488958818,NA
-Electronics,production,Production,Water consumption,kg,99330.3607729572,NA
-Food,anaerobicDigestion,EOL,Energy demand,MJ,-5316.37704998353,NA
-Food,anaerobicDigestion,EOL,Excess nutrients,kg N eq.,0.307660669033052,NA
-Food,anaerobicDigestion,EOL,Global warming,kg CO2 eq.,171.77877067953,NA
-Food,anaerobicDigestion,EOL,Human toxicity,CTUh,3.85424182861614e-5,NA
-Food,anaerobicDigestion,EOL,Smog,kg O3 eq.,2.81939810895949,NA
-Food,anaerobicDigestion,EOL,Water consumption,kg,1304.37897373055,NA
-Food,composting,EOL,Energy demand,MJ,-3963.41621057697,NA
-Food,composting,EOL,Excess nutrients,kg N eq.,0.0137306156740234,NA
-Food,composting,EOL,Global warming,kg CO2 eq.,533.786947651242,NA
-Food,composting,EOL,Human toxicity,CTUh,6.28114029327582e-7,NA
-Food,composting,EOL,Smog,kg O3 eq.,-0.809296238475857,NA
-Food,composting,EOL,Water consumption,kg,106.747730603442,NA
-Food,landfilling,EOL,Energy demand,MJ,358.146600062534,NA
-Food,landfilling,EOL,Excess nutrients,kg N eq.,1.5836943952776,NA
-Food,landfilling,EOL,Global warming,kg CO2 eq.,426.558768844724,NA
-Food,landfilling,EOL,Human toxicity,CTUh,2.045595647272e-7,NA
-Food,landfilling,EOL,Smog,kg O3 eq.,6.78397738421397,NA
-Food,landfilling,EOL,Water consumption,kg,-315.304259435827,NA
-Food,anaerobicDigestion,EOL Transport,Energy demand,MJ,1.8464705568407,180
-Food,anaerobicDigestion,EOL Transport,Excess nutrients,kg N eq.,4.33817628990274e-5,180
-Food,anaerobicDigestion,EOL Transport,Global warming,kg CO2 eq.,0.127705403332056,180
-Food,anaerobicDigestion,EOL Transport,Human toxicity,CTUh,6.75005513471328e-11,180
-Food,anaerobicDigestion,EOL Transport,Smog,kg O3 eq.,0.0165991888681978,180
-Food,anaerobicDigestion,EOL Transport,Water consumption,kg,0.217399569849707,180
-Food,composting,EOL Transport,Energy demand,MJ,1.8464705568407,180
-Food,composting,EOL Transport,Excess nutrients,kg N eq.,4.33817628990274e-5,180
-Food,composting,EOL Transport,Global warming,kg CO2 eq.,0.127705403332056,180
-Food,composting,EOL Transport,Human toxicity,CTUh,6.75005513471328e-11,180
-Food,composting,EOL Transport,Smog,kg O3 eq.,0.0165991888681978,180
-Food,composting,EOL Transport,Water consumption,kg,0.217399569849707,180
-Food,landfilling,EOL Transport,Energy demand,MJ,1.8464705568407,180
-Food,landfilling,EOL Transport,Excess nutrients,kg N eq.,4.33817628990274e-5,180
-Food,landfilling,EOL Transport,Global warming,kg CO2 eq.,0.127705403332056,180
-Food,landfilling,EOL Transport,Human toxicity,CTUh,6.75005513471328e-11,180
-Food,landfilling,EOL Transport,Smog,kg O3 eq.,0.0165991888681978,180
-Food,landfilling,EOL Transport,Water consumption,kg,0.217399569849707,180
-Food,production,Production,Energy demand,MJ,37482.194939694,NA
-Food,production,Production,Excess nutrients,kg N eq.,16.376480739538,NA
-Food,production,Production,Global warming,kg CO2 eq.,278.588029764997,NA
-Food,production,Production,Human toxicity,CTUh,5.903503467807e-5,NA
-Food,production,Production,Smog,kg O3 eq.,85.9010389778924,NA
-Food,production,Production,Water consumption,kg,131944.292154649,NA
-Glass,landfilling,EOL,Energy demand,MJ,680.431139444944,NA
-Glass,landfilling,EOL,Excess nutrients,kg N eq.,0.00941656922528107,NA
-Glass,landfilling,EOL,Global warming,kg CO2 eq.,39.7640939025638,NA
-Glass,landfilling,EOL,Human toxicity,CTUh,1.73132950465102e-7,NA
-Glass,landfilling,EOL,Smog,kg O3 eq.,3.66087854611398,NA
-Glass,landfilling,EOL,Water consumption,kg,78.6232995578284,NA
-Glass,recycling,EOL,Energy demand,MJ,-2087.58716894793,NA
-Glass,recycling,EOL,Excess nutrients,kg N eq.,-0.0708213799926024,NA
-Glass,recycling,EOL,Global warming,kg CO2 eq.,-150.166042785371,NA
-Glass,recycling,EOL,Human toxicity,CTUh,-2.08992223031169e-7,NA
-Glass,recycling,EOL,Smog,kg O3 eq.,-11.4387385860775,NA
-Glass,recycling,EOL,Water consumption,kg,-694.657358965385,NA
-Glass,useAsAggregate,EOL,Energy demand,MJ,-151.452696307575,NA
-Glass,useAsAggregate,EOL,Excess nutrients,kg N eq.,0.0690286154124664,NA
-Glass,useAsAggregate,EOL,Global warming,kg CO2 eq.,18.5462978316261,NA
-Glass,useAsAggregate,EOL,Human toxicity,CTUh,5.80871990318191e-7,NA
-Glass,useAsAggregate,EOL,Smog,kg O3 eq.,0.0363170771851443,NA
-Glass,useAsAggregate,EOL,Water consumption,kg,0.680145322083263,NA
-Glass,landfilling,EOL Transport,Energy demand,MJ,1.8464705568407,180
-Glass,landfilling,EOL Transport,Excess nutrients,kg N eq.,4.33817628990274e-5,180
-Glass,landfilling,EOL Transport,Global warming,kg CO2 eq.,0.127705403332056,180
-Glass,landfilling,EOL Transport,Human toxicity,CTUh,6.75005513471328e-11,180
-Glass,landfilling,EOL Transport,Smog,kg O3 eq.,0.0165991888681978,180
-Glass,landfilling,EOL Transport,Water consumption,kg,0.217399569849707,180
-Glass,recycling,EOL Transport,Energy demand,MJ,2.90042600248944,180
-Glass,recycling,EOL Transport,Excess nutrients,kg N eq.,7.63501046471128e-5,180
-Glass,recycling,EOL Transport,Global warming,kg CO2 eq.,0.200513188271367,180
-Glass,recycling,EOL Transport,Human toxicity,CTUh,1.06005249883158e-10,180
-Glass,recycling,EOL Transport,Smog,kg O3 eq.,0.0307527460080563,180
-Glass,recycling,EOL Transport,Water consumption,kg,0.340563929946618,180
-Glass,useAsAggregate,EOL Transport,Energy demand,MJ,26.1038340224049,20
-Glass,useAsAggregate,EOL Transport,Excess nutrients,kg N eq.,6.87150941824015e-4,20
-Glass,useAsAggregate,EOL Transport,Global warming,kg CO2 eq.,1.8046186944423,20
-Glass,useAsAggregate,EOL Transport,Human toxicity,CTUh,9.54047248948425e-10,20
-Glass,useAsAggregate,EOL Transport,Smog,kg O3 eq.,0.276774714072506,20
-Glass,useAsAggregate,EOL Transport,Water consumption,kg,3.06507536951956,20
-Glass,production,Production,Energy demand,MJ,14238.2233415662,NA
-Glass,production,Production,Excess nutrients,kg N eq.,1.77266548663721,NA
-Glass,production,Production,Global warming,kg CO2 eq.,927.326122775538,NA
-Glass,production,Production,Human toxicity,CTUh,3.40762106385021e-5,NA
-Glass,production,Production,Smog,kg O3 eq.,81.6778060669051,NA
-Glass,production,Production,Water consumption,kg,6826.18496641441,NA
-Trash,combustion,EOL,Energy demand,MJ,-544.621811110032,NA
-Trash,combustion,EOL,Excess nutrients,kg N eq.,0.0237418734040536,NA
-Trash,combustion,EOL,Global warming,kg CO2 eq.,566.013742841146,NA
-Trash,combustion,EOL,Human toxicity,CTUh,2.85951683709566e-8,NA
-Trash,combustion,EOL,Smog,kg O3 eq.,12.8337980681661,NA
-Trash,combustion,EOL,Water consumption,kg,-501.034825769893,NA
-Trash,landfilling,EOL,Energy demand,MJ,680.431139444944,NA
-Trash,landfilling,EOL,Excess nutrients,kg N eq.,0.00941656922528107,NA
-Trash,landfilling,EOL,Global warming,kg CO2 eq.,39.7640939025638,NA
-Trash,landfilling,EOL,Human toxicity,CTUh,1.73132950465102e-7,NA
-Trash,landfilling,EOL,Smog,kg O3 eq.,3.66087854611398,NA
-Trash,landfilling,EOL,Water consumption,kg,78.6232995578284,NA
-Trash,combustion,EOL Transport,Energy demand,MJ,1.8464705568407,180
-Trash,combustion,EOL Transport,Excess nutrients,kg N eq.,4.33817628990274e-5,180
-Trash,combustion,EOL Transport,Global warming,kg CO2 eq.,0.127705403332056,180
-Trash,combustion,EOL Transport,Human toxicity,CTUh,6.75005513471328e-11,180
-Trash,combustion,EOL Transport,Smog,kg O3 eq.,0.0165991888681978,180
-Trash,combustion,EOL Transport,Water consumption,kg,0.217399569849707,180
-Trash,landfilling,EOL Transport,Energy demand,MJ,1.8464705568407,180
-Trash,landfilling,EOL Transport,Excess nutrients,kg N eq.,4.33817628990274e-5,180
-Trash,landfilling,EOL Transport,Global warming,kg CO2 eq.,0.127705403332056,180
-Trash,landfilling,EOL Transport,Human toxicity,CTUh,6.75005513471328e-11,180
-Trash,landfilling,EOL Transport,Smog,kg O3 eq.,0.0165991888681978,180
-Trash,landfilling,EOL Transport,Water consumption,kg,0.217399569849707,180
-Trash,production,Production,Energy demand,MJ,14238.2233415662,NA
-Trash,production,Production,Excess nutrients,kg N eq.,1.77266548663721,NA
-Trash,production,Production,Global warming,kg CO2 eq.,927.326122775538,NA
-Trash,production,Production,Human toxicity,CTUh,3.40762106385021e-5,NA
-Trash,production,Production,Smog,kg O3 eq.,81.6778060669051,NA
-Trash,production,Production,Water consumption,kg,6826.18496641441,NA
-Paper,combustion,EOL,Energy demand,MJ,-544.621811110032,NA
-Paper,combustion,EOL,Excess nutrients,kg N eq.,0.0237418734040536,NA
-Paper,combustion,EOL,Global warming,kg CO2 eq.,566.013742841146,NA
-Paper,combustion,EOL,Human toxicity,CTUh,2.85951683709566e-8,NA
-Paper,combustion,EOL,Smog,kg O3 eq.,12.8337980681661,NA
-Paper,combustion,EOL,Water consumption,kg,-501.034825769893,NA
-Paper,landfilling,EOL,Energy demand,MJ,358.146600062534,NA
-Paper,landfilling,EOL,Excess nutrients,kg N eq.,1.5836943952776,NA
-Paper,landfilling,EOL,Global warming,kg CO2 eq.,426.558768844724,NA
-Paper,landfilling,EOL,Human toxicity,CTUh,2.045595647272e-7,NA
-Paper,landfilling,EOL,Smog,kg O3 eq.,6.78397738421397,NA
-Paper,landfilling,EOL,Water consumption,kg,-315.304259435827,NA
-Paper,recycling,EOL,Energy demand,MJ,-2087.58716894793,NA
-Paper,recycling,EOL,Excess nutrients,kg N eq.,-0.0708213799926024,NA
-Paper,recycling,EOL,Global warming,kg CO2 eq.,-150.166042785371,NA
-Paper,recycling,EOL,Human toxicity,CTUh,-2.08992223031169e-7,NA
-Paper,recycling,EOL,Smog,kg O3 eq.,-11.4387385860775,NA
-Paper,recycling,EOL,Water consumption,kg,-694.657358965385,NA
-Paper,combustion,EOL Transport,Energy demand,MJ,1.8464705568407,180
-Paper,combustion,EOL Transport,Excess nutrients,kg N eq.,4.33817628990274e-5,180
-Paper,combustion,EOL Transport,Global warming,kg CO2 eq.,0.127705403332056,180
-Paper,combustion,EOL Transport,Human toxicity,CTUh,6.75005513471328e-11,180
-Paper,combustion,EOL Transport,Smog,kg O3 eq.,0.0165991888681978,180
-Paper,combustion,EOL Transport,Water consumption,kg,0.217399569849707,180
-Paper,landfilling,EOL Transport,Energy demand,MJ,1.8464705568407,180
-Paper,landfilling,EOL Transport,Excess nutrients,kg N eq.,4.33817628990274e-5,180
-Paper,landfilling,EOL Transport,Global warming,kg CO2 eq.,0.127705403332056,180
-Paper,landfilling,EOL Transport,Human toxicity,CTUh,6.75005513471328e-11,180
-Paper,landfilling,EOL Transport,Smog,kg O3 eq.,0.0165991888681978,180
-Paper,landfilling,EOL Transport,Water consumption,kg,0.217399569849707,180
-Paper,recycling,EOL Transport,Energy demand,MJ,2.90042600248944,180
-Paper,recycling,EOL Transport,Excess nutrients,kg N eq.,7.63501046471128e-5,180
-Paper,recycling,EOL Transport,Global warming,kg CO2 eq.,0.200513188271367,180
-Paper,recycling,EOL Transport,Human toxicity,CTUh,1.06005249883158e-10,180
-Paper,recycling,EOL Transport,Smog,kg O3 eq.,0.0307527460080563,180
-Paper,recycling,EOL Transport,Water consumption,kg,0.340563929946618,180
-Paper,production,Production,Energy demand,MJ,37482.194939694,NA
-Paper,production,Production,Excess nutrients,kg N eq.,16.376480739538,NA
-Paper,production,Production,Global warming,kg CO2 eq.,278.588029764997,NA
-Paper,production,Production,Human toxicity,CTUh,5.903503467807e-5,NA
-Paper,production,Production,Smog,kg O3 eq.,85.9010389778924,NA
-Paper,production,Production,Water consumption,kg,131944.292154649,NA
-Plastic Film,combustion,EOL,Energy demand,MJ,-544.621811110032,NA
-Plastic Film,combustion,EOL,Excess nutrients,kg N eq.,0.0237418734040536,NA
-Plastic Film,combustion,EOL,Global warming,kg CO2 eq.,566.013742841146,NA
-Plastic Film,combustion,EOL,Human toxicity,CTUh,2.85951683709566e-8,NA
-Plastic Film,combustion,EOL,Smog,kg O3 eq.,12.8337980681661,NA
-Plastic Film,combustion,EOL,Water consumption,kg,-501.034825769893,NA
-Plastic Film,landfilling,EOL,Energy demand,MJ,680.431139444944,NA
-Plastic Film,landfilling,EOL,Excess nutrients,kg N eq.,0.00941656922528107,NA
-Plastic Film,landfilling,EOL,Global warming,kg CO2 eq.,39.7640939025638,NA
-Plastic Film,landfilling,EOL,Human toxicity,CTUh,1.73132950465102e-7,NA
-Plastic Film,landfilling,EOL,Smog,kg O3 eq.,3.66087854611398,NA
-Plastic Film,landfilling,EOL,Water consumption,kg,78.6232995578284,NA
-Plastic Film,recycling,EOL,Energy demand,MJ,-2087.58716894793,NA
-Plastic Film,recycling,EOL,Excess nutrients,kg N eq.,-0.0708213799926024,NA
-Plastic Film,recycling,EOL,Global warming,kg CO2 eq.,-150.166042785371,NA
-Plastic Film,recycling,EOL,Human toxicity,CTUh,-2.08992223031169e-7,NA
-Plastic Film,recycling,EOL,Smog,kg O3 eq.,-11.4387385860775,NA
-Plastic Film,recycling,EOL,Water consumption,kg,-694.657358965385,NA
-Plastic Film,combustion,EOL Transport,Energy demand,MJ,1.8464705568407,180
-Plastic Film,combustion,EOL Transport,Excess nutrients,kg N eq.,4.33817628990274e-5,180
-Plastic Film,combustion,EOL Transport,Global warming,kg CO2 eq.,0.127705403332056,180
-Plastic Film,combustion,EOL Transport,Human toxicity,CTUh,6.75005513471328e-11,180
-Plastic Film,combustion,EOL Transport,Smog,kg O3 eq.,0.0165991888681978,180
-Plastic Film,combustion,EOL Transport,Water consumption,kg,0.217399569849707,180
-Plastic Film,landfilling,EOL Transport,Energy demand,MJ,1.8464705568407,180
-Plastic Film,landfilling,EOL Transport,Excess nutrients,kg N eq.,4.33817628990274e-5,180
-Plastic Film,landfilling,EOL Transport,Global warming,kg CO2 eq.,0.127705403332056,180
-Plastic Film,landfilling,EOL Transport,Human toxicity,CTUh,6.75005513471328e-11,180
-Plastic Film,landfilling,EOL Transport,Smog,kg O3 eq.,0.0165991888681978,180
-Plastic Film,landfilling,EOL Transport,Water consumption,kg,0.217399569849707,180
-Plastic Film,recycling,EOL Transport,Energy demand,MJ,2.90042600248944,180
-Plastic Film,recycling,EOL Transport,Excess nutrients,kg N eq.,7.63501046471128e-5,180
-Plastic Film,recycling,EOL Transport,Global warming,kg CO2 eq.,0.200513188271367,180
-Plastic Film,recycling,EOL Transport,Human toxicity,CTUh,1.06005249883158e-10,180
-Plastic Film,recycling,EOL Transport,Smog,kg O3 eq.,0.0307527460080563,180
-Plastic Film,recycling,EOL Transport,Water consumption,kg,0.340563929946618,180
-Plastic Film,production,Production,Energy demand,MJ,37482.194939694,NA
-Plastic Film,production,Production,Excess nutrients,kg N eq.,16.376480739538,NA
-Plastic Film,production,Production,Global warming,kg CO2 eq.,278.588029764997,NA
-Plastic Film,production,Production,Human toxicity,CTUh,5.903503467807e-5,NA
-Plastic Film,production,Production,Smog,kg O3 eq.,85.9010389778924,NA
-Plastic Film,production,Production,Water consumption,kg,131944.292154649,NA
-Rigid Plastic,combustion,EOL,Energy demand,MJ,-544.621811110032,NA
-Rigid Plastic,combustion,EOL,Excess nutrients,kg N eq.,0.0237418734040536,NA
-Rigid Plastic,combustion,EOL,Global warming,kg CO2 eq.,566.013742841146,NA
-Rigid Plastic,combustion,EOL,Human toxicity,CTUh,2.85951683709566e-8,NA
-Rigid Plastic,combustion,EOL,Smog,kg O3 eq.,12.8337980681661,NA
-Rigid Plastic,combustion,EOL,Water consumption,kg,-501.034825769893,NA
-Rigid Plastic,landfilling,EOL,Energy demand,MJ,680.431139444944,NA
-Rigid Plastic,landfilling,EOL,Excess nutrients,kg N eq.,0.00941656922528107,NA
-Rigid Plastic,landfilling,EOL,Global warming,kg CO2 eq.,39.7640939025638,NA
-Rigid Plastic,landfilling,EOL,Human toxicity,CTUh,1.73132950465102e-7,NA
-Rigid Plastic,landfilling,EOL,Smog,kg O3 eq.,3.66087854611398,NA
-Rigid Plastic,landfilling,EOL,Water consumption,kg,78.6232995578284,NA
-Rigid Plastic,recycling,EOL,Energy demand,MJ,-2087.58716894793,NA
-Rigid Plastic,recycling,EOL,Excess nutrients,kg N eq.,-0.0708213799926024,NA
-Rigid Plastic,recycling,EOL,Global warming,kg CO2 eq.,-150.166042785371,NA
-Rigid Plastic,recycling,EOL,Human toxicity,CTUh,-2.08992223031169e-7,NA
-Rigid Plastic,recycling,EOL,Smog,kg O3 eq.,-11.4387385860775,NA
-Rigid Plastic,recycling,EOL,Water consumption,kg,-694.657358965385,NA
-Rigid Plastic,combustion,EOL Transport,Energy demand,MJ,1.8464705568407,180
-Rigid Plastic,combustion,EOL Transport,Excess nutrients,kg N eq.,4.33817628990274e-5,180
-Rigid Plastic,combustion,EOL Transport,Global warming,kg CO2 eq.,0.127705403332056,180
-Rigid Plastic,combustion,EOL Transport,Human toxicity,CTUh,6.75005513471328e-11,180
-Rigid Plastic,combustion,EOL Transport,Smog,kg O3 eq.,0.0165991888681978,180
-Rigid Plastic,combustion,EOL Transport,Water consumption,kg,0.217399569849707,180
-Rigid Plastic,landfilling,EOL Transport,Energy demand,MJ,1.8464705568407,180
-Rigid Plastic,landfilling,EOL Transport,Excess nutrients,kg N eq.,4.33817628990274e-5,180
-Rigid Plastic,landfilling,EOL Transport,Global warming,kg CO2 eq.,0.127705403332056,180
-Rigid Plastic,landfilling,EOL Transport,Human toxicity,CTUh,6.75005513471328e-11,180
-Rigid Plastic,landfilling,EOL Transport,Smog,kg O3 eq.,0.0165991888681978,180
-Rigid Plastic,landfilling,EOL Transport,Water consumption,kg,0.217399569849707,180
-Rigid Plastic,recycling,EOL Transport,Energy demand,MJ,2.90042600248944,180
-Rigid Plastic,recycling,EOL Transport,Excess nutrients,kg N eq.,7.63501046471128e-5,180
-Rigid Plastic,recycling,EOL Transport,Global warming,kg CO2 eq.,0.200513188271367,180
-Rigid Plastic,recycling,EOL Transport,Human toxicity,CTUh,1.06005249883158e-10,180
-Rigid Plastic,recycling,EOL Transport,Smog,kg O3 eq.,0.0307527460080563,180
-Rigid Plastic,recycling,EOL Transport,Water consumption,kg,0.340563929946618,180
-Rigid Plastic,production,Production,Energy demand,MJ,14238.2233415662,NA
-Rigid Plastic,production,Production,Excess nutrients,kg N eq.,1.77266548663721,NA
-Rigid Plastic,production,Production,Global warming,kg CO2 eq.,927.326122775538,NA
-Rigid Plastic,production,Production,Human toxicity,CTUh,3.40762106385021e-5,NA
-Rigid Plastic,production,Production,Smog,kg O3 eq.,81.6778060669051,NA
-Rigid Plastic,production,Production,Water consumption,kg,6826.18496641441,NA
-Scrap Metal,landfilling,EOL,Energy demand,MJ,680.431139444944,NA
-Scrap Metal,landfilling,EOL,Excess nutrients,kg N eq.,0.00941656922528107,NA
-Scrap Metal,landfilling,EOL,Global warming,kg CO2 eq.,39.7640939025638,NA
-Scrap Metal,landfilling,EOL,Human toxicity,CTUh,1.73132950465102e-7,NA
-Scrap Metal,landfilling,EOL,Smog,kg O3 eq.,3.66087854611398,NA
-Scrap Metal,landfilling,EOL,Water consumption,kg,78.6232995578284,NA
-Scrap Metal,recycling,EOL,Energy demand,MJ,-30251.2819148879,NA
-Scrap Metal,recycling,EOL,Excess nutrients,kg N eq.,-0.207070162810331,NA
-Scrap Metal,recycling,EOL,Global warming,kg CO2 eq.,-2095.08195893509,NA
-Scrap Metal,recycling,EOL,Human toxicity,CTUh,-2.22891933653896e-5,NA
-Scrap Metal,recycling,EOL,Smog,kg O3 eq.,-114.56230985136,NA
-Scrap Metal,recycling,EOL,Water consumption,kg,-72261.2800445482,NA
-Scrap Metal,landfilling,EOL Transport,Energy demand,MJ,1.8464705568407,180
-Scrap Metal,landfilling,EOL Transport,Excess nutrients,kg N eq.,4.33817628990274e-5,180
-Scrap Metal,landfilling,EOL Transport,Global warming,kg CO2 eq.,0.127705403332056,180
-Scrap Metal,landfilling,EOL Transport,Human toxicity,CTUh,6.75005513471328e-11,180
-Scrap Metal,landfilling,EOL Transport,Smog,kg O3 eq.,0.0165991888681978,180
-Scrap Metal,landfilling,EOL Transport,Water consumption,kg,0.217399569849707,180
-Scrap Metal,recycling,EOL Transport,Energy demand,MJ,2.69745443452463,180
-Scrap Metal,recycling,EOL Transport,Excess nutrients,kg N eq.,7.10057638120811e-5,180
-Scrap Metal,recycling,EOL Transport,Global warming,kg CO2 eq.,0.186481320494688,180
-Scrap Metal,recycling,EOL Transport,Human toxicity,CTUh,9.85870089900544e-11,180
-Scrap Metal,recycling,EOL Transport,Smog,kg O3 eq.,0.0285998846077565,180
-Scrap Metal,recycling,EOL Transport,Water consumption,kg,0.31673120260829,180
-Scrap Metal,production,Production,Energy demand,MJ,73852.3490903196,NA
-Scrap Metal,production,Production,Excess nutrients,kg N eq.,0.500301226383645,NA
-Scrap Metal,production,Production,Global warming,kg CO2 eq.,4686.27962361537,NA
-Scrap Metal,production,Production,Human toxicity,CTUh,2.86908367339473e-5,NA
-Scrap Metal,production,Production,Smog,kg O3 eq.,229.27488958818,NA
-Scrap Metal,production,Production,Water consumption,kg,99330.3607729572,NA
-Wood,combustion,EOL,Energy demand,MJ,-544.621811110032,NA
-Wood,combustion,EOL,Excess nutrients,kg N eq.,0.0237418734040536,NA
-Wood,combustion,EOL,Global warming,kg CO2 eq.,566.013742841146,NA
-Wood,combustion,EOL,Human toxicity,CTUh,2.85951683709566e-8,NA
-Wood,combustion,EOL,Smog,kg O3 eq.,12.8337980681661,NA
-Wood,combustion,EOL,Water consumption,kg,-501.034825769893,NA
-Wood,composting,EOL,Energy demand,MJ,-3963.41621057697,NA
-Wood,composting,EOL,Excess nutrients,kg N eq.,0.0137306156740234,NA
-Wood,composting,EOL,Global warming,kg CO2 eq.,533.786947651242,NA
-Wood,composting,EOL,Human toxicity,CTUh,6.28114029327582e-7,NA
-Wood,composting,EOL,Smog,kg O3 eq.,-0.809296238475857,NA
-Wood,composting,EOL,Water consumption,kg,106.747730603442,NA
-Wood,landfilling,EOL,Energy demand,MJ,358.146600062534,NA
-Wood,landfilling,EOL,Excess nutrients,kg N eq.,1.5836943952776,NA
-Wood,landfilling,EOL,Global warming,kg CO2 eq.,426.558768844724,NA
-Wood,landfilling,EOL,Human toxicity,CTUh,2.045595647272e-7,NA
-Wood,landfilling,EOL,Smog,kg O3 eq.,6.78397738421397,NA
-Wood,landfilling,EOL,Water consumption,kg,-315.304259435827,NA
-Wood,recycling,EOL,Energy demand,MJ,-2087.58716894793,NA
-Wood,recycling,EOL,Excess nutrients,kg N eq.,-0.0708213799926024,NA
-Wood,recycling,EOL,Global warming,kg CO2 eq.,-150.166042785371,NA
-Wood,recycling,EOL,Human toxicity,CTUh,-2.08992223031169e-7,NA
-Wood,recycling,EOL,Smog,kg O3 eq.,-11.4387385860775,NA
-Wood,recycling,EOL,Water consumption,kg,-694.657358965385,NA
-Wood,combustion,EOL Transport,Energy demand,MJ,1.8464705568407,180
-Wood,combustion,EOL Transport,Excess nutrients,kg N eq.,4.33817628990274e-5,180
-Wood,combustion,EOL Transport,Global warming,kg CO2 eq.,0.127705403332056,180
-Wood,combustion,EOL Transport,Human toxicity,CTUh,6.75005513471328e-11,180
-Wood,combustion,EOL Transport,Smog,kg O3 eq.,0.0165991888681978,180
-Wood,combustion,EOL Transport,Water consumption,kg,0.217399569849707,180
-Wood,composting,EOL Transport,Energy demand,MJ,1.8464705568407,180
-Wood,composting,EOL Transport,Excess nutrients,kg N eq.,4.33817628990274e-5,180
-Wood,composting,EOL Transport,Global warming,kg CO2 eq.,0.127705403332056,180
-Wood,composting,EOL Transport,Human toxicity,CTUh,6.75005513471328e-11,180
-Wood,composting,EOL Transport,Smog,kg O3 eq.,0.0165991888681978,180
-Wood,composting,EOL Transport,Water consumption,kg,0.217399569849707,180
-Wood,landfilling,EOL Transport,Energy demand,MJ,1.8464705568407,180
-Wood,landfilling,EOL Transport,Excess nutrients,kg N eq.,4.33817628990274e-5,180
-Wood,landfilling,EOL Transport,Global warming,kg CO2 eq.,0.127705403332056,180
-Wood,landfilling,EOL Transport,Human toxicity,CTUh,6.75005513471328e-11,180
-Wood,landfilling,EOL Transport,Smog,kg O3 eq.,0.0165991888681978,180
-Wood,landfilling,EOL Transport,Water consumption,kg,0.217399569849707,180
-Wood,recycling,EOL Transport,Energy demand,MJ,2.90042600248944,180
-Wood,recycling,EOL Transport,Excess nutrients,kg N eq.,7.63501046471128e-5,180
-Wood,recycling,EOL Transport,Global warming,kg CO2 eq.,0.200513188271367,180
-Wood,recycling,EOL Transport,Human toxicity,CTUh,1.06005249883158e-10,180
-Wood,recycling,EOL Transport,Smog,kg O3 eq.,0.0307527460080563,180
-Wood,recycling,EOL Transport,Water consumption,kg,0.340563929946618,180
-Wood,production,Production,Energy demand,MJ,37482.194939694,NA
-Wood,production,Production,Excess nutrients,kg N eq.,16.376480739538,NA
-Wood,production,Production,Global warming,kg CO2 eq.,278.588029764997,NA
-Wood,production,Production,Human toxicity,CTUh,5.903503467807e-5,NA
-Wood,production,Production,Smog,kg O3 eq.,85.9010389778924,NA
-Wood,production,Production,Water consumption,kg,131944.292154649,NA
-Yard Debris,anaerobicDigestion,EOL,Energy demand,MJ,-5316.37704998353,NA
-Yard Debris,anaerobicDigestion,EOL,Excess nutrients,kg N eq.,0.307660669033052,NA
-Yard Debris,anaerobicDigestion,EOL,Global warming,kg CO2 eq.,171.77877067953,NA
-Yard Debris,anaerobicDigestion,EOL,Human toxicity,CTUh,3.85424182861614e-5,NA
-Yard Debris,anaerobicDigestion,EOL,Smog,kg O3 eq.,2.81939810895949,NA
-Yard Debris,anaerobicDigestion,EOL,Water consumption,kg,1304.37897373055,NA
-Yard Debris,combustion,EOL,Energy demand,MJ,-544.621811110032,NA
-Yard Debris,combustion,EOL,Excess nutrients,kg N eq.,0.0237418734040536,NA
-Yard Debris,combustion,EOL,Global warming,kg CO2 eq.,566.013742841146,NA
-Yard Debris,combustion,EOL,Human toxicity,CTUh,2.85951683709566e-8,NA
-Yard Debris,combustion,EOL,Smog,kg O3 eq.,12.8337980681661,NA
-Yard Debris,combustion,EOL,Water consumption,kg,-501.034825769893,NA
-Yard Debris,composting,EOL,Energy demand,MJ,-3963.41621057697,NA
-Yard Debris,composting,EOL,Excess nutrients,kg N eq.,0.0137306156740234,NA
-Yard Debris,composting,EOL,Global warming,kg CO2 eq.,533.786947651242,NA
-Yard Debris,composting,EOL,Human toxicity,CTUh,6.28114029327582e-7,NA
-Yard Debris,composting,EOL,Smog,kg O3 eq.,-0.809296238475857,NA
-Yard Debris,composting,EOL,Water consumption,kg,106.747730603442,NA
-Yard Debris,landfilling,EOL,Energy demand,MJ,358.146600062534,NA
-Yard Debris,landfilling,EOL,Excess nutrients,kg N eq.,1.5836943952776,NA
-Yard Debris,landfilling,EOL,Global warming,kg CO2 eq.,426.558768844724,NA
-Yard Debris,landfilling,EOL,Human toxicity,CTUh,2.045595647272e-7,NA
-Yard Debris,landfilling,EOL,Smog,kg O3 eq.,6.78397738421397,NA
-Yard Debris,landfilling,EOL,Water consumption,kg,-315.304259435827,NA
-Yard Debris,anaerobicDigestion,EOL Transport,Energy demand,MJ,1.8464705568407,180
-Yard Debris,anaerobicDigestion,EOL Transport,Excess nutrients,kg N eq.,4.33817628990274e-5,180
-Yard Debris,anaerobicDigestion,EOL Transport,Global warming,kg CO2 eq.,0.127705403332056,180
-Yard Debris,anaerobicDigestion,EOL Transport,Human toxicity,CTUh,6.75005513471328e-11,180
-Yard Debris,anaerobicDigestion,EOL Transport,Smog,kg O3 eq.,0.0165991888681978,180
-Yard Debris,anaerobicDigestion,EOL Transport,Water consumption,kg,0.217399569849707,180
-Yard Debris,combustion,EOL Transport,Energy demand,MJ,1.8464705568407,180
-Yard Debris,combustion,EOL Transport,Excess nutrients,kg N eq.,4.33817628990274e-5,180
-Yard Debris,combustion,EOL Transport,Global warming,kg CO2 eq.,0.127705403332056,180
-Yard Debris,combustion,EOL Transport,Human toxicity,CTUh,6.75005513471328e-11,180
-Yard Debris,combustion,EOL Transport,Smog,kg O3 eq.,0.0165991888681978,180
-Yard Debris,combustion,EOL Transport,Water consumption,kg,0.217399569849707,180
-Yard Debris,composting,EOL Transport,Energy demand,MJ,1.8464705568407,180
-Yard Debris,composting,EOL Transport,Excess nutrients,kg N eq.,4.33817628990274e-5,180
-Yard Debris,composting,EOL Transport,Global warming,kg CO2 eq.,0.127705403332056,180
-Yard Debris,composting,EOL Transport,Human toxicity,CTUh,6.75005513471328e-11,180
-Yard Debris,composting,EOL Transport,Smog,kg O3 eq.,0.0165991888681978,180
-Yard Debris,composting,EOL Transport,Water consumption,kg,0.217399569849707,180
-Yard Debris,landfilling,EOL Transport,Energy demand,MJ,1.8464705568407,180
-Yard Debris,landfilling,EOL Transport,Excess nutrients,kg N eq.,4.33817628990274e-5,180
-Yard Debris,landfilling,EOL Transport,Global warming,kg CO2 eq.,0.127705403332056,180
-Yard Debris,landfilling,EOL Transport,Human toxicity,CTUh,6.75005513471328e-11,180
-Yard Debris,landfilling,EOL Transport,Smog,kg O3 eq.,0.0165991888681978,180
-Yard Debris,landfilling,EOL Transport,Water consumption,kg,0.217399569849707,180
-Yard Debris,production,Production,Energy demand,MJ,37482.194939694,NA
-Yard Debris,production,Production,Excess nutrients,kg N eq.,16.376480739538,NA
-Yard Debris,production,Production,Global warming,kg CO2 eq.,278.588029764997,NA
-Yard Debris,production,Production,Human toxicity,CTUh,5.903503467807e-5,NA
-Yard Debris,production,Production,Smog,kg O3 eq.,85.9010389778924,NA
-Yard Debris,production,Production,Water consumption,kg,131944.292154649,NA
+Material,Disposition,Life Cycle Stage,Category,Units,Factor
+Cardboard,Combustion,EOL,Energy demand,MJ,-544.621811110032
+Cardboard,Combustion,EOL,Excess nutrients,kg N eq.,0.0237418734040536
+Cardboard,Combustion,EOL,Global warming,kg CO2 eq.,566.013742841146
+Cardboard,Combustion,EOL,Human toxicity,CTUh,2.85951683709566e-8
+Cardboard,Combustion,EOL,Smog,kg O3 eq.,12.8337980681661
+Cardboard,Combustion,EOL,Water consumption,kg,-501.034825769893
+Cardboard,Landfilling,EOL,Energy demand,MJ,358.146600062534
+Cardboard,Landfilling,EOL,Excess nutrients,kg N eq.,1.5836943952776
+Cardboard,Landfilling,EOL,Global warming,kg CO2 eq.,426.558768844724
+Cardboard,Landfilling,EOL,Human toxicity,CTUh,2.045595647272e-7
+Cardboard,Landfilling,EOL,Smog,kg O3 eq.,6.78397738421397
+Cardboard,Landfilling,EOL,Water consumption,kg,-315.304259435827
+Cardboard,Recycling,EOL,Energy demand,MJ,-2087.58716894793
+Cardboard,Recycling,EOL,Excess nutrients,kg N eq.,-0.0708213799926024
+Cardboard,Recycling,EOL,Global warming,kg CO2 eq.,-150.166042785371
+Cardboard,Recycling,EOL,Human toxicity,CTUh,-2.08992223031169e-7
+Cardboard,Recycling,EOL,Smog,kg O3 eq.,-11.4387385860775
+Cardboard,Recycling,EOL,Water consumption,kg,-694.657358965385
+Cardboard,Production,Production,Energy demand,MJ,37482.194939694
+Cardboard,Production,Production,Excess nutrients,kg N eq.,16.376480739538
+Cardboard,Production,Production,Global warming,kg CO2 eq.,278.588029764997
+Cardboard,Production,Production,Human toxicity,CTUh,5.903503467807e-5
+Cardboard,Production,Production,Smog,kg O3 eq.,85.9010389778924
+Cardboard,Production,Production,Water consumption,kg,131944.292154649
+Carpet,Combustion,EOL,Energy demand,MJ,-544.621811110032
+Carpet,Combustion,EOL,Excess nutrients,kg N eq.,0.0237418734040536
+Carpet,Combustion,EOL,Global warming,kg CO2 eq.,566.013742841146
+Carpet,Combustion,EOL,Human toxicity,CTUh,2.85951683709566e-8
+Carpet,Combustion,EOL,Smog,kg O3 eq.,12.8337980681661
+Carpet,Combustion,EOL,Water consumption,kg,-501.034825769893
+Carpet,Landfilling,EOL,Energy demand,MJ,680.431139444944
+Carpet,Landfilling,EOL,Excess nutrients,kg N eq.,0.00941656922528107
+Carpet,Landfilling,EOL,Global warming,kg CO2 eq.,39.7640939025638
+Carpet,Landfilling,EOL,Human toxicity,CTUh,1.73132950465102e-7
+Carpet,Landfilling,EOL,Smog,kg O3 eq.,3.66087854611398
+Carpet,Landfilling,EOL,Water consumption,kg,78.6232995578284
+Carpet,Recycling,EOL,Energy demand,MJ,-2087.58716894793
+Carpet,Recycling,EOL,Excess nutrients,kg N eq.,-0.0708213799926024
+Carpet,Recycling,EOL,Global warming,kg CO2 eq.,-150.166042785371
+Carpet,Recycling,EOL,Human toxicity,CTUh,-2.08992223031169e-7
+Carpet,Recycling,EOL,Smog,kg O3 eq.,-11.4387385860775
+Carpet,Recycling,EOL,Water consumption,kg,-694.657358965385
+Carpet,Production,Production,Energy demand,MJ,73852.3490903196
+Carpet,Production,Production,Excess nutrients,kg N eq.,0.500301226383645
+Carpet,Production,Production,Global warming,kg CO2 eq.,4686.27962361537
+Carpet,Production,Production,Human toxicity,CTUh,2.86908367339473e-5
+Carpet,Production,Production,Smog,kg O3 eq.,229.27488958818
+Carpet,Production,Production,Water consumption,kg,99330.3607729572
+Electronics,Landfilling,EOL,Energy demand,MJ,680.431139444944
+Electronics,Landfilling,EOL,Excess nutrients,kg N eq.,0.00941656922528107
+Electronics,Landfilling,EOL,Global warming,kg CO2 eq.,39.7640939025638
+Electronics,Landfilling,EOL,Human toxicity,CTUh,1.73132950465102e-7
+Electronics,Landfilling,EOL,Smog,kg O3 eq.,3.66087854611398
+Electronics,Landfilling,EOL,Water consumption,kg,78.6232995578284
+Electronics,Recycling,EOL,Energy demand,MJ,-30251.2819148879
+Electronics,Recycling,EOL,Excess nutrients,kg N eq.,-0.207070162810331
+Electronics,Recycling,EOL,Global warming,kg CO2 eq.,-2095.08195893509
+Electronics,Recycling,EOL,Human toxicity,CTUh,-2.22891933653896e-5
+Electronics,Recycling,EOL,Smog,kg O3 eq.,-114.56230985136
+Electronics,Recycling,EOL,Water consumption,kg,-72261.2800445482
+Electronics,Production,Production,Energy demand,MJ,73852.3490903196
+Electronics,Production,Production,Excess nutrients,kg N eq.,0.500301226383645
+Electronics,Production,Production,Global warming,kg CO2 eq.,4686.27962361537
+Electronics,Production,Production,Human toxicity,CTUh,2.86908367339473e-5
+Electronics,Production,Production,Smog,kg O3 eq.,229.27488958818
+Electronics,Production,Production,Water consumption,kg,99330.3607729572
+Food,Anaerobic Digestion,EOL,Energy demand,MJ,-5316.37704998353
+Food,Anaerobic Digestion,EOL,Excess nutrients,kg N eq.,0.307660669033052
+Food,Anaerobic Digestion,EOL,Global warming,kg CO2 eq.,171.77877067953
+Food,Anaerobic Digestion,EOL,Human toxicity,CTUh,3.85424182861614e-5
+Food,Anaerobic Digestion,EOL,Smog,kg O3 eq.,2.81939810895949
+Food,Anaerobic Digestion,EOL,Water consumption,kg,1304.37897373055
+Food,Composting,EOL,Energy demand,MJ,-3963.41621057697
+Food,Composting,EOL,Excess nutrients,kg N eq.,0.0137306156740234
+Food,Composting,EOL,Global warming,kg CO2 eq.,533.786947651242
+Food,Composting,EOL,Human toxicity,CTUh,6.28114029327582e-7
+Food,Composting,EOL,Smog,kg O3 eq.,-0.809296238475857
+Food,Composting,EOL,Water consumption,kg,106.747730603442
+Food,Landfilling,EOL,Energy demand,MJ,358.146600062534
+Food,Landfilling,EOL,Excess nutrients,kg N eq.,1.5836943952776
+Food,Landfilling,EOL,Global warming,kg CO2 eq.,426.558768844724
+Food,Landfilling,EOL,Human toxicity,CTUh,2.045595647272e-7
+Food,Landfilling,EOL,Smog,kg O3 eq.,6.78397738421397
+Food,Landfilling,EOL,Water consumption,kg,-315.304259435827
+Food,Production,Production,Energy demand,MJ,37482.194939694
+Food,Production,Production,Excess nutrients,kg N eq.,16.376480739538
+Food,Production,Production,Global warming,kg CO2 eq.,278.588029764997
+Food,Production,Production,Human toxicity,CTUh,5.903503467807e-5
+Food,Production,Production,Smog,kg O3 eq.,85.9010389778924
+Food,Production,Production,Water consumption,kg,131944.292154649
+Glass,Landfilling,EOL,Energy demand,MJ,680.431139444944
+Glass,Landfilling,EOL,Excess nutrients,kg N eq.,0.00941656922528107
+Glass,Landfilling,EOL,Global warming,kg CO2 eq.,39.7640939025638
+Glass,Landfilling,EOL,Human toxicity,CTUh,1.73132950465102e-7
+Glass,Landfilling,EOL,Smog,kg O3 eq.,3.66087854611398
+Glass,Landfilling,EOL,Water consumption,kg,78.6232995578284
+Glass,Recycling,EOL,Energy demand,MJ,-2087.58716894793
+Glass,Recycling,EOL,Excess nutrients,kg N eq.,-0.0708213799926024
+Glass,Recycling,EOL,Global warming,kg CO2 eq.,-150.166042785371
+Glass,Recycling,EOL,Human toxicity,CTUh,-2.08992223031169e-7
+Glass,Recycling,EOL,Smog,kg O3 eq.,-11.4387385860775
+Glass,Recycling,EOL,Water consumption,kg,-694.657358965385
+Glass,Use as Aggregate,EOL,Energy demand,MJ,-151.452696307575
+Glass,Use as Aggregate,EOL,Excess nutrients,kg N eq.,0.0690286154124664
+Glass,Use as Aggregate,EOL,Global warming,kg CO2 eq.,18.5462978316261
+Glass,Use as Aggregate,EOL,Human toxicity,CTUh,5.80871990318191e-7
+Glass,Use as Aggregate,EOL,Smog,kg O3 eq.,0.0363170771851443
+Glass,Use as Aggregate,EOL,Water consumption,kg,0.680145322083263
+Glass,Production,Production,Energy demand,MJ,14238.2233415662
+Glass,Production,Production,Excess nutrients,kg N eq.,1.77266548663721
+Glass,Production,Production,Global warming,kg CO2 eq.,927.326122775538
+Glass,Production,Production,Human toxicity,CTUh,3.40762106385021e-5
+Glass,Production,Production,Smog,kg O3 eq.,81.6778060669051
+Glass,Production,Production,Water consumption,kg,6826.18496641441
+Trash,Combustion,EOL,Energy demand,MJ,-544.621811110032
+Trash,Combustion,EOL,Excess nutrients,kg N eq.,0.0237418734040536
+Trash,Combustion,EOL,Global warming,kg CO2 eq.,566.013742841146
+Trash,Combustion,EOL,Human toxicity,CTUh,2.85951683709566e-8
+Trash,Combustion,EOL,Smog,kg O3 eq.,12.8337980681661
+Trash,Combustion,EOL,Water consumption,kg,-501.034825769893
+Trash,Landfilling,EOL,Energy demand,MJ,680.431139444944
+Trash,Landfilling,EOL,Excess nutrients,kg N eq.,0.00941656922528107
+Trash,Landfilling,EOL,Global warming,kg CO2 eq.,39.7640939025638
+Trash,Landfilling,EOL,Human toxicity,CTUh,1.73132950465102e-7
+Trash,Landfilling,EOL,Smog,kg O3 eq.,3.66087854611398
+Trash,Landfilling,EOL,Water consumption,kg,78.6232995578284
+Trash,Production,Production,Energy demand,MJ,14238.2233415662
+Trash,Production,Production,Excess nutrients,kg N eq.,1.77266548663721
+Trash,Production,Production,Global warming,kg CO2 eq.,927.326122775538
+Trash,Production,Production,Human toxicity,CTUh,3.40762106385021e-5
+Trash,Production,Production,Smog,kg O3 eq.,81.6778060669051
+Trash,Production,Production,Water consumption,kg,6826.18496641441
+Paper,Combustion,EOL,Energy demand,MJ,-544.621811110032
+Paper,Combustion,EOL,Excess nutrients,kg N eq.,0.0237418734040536
+Paper,Combustion,EOL,Global warming,kg CO2 eq.,566.013742841146
+Paper,Combustion,EOL,Human toxicity,CTUh,2.85951683709566e-8
+Paper,Combustion,EOL,Smog,kg O3 eq.,12.8337980681661
+Paper,Combustion,EOL,Water consumption,kg,-501.034825769893
+Paper,Landfilling,EOL,Energy demand,MJ,358.146600062534
+Paper,Landfilling,EOL,Excess nutrients,kg N eq.,1.5836943952776
+Paper,Landfilling,EOL,Global warming,kg CO2 eq.,426.558768844724
+Paper,Landfilling,EOL,Human toxicity,CTUh,2.045595647272e-7
+Paper,Landfilling,EOL,Smog,kg O3 eq.,6.78397738421397
+Paper,Landfilling,EOL,Water consumption,kg,-315.304259435827
+Paper,Recycling,EOL,Energy demand,MJ,-2087.58716894793
+Paper,Recycling,EOL,Excess nutrients,kg N eq.,-0.0708213799926024
+Paper,Recycling,EOL,Global warming,kg CO2 eq.,-150.166042785371
+Paper,Recycling,EOL,Human toxicity,CTUh,-2.08992223031169e-7
+Paper,Recycling,EOL,Smog,kg O3 eq.,-11.4387385860775
+Paper,Recycling,EOL,Water consumption,kg,-694.657358965385
+Paper,Production,Production,Energy demand,MJ,37482.194939694
+Paper,Production,Production,Excess nutrients,kg N eq.,16.376480739538
+Paper,Production,Production,Global warming,kg CO2 eq.,278.588029764997
+Paper,Production,Production,Human toxicity,CTUh,5.903503467807e-5
+Paper,Production,Production,Smog,kg O3 eq.,85.9010389778924
+Paper,Production,Production,Water consumption,kg,131944.292154649
+Plastic Film,Combustion,EOL,Energy demand,MJ,-544.621811110032
+Plastic Film,Combustion,EOL,Excess nutrients,kg N eq.,0.0237418734040536
+Plastic Film,Combustion,EOL,Global warming,kg CO2 eq.,566.013742841146
+Plastic Film,Combustion,EOL,Human toxicity,CTUh,2.85951683709566e-8
+Plastic Film,Combustion,EOL,Smog,kg O3 eq.,12.8337980681661
+Plastic Film,Combustion,EOL,Water consumption,kg,-501.034825769893
+Plastic Film,Landfilling,EOL,Energy demand,MJ,680.431139444944
+Plastic Film,Landfilling,EOL,Excess nutrients,kg N eq.,0.00941656922528107
+Plastic Film,Landfilling,EOL,Global warming,kg CO2 eq.,39.7640939025638
+Plastic Film,Landfilling,EOL,Human toxicity,CTUh,1.73132950465102e-7
+Plastic Film,Landfilling,EOL,Smog,kg O3 eq.,3.66087854611398
+Plastic Film,Landfilling,EOL,Water consumption,kg,78.6232995578284
+Plastic Film,Recycling,EOL,Energy demand,MJ,-2087.58716894793
+Plastic Film,Recycling,EOL,Excess nutrients,kg N eq.,-0.0708213799926024
+Plastic Film,Recycling,EOL,Global warming,kg CO2 eq.,-150.166042785371
+Plastic Film,Recycling,EOL,Human toxicity,CTUh,-2.08992223031169e-7
+Plastic Film,Recycling,EOL,Smog,kg O3 eq.,-11.4387385860775
+Plastic Film,Recycling,EOL,Water consumption,kg,-694.657358965385
+Plastic Film,Production,Production,Energy demand,MJ,37482.194939694
+Plastic Film,Production,Production,Excess nutrients,kg N eq.,16.376480739538
+Plastic Film,Production,Production,Global warming,kg CO2 eq.,278.588029764997
+Plastic Film,Production,Production,Human toxicity,CTUh,5.903503467807e-5
+Plastic Film,Production,Production,Smog,kg O3 eq.,85.9010389778924
+Plastic Film,Production,Production,Water consumption,kg,131944.292154649
+Rigid Plastic,Combustion,EOL,Energy demand,MJ,-544.621811110032
+Rigid Plastic,Combustion,EOL,Excess nutrients,kg N eq.,0.0237418734040536
+Rigid Plastic,Combustion,EOL,Global warming,kg CO2 eq.,566.013742841146
+Rigid Plastic,Combustion,EOL,Human toxicity,CTUh,2.85951683709566e-8
+Rigid Plastic,Combustion,EOL,Smog,kg O3 eq.,12.8337980681661
+Rigid Plastic,Combustion,EOL,Water consumption,kg,-501.034825769893
+Rigid Plastic,Landfilling,EOL,Energy demand,MJ,680.431139444944
+Rigid Plastic,Landfilling,EOL,Excess nutrients,kg N eq.,0.00941656922528107
+Rigid Plastic,Landfilling,EOL,Global warming,kg CO2 eq.,39.7640939025638
+Rigid Plastic,Landfilling,EOL,Human toxicity,CTUh,1.73132950465102e-7
+Rigid Plastic,Landfilling,EOL,Smog,kg O3 eq.,3.66087854611398
+Rigid Plastic,Landfilling,EOL,Water consumption,kg,78.6232995578284
+Rigid Plastic,Recycling,EOL,Energy demand,MJ,-2087.58716894793
+Rigid Plastic,Recycling,EOL,Excess nutrients,kg N eq.,-0.0708213799926024
+Rigid Plastic,Recycling,EOL,Global warming,kg CO2 eq.,-150.166042785371
+Rigid Plastic,Recycling,EOL,Human toxicity,CTUh,-2.08992223031169e-7
+Rigid Plastic,Recycling,EOL,Smog,kg O3 eq.,-11.4387385860775
+Rigid Plastic,Recycling,EOL,Water consumption,kg,-694.657358965385
+Rigid Plastic,Production,Production,Energy demand,MJ,14238.2233415662
+Rigid Plastic,Production,Production,Excess nutrients,kg N eq.,1.77266548663721
+Rigid Plastic,Production,Production,Global warming,kg CO2 eq.,927.326122775538
+Rigid Plastic,Production,Production,Human toxicity,CTUh,3.40762106385021e-5
+Rigid Plastic,Production,Production,Smog,kg O3 eq.,81.6778060669051
+Rigid Plastic,Production,Production,Water consumption,kg,6826.18496641441
+Scrap Metal,Landfilling,EOL,Energy demand,MJ,680.431139444944
+Scrap Metal,Landfilling,EOL,Excess nutrients,kg N eq.,0.00941656922528107
+Scrap Metal,Landfilling,EOL,Global warming,kg CO2 eq.,39.7640939025638
+Scrap Metal,Landfilling,EOL,Human toxicity,CTUh,1.73132950465102e-7
+Scrap Metal,Landfilling,EOL,Smog,kg O3 eq.,3.66087854611398
+Scrap Metal,Landfilling,EOL,Water consumption,kg,78.6232995578284
+Scrap Metal,Recycling,EOL,Energy demand,MJ,-30251.2819148879
+Scrap Metal,Recycling,EOL,Excess nutrients,kg N eq.,-0.207070162810331
+Scrap Metal,Recycling,EOL,Global warming,kg CO2 eq.,-2095.08195893509
+Scrap Metal,Recycling,EOL,Human toxicity,CTUh,-2.22891933653896e-5
+Scrap Metal,Recycling,EOL,Smog,kg O3 eq.,-114.56230985136
+Scrap Metal,Recycling,EOL,Water consumption,kg,-72261.2800445482
+Scrap Metal,Production,Production,Energy demand,MJ,73852.3490903196
+Scrap Metal,Production,Production,Excess nutrients,kg N eq.,0.500301226383645
+Scrap Metal,Production,Production,Global warming,kg CO2 eq.,4686.27962361537
+Scrap Metal,Production,Production,Human toxicity,CTUh,2.86908367339473e-5
+Scrap Metal,Production,Production,Smog,kg O3 eq.,229.27488958818
+Scrap Metal,Production,Production,Water consumption,kg,99330.3607729572
+Wood,Combustion,EOL,Energy demand,MJ,-544.621811110032
+Wood,Combustion,EOL,Excess nutrients,kg N eq.,0.0237418734040536
+Wood,Combustion,EOL,Global warming,kg CO2 eq.,566.013742841146
+Wood,Combustion,EOL,Human toxicity,CTUh,2.85951683709566e-8
+Wood,Combustion,EOL,Smog,kg O3 eq.,12.8337980681661
+Wood,Combustion,EOL,Water consumption,kg,-501.034825769893
+Wood,Composting,EOL,Energy demand,MJ,-3963.41621057697
+Wood,Composting,EOL,Excess nutrients,kg N eq.,0.0137306156740234
+Wood,Composting,EOL,Global warming,kg CO2 eq.,533.786947651242
+Wood,Composting,EOL,Human toxicity,CTUh,6.28114029327582e-7
+Wood,Composting,EOL,Smog,kg O3 eq.,-0.809296238475857
+Wood,Composting,EOL,Water consumption,kg,106.747730603442
+Wood,Landfilling,EOL,Energy demand,MJ,358.146600062534
+Wood,Landfilling,EOL,Excess nutrients,kg N eq.,1.5836943952776
+Wood,Landfilling,EOL,Global warming,kg CO2 eq.,426.558768844724
+Wood,Landfilling,EOL,Human toxicity,CTUh,2.045595647272e-7
+Wood,Landfilling,EOL,Smog,kg O3 eq.,6.78397738421397
+Wood,Landfilling,EOL,Water consumption,kg,-315.304259435827
+Wood,Recycling,EOL,Energy demand,MJ,-2087.58716894793
+Wood,Recycling,EOL,Excess nutrients,kg N eq.,-0.0708213799926024
+Wood,Recycling,EOL,Global warming,kg CO2 eq.,-150.166042785371
+Wood,Recycling,EOL,Human toxicity,CTUh,-2.08992223031169e-7
+Wood,Recycling,EOL,Smog,kg O3 eq.,-11.4387385860775
+Wood,Recycling,EOL,Water consumption,kg,-694.657358965385
+Wood,Production,Production,Energy demand,MJ,37482.194939694
+Wood,Production,Production,Excess nutrients,kg N eq.,16.376480739538
+Wood,Production,Production,Global warming,kg CO2 eq.,278.588029764997
+Wood,Production,Production,Human toxicity,CTUh,5.903503467807e-5
+Wood,Production,Production,Smog,kg O3 eq.,85.9010389778924
+Wood,Production,Production,Water consumption,kg,131944.292154649
+Yard Debris,Anaerobic Digestion,EOL,Energy demand,MJ,-5316.37704998353
+Yard Debris,Anaerobic Digestion,EOL,Excess nutrients,kg N eq.,0.307660669033052
+Yard Debris,Anaerobic Digestion,EOL,Global warming,kg CO2 eq.,171.77877067953
+Yard Debris,Anaerobic Digestion,EOL,Human toxicity,CTUh,3.85424182861614e-5
+Yard Debris,Anaerobic Digestion,EOL,Smog,kg O3 eq.,2.81939810895949
+Yard Debris,Anaerobic Digestion,EOL,Water consumption,kg,1304.37897373055
+Yard Debris,Combustion,EOL,Energy demand,MJ,-544.621811110032
+Yard Debris,Combustion,EOL,Excess nutrients,kg N eq.,0.0237418734040536
+Yard Debris,Combustion,EOL,Global warming,kg CO2 eq.,566.013742841146
+Yard Debris,Combustion,EOL,Human toxicity,CTUh,2.85951683709566e-8
+Yard Debris,Combustion,EOL,Smog,kg O3 eq.,12.8337980681661
+Yard Debris,Combustion,EOL,Water consumption,kg,-501.034825769893
+Yard Debris,Composting,EOL,Energy demand,MJ,-3963.41621057697
+Yard Debris,Composting,EOL,Excess nutrients,kg N eq.,0.0137306156740234
+Yard Debris,Composting,EOL,Global warming,kg CO2 eq.,533.786947651242
+Yard Debris,Composting,EOL,Human toxicity,CTUh,6.28114029327582e-7
+Yard Debris,Composting,EOL,Smog,kg O3 eq.,-0.809296238475857
+Yard Debris,Composting,EOL,Water consumption,kg,106.747730603442
+Yard Debris,Landfilling,EOL,Energy demand,MJ,358.146600062534
+Yard Debris,Landfilling,EOL,Excess nutrients,kg N eq.,1.5836943952776
+Yard Debris,Landfilling,EOL,Global warming,kg CO2 eq.,426.558768844724
+Yard Debris,Landfilling,EOL,Human toxicity,CTUh,2.045595647272e-7
+Yard Debris,Landfilling,EOL,Smog,kg O3 eq.,6.78397738421397
+Yard Debris,Landfilling,EOL,Water consumption,kg,-315.304259435827
+Yard Debris,Production,Production,Energy demand,MJ,37482.194939694
+Yard Debris,Production,Production,Excess nutrients,kg N eq.,16.376480739538
+Yard Debris,Production,Production,Global warming,kg CO2 eq.,278.588029764997
+Yard Debris,Production,Production,Human toxicity,CTUh,5.903503467807e-5
+Yard Debris,Production,Production,Smog,kg O3 eq.,85.9010389778924
+Yard Debris,Production,Production,Water consumption,kg,131944.292154649
