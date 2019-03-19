@@ -113,13 +113,14 @@ tabPanel("Visualize!",
                     selectInput(inputId = "usermaterial",
                                 label = "Select a material:",
                                 choices = unique(mass$Material),
-                                selected = "Rigid Plastic")
+                                selected = "Cardboard")
                   )
            ),
            column(4,
-                  wellPanel(),
-                  plotlyOutput("massplot"),
-                  tableOutput("df"),
+                  wellPanel(
+                  plotlyOutput("massplot")),
+                  # tableOutput("df"),
+                  # tableOutput("cbdf"),
                   wellPanel(
                     selectInput(inputId = "userregion",
                                 label = "Select a region:",
@@ -127,15 +128,22 @@ tabPanel("Visualize!",
                                 selected = "Oregon total")
                   )),
            column(4,
-                  wellPanel(),
+                  # wellPanel(),
+                  wellPanel(
+                    plotlyOutput("cbplot")),
                   wellPanel(
                     selectInput(inputId = "userimpact",
                                 label = "Select an impact:",
                                 choices = unique(I1$Category),
-                                selected = "Global warming"))
+                                selected = "Global warming")
+                    )
+                    # ,
+                    # DT::dataTableOutput("userimpactdf"))
            )
-         )
-                      ),
+         
+                      )
+           
+         ),
 tabPanel("Context"),
 
 # More NavbarMenu ---------------------------------------------------------
@@ -148,6 +156,7 @@ tabPanel("Context"),
              )
   )
 )
+
 
 
 
@@ -219,6 +228,20 @@ server <- function(input, output, session) {
     paste(tweight()[1], one$pct, two$pct, three$pct, four$pct, sum(one$pct, two$pct, three$pct, four$pct))
   })
   
+  # creates reactive impact dataframe
+  
+  userimpact <- reactive({
+    
+    I1 %>% 
+      filter(Category == input$userimpact) %>% 
+      filter(Material == input$usermaterial)
+    
+  })
+  
+  output$userimpact <- DT::renderDataTable({
+    userimpactdf()
+  })
+  
 # Cardboard Panel ---------------------------------------------------------
 
   
@@ -249,7 +272,6 @@ server <- function(input, output, session) {
                   max = 100,
                   value = three$st)
     )
-    
   })
   
   
@@ -279,34 +301,49 @@ server <- function(input, output, session) {
                       value = ceiling(100*input$cbcslide/(input$cbcslide + input$cblslide + input$cbrslide)))
   })
   
-  cbdf <- reactive({
+  cbmassdf <- reactive({
     
-    Disposition <- c("Combustion", "Landfilling", "Recycling")
+    Disposition <- c(tdisp()[1], tdisp()[2], tdisp()[3], "Production")
     
-    `Initial Weight` <- c(tweight()[1], tweight()[2], tweight()[3])
+    `Initial Weight` <- c(tweight()[1], tweight()[2], tweight()[3], sum(tweight()))
     
     `Scenario Weight` <- c(input$Production*input$cbcslide/100,
                            input$Production*input$cblslide/100,
-                           input$Production*input$cbrslide/100)
+                           input$Production*input$cbrslide/100,
+                           input$Production)
     
-    a <- tibble(Disposition, `Initial Weight`, `Scenario Weight`) %>% 
-      gather(key = `Scenario`, value = "Weight", c(`Initial Weight`, `Scenario Weight`)) %>% 
-      spread("Disposition", "Weight") %>% 
-      mutate(Sum = rowSums(.[2:4]))
-    a
+  tibble(Disposition, `Initial Weight`, `Scenario Weight`) %>% 
+    left_join(userimpact()) %>% 
+    mutate(`Initial Impact` = `Initial Weight`*Factor,
+           `New Scenario Impact` = `Scenario Weight`*Factor) %>% 
+    select(Disposition, `Initial Weight`, `Scenario Weight`, `Initial Impact`, `New Scenario Impact`)
+  # %>% 
+  #     gather(key = `Scenario`, value = "Weight", c(`Initial Weight`, `Scenario Weight`))
   })
   
+  cardboarddf <- reactive({
+    cbmassdf() %>% 
+      gather(key = "Variable", value = "Value", c(`Initial Weight`, `Scenario Weight`, `Initial Impact`, `New Scenario Impact`))
+  })
+  
+  
+  output$cbdf <- renderTable({
+    cbmassdf()
+  }, digits = 0)
+  
   output$df <- renderTable({
-    cbdf()
+    cardboarddf()
   }, digits = 0)
   
   output$massplot <- renderPlotly({
-    p <- plot_ly(cbdf(),
-                 x = ~Scenario,
-                 y = ~Combustion,
-                 name = "Combustion weight",
-                 marker = list(color = ("#A7B753")),
-                 type = "bar") %>% 
+    massplot <- plot_ly(cardboarddf() %>% filter(grepl("Weight", Variable)) %>% spread("Disposition", "Value"),
+                        # %>% select(-`Initial Impact`, -`New Scenario Impact`)
+                        # %>% spread("Disposition", "Weight"),
+                        x = ~Variable,
+                        y = ~Combustion,
+                        name = "Combustion weight",
+                        marker = list(color = ("#A7B753")),
+                        type = "bar") %>% 
       add_trace(y = ~Landfilling,
                 name = "Landfilling weight",
                 marker = list(color = ("#492F42"))) %>% 
@@ -315,9 +352,46 @@ server <- function(input, output, session) {
                 marker = list(color = ("#389476"))) %>% 
       layout(barmode = "relative")
     
-    p %>% 
+    massplot %>% 
       layout(yaxis = list(overlaying = "y",
                           title = "Weight in tons"),
+             xaxis = list(title = ""),
+             legend = list(orientation = 'h')
+      )
+  })
+  
+  output$cbplot <- renderPlotly({
+    
+    
+    p <- plot_ly(cardboarddf() %>% 
+                   filter(grepl("Impact", Variable)) %>% 
+                   spread("Disposition", "Value") %>% 
+                   mutate(Sum = rowSums(.[2:4])),
+                 x = ~Variable,
+                 y = ~Production,
+                 name = "Production impact",
+                 marker = list(color = ("#3A6276")),
+                 type = "bar") %>% 
+      add_trace(y = ~Combustion,
+                name = "Combustion impact",
+                marker = list(color = ("#A7B753"))) %>% 
+      add_trace(y = ~Landfilling,
+                name = "Landfilling impact",
+                marker = list(color = ("#492F42"))) %>% 
+      add_trace(y = ~Recycling,
+                name = "Recycling impact",
+                marker = list(color = ("#389476"))) %>% 
+      layout(barmode = "relative")
+    
+    p %>% 
+      add_trace(y = ~Sum,
+                type = "scatter",
+                mode = "line",
+                name = "Net impact",
+                marker = list(size = ~log(Sum),
+                              color = ("#C59B44"))) %>% 
+      layout(yaxis = list(overlaying = "y",
+                          title = "Impact in kg CO2 eq"),
              xaxis = list(title = ""),
              legend = list(orientation = 'h')
       )
