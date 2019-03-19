@@ -54,13 +54,17 @@ I1 <- I %>%
   mutate(`Life Cycle Stage` = ifelse(LCstage %in% "endOfLifeTransport", "EOL Transport", 
                                      ifelse(LCstage %in% "endOfLife", "EOL",
                                             ifelse(LCstage %in% "production", "Production",
-                                                   "other")))
-  ) %>% 
-  rename(Disposition = disposition, Category = impactCategory,
+                                                   "other")))) %>%
+  mutate(disposition = recode(disposition, "anaerobicDigestion" = "anaerobic digestion",
+                              "useAsAggregate" = "use as aggregate")) %>%
+  mutate(Disposition = tools::toTitleCase(disposition)) %>% 
+  rename(Category = impactCategory,
          Units = impactUnits, Factor = impactFactor,
          `Implied Miles` = impliedMiles) %>% 
   mutate(Category = recode(Category, Eutrophication = "Excess nutrients")) %>% 
   select(Material, Disposition, `Life Cycle Stage`, Category,
-         Units, Factor, `Implied Miles`)
+         Units, Factor, `Implied Miles`) %>% 
+  filter(`Life Cycle Stage` != "EOL Transport") %>% 
+  select(-`Implied Miles`)
 
 write_csv(I1, "I1.csv")
