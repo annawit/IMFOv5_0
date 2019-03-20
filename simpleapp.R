@@ -58,6 +58,7 @@ tabPanel("Visualize!",
          fluidPage(
            column(4,
                   wellPanel(
+                    
                     # textOutput("vals"),
                     conditionalPanel(
                       condition = "input.usermaterial == `Cardboard`",
@@ -119,14 +120,16 @@ tabPanel("Visualize!",
            column(4,
                   wellPanel(
                   plotlyOutput("massplot")),
-                  # tableOutput("df"),
-                  # tableOutput("cbdf"),
+                  
                   wellPanel(
                     selectInput(inputId = "userregion",
                                 label = "Select a region:",
                                 choices = unique(mass$Wasteshed),
                                 selected = "Oregon total")
-                  )),
+                  ),
+                  tableOutput("df"),
+                  tableOutput("cbdf")
+                  ),
            column(4,
                   # wellPanel(),
                   wellPanel(
@@ -136,12 +139,11 @@ tabPanel("Visualize!",
                                 label = "Select an impact:",
                                 choices = unique(I1$Category),
                                 selected = "Global warming")
-                    )
-                    # ,
-                    # DT::dataTableOutput("userimpactdf"))
+                    ),
+                    DT::dataTableOutput("userimpact"))
            )
          
-                      )
+                      
            
          ),
 tabPanel("Context"),
@@ -201,7 +203,7 @@ server <- function(input, output, session) {
   
   observeEvent(input$usermaterial, {
     one$pct <- (tweight()[1]/sum(tweight()))*100
-    one$st <- (tweight()[1]/sum(tweight()))*100
+    one$st <- (tweight()[1]/sum(tweight()))
     print(one$pct)
   })
   
@@ -239,7 +241,7 @@ server <- function(input, output, session) {
   })
   
   output$userimpact <- DT::renderDataTable({
-    userimpactdf()
+    userimpact()
   })
   
 # Cardboard Panel ---------------------------------------------------------

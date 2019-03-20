@@ -40,7 +40,7 @@ cbmassdf <- tibble(Disposition, `Initial Weight`, `Scenario Weight`) %>%
 
 cardboarddf <- cbmassdf %>% 
   gather(key = "Variable", value = "Value", c(`Initial Weight`, `Scenario Weight`, `Initial Impact`, `New Scenario Impact`)) 
-# %>%
+ul# %>%
   # filter(grepl("Weight", Variable)) %>% 
   #   spread("Disposition", "Value")
 
