@@ -16,13 +16,11 @@ library(packcircles)
 library(ggiraph)
 library(ggrepel)
 
-
+# brings in main table of regions/waste types/masses
 mass <- read_csv("mass.csv")
 
+# brings in impact factors
 I1 <- read_csv("I1.csv")
-
-d <- read_csv("impact_dictionary.csv")
-
 
 
 ui <- fluidPage(
@@ -107,10 +105,7 @@ tabPanel("Visualize!",
                     conditionalPanel(
                       condition = "input.usermaterial == `Yard Debris`",
                       uiOutput("yarddebrispanel")
-                    )
-                    
-                  ),
-                  wellPanel(
+                    ),
                     selectInput(inputId = "usermaterial",
                                 label = "Select a material:",
                                 choices = unique(mass$Material),
@@ -119,40 +114,45 @@ tabPanel("Visualize!",
            ),
            column(4,
                   wellPanel(
-                  plotlyOutput("massplot")),
-                  
-                  wellPanel(
+                    plotlyOutput("massplot"),
+                    hr(),
                     selectInput(inputId = "userregion",
                                 label = "Select a region:",
                                 choices = unique(mass$Wasteshed),
-                                selected = "Oregon total")
-                  ),
+                                selected = "Oregon total"),
                   tableOutput("df"),
                   tableOutput("cbdf")
+                  )
                   ),
            column(4,
-                  # wellPanel(),
                   wellPanel(
-                    plotlyOutput("cbplot")),
-                  wellPanel(
+                    plotlyOutput("cbplot"),
+                    hr(),
                     selectInput(inputId = "userimpact",
                                 label = "Select an impact:",
                                 choices = unique(I1$Category),
-                                selected = "Global warming")
-                    ),
-                    DT::dataTableOutput("userimpact"))
+                                selected = "Global warming"),
+                    DT::dataTableOutput("userimpact")
+                  )
            )
-         
-                      
-           
-         ),
+         )
+),
 tabPanel("Context"),
 
 # More NavbarMenu ---------------------------------------------------------
 
 
              navbarMenu("More",
-                        tabPanel("Glossary"),
+                        tabPanel("Glossary",
+                                 fluidPage(
+                                   column(3, wellPanel()),
+                                   column(9,
+                                          wellPanel(
+                                            includeMarkdown("Glossary.md")
+                                          )
+                                   )
+                                 )
+                        ),
                         tabPanel("Resources"),
                         tabPanel("About")
              )
@@ -163,6 +163,10 @@ tabPanel("Context"),
 
 
 server <- function(input, output, session) {
+
+
+# General -------------------------------------------------------------
+
   
   # this is the initial dataframe created when the user
   # filters based on their region and material
@@ -196,32 +200,29 @@ server <- function(input, output, session) {
   four <- reactiveValues(pct = 0, st = 0)
   
   # These observe event create the percent values for the sliders
-  # one$pct is used over and over again as the sliders change, and becomes the 
-  # value of the slider
-  # one$st is the starting percentage of that disposition, and is used for the 
-  # reset button
+  # The pct/st is left over from when I was trying to create a reset button
   
   observeEvent(input$usermaterial, {
-    one$pct <- (tweight()[1]/sum(tweight()))*100
+    one$pct <- (tweight()[1]/sum(tweight()))
     one$st <- (tweight()[1]/sum(tweight()))
     print(one$pct)
   })
   
   observeEvent(input$usermaterial, {
-    two$pct <- (tweight()[2]/sum(tweight()))*100
-    two$st <- (tweight()[2]/sum(tweight()))*100
+    two$pct <- (tweight()[2]/sum(tweight()))
+    two$st <- (tweight()[2]/sum(tweight()))
     print(two$pct)
   })
   
   observeEvent(input$usermaterial, {
-    three$pct <- (tweight()[3]/sum(tweight()))*100
-    three$st <- (tweight()[3]/sum(tweight()))*100
+    three$pct <- (tweight()[3]/sum(tweight()))
+    three$st <- (tweight()[3]/sum(tweight()))
     print(three$pct)
   })
   
   observeEvent(input$usermaterial, {
-    four$pct <- (tweight()[4]/sum(tweight()))*100
-    four$st <- (tweight()[4]/sum(tweight()))*100
+    four$pct <- (tweight()[4]/sum(tweight()))
+    four$st <- (tweight()[4]/sum(tweight()))
     print(four$pct)
   })
   
@@ -250,32 +251,29 @@ server <- function(input, output, session) {
   output$cardboardpanel <-  renderUI({
     
     tagList(
-      
       setSliderColor(c("#3A6276", "#A7B753", "#492F42", "#389476"), c(1, 2, 3, 4)),
-      br(),
       sliderInput(inputId = "Production",
-                  label = "Total Weight, in Tons",
+                  label = "Total Waste, in Tons",
                   min = 0,
                   max = sum(tweight())*1.5,
                   value = sum(tweight())),
       sliderInput(inputId = "cbcslide",
-                  label = "% Combustion",
+                  label = paste("%", tdisp()[1]),
                   min = 0,
-                  max = 100,
+                  max = 1,
                   value = one$st),
       sliderInput(inputId = "cblslide",
-                  label = "% Landfilling",
+                  label = paste("%", tdisp()[2]),
                   min = 0,
-                  max = 100,
+                  max = 1,
                   value = two$st),
       sliderInput(inputId = "cbrslide",
-                  label = "% Recycling",
+                  label = paste("%", tdisp()[3]),
                   min = 0,
-                  max = 100,
+                  max = 1,
                   value = three$st)
     )
   })
-  
   
   observeEvent({
     input$cbcslide
@@ -283,7 +281,8 @@ server <- function(input, output, session) {
   }, {
     updateSliderInput(session = session,
                       inputId = "cbrslide",
-                      value = ceiling(100*input$cbrslide/(input$cbcslide + input$cblslide + input$cbrslide)))
+                      value = input$cbrslide/(input$cbcslide + input$cblslide + input$cbrslide)
+                      )
   })
   
   observeEvent({
@@ -292,7 +291,8 @@ server <- function(input, output, session) {
   }, {
     updateSliderInput(session = session,
                       inputId = "cblslide",
-                      value = ceiling(100*input$cblslide/(input$cbcslide + input$cblslide + input$cbrslide)))
+                      value = input$cblslide/(input$cbcslide + input$cblslide + input$cbrslide)
+                      )
   })
   observeEvent({
     input$cbrslide
@@ -300,32 +300,32 @@ server <- function(input, output, session) {
   }, {
     updateSliderInput(session = session,
                       inputId = "cbcslide",
-                      value = ceiling(100*input$cbcslide/(input$cbcslide + input$cblslide + input$cbrslide)))
+                      value = input$cbcslide/(input$cbcslide + input$cblslide + input$cbrslide)
+                      )
   })
   
   cbmassdf <- reactive({
     
-    Disposition <- c(tdisp()[1], tdisp()[2], tdisp()[3], "Production")
-    
-    `Initial Weight` <- c(tweight()[1], tweight()[2], tweight()[3], sum(tweight()))
-    
-    `Scenario Weight` <- c(input$Production*input$cbcslide/100,
-                           input$Production*input$cblslide/100,
-                           input$Production*input$cbrslide/100,
+    Disposition       <- c(tdisp()[1], tdisp()[2], tdisp()[3], "Production")
+    `Initial Weight`  <- c(tweight()[1], tweight()[2], tweight()[3], sum(tweight()))
+    `Scenario Weight` <- c(input$Production*input$cbcslide,
+                           input$Production*input$cblslide,
+                           input$Production*input$cbrslide,
                            input$Production)
     
-  tibble(Disposition, `Initial Weight`, `Scenario Weight`) %>% 
-    left_join(userimpact()) %>% 
-    mutate(`Initial Impact` = `Initial Weight`*Factor,
-           `New Scenario Impact` = `Scenario Weight`*Factor) %>% 
-    select(Disposition, `Initial Weight`, `Scenario Weight`, `Initial Impact`, `New Scenario Impact`)
+    tibble(Disposition, `Initial Weight`, `Scenario Weight`) %>% 
+      left_join(userimpact()) %>% 
+      mutate(`Initial Impact` = `Initial Weight`*Factor,
+             `New Scenario Impact` = `Scenario Weight`*Factor) %>% 
+      select(Disposition, `Initial Weight`, `Scenario Weight`, `Initial Impact`, `New Scenario Impact`)
   # %>% 
   #     gather(key = `Scenario`, value = "Weight", c(`Initial Weight`, `Scenario Weight`))
   })
   
   cardboarddf <- reactive({
     cbmassdf() %>% 
-      gather(key = "Variable", value = "Value", c(`Initial Weight`, `Scenario Weight`, `Initial Impact`, `New Scenario Impact`))
+      gather(key = "Variable", value = "Value", c(`Initial Weight`, `Scenario Weight`,
+                                                  `Initial Impact`, `New Scenario Impact`))
   })
   
   
@@ -338,9 +338,12 @@ server <- function(input, output, session) {
   }, digits = 0)
   
   output$massplot <- renderPlotly({
-    massplot <- plot_ly(cardboarddf() %>% filter(grepl("Weight", Variable)) %>% spread("Disposition", "Value"),
-                        # %>% select(-`Initial Impact`, -`New Scenario Impact`)
-                        # %>% spread("Disposition", "Weight"),
+    req(cardboarddf())
+    #Add traces with a for loop
+    #https://stackoverflow.com/questions/46583282/r-plotly-to-add-traces-conditionally-based-on-available-columns-in-dataframe
+    massplot <- plot_ly(cardboarddf() %>%
+                          filter(grepl("Weight", Variable)) %>%
+                          spread("Disposition", "Value"),
                         x = ~Variable,
                         y = ~Combustion,
                         name = "Combustion weight",
@@ -363,12 +366,12 @@ server <- function(input, output, session) {
   })
   
   output$cbplot <- renderPlotly({
-    
+    req(cardboarddf())
     
     p <- plot_ly(cardboarddf() %>% 
                    filter(grepl("Impact", Variable)) %>% 
                    spread("Disposition", "Value") %>% 
-                   mutate(Sum = rowSums(.[2:4])),
+                   mutate(Sum = rowSums(.[2:5])),
                  x = ~Variable,
                  y = ~Production,
                  name = "Production impact",
@@ -393,7 +396,7 @@ server <- function(input, output, session) {
                 marker = list(size = ~log(Sum),
                               color = ("#C59B44"))) %>% 
       layout(yaxis = list(overlaying = "y",
-                          title = "Impact in kg CO2 eq"),
+                          title = paste("Impact in", userimpact()$Units[[1]])),
              xaxis = list(title = ""),
              legend = list(orientation = 'h')
       )
