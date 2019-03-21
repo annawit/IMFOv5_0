@@ -4,6 +4,9 @@ I1 <- read_csv("I1.csv")
 
 d <- read_csv("impact_dictionary.csv")
 
+Material <- unique(mass$Material)
+Impacts <- unique(I1$Category)
+
 usermass <- mass %>% 
   filter(Wasteshed == "Oregon total") %>% 
   filter(Material == "Cardboard")
@@ -39,10 +42,18 @@ cbmassdf <- tibble(Disposition, `Initial Weight`, `Scenario Weight`) %>%
   #     gather(key = `Scenario`, value = "Weight", c(`Initial Weight`, `Scenario Weight`))
 
 cardboarddf <- cbmassdf %>% 
-  gather(key = "Variable", value = "Value", c(`Initial Weight`, `Scenario Weight`, `Initial Impact`, `New Scenario Impact`)) 
-ul# %>%
+  gather(key = "Variable", value = "Value", c(`Initial Weight`, `Scenario Weight`, `Initial Impact`, `New Scenario Impact`))
+# %>%
   # filter(grepl("Weight", Variable)) %>% 
   #   spread("Disposition", "Value")
+
+plot_cardboarddf <- cardboarddf %>% 
+  filter(grepl("Impact", Variable)) %>% 
+  spread("Disposition", "Value") %>%
+  mutate(Sum = rowSums(.[3:6]))
+
+cbmassdf() %>% 
+  gather(key = "Variable", value = "Value", c(`Initial Weight`, `Scenario Weight`, `Initial Impact`, `New Scenario Impact`))
 
 
 massplot <- plot_ly(cardboarddf %>% filter(grepl("Weight", Variable)) %>% spread("Disposition", "Value"),
