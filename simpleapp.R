@@ -170,7 +170,7 @@ tabPanel("Context",
                          )),
            mainPanel(wellPanel())
          )
-         ),
+),
 
 # More NavbarMenu ---------------------------------------------------------
 
@@ -1172,6 +1172,43 @@ server <- function(input, output, session) {
     
   })
     
+  
+
+# Context plots -----------------------------------------------------------
+
+regionalcontext <- reactive({
+  context %>% 
+    filter(wasteshed %in% input$contextregion)
+}) 
+  
+  renderPlotly({
+    tt <- plot_ly(data = regionalcontext,
+                  y = ~appMaterial,
+                  x = ~Disposal,
+                  name = "Disposal",
+                  type = "bar") %>%
+      add_trace(x = ~Recovery,
+                name = "Recovery") %>% 
+      layout(barmode = "relative")
+
+    # Net impact
+    Bakertrnet <- Bakertr %>% 
+      filter(umbDisp == "Net") %>% 
+      select(wasteshed, appMaterial, umbDisp, impact, tons)
+    
+    bb <- plot_ly(data = Bakertrnet,
+                  y = ~appMaterial,
+                  x = ~impact,
+                  name = "Net Impact",
+                  type = "bar") %>%
+      layout(barmode = "relative")
+    bb
+    
+    sub2 <- subplot(tt, bb)
+    sub2
+  })
+  
+  
   
 }
 
