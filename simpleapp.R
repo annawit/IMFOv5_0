@@ -5,16 +5,12 @@ library(dplyr)
 library(stringr)
 library(ggplot2)
 library(tidyr)
-library(reshape2)
 library(plotly)
 library(shinythemes)
 library(shinyWidgets)
 library(viridis)
 library(shinyjs)
 library(shinyBS)
-library(packcircles)
-library(ggiraph)
-library(ggrepel)
 
 # brings in main table of regions/waste types/masses
 mass <- read_csv("mass.csv")
@@ -29,7 +25,7 @@ ui <- fluidPage(
   chooseSliderSkin("Modern"),
   useShinyjs(),
   
-  navbarPage("Lifecycle Impacts Tool",
+  navbarPage("Lifecycle Impacts Tool: DRAFT",
              
              # Introduction tab -------------------------------------------------------
              tabPanel("Introduction",
@@ -41,20 +37,23 @@ ui <- fluidPage(
                         column(12,
                                align = "center",
                                wellPanel(
-                                 style = "background-color: rgba(248,245,240,0.85)",
-                                 h2(style = "color: rgb(0,0,0)",
-                                    "Welcome to the Lifecycle Impacts Tool!", align = "center"),
+                                 # black background
+                                 style = "background-color: rgba(0,0,0,0.6)",
+                                 # smoke background
+                                 # style = "background-color: rgba(248,245,240,0.85)",
+                                 h3(style = "color: rgba(248,245,240)",
+                                    "Lifecycle Impacts Tool", align = "center"),
                                # h2("Interactive Visualizer!", align = "center"),
                                # div(img(src = 'greenpic.jpeg', height="50%", width="50%"), style = "text-align: center;"),
                                br(),
                                div(
                                  style = "width: 560px; height: 315px",
-                                 HTML('<iframe width="560" height="315" src="https://www.youtube.com/embed/-9JRowyICbo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
+                                 HTML('<iframe width="560" height="315" src="https://www.youtube.com/embed/roNLC7UbZao?start=309" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
                                ),
                                br(),
                                br(),
                                div(style = "width:500px; text-align:center;",
-                                    p(style = "color: rgb(0,0,0)", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
+                                    p(style = "color: rgba(248,245,240)", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
                                )
                         )
                         )
@@ -68,7 +67,10 @@ tabPanel("Visualize!",
          fluidPage(
            column(4,
                   wellPanel(
-                    style = "background-color: rgba(248,245,240,0.9)",
+                    # black background
+                    style = "background-color: rgba(0,0,0,0.6);
+                    color: rgba(248,245,240)",
+                    # style = "background-color: rgba(248,245,240,0.9)",
                     # uiOutput("sliders"),
                     
                     # textOutput("vals"),
@@ -124,14 +126,16 @@ tabPanel("Visualize!",
                     # ),
                     selectInput(inputId = "usermaterial",
                                 label = "Select a material:",
-                                choices = unique(mass$Material),
+                                choices = c("Cardboard", "Electronics", "Food"),
                                 selected = "Cardboard"),
                     tableOutput("ttable")
                   )
            ),
            column(4,
                   wellPanel(
-                    style = "background-color: rgba(248,245,240,0.9)",
+                    style = "background-color: rgba(0,0,0,0.6);
+                    color: rgba(248,245,240)",
+                    # style = "background-color: rgba(248,245,240,0.9)",
                     plotlyOutput("massplot"),
                     hr(),
                     selectInput(inputId = "userregion",
@@ -144,7 +148,9 @@ tabPanel("Visualize!",
                   ),
            column(4,
                   wellPanel(
-                    style = "background-color: rgba(248,245,240,0.9)",
+                    style = "background-color: rgba(0,0,0,0.6);
+                    color: rgba(248,245,240)",
+                    # style = "background-color: rgba(248,245,240,0.9)",
                     plotlyOutput("cbplot"),
                     hr(),
                     selectInput(inputId = "userimpact",
@@ -161,14 +167,20 @@ tabPanel("Visualize!",
 
 tabPanel("Context",
          fluidPage(
-           absolutePanel(fixed = TRUE,
+           fixedPanel(width = "22%",
+                      left = "30px",
                          wellPanel(
+                           style = "background-color: rgba(0,0,0,0.6);
+                    color: rgba(248,245,240)",
                            selectInput(inputId = "contextregion",
                                        label = "Select a region:",
                                        choices = unique(context$wasteshed),
                                        selected = "Global warming")
                          )),
-           mainPanel(wellPanel())
+           column(width = 9, offset = 3, 
+             wellPanel(
+               style = "background-color: rgba(0,0,0,0.6);
+                    color: rgba(248,245,240)"))
          )
 ),
 
@@ -178,9 +190,14 @@ tabPanel("Context",
              navbarMenu("More",
                         tabPanel("Glossary",
                                  fluidPage(
-                                   column(3, wellPanel()),
+                                   column(3, wellPanel(
+                                     style = "background-color: rgba(0,0,0,0.6);
+                    color: rgba(248,245,240)"
+                                   )),
                                    column(9,
                                           wellPanel(
+                                            style = "background-color: rgba(0,0,0,0.6);
+                    color: rgba(248,245,240)",
                                             includeMarkdown("Glossary.md")
                                           )
                                    )
@@ -234,44 +251,39 @@ server <- function(input, output, session) {
   })
 
   # initializes the reactive values for the sliders
-  # pct is for the percent value of the sliders, which changes
-  # st is for the starting value, which does not change and is used for the reset
+  # st is for the starting value
   
-  one <- reactiveValues(pct = 0, st = 0)
-  two <- reactiveValues(pct = 0, st = 0)
-  three <- reactiveValues(pct = 0, st = 0)
-  four <- reactiveValues(pct = 0, st = 0)
+  one <- reactiveValues(st = 0)
+  two <- reactiveValues(st = 0)
+  three <- reactiveValues(st = 0)
+  four <- reactiveValues(st = 0)
   
   # These observe event create the percent values for the sliders
   # The pct/st is left over from when I was trying to create a reset button
   
   observeEvent(input$usermaterial, {
-    one$pct <- (tweight()[1]/sum(tweight()))
-    one$st  <- (tweight()[1]/sum(tweight()))
-    print(one$pct)
+    one$st  <- (tweight()[1]/sum(tweight()))*100
+    print(one$st)
   })
   
   observeEvent(input$usermaterial, {
-    two$pct <- (tweight()[2]/sum(tweight()))
-    two$st <- (tweight()[2]/sum(tweight()))
-    print(two$pct)
+    two$st <- (tweight()[2]/sum(tweight()))*100
+    print(two$st)
   })
   
   observeEvent(input$usermaterial, {
-    three$pct <- (tweight()[3]/sum(tweight()))
-    three$st <- (tweight()[3]/sum(tweight()))
-    print(three$pct)
+    three$st <- (tweight()[3]/sum(tweight()))*100
+    print(three$st)
   })
   
   observeEvent(input$usermaterial, {
-    four$pct <- (tweight()[4]/sum(tweight()))
-    four$st <- (tweight()[4]/sum(tweight()))
-    print(four$pct)
+    four$st <- (tweight()[4]/sum(tweight()))*100
+    print(four$st)
   })
   
   #just a test of the output
   output$vals <- renderText({
-    paste(tweight()[1], one$pct, two$pct, three$pct, four$pct, sum(one$pct, two$pct, three$pct, four$pct))
+    paste(tweight()[1])
   })
   
   # creates reactive impact dataframe
@@ -293,7 +305,7 @@ server <- function(input, output, session) {
     #https://stackoverflow.com/questions/35579439/dynamic-number-of-sliders-in-shiny
     
     tagList(
-      setSliderColor(c("#3A6276", "#A7B753", "#492F42", "#389476"), c(1, 2, 3, 4)),
+      setSliderColor(c("#237698", "#B1CA54", "#564D65", "#248F79"), c(1, 2, 3, 4)),
       sliderInput(inputId = "Production",
                   label = "Total Waste, in Tons",
                   min = 0,
@@ -302,17 +314,20 @@ server <- function(input, output, session) {
       sliderInput(inputId = "cbcslide",
                   label = paste("%", tdisp()[1]),
                   min = 0,
-                  max = 1,
+                  max = 100,
+                  post = " %",
                   value = one$st),
       sliderInput(inputId = "cblslide",
                   label = paste("%", tdisp()[2]),
                   min = 0,
-                  max = 1,
+                  max = 100,
+                  post = " %",
                   value = two$st),
       sliderInput(inputId = "cbrslide",
                   label = paste("%", tdisp()[3]),
                   min = 0,
-                  max = 1,
+                  max = 100,
+                  post = " %",
                   value = three$st)
     )
   })
@@ -323,7 +338,7 @@ server <- function(input, output, session) {
   }, {
     updateSliderInput(session = session,
                       inputId = "cbrslide",
-                      value = input$cbrslide/(input$cbcslide + input$cblslide + input$cbrslide)
+                      value = 100*input$cbrslide/(input$cbcslide + input$cblslide + input$cbrslide)
                       )
   })
   
@@ -333,7 +348,7 @@ server <- function(input, output, session) {
   }, {
     updateSliderInput(session = session,
                       inputId = "cblslide",
-                      value = input$cblslide/(input$cbcslide + input$cblslide + input$cbrslide)
+                      value = 100*input$cblslide/(input$cbcslide + input$cblslide + input$cbrslide)
                       )
   })
   observeEvent({
@@ -342,16 +357,15 @@ server <- function(input, output, session) {
   }, {
     updateSliderInput(session = session,
                       inputId = "cbcslide",
-                      value = input$cbcslide/(input$cbcslide + input$cblslide + input$cbrslide)
+                      value = 100*input$cbcslide/(input$cbcslide + input$cblslide + input$cbrslide)
                       )
   })
   
   sliderweights <- reactive({
-    c(input$Production*input$cbcslide,
-      input$Production*input$cblslide,
-      input$Production*input$cbrslide,
+    c(input$Production*input$cbcslide/100,
+      input$Production*input$cblslide/100,
+      input$Production*input$cbrslide/100,
       input$Production)
-    
   })
   
   cbmassdf <- reactive({
@@ -398,14 +412,14 @@ server <- function(input, output, session) {
                         x = ~Variable,
                         y = ~Combustion,
                         name = "Combustion weight",
-                        marker = list(color = ("#A7B753")),
+                        marker = list(color = ("#B1CA54")),
                         type = "bar") %>% 
       add_trace(y = ~Landfilling,
                 name = "Landfilling weight",
-                marker = list(color = ("#492F42"))) %>% 
+                marker = list(color = ("#564D65"))) %>% 
       add_trace(y = ~Recycling,
                 name = "Recycling weight",
-                marker = list(color = ("#389476"))) %>% 
+                marker = list(color = ("#248F79"))) %>% 
       layout(barmode = "relative")
     
     massplot %>% 
@@ -426,17 +440,17 @@ server <- function(input, output, session) {
                  x = ~Variable,
                  y = ~Production,
                  name = "Production impact",
-                 marker = list(color = ("#3A6276")),
+                 marker = list(color = ("#237698")),
                  type = "bar") %>% 
       add_trace(y = ~Combustion,
                 name = "Combustion impact",
-                marker = list(color = ("#A7B753"))) %>% 
+                marker = list(color = ("#B1CA54"))) %>% 
       add_trace(y = ~Landfilling,
                 name = "Landfilling impact",
-                marker = list(color = ("#492F42"))) %>% 
+                marker = list(color = ("#564D65"))) %>% 
       add_trace(y = ~Recycling,
                 name = "Recycling impact",
-                marker = list(color = ("#389476"))) %>% 
+                marker = list(color = ("#248F79"))) %>% 
       layout(barmode = "relative")
     
     p %>% 
@@ -445,7 +459,7 @@ server <- function(input, output, session) {
                 mode = "line",
                 name = "Net impact",
                 marker = list(size = ~log(Sum),
-                              color = ("#C59B44"))) %>% 
+                              color = ("#cf9f35"))) %>% 
       layout(yaxis = list(overlaying = "y",
                           title = paste("Impact in", userimpact()$Units[[1]])),
              xaxis = list(title = ""),
@@ -456,61 +470,61 @@ server <- function(input, output, session) {
   
 # Carpet Panel ------------------------------------------------------------
 
-  output$carpetpanel <-  renderUI({
-    
-    tagList(
-      
-      setSliderColor(c("#3A6276", "#A7B753", "#492F42", "#389476"), c(1, 2, 3, 4)),
-      br(),
-      sliderInput(inputId = "Production",
-                  label = "Total Weight, in Tons",
-                  min = 0,
-                  max = sum(tweight())*1.5,
-                  value = sum(tweight())),
-      sliderInput(inputId = "ccslide",
-                  label = paste("%", tdisp()[1]),
-                  min = 0,
-                  max = 100,
-                  value = one$pct),
-      sliderInput(inputId = "clslide",
-                  label = paste("%", tdisp()[2]),
-                  min = 0,
-                  max = 100,
-                  value = two$pct),
-      sliderInput(inputId = "crslide",
-                  label = paste("%", tdisp()[3]),
-                  min = 0,
-                  max = 100,
-                  value = three$pct)
-    )
-    
-  })
-  
-  observeEvent({
-    input$ccslide
-    input$clslide
-  }, {
-    updateSliderInput(session = session,
-                      inputId = "crslide",
-                      value = round(100*input$crslide/(input$ccslide + input$clslide + input$crslide)))
-  })
-  
-  observeEvent({
-    input$ccslide
-    input$crslide
-  }, {
-    updateSliderInput(session = session,
-                      inputId = "clslide",
-                      value = round(100*input$clslide/(input$ccslide + input$clslide + input$crslide)))
-  })
-  observeEvent({
-    input$crslide
-    input$clslide
-  }, {
-    updateSliderInput(session = session,
-                      inputId = "ccslide",
-                      value = round(100*input$ccslide/(input$ccslide + input$clslide + input$crslide)))
-  })
+  # output$carpetpanel <-  renderUI({
+  #   
+  #   tagList(
+  #     # 3A6276
+  #     setSliderColor(c("#237698", "#B1CA54", "#564D65", "#248F79"), c(1, 2, 3, 4)),
+  #     br(),
+  #     sliderInput(inputId = "Production",
+  #                 label = "Total Weight, in Tons",
+  #                 min = 0,
+  #                 max = sum(tweight())*1.5,
+  #                 value = sum(tweight())),
+  #     sliderInput(inputId = "ccslide",
+  #                 label = paste("%", tdisp()[1]),
+  #                 min = 0,
+  #                 max = 100,
+  #                 value = one$st),
+  #     sliderInput(inputId = "clslide",
+  #                 label = paste("%", tdisp()[2]),
+  #                 min = 0,
+  #                 max = 100,
+  #                 value = two$st),
+  #     sliderInput(inputId = "crslide",
+  #                 label = paste("%", tdisp()[3]),
+  #                 min = 0,
+  #                 max = 100,
+  #                 value = three$st)
+  #   )
+  #   
+  # })
+  # 
+  # observeEvent({
+  #   input$ccslide
+  #   input$clslide
+  # }, {
+  #   updateSliderInput(session = session,
+  #                     inputId = "crslide",
+  #                     value = round(100*input$crslide/(input$ccslide + input$clslide + input$crslide)))
+  # })
+  # 
+  # observeEvent({
+  #   input$ccslide
+  #   input$crslide
+  # }, {
+  #   updateSliderInput(session = session,
+  #                     inputId = "clslide",
+  #                     value = round(100*input$clslide/(input$ccslide + input$clslide + input$crslide)))
+  # })
+  # observeEvent({
+  #   input$crslide
+  #   input$clslide
+  # }, {
+  #   updateSliderInput(session = session,
+  #                     inputId = "ccslide",
+  #                     value = round(100*input$ccslide/(input$ccslide + input$clslide + input$crslide)))
+  # })
   
 # Electronics Panel -------------------------------------------------------
 
@@ -518,7 +532,7 @@ server <- function(input, output, session) {
     
     tagList(
       
-      setSliderColor(c("#3A6276", "#A7B753", "#492F42", "#389476"), c(1, 2, 3, 4)),
+      setSliderColor(c("#237698", "#B1CA54", "#564D65", "#248F79"), c(1, 2, 3, 4)),
       br(),
       sliderInput(inputId = "Production",
                   label = "Total Weight, in Tons",
@@ -564,7 +578,7 @@ server <- function(input, output, session) {
     
     tagList(
       
-      setSliderColor(c("#3A6276", "#A7B753", "#492F42", "#389476"), c(1, 2, 3, 4)),
+      setSliderColor(c("#237698", "#B1CA54", "#564D65", "#248F79"), c(1, 2, 3, 4)),
       br(),
       sliderInput(inputId = "Production",
                   label = "Total Weight, in Tons",
@@ -620,7 +634,7 @@ server <- function(input, output, session) {
     
     tagList(
       
-      setSliderColor(c("#3A6276", "#A7B753", "#492F42", "#389476"), c(1, 2, 3, 4)),
+      setSliderColor(c("#237698", "#B1CA54", "#564D65", "#248F79"), c(1, 2, 3, 4)),
       br(),
       sliderInput(inputId = "Production",
                   label = "Total Weight, in Tons",
@@ -631,17 +645,17 @@ server <- function(input, output, session) {
                   label = "% Landfilling",
                   min = 0,
                   max = 100,
-                  value = one$pct),
+                  value = one$st),
       sliderInput(inputId = "grslide",
                   label = "% Recycling",
                   min = 0,
                   max = 100,
-                  value = two$pct),
+                  value = two$st),
       sliderInput(inputId = "guaslide",
                   label = "% Use as Aggregate",
                   min = 0,
                   max = 100,
-                  value = three$pct)
+                  value = three$st)
     )
     
   })
@@ -678,7 +692,7 @@ server <- function(input, output, session) {
     
     tagList(
       
-      setSliderColor(c("#3A6276", "#A7B753", "#492F42", "#389476"), c(1, 2, 3, 4)),
+      setSliderColor(c("#237698", "#B1CA54", "#564D65", "#248F79"), c(1, 2, 3, 4)),
       br(),
       sliderInput(inputId = "Production",
                   label = "Total Weight, in Tons",
@@ -689,12 +703,12 @@ server <- function(input, output, session) {
                   label = "% Combustion",
                   min = 0,
                   max = 100,
-                  value = one$pct),
+                  value = one$st),
       sliderInput(inputId = "tlslide",
                   label = "% Landfilling",
                   min = 0,
                   max = 100,
-                  value = two$pct)
+                  value = two$st)
     )
   })
   
@@ -720,7 +734,7 @@ server <- function(input, output, session) {
     
     tagList(
       
-      setSliderColor(c("#3A6276", "#A7B753", "#492F42", "#389476"), c(1, 2, 3, 4)),
+      setSliderColor(c("#237698", "#B1CA54", "#564D65", "#248F79"), c(1, 2, 3, 4)),
       br(),
       sliderInput(inputId = "Production",
                   label = "Total Weight, in Tons",
@@ -731,17 +745,17 @@ server <- function(input, output, session) {
                   label = "% Combustion",
                   min = 0,
                   max = 100,
-                  value = one$pct),
+                  value = one$st),
       sliderInput(inputId = "plslide",
                   label = "% Landfilling",
                   min = 0,
                   max = 100,
-                  value = two$pct),
+                  value = two$st),
       sliderInput(inputId = "prslide",
                   label = "% Recycling",
                   min = 0,
                   max = 100,
-                  value = three$pct)
+                  value = three$st)
     )
     
   })
@@ -778,7 +792,7 @@ server <- function(input, output, session) {
     
     tagList(
       
-      setSliderColor(c("#3A6276", "#A7B753", "#492F42", "#389476"), c(1, 2, 3, 4)),
+      setSliderColor(c("#237698", "#B1CA54", "#564D65", "#248F79"), c(1, 2, 3, 4)),
       br(),
       sliderInput(inputId = "Production",
                   label = "Total Weight, in Tons",
@@ -789,17 +803,17 @@ server <- function(input, output, session) {
                   label = "% Combustion",
                   min = 0,
                   max = 100,
-                  value = one$pct),
+                  value = one$st),
       sliderInput(inputId = "oflslide",
                   label = "% Landfilling",
                   min = 0,
                   max = 100,
-                  value = two$pct),
+                  value = two$st),
       sliderInput(inputId = "pfrslide",
                   label = "% Recycling",
                   min = 0,
                   max = 100,
-                  value = three$pct)
+                  value = three$st)
     )
   })
   
@@ -835,7 +849,7 @@ server <- function(input, output, session) {
 
     tagList(
       
-      setSliderColor(c("#3A6276", "#A7B753", "#492F42", "#389476"), c(1, 2, 3, 4)),
+      setSliderColor(c("#237698", "#B1CA54", "#564D65", "#248F79"), c(1, 2, 3, 4)),
       br(),
       sliderInput(inputId = "Production",
                   label = "Total Weight, in Tons",
@@ -846,17 +860,17 @@ server <- function(input, output, session) {
                   label = "% Combustion",
                   min = 0,
                   max = 100,
-                  value = one$pct),
+                  value = one$st),
       sliderInput(inputId = "rplslide",
                   label = "% Landfilling",
                   min = 0,
                   max = 100,
-                  value = two$pct),
+                  value = two$st),
       sliderInput(inputId = "rprslide",
                   label = "% Recycling",
                   min = 0,
                   max = 100,
-                  value = three$pct)
+                  value = three$st)
     )
     
   })
@@ -893,7 +907,7 @@ server <- function(input, output, session) {
     
     tagList(
       
-      setSliderColor(c("#3A6276", "#A7B753", "#492F42", "#389476"), c(1, 2, 3, 4)),
+      setSliderColor(c("#237698", "#B1CA54", "#564D65", "#248F79"), c(1, 2, 3, 4)),
       br(),
       sliderInput(inputId = "Production",
                   label = "Total Weight, in Tons",
@@ -904,12 +918,12 @@ server <- function(input, output, session) {
                   label = "% Landfilling",
                   min = 0,
                   max = 100,
-                  value = one$pct),
+                  value = one$st),
       sliderInput(inputId = "smrslide",
                   label = "% Recycling",
                   min = 0,
                   max = 100,
-                  value = two$pct)
+                  value = two$st)
     )
   })
   
@@ -935,7 +949,7 @@ server <- function(input, output, session) {
     
     tagList(
       
-      setSliderColor(c("#3A6276", "#A7B753", "#492F42", "#389476"), c(1, 2, 3, 4)),
+      setSliderColor(c("#237698", "#B1CA54", "#564D65", "#248F79"), c(1, 2, 3, 4)),
       br(),
       sliderInput(inputId = "Production",
                   label = "Total Weight, in Tons",
@@ -946,22 +960,22 @@ server <- function(input, output, session) {
                   label = "% Combustion",
                   min = 0,
                   max = 100,
-                  value = one$pct),
+                  value = one$st),
       sliderInput(inputId = "wcpslide",
                   label = "% Composting",
                   min = 0,
                   max = 100,
-                  value = two$pct),
+                  value = two$st),
       sliderInput(inputId = "wlslide",
                   label = "% Landfilling",
                   min = 0,
                   max = 100,
-                  value = three$pct),
+                  value = three$st),
       sliderInput(inputId = "wrslide",
                   label = "% Recycling",
                   min = 0,
                   max = 100,
-                  value = four$pct)
+                  value = four$st)
     )
     
   })
@@ -1026,7 +1040,7 @@ server <- function(input, output, session) {
     
     tagList(
       
-      setSliderColor(c("#3A6276", "#A7B753", "#492F42", "#389476"), c(1, 2, 3, 4)),
+      setSliderColor(c("#237698", "#B1CA54", "#564D65", "#248F79"), c(1, 2, 3, 4)),
       br(),
       sliderInput(inputId = "Production",
                   label = "Total Weight, in Tons",
@@ -1037,22 +1051,22 @@ server <- function(input, output, session) {
                   label = "% Anaerobic Digestion",
                   min = 0,
                   max = 100,
-                  value = one$pct),
+                  value = one$st),
       sliderInput(inputId = "ycbslide",
                   label = "% Combustion",
                   min = 0,
                   max = 100,
-                  value = two$pct),
+                  value = two$st),
       sliderInput(inputId = "ycpslide",
                   label = "% Composting",
                   min = 0,
                   max = 100,
-                  value = three$pct),
+                  value = three$st),
       sliderInput(inputId = "ylslide",
                   label = "% Landfilling",
                   min = 0,
                   max = 100,
-                  value = four$pct)
+                  value = four$st)
     )
     
   })
