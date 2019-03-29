@@ -1,214 +1,74 @@
 "wasteshed","material","LCstage","disposition","tons"
-"Baker","Cardboard/Kraft","endOfLife","combustion",0
-"Baker","Cardboard/Kraft","endOfLife","landfilling",434.974529366144
-"Baker","Cardboard/Kraft","endOfLife","recycling",895.064
-"Baker","Cardboard/Kraft","endOfLifeTransport","combustion",0
-"Baker","Cardboard/Kraft","endOfLifeTransport","landfilling",434.974529366144
-"Baker","Cardboard/Kraft","endOfLifeTransport","recycling",895.064
-"Baker","Carpeting-used","endOfLife","combustion",0
-"Baker","Carpeting-used","endOfLife","landfilling",297.716792783918
-"Baker","Carpeting-used","endOfLife","recycling",0
-"Baker","Carpeting-used","endOfLifeTransport","combustion",0
-"Baker","Carpeting-used","endOfLifeTransport","landfilling",297.716792783918
-"Baker","Carpeting-used","endOfLifeTransport","recycling",0
-"Baker","Electronics","endOfLife","landfilling",103.863097141256
-"Baker","Electronics","endOfLife","recycling",96.954
-"Baker","Electronics","endOfLifeTransport","landfilling",103.863097141256
-"Baker","Electronics","endOfLifeTransport","recycling",96.954
-"Baker","FoodWaste","endOfLife","anaerobicDigestion",0
-"Baker","FoodWaste","endOfLife","composting",0.585
-"Baker","FoodWaste","endOfLife","landfilling",1854.23309175329
-"Baker","FoodWaste","endOfLifeTransport","anaerobicDigestion",0
-"Baker","FoodWaste","endOfLifeTransport","composting",0.585
-"Baker","FoodWaste","endOfLifeTransport","landfilling",1854.23309175329
-"Baker","Glass Containers","endOfLife","landfilling",140.58706094437
-"Baker","Glass Containers","endOfLife","recycling",334.239
-"Baker","Glass Containers","endOfLife","useAsAggregate",0
-"Baker","Glass Containers","endOfLifeTransport","landfilling",140.58706094437
-"Baker","Glass Containers","endOfLifeTransport","recycling",334.239
-"Baker","Glass Containers","endOfLifeTransport","useAsAggregate",0
-"Baker","Nonrecyclables","endOfLife","combustion",0
-"Baker","Nonrecyclables","endOfLife","landfilling",2094.95317963785
-"Baker","Nonrecyclables","endOfLifeTransport","combustion",0
-"Baker","Nonrecyclables","endOfLifeTransport","landfilling",2094.95317963785
-"Baker","Paper Fiber","endOfLife","combustion",0
-"Baker","Paper Fiber","endOfLife","landfilling",1501.8634851461
-"Baker","Paper Fiber","endOfLife","recycling",262.51
-"Baker","Paper Fiber","endOfLifeTransport","combustion",0
-"Baker","Paper Fiber","endOfLifeTransport","landfilling",1501.8634851461
-"Baker","Paper Fiber","endOfLifeTransport","recycling",262.51
-"Baker","Plastic Film","endOfLife","combustion",0
-"Baker","Plastic Film","endOfLife","landfilling",656.34822365803
-"Baker","Plastic Film","endOfLife","recycling",27.925
-"Baker","Plastic Film","endOfLifeTransport","combustion",0
-"Baker","Plastic Film","endOfLifeTransport","landfilling",656.34822365803
-"Baker","Plastic Film","endOfLifeTransport","recycling",27.925
-"Baker","Rigid Plastic Cont.","endOfLife","combustion",0
-"Baker","Rigid Plastic Cont.","endOfLife","landfilling",233.070363264846
-"Baker","Rigid Plastic Cont.","endOfLife","recycling",61.216
-"Baker","Rigid Plastic Cont.","endOfLifeTransport","combustion",0
-"Baker","Rigid Plastic Cont.","endOfLifeTransport","landfilling",233.070363264846
-"Baker","Rigid Plastic Cont.","endOfLifeTransport","recycling",61.216
-"Baker","Scrap Metal - Other","endOfLife","landfilling",415.192317638552
-"Baker","Scrap Metal - Other","endOfLife","recycling",206.908
-"Baker","Scrap Metal - Other","endOfLifeTransport","landfilling",415.192317638552
-"Baker","Scrap Metal - Other","endOfLifeTransport","recycling",206.908
-"Baker","Wood Waste","endOfLife","combustion",46.1
-"Baker","Wood Waste","endOfLife","composting",0
-"Baker","Wood Waste","endOfLife","landfilling",1901.55768734646
-"Baker","Wood Waste","endOfLife","recycling",0
-"Baker","Wood Waste","endOfLifeTransport","combustion",46.1
-"Baker","Wood Waste","endOfLifeTransport","composting",0
-"Baker","Wood Waste","endOfLifeTransport","landfilling",1901.55768734646
-"Baker","Wood Waste","endOfLifeTransport","recycling",0
-"Baker","Yard Debris","endOfLife","anaerobicDigestion",0
-"Baker","Yard Debris","endOfLife","combustion",0
-"Baker","Yard Debris","endOfLife","composting",785.87
-"Baker","Yard Debris","endOfLife","landfilling",393.566702405902
-"Baker","Yard Debris","endOfLifeTransport","anaerobicDigestion",0
-"Baker","Yard Debris","endOfLifeTransport","combustion",0
-"Baker","Yard Debris","endOfLifeTransport","composting",785.87
-"Baker","Yard Debris","endOfLifeTransport","landfilling",393.566702405902
-"Benton","Cardboard/Kraft","endOfLife","combustion",0
-"Benton","Cardboard/Kraft","endOfLife","landfilling",2169.25207933336
-"Benton","Cardboard/Kraft","endOfLife","recycling",6616.65
-"Benton","Cardboard/Kraft","endOfLifeTransport","combustion",0
-"Benton","Cardboard/Kraft","endOfLifeTransport","landfilling",2169.25207933336
-"Benton","Cardboard/Kraft","endOfLifeTransport","recycling",6616.65
-"Benton","Carpeting-used","endOfLife","combustion",0
-"Benton","Carpeting-used","endOfLife","landfilling",1484.73698618648
-"Benton","Carpeting-used","endOfLife","recycling",0
-"Benton","Carpeting-used","endOfLifeTransport","combustion",0
-"Benton","Carpeting-used","endOfLifeTransport","landfilling",1484.73698618648
-"Benton","Carpeting-used","endOfLifeTransport","recycling",0
-"Benton","Electronics","endOfLife","landfilling",517.973408162524
-"Benton","Electronics","endOfLife","recycling",357.222
-"Benton","Electronics","endOfLifeTransport","landfilling",517.973408162524
-"Benton","Electronics","endOfLifeTransport","recycling",357.222
-"Benton","FoodWaste","endOfLife","anaerobicDigestion",0
-"Benton","FoodWaste","endOfLife","composting",638.099
-"Benton","FoodWaste","endOfLife","landfilling",9247.2057978106
-"Benton","FoodWaste","endOfLifeTransport","anaerobicDigestion",0
-"Benton","FoodWaste","endOfLifeTransport","composting",638.099
-"Benton","FoodWaste","endOfLifeTransport","landfilling",9247.2057978106
-"Benton","Glass Containers","endOfLife","landfilling",701.11869475518
-"Benton","Glass Containers","endOfLife","recycling",1764.12
-"Benton","Glass Containers","endOfLife","useAsAggregate",0
-"Benton","Glass Containers","endOfLifeTransport","landfilling",701.11869475518
-"Benton","Glass Containers","endOfLifeTransport","recycling",1764.12
-"Benton","Glass Containers","endOfLifeTransport","useAsAggregate",0
-"Benton","Nonrecyclables","endOfLife","combustion",0
-"Benton","Nonrecyclables","endOfLife","landfilling",10447.6957482034
-"Benton","Nonrecyclables","endOfLifeTransport","combustion",0
-"Benton","Nonrecyclables","endOfLifeTransport","landfilling",10447.6957482034
-"Benton","Paper Fiber","endOfLife","combustion",0
-"Benton","Paper Fiber","endOfLife","landfilling",7489.91094438459
-"Benton","Paper Fiber","endOfLife","recycling",4396.202
-"Benton","Paper Fiber","endOfLifeTransport","combustion",0
-"Benton","Paper Fiber","endOfLifeTransport","landfilling",7489.91094438459
-"Benton","Paper Fiber","endOfLifeTransport","recycling",4396.202
-"Benton","Plastic Film","endOfLife","combustion",0
-"Benton","Plastic Film","endOfLife","landfilling",3273.26004814974
-"Benton","Plastic Film","endOfLife","recycling",276.052
-"Benton","Plastic Film","endOfLifeTransport","combustion",0
-"Benton","Plastic Film","endOfLifeTransport","landfilling",3273.26004814974
-"Benton","Plastic Film","endOfLifeTransport","recycling",276.052
-"Benton","Rigid Plastic Cont.","endOfLife","combustion",0
-"Benton","Rigid Plastic Cont.","endOfLife","landfilling",1162.34017398675
-"Benton","Rigid Plastic Cont.","endOfLife","recycling",536.651
-"Benton","Rigid Plastic Cont.","endOfLifeTransport","combustion",0
-"Benton","Rigid Plastic Cont.","endOfLifeTransport","landfilling",1162.34017398675
-"Benton","Rigid Plastic Cont.","endOfLifeTransport","recycling",536.651
-"Benton","Scrap Metal - Other","endOfLife","landfilling",2070.59663855059
-"Benton","Scrap Metal - Other","endOfLife","recycling",3183.25
-"Benton","Scrap Metal - Other","endOfLifeTransport","landfilling",2070.59663855059
-"Benton","Scrap Metal - Other","endOfLifeTransport","recycling",3183.25
-"Benton","Wood Waste","endOfLife","combustion",416.65
-"Benton","Wood Waste","endOfLife","composting",84.889
-"Benton","Wood Waste","endOfLife","landfilling",9483.21726621473
-"Benton","Wood Waste","endOfLife","recycling",0
-"Benton","Wood Waste","endOfLifeTransport","combustion",416.65
-"Benton","Wood Waste","endOfLifeTransport","composting",84.889
-"Benton","Wood Waste","endOfLifeTransport","landfilling",9483.21726621473
-"Benton","Wood Waste","endOfLifeTransport","recycling",0
-"Benton","Yard Debris","endOfLife","anaerobicDigestion",0
-"Benton","Yard Debris","endOfLife","combustion",0
-"Benton","Yard Debris","endOfLife","composting",13569.151
-"Benton","Yard Debris","endOfLife","landfilling",1962.74799996789
-"Benton","Yard Debris","endOfLifeTransport","anaerobicDigestion",0
-"Benton","Yard Debris","endOfLifeTransport","combustion",0
-"Benton","Yard Debris","endOfLifeTransport","composting",13569.151
-"Benton","Yard Debris","endOfLifeTransport","landfilling",1962.74799996789
-"Clatsop","Cardboard/Kraft","endOfLife","combustion",0
-"Clatsop","Cardboard/Kraft","endOfLife","landfilling",1192.26032185344
-"Clatsop","Cardboard/Kraft","endOfLife","recycling",4100.159
-"Clatsop","Cardboard/Kraft","endOfLifeTransport","combustion",0
-"Clatsop","Cardboard/Kraft","endOfLifeTransport","landfilling",1192.26032185344
-"Clatsop","Cardboard/Kraft","endOfLifeTransport","recycling",4100.159
-"Clatsop","Carpeting-used","endOfLife","combustion",0
-"Clatsop","Carpeting-used","endOfLife","landfilling",816.038400462157
-"Clatsop","Carpeting-used","endOfLife","recycling",0
-"Clatsop","Carpeting-used","endOfLifeTransport","combustion",0
-"Clatsop","Carpeting-used","endOfLifeTransport","landfilling",816.038400462157
-"Clatsop","Carpeting-used","endOfLifeTransport","recycling",0
-"Clatsop","Electronics","endOfLife","landfilling",284.687588045166
-"Clatsop","Electronics","endOfLife","recycling",99.772
-"Clatsop","Electronics","endOfLifeTransport","landfilling",284.687588045166
-"Clatsop","Electronics","endOfLifeTransport","recycling",99.772
-"Clatsop","FoodWaste","endOfLife","anaerobicDigestion",0
-"Clatsop","FoodWaste","endOfLife","composting",1.144
-"Clatsop","FoodWaste","endOfLife","landfilling",5082.43217364153
-"Clatsop","FoodWaste","endOfLifeTransport","anaerobicDigestion",0
-"Clatsop","FoodWaste","endOfLifeTransport","composting",1.144
-"Clatsop","FoodWaste","endOfLifeTransport","landfilling",5082.43217364153
-"Clatsop","Glass Containers","endOfLife","landfilling",385.347562245123
-"Clatsop","Glass Containers","endOfLife","recycling",1278.83
-"Clatsop","Glass Containers","endOfLife","useAsAggregate",0
-"Clatsop","Glass Containers","endOfLifeTransport","landfilling",385.347562245123
-"Clatsop","Glass Containers","endOfLifeTransport","recycling",1278.83
-"Clatsop","Glass Containers","endOfLifeTransport","useAsAggregate",0
-"Clatsop","Nonrecyclables","endOfLife","combustion",0
-"Clatsop","Nonrecyclables","endOfLife","landfilling",5742.24324321395
-"Clatsop","Nonrecyclables","endOfLifeTransport","combustion",0
-"Clatsop","Nonrecyclables","endOfLifeTransport","landfilling",5742.24324321395
-"Clatsop","Paper Fiber","endOfLife","combustion",0
-"Clatsop","Paper Fiber","endOfLife","landfilling",4116.59102152381
-"Clatsop","Paper Fiber","endOfLife","recycling",1767.064
-"Clatsop","Paper Fiber","endOfLifeTransport","combustion",0
-"Clatsop","Paper Fiber","endOfLifeTransport","landfilling",4116.59102152381
-"Clatsop","Paper Fiber","endOfLifeTransport","recycling",1767.064
-"Clatsop","Plastic Film","endOfLife","combustion",0
-"Clatsop","Plastic Film","endOfLife","landfilling",1799.04314288653
-"Clatsop","Plastic Film","endOfLife","recycling",194.775
-"Clatsop","Plastic Film","endOfLifeTransport","combustion",0
-"Clatsop","Plastic Film","endOfLifeTransport","landfilling",1799.04314288653
-"Clatsop","Plastic Film","endOfLifeTransport","recycling",194.775
-"Clatsop","Rigid Plastic Cont.","endOfLife","combustion",0
-"Clatsop","Rigid Plastic Cont.","endOfLife","landfilling",638.84325991588
-"Clatsop","Rigid Plastic Cont.","endOfLife","recycling",178.374
-"Clatsop","Rigid Plastic Cont.","endOfLifeTransport","combustion",0
-"Clatsop","Rigid Plastic Cont.","endOfLifeTransport","landfilling",638.84325991588
-"Clatsop","Rigid Plastic Cont.","endOfLifeTransport","recycling",178.374
-"Clatsop","Scrap Metal - Other","endOfLife","landfilling",1138.03750067887
-"Clatsop","Scrap Metal - Other","endOfLife","recycling",2904.996
-"Clatsop","Scrap Metal - Other","endOfLifeTransport","landfilling",1138.03750067887
-"Clatsop","Scrap Metal - Other","endOfLifeTransport","recycling",2904.996
-"Clatsop","Wood Waste","endOfLife","combustion",3947.394
-"Clatsop","Wood Waste","endOfLife","composting",1.692
-"Clatsop","Wood Waste","endOfLife","landfilling",5212.14836105996
-"Clatsop","Wood Waste","endOfLife","recycling",0
-"Clatsop","Wood Waste","endOfLifeTransport","combustion",3947.394
-"Clatsop","Wood Waste","endOfLifeTransport","composting",1.692
-"Clatsop","Wood Waste","endOfLifeTransport","landfilling",5212.14836105996
-"Clatsop","Wood Waste","endOfLifeTransport","recycling",0
-"Clatsop","Yard Debris","endOfLife","anaerobicDigestion",0
-"Clatsop","Yard Debris","endOfLife","combustion",3855.977
-"Clatsop","Yard Debris","endOfLife","composting",522
-"Clatsop","Yard Debris","endOfLife","landfilling",1078.76193110672
-"Clatsop","Yard Debris","endOfLifeTransport","anaerobicDigestion",0
-"Clatsop","Yard Debris","endOfLifeTransport","combustion",3855.977
-"Clatsop","Yard Debris","endOfLifeTransport","composting",522
-"Clatsop","Yard Debris","endOfLifeTransport","landfilling",1078.76193110672
+"Columbia","Cardboard/Kraft","endOfLife","combustion",0
+"Columbia","Cardboard/Kraft","endOfLife","landfilling",1002.64981727418
+"Columbia","Cardboard/Kraft","endOfLife","recycling",3053.452
+"Columbia","Cardboard/Kraft","endOfLifeTransport","combustion",0
+"Columbia","Cardboard/Kraft","endOfLifeTransport","landfilling",1002.64981727418
+"Columbia","Cardboard/Kraft","endOfLifeTransport","recycling",3053.452
+"Columbia","Carpeting-used","endOfLife","combustion",0
+"Columbia","Carpeting-used","endOfLife","landfilling",686.260154862951
+"Columbia","Carpeting-used","endOfLife","recycling",0
+"Columbia","Carpeting-used","endOfLifeTransport","combustion",0
+"Columbia","Carpeting-used","endOfLifeTransport","landfilling",686.260154862951
+"Columbia","Carpeting-used","endOfLifeTransport","recycling",0
+"Columbia","Electronics","endOfLife","landfilling",239.412444498677
+"Columbia","Electronics","endOfLife","recycling",139.01
+"Columbia","Electronics","endOfLifeTransport","landfilling",239.412444498677
+"Columbia","Electronics","endOfLifeTransport","recycling",139.01
+"Columbia","FoodWaste","endOfLife","anaerobicDigestion",0
+"Columbia","FoodWaste","endOfLife","composting",1.144
+"Columbia","FoodWaste","endOfLife","landfilling",4274.15019757447
+"Columbia","FoodWaste","endOfLifeTransport","anaerobicDigestion",0
+"Columbia","FoodWaste","endOfLifeTransport","composting",1.144
+"Columbia","FoodWaste","endOfLifeTransport","landfilling",4274.15019757447
+"Columbia","Glass Containers","endOfLife","landfilling",324.064011684537
+"Columbia","Glass Containers","endOfLife","recycling",723.753
+"Columbia","Glass Containers","endOfLife","useAsAggregate",0
+"Columbia","Glass Containers","endOfLifeTransport","landfilling",324.064011684537
+"Columbia","Glass Containers","endOfLifeTransport","recycling",723.753
+"Columbia","Glass Containers","endOfLifeTransport","useAsAggregate",0
+"Columbia","Nonrecyclables","endOfLife","combustion",0
+"Columbia","Nonrecyclables","endOfLife","landfilling",4829.02855443686
+"Columbia","Nonrecyclables","endOfLifeTransport","combustion",0
+"Columbia","Nonrecyclables","endOfLifeTransport","landfilling",4829.02855443686
+"Columbia","Paper Fiber","endOfLife","combustion",0
+"Columbia","Paper Fiber","endOfLife","landfilling",3461.91109430441
+"Columbia","Paper Fiber","endOfLife","recycling",3298.099
+"Columbia","Paper Fiber","endOfLifeTransport","combustion",0
+"Columbia","Paper Fiber","endOfLifeTransport","landfilling",3461.91109430441
+"Columbia","Paper Fiber","endOfLifeTransport","recycling",3298.099
+"Columbia","Plastic Film","endOfLife","combustion",0
+"Columbia","Plastic Film","endOfLife","landfilling",1512.93324571886
+"Columbia","Plastic Film","endOfLife","recycling",15.843
+"Columbia","Plastic Film","endOfLifeTransport","combustion",0
+"Columbia","Plastic Film","endOfLifeTransport","landfilling",1512.93324571886
+"Columbia","Plastic Film","endOfLifeTransport","recycling",15.843
+"Columbia","Rigid Plastic Cont.","endOfLife","combustion",0
+"Columbia","Rigid Plastic Cont.","endOfLife","landfilling",537.245151986392
+"Columbia","Rigid Plastic Cont.","endOfLife","recycling",315.868
+"Columbia","Rigid Plastic Cont.","endOfLifeTransport","combustion",0
+"Columbia","Rigid Plastic Cont.","endOfLifeTransport","landfilling",537.245151986392
+"Columbia","Rigid Plastic Cont.","endOfLifeTransport","recycling",315.868
+"Columbia","Scrap Metal - Other","endOfLife","landfilling",957.050294463374
+"Columbia","Scrap Metal - Other","endOfLife","recycling",993.86
+"Columbia","Scrap Metal - Other","endOfLifeTransport","landfilling",957.050294463374
+"Columbia","Scrap Metal - Other","endOfLifeTransport","recycling",993.86
+"Columbia","Wood Waste","endOfLife","combustion",2917.315
+"Columbia","Wood Waste","endOfLife","composting",0
+"Columbia","Wood Waste","endOfLife","landfilling",4383.2370381148
+"Columbia","Wood Waste","endOfLife","recycling",0
+"Columbia","Wood Waste","endOfLifeTransport","combustion",2917.315
+"Columbia","Wood Waste","endOfLifeTransport","composting",0
+"Columbia","Wood Waste","endOfLifeTransport","landfilling",4383.2370381148
+"Columbia","Wood Waste","endOfLifeTransport","recycling",0
+"Columbia","Yard Debris","endOfLife","anaerobicDigestion",0
+"Columbia","Yard Debris","endOfLife","combustion",0
+"Columbia","Yard Debris","endOfLife","composting",892.963
+"Columbia","Yard Debris","endOfLife","landfilling",907.201584487056
+"Columbia","Yard Debris","endOfLifeTransport","anaerobicDigestion",0
+"Columbia","Yard Debris","endOfLifeTransport","combustion",0
+"Columbia","Yard Debris","endOfLifeTransport","composting",892.963
+"Columbia","Yard Debris","endOfLifeTransport","landfilling",907.201584487056
 "Coos","Cardboard/Kraft","endOfLife","combustion",0
 "Coos","Cardboard/Kraft","endOfLife","landfilling",1590.03909496679
 "Coos","Cardboard/Kraft","endOfLife","recycling",3751.415
@@ -279,146 +139,146 @@
 "Coos","Yard Debris","endOfLifeTransport","combustion",0
 "Coos","Yard Debris","endOfLifeTransport","composting",0
 "Coos","Yard Debris","endOfLifeTransport","landfilling",1438.67376375912
-"Hood River","Cardboard/Kraft","endOfLife","combustion",0
-"Hood River","Cardboard/Kraft","endOfLife","landfilling",706.32207580858
-"Hood River","Cardboard/Kraft","endOfLife","recycling",2240.669
-"Hood River","Cardboard/Kraft","endOfLifeTransport","combustion",0
-"Hood River","Cardboard/Kraft","endOfLifeTransport","landfilling",706.32207580858
-"Hood River","Cardboard/Kraft","endOfLifeTransport","recycling",2240.669
-"Hood River","Carpeting-used","endOfLife","combustion",0
-"Hood River","Carpeting-used","endOfLife","landfilling",483.439670338034
-"Hood River","Carpeting-used","endOfLife","recycling",0
-"Hood River","Carpeting-used","endOfLifeTransport","combustion",0
-"Hood River","Carpeting-used","endOfLifeTransport","landfilling",483.439670338034
-"Hood River","Carpeting-used","endOfLifeTransport","recycling",0
-"Hood River","Electronics","endOfLife","landfilling",168.65538881006
-"Hood River","Electronics","endOfLife","recycling",67.932
-"Hood River","Electronics","endOfLifeTransport","landfilling",168.65538881006
-"Hood River","Electronics","endOfLifeTransport","recycling",67.932
-"Hood River","FoodWaste","endOfLife","anaerobicDigestion",0
-"Hood River","FoodWaste","endOfLife","composting",107.145
-"Hood River","FoodWaste","endOfLife","landfilling",3010.94817737639
-"Hood River","FoodWaste","endOfLifeTransport","anaerobicDigestion",0
-"Hood River","FoodWaste","endOfLifeTransport","composting",107.145
-"Hood River","FoodWaste","endOfLifeTransport","landfilling",3010.94817737639
-"Hood River","Glass Containers","endOfLife","landfilling",228.288642240172
-"Hood River","Glass Containers","endOfLife","recycling",1339.36
-"Hood River","Glass Containers","endOfLife","useAsAggregate",0
-"Hood River","Glass Containers","endOfLifeTransport","landfilling",228.288642240172
-"Hood River","Glass Containers","endOfLifeTransport","recycling",1339.36
-"Hood River","Glass Containers","endOfLifeTransport","useAsAggregate",0
-"Hood River","Nonrecyclables","endOfLife","combustion",0
-"Hood River","Nonrecyclables","endOfLife","landfilling",3401.83523094988
-"Hood River","Nonrecyclables","endOfLifeTransport","combustion",0
-"Hood River","Nonrecyclables","endOfLifeTransport","landfilling",3401.83523094988
-"Hood River","Paper Fiber","endOfLife","combustion",0
-"Hood River","Paper Fiber","endOfLife","landfilling",2438.76195683302
-"Hood River","Paper Fiber","endOfLife","recycling",1119.555
-"Hood River","Paper Fiber","endOfLifeTransport","combustion",0
-"Hood River","Paper Fiber","endOfLifeTransport","landfilling",2438.76195683302
-"Hood River","Paper Fiber","endOfLifeTransport","recycling",1119.555
-"Hood River","Plastic Film","endOfLife","combustion",0
-"Hood River","Plastic Film","endOfLife","landfilling",1065.79399134697
-"Hood River","Plastic Film","endOfLife","recycling",152.327
-"Hood River","Plastic Film","endOfLifeTransport","combustion",0
-"Hood River","Plastic Film","endOfLifeTransport","landfilling",1065.79399134697
-"Hood River","Plastic Film","endOfLifeTransport","recycling",152.327
-"Hood River","Rigid Plastic Cont.","endOfLife","combustion",0
-"Hood River","Rigid Plastic Cont.","endOfLife","landfilling",378.465247219368
-"Hood River","Rigid Plastic Cont.","endOfLife","recycling",163.14
-"Hood River","Rigid Plastic Cont.","endOfLifeTransport","combustion",0
-"Hood River","Rigid Plastic Cont.","endOfLifeTransport","landfilling",378.465247219368
-"Hood River","Rigid Plastic Cont.","endOfLifeTransport","recycling",163.14
-"Hood River","Scrap Metal - Other","endOfLife","landfilling",674.199245830744
-"Hood River","Scrap Metal - Other","endOfLife","recycling",248.187
-"Hood River","Scrap Metal - Other","endOfLifeTransport","landfilling",674.199245830744
-"Hood River","Scrap Metal - Other","endOfLifeTransport","recycling",248.187
-"Hood River","Wood Waste","endOfLife","combustion",92.2
-"Hood River","Wood Waste","endOfLife","composting",0
-"Hood River","Wood Waste","endOfLife","landfilling",3087.79499101599
-"Hood River","Wood Waste","endOfLife","recycling",0
-"Hood River","Wood Waste","endOfLifeTransport","combustion",92.2
-"Hood River","Wood Waste","endOfLifeTransport","composting",0
-"Hood River","Wood Waste","endOfLifeTransport","landfilling",3087.79499101599
-"Hood River","Wood Waste","endOfLifeTransport","recycling",0
-"Hood River","Yard Debris","endOfLife","anaerobicDigestion",0
-"Hood River","Yard Debris","endOfLife","combustion",0
-"Hood River","Yard Debris","endOfLife","composting",1022.636
-"Hood River","Yard Debris","endOfLife","landfilling",639.083053018209
-"Hood River","Yard Debris","endOfLifeTransport","anaerobicDigestion",0
-"Hood River","Yard Debris","endOfLifeTransport","combustion",0
-"Hood River","Yard Debris","endOfLifeTransport","composting",1022.636
-"Hood River","Yard Debris","endOfLifeTransport","landfilling",639.083053018209
-"Josephine","Cardboard/Kraft","endOfLife","combustion",0
-"Josephine","Cardboard/Kraft","endOfLife","landfilling",2451.84205534038
-"Josephine","Cardboard/Kraft","endOfLife","recycling",6801.699
-"Josephine","Cardboard/Kraft","endOfLifeTransport","combustion",0
-"Josephine","Cardboard/Kraft","endOfLifeTransport","landfilling",2451.84205534038
-"Josephine","Cardboard/Kraft","endOfLifeTransport","recycling",6801.699
-"Josephine","Carpeting-used","endOfLife","combustion",0
-"Josephine","Carpeting-used","endOfLife","landfilling",1678.15470527062
-"Josephine","Carpeting-used","endOfLife","recycling",0
-"Josephine","Carpeting-used","endOfLifeTransport","combustion",0
-"Josephine","Carpeting-used","endOfLifeTransport","landfilling",1678.15470527062
-"Josephine","Carpeting-used","endOfLifeTransport","recycling",0
-"Josephine","Electronics","endOfLife","landfilling",585.450164035871
-"Josephine","Electronics","endOfLife","recycling",476.618
-"Josephine","Electronics","endOfLifeTransport","landfilling",585.450164035871
-"Josephine","Electronics","endOfLifeTransport","recycling",476.618
-"Josephine","FoodWaste","endOfLife","anaerobicDigestion",0
-"Josephine","FoodWaste","endOfLife","composting",383.995
-"Josephine","FoodWaste","endOfLife","landfilling",10451.8457239083
-"Josephine","FoodWaste","endOfLifeTransport","anaerobicDigestion",0
-"Josephine","FoodWaste","endOfLifeTransport","composting",383.995
-"Josephine","FoodWaste","endOfLifeTransport","landfilling",10451.8457239083
-"Josephine","Glass Containers","endOfLife","landfilling",792.453914399101
-"Josephine","Glass Containers","endOfLife","recycling",2047
-"Josephine","Glass Containers","endOfLife","useAsAggregate",0
-"Josephine","Glass Containers","endOfLifeTransport","landfilling",792.453914399101
-"Josephine","Glass Containers","endOfLifeTransport","recycling",2047
-"Josephine","Glass Containers","endOfLifeTransport","useAsAggregate",0
-"Josephine","Nonrecyclables","endOfLife","combustion",0
-"Josephine","Nonrecyclables","endOfLife","landfilling",11808.7243344804
-"Josephine","Nonrecyclables","endOfLifeTransport","combustion",0
-"Josephine","Nonrecyclables","endOfLifeTransport","landfilling",11808.7243344804
-"Josephine","Paper Fiber","endOfLife","combustion",0
-"Josephine","Paper Fiber","endOfLife","landfilling",8465.62684860484
-"Josephine","Paper Fiber","endOfLife","recycling",3866.039
-"Josephine","Paper Fiber","endOfLifeTransport","combustion",0
-"Josephine","Paper Fiber","endOfLifeTransport","landfilling",8465.62684860484
-"Josephine","Paper Fiber","endOfLifeTransport","recycling",3866.039
-"Josephine","Plastic Film","endOfLife","combustion",0
-"Josephine","Plastic Film","endOfLife","landfilling",3699.66990954107
-"Josephine","Plastic Film","endOfLife","recycling",198.103
-"Josephine","Plastic Film","endOfLifeTransport","combustion",0
-"Josephine","Plastic Film","endOfLifeTransport","landfilling",3699.66990954107
-"Josephine","Plastic Film","endOfLifeTransport","recycling",198.103
-"Josephine","Rigid Plastic Cont.","endOfLife","combustion",0
-"Josephine","Rigid Plastic Cont.","endOfLife","landfilling",1313.75903627953
-"Josephine","Rigid Plastic Cont.","endOfLife","recycling",563.018
-"Josephine","Rigid Plastic Cont.","endOfLifeTransport","combustion",0
-"Josephine","Rigid Plastic Cont.","endOfLifeTransport","landfilling",1313.75903627953
-"Josephine","Rigid Plastic Cont.","endOfLifeTransport","recycling",563.018
-"Josephine","Scrap Metal - Other","endOfLife","landfilling",2340.33470172122
-"Josephine","Scrap Metal - Other","endOfLife","recycling",6915.747
-"Josephine","Scrap Metal - Other","endOfLifeTransport","landfilling",2340.33470172122
-"Josephine","Scrap Metal - Other","endOfLifeTransport","recycling",6915.747
-"Josephine","Wood Waste","endOfLife","combustion",2829.68
-"Josephine","Wood Waste","endOfLife","composting",458.636
-"Josephine","Wood Waste","endOfLife","landfilling",10718.6025703296
-"Josephine","Wood Waste","endOfLife","recycling",0
-"Josephine","Wood Waste","endOfLifeTransport","combustion",2829.68
-"Josephine","Wood Waste","endOfLifeTransport","composting",458.636
-"Josephine","Wood Waste","endOfLifeTransport","landfilling",10718.6025703296
-"Josephine","Wood Waste","endOfLifeTransport","recycling",0
-"Josephine","Yard Debris","endOfLife","anaerobicDigestion",0
-"Josephine","Yard Debris","endOfLife","combustion",1812
-"Josephine","Yard Debris","endOfLife","composting",9443.504
-"Josephine","Yard Debris","endOfLife","landfilling",2218.43654603545
-"Josephine","Yard Debris","endOfLifeTransport","anaerobicDigestion",0
-"Josephine","Yard Debris","endOfLifeTransport","combustion",1812
-"Josephine","Yard Debris","endOfLifeTransport","composting",9443.504
-"Josephine","Yard Debris","endOfLifeTransport","landfilling",2218.43654603545
+"Harney","Cardboard/Kraft","endOfLife","combustion",0
+"Harney","Cardboard/Kraft","endOfLife","landfilling",141.200449415121
+"Harney","Cardboard/Kraft","endOfLife","recycling",445.239
+"Harney","Cardboard/Kraft","endOfLifeTransport","combustion",0
+"Harney","Cardboard/Kraft","endOfLifeTransport","landfilling",141.200449415121
+"Harney","Cardboard/Kraft","endOfLifeTransport","recycling",445.239
+"Harney","Carpeting-used","endOfLife","combustion",0
+"Harney","Carpeting-used","endOfLife","landfilling",96.6441529364405
+"Harney","Carpeting-used","endOfLife","recycling",0
+"Harney","Carpeting-used","endOfLifeTransport","combustion",0
+"Harney","Carpeting-used","endOfLifeTransport","landfilling",96.6441529364405
+"Harney","Carpeting-used","endOfLifeTransport","recycling",0
+"Harney","Electronics","endOfLife","landfilling",33.7158040388312
+"Harney","Electronics","endOfLife","recycling",37.621
+"Harney","Electronics","endOfLifeTransport","landfilling",33.7158040388312
+"Harney","Electronics","endOfLifeTransport","recycling",37.621
+"Harney","FoodWaste","endOfLife","anaerobicDigestion",0
+"Harney","FoodWaste","endOfLife","composting",0.585
+"Harney","FoodWaste","endOfLife","landfilling",601.916958810171
+"Harney","FoodWaste","endOfLifeTransport","anaerobicDigestion",0
+"Harney","FoodWaste","endOfLifeTransport","composting",0.585
+"Harney","FoodWaste","endOfLifeTransport","landfilling",601.916958810171
+"Harney","Glass Containers","endOfLife","landfilling",45.6370542344708
+"Harney","Glass Containers","endOfLife","recycling",61.928
+"Harney","Glass Containers","endOfLife","useAsAggregate",0
+"Harney","Glass Containers","endOfLifeTransport","landfilling",45.6370542344708
+"Harney","Glass Containers","endOfLifeTransport","recycling",61.928
+"Harney","Glass Containers","endOfLifeTransport","useAsAggregate",0
+"Harney","Nonrecyclables","endOfLife","combustion",0
+"Harney","Nonrecyclables","endOfLife","landfilling",680.058970118462
+"Harney","Nonrecyclables","endOfLifeTransport","combustion",0
+"Harney","Nonrecyclables","endOfLifeTransport","landfilling",680.058970118462
+"Harney","Paper Fiber","endOfLife","combustion",0
+"Harney","Paper Fiber","endOfLife","landfilling",487.531532873464
+"Harney","Paper Fiber","endOfLife","recycling",108.79
+"Harney","Paper Fiber","endOfLifeTransport","combustion",0
+"Harney","Paper Fiber","endOfLifeTransport","landfilling",487.531532873464
+"Harney","Paper Fiber","endOfLifeTransport","recycling",108.79
+"Harney","Plastic Film","endOfLife","combustion",0
+"Harney","Plastic Film","endOfLife","landfilling",213.062278125529
+"Harney","Plastic Film","endOfLife","recycling",23.073
+"Harney","Plastic Film","endOfLifeTransport","combustion",0
+"Harney","Plastic Film","endOfLifeTransport","landfilling",213.062278125529
+"Harney","Plastic Film","endOfLifeTransport","recycling",23.073
+"Harney","Rigid Plastic Cont.","endOfLife","combustion",0
+"Harney","Rigid Plastic Cont.","endOfLife","landfilling",75.658774977695
+"Harney","Rigid Plastic Cont.","endOfLife","recycling",22.304
+"Harney","Rigid Plastic Cont.","endOfLifeTransport","combustion",0
+"Harney","Rigid Plastic Cont.","endOfLifeTransport","landfilling",75.658774977695
+"Harney","Rigid Plastic Cont.","endOfLifeTransport","recycling",22.304
+"Harney","Scrap Metal - Other","endOfLife","landfilling",134.778792518495
+"Harney","Scrap Metal - Other","endOfLife","recycling",201.311
+"Harney","Scrap Metal - Other","endOfLifeTransport","landfilling",134.778792518495
+"Harney","Scrap Metal - Other","endOfLifeTransport","recycling",201.311
+"Harney","Wood Waste","endOfLife","combustion",46.1
+"Harney","Wood Waste","endOfLife","composting",0
+"Harney","Wood Waste","endOfLife","landfilling",617.279362157977
+"Harney","Wood Waste","endOfLife","recycling",0
+"Harney","Wood Waste","endOfLifeTransport","combustion",46.1
+"Harney","Wood Waste","endOfLifeTransport","composting",0
+"Harney","Wood Waste","endOfLifeTransport","landfilling",617.279362157977
+"Harney","Wood Waste","endOfLifeTransport","recycling",0
+"Harney","Yard Debris","endOfLife","anaerobicDigestion",0
+"Harney","Yard Debris","endOfLife","combustion",0
+"Harney","Yard Debris","endOfLife","composting",0
+"Harney","Yard Debris","endOfLife","landfilling",127.758734139034
+"Harney","Yard Debris","endOfLifeTransport","anaerobicDigestion",0
+"Harney","Yard Debris","endOfLifeTransport","combustion",0
+"Harney","Yard Debris","endOfLifeTransport","composting",0
+"Harney","Yard Debris","endOfLifeTransport","landfilling",127.758734139034
+"Lane","Cardboard/Kraft","endOfLife","combustion",0
+"Lane","Cardboard/Kraft","endOfLife","landfilling",9028.42595450403
+"Lane","Cardboard/Kraft","endOfLife","recycling",23150.168
+"Lane","Cardboard/Kraft","endOfLifeTransport","combustion",0
+"Lane","Cardboard/Kraft","endOfLifeTransport","landfilling",9028.42595450403
+"Lane","Cardboard/Kraft","endOfLifeTransport","recycling",23150.168
+"Lane","Carpeting-used","endOfLife","combustion",0
+"Lane","Carpeting-used","endOfLife","landfilling",6179.47451539042
+"Lane","Carpeting-used","endOfLife","recycling",0
+"Lane","Carpeting-used","endOfLifeTransport","combustion",0
+"Lane","Carpeting-used","endOfLifeTransport","landfilling",6179.47451539042
+"Lane","Carpeting-used","endOfLifeTransport","recycling",0
+"Lane","Electronics","endOfLife","landfilling",2155.80503831284
+"Lane","Electronics","endOfLife","recycling",2738.096
+"Lane","Electronics","endOfLifeTransport","landfilling",2155.80503831284
+"Lane","Electronics","endOfLifeTransport","recycling",2738.096
+"Lane","FoodWaste","endOfLife","anaerobicDigestion",0
+"Lane","FoodWaste","endOfLife","composting",2201.045
+"Lane","FoodWaste","endOfLife","landfilling",38486.8654164206
+"Lane","FoodWaste","endOfLifeTransport","anaerobicDigestion",0
+"Lane","FoodWaste","endOfLifeTransport","composting",2201.045
+"Lane","FoodWaste","endOfLifeTransport","landfilling",38486.8654164206
+"Lane","Glass Containers","endOfLife","landfilling",2918.05561982495
+"Lane","Glass Containers","endOfLife","recycling",10305.682
+"Lane","Glass Containers","endOfLife","useAsAggregate",0
+"Lane","Glass Containers","endOfLifeTransport","landfilling",2918.05561982495
+"Lane","Glass Containers","endOfLifeTransport","recycling",10305.682
+"Lane","Glass Containers","endOfLifeTransport","useAsAggregate",0
+"Lane","Nonrecyclables","endOfLife","combustion",0
+"Lane","Nonrecyclables","endOfLife","landfilling",43483.3039260374
+"Lane","Nonrecyclables","endOfLifeTransport","combustion",0
+"Lane","Nonrecyclables","endOfLifeTransport","landfilling",43483.3039260374
+"Lane","Paper Fiber","endOfLife","combustion",0
+"Lane","Paper Fiber","endOfLife","landfilling",31173.0052083144
+"Lane","Paper Fiber","endOfLife","recycling",26668.577
+"Lane","Paper Fiber","endOfLifeTransport","combustion",0
+"Lane","Paper Fiber","endOfLifeTransport","landfilling",31173.0052083144
+"Lane","Paper Fiber","endOfLifeTransport","recycling",26668.577
+"Lane","Plastic Film","endOfLife","combustion",0
+"Lane","Plastic Film","endOfLife","landfilling",13623.3065101582
+"Lane","Plastic Film","endOfLife","recycling",987.439
+"Lane","Plastic Film","endOfLifeTransport","combustion",0
+"Lane","Plastic Film","endOfLifeTransport","landfilling",13623.3065101582
+"Lane","Plastic Film","endOfLifeTransport","recycling",987.439
+"Lane","Rigid Plastic Cont.","endOfLife","combustion",0
+"Lane","Rigid Plastic Cont.","endOfLife","landfilling",4837.65916131319
+"Lane","Rigid Plastic Cont.","endOfLife","recycling",2536.116
+"Lane","Rigid Plastic Cont.","endOfLifeTransport","combustion",0
+"Lane","Rigid Plastic Cont.","endOfLifeTransport","landfilling",4837.65916131319
+"Lane","Rigid Plastic Cont.","endOfLifeTransport","recycling",2536.116
+"Lane","Scrap Metal - Other","endOfLife","landfilling",8617.8220645265
+"Lane","Scrap Metal - Other","endOfLife","recycling",51823.449
+"Lane","Scrap Metal - Other","endOfLifeTransport","landfilling",8617.8220645265
+"Lane","Scrap Metal - Other","endOfLifeTransport","recycling",51823.449
+"Lane","Wood Waste","endOfLife","combustion",39963.637
+"Lane","Wood Waste","endOfLife","composting",2478.674
+"Lane","Wood Waste","endOfLife","landfilling",39469.145017395
+"Lane","Wood Waste","endOfLife","recycling",8972.931
+"Lane","Wood Waste","endOfLifeTransport","combustion",39963.637
+"Lane","Wood Waste","endOfLifeTransport","composting",2478.674
+"Lane","Wood Waste","endOfLifeTransport","landfilling",39469.145017395
+"Lane","Wood Waste","endOfLifeTransport","recycling",8972.931
+"Lane","Yard Debris","endOfLife","anaerobicDigestion",0
+"Lane","Yard Debris","endOfLife","combustion",0
+"Lane","Yard Debris","endOfLife","composting",69871.079
+"Lane","Yard Debris","endOfLife","landfilling",8168.95609038982
+"Lane","Yard Debris","endOfLifeTransport","anaerobicDigestion",0
+"Lane","Yard Debris","endOfLifeTransport","combustion",0
+"Lane","Yard Debris","endOfLifeTransport","composting",69871.079
+"Lane","Yard Debris","endOfLifeTransport","landfilling",8168.95609038982
 "Linn","Cardboard/Kraft","endOfLife","combustion",0
 "Linn","Cardboard/Kraft","endOfLife","landfilling",3407.13608715635
 "Linn","Cardboard/Kraft","endOfLife","recycling",20107.575
@@ -559,6 +419,76 @@
 "Metro","Yard Debris","endOfLifeTransport","combustion",14329.22
 "Metro","Yard Debris","endOfLifeTransport","composting",205754.66
 "Metro","Yard Debris","endOfLifeTransport","landfilling",39877.9490771155
+"Morrow","Cardboard/Kraft","endOfLife","combustion",0
+"Morrow","Cardboard/Kraft","endOfLife","landfilling",611.508548768336
+"Morrow","Cardboard/Kraft","endOfLife","recycling",2760.773
+"Morrow","Cardboard/Kraft","endOfLifeTransport","combustion",0
+"Morrow","Cardboard/Kraft","endOfLifeTransport","landfilling",611.508548768336
+"Morrow","Cardboard/Kraft","endOfLifeTransport","recycling",2760.773
+"Morrow","Carpeting-used","endOfLife","combustion",0
+"Morrow","Carpeting-used","endOfLife","landfilling",418.544883914363
+"Morrow","Carpeting-used","endOfLife","recycling",0
+"Morrow","Carpeting-used","endOfLifeTransport","combustion",0
+"Morrow","Carpeting-used","endOfLifeTransport","landfilling",418.544883914363
+"Morrow","Carpeting-used","endOfLifeTransport","recycling",0
+"Morrow","Electronics","endOfLife","landfilling",146.015841194166
+"Morrow","Electronics","endOfLife","recycling",7.788
+"Morrow","Electronics","endOfLifeTransport","landfilling",146.015841194166
+"Morrow","Electronics","endOfLifeTransport","recycling",7.788
+"Morrow","FoodWaste","endOfLife","anaerobicDigestion",0
+"Morrow","FoodWaste","endOfLife","composting",0
+"Morrow","FoodWaste","endOfLife","landfilling",2606.7719152857
+"Morrow","FoodWaste","endOfLifeTransport","anaerobicDigestion",0
+"Morrow","FoodWaste","endOfLifeTransport","composting",0
+"Morrow","FoodWaste","endOfLifeTransport","landfilling",2606.7719152857
+"Morrow","Glass Containers","endOfLife","landfilling",197.644192497835
+"Morrow","Glass Containers","endOfLife","recycling",75.231
+"Morrow","Glass Containers","endOfLife","useAsAggregate",0
+"Morrow","Glass Containers","endOfLifeTransport","landfilling",197.644192497835
+"Morrow","Glass Containers","endOfLifeTransport","recycling",75.231
+"Morrow","Glass Containers","endOfLifeTransport","useAsAggregate",0
+"Morrow","Nonrecyclables","endOfLife","combustion",0
+"Morrow","Nonrecyclables","endOfLife","landfilling",2945.18803315858
+"Morrow","Nonrecyclables","endOfLifeTransport","combustion",0
+"Morrow","Nonrecyclables","endOfLifeTransport","landfilling",2945.18803315858
+"Morrow","Paper Fiber","endOfLife","combustion",0
+"Morrow","Paper Fiber","endOfLife","landfilling",2111.39342247962
+"Morrow","Paper Fiber","endOfLife","recycling",187.991
+"Morrow","Paper Fiber","endOfLifeTransport","combustion",0
+"Morrow","Paper Fiber","endOfLifeTransport","landfilling",2111.39342247962
+"Morrow","Paper Fiber","endOfLifeTransport","recycling",187.991
+"Morrow","Plastic Film","endOfLife","combustion",0
+"Morrow","Plastic Film","endOfLife","landfilling",922.726556703614
+"Morrow","Plastic Film","endOfLife","recycling",101.437
+"Morrow","Plastic Film","endOfLifeTransport","combustion",0
+"Morrow","Plastic Film","endOfLifeTransport","landfilling",922.726556703614
+"Morrow","Plastic Film","endOfLifeTransport","recycling",101.437
+"Morrow","Rigid Plastic Cont.","endOfLife","combustion",0
+"Morrow","Rigid Plastic Cont.","endOfLife","landfilling",327.661759433788
+"Morrow","Rigid Plastic Cont.","endOfLife","recycling",39.571
+"Morrow","Rigid Plastic Cont.","endOfLifeTransport","combustion",0
+"Morrow","Rigid Plastic Cont.","endOfLifeTransport","landfilling",327.661759433788
+"Morrow","Rigid Plastic Cont.","endOfLifeTransport","recycling",39.571
+"Morrow","Scrap Metal - Other","endOfLife","landfilling",583.697744299863
+"Morrow","Scrap Metal - Other","endOfLife","recycling",1277.437
+"Morrow","Scrap Metal - Other","endOfLifeTransport","landfilling",583.697744299863
+"Morrow","Scrap Metal - Other","endOfLifeTransport","recycling",1277.437
+"Morrow","Wood Waste","endOfLife","combustion",218.69
+"Morrow","Wood Waste","endOfLife","composting",0
+"Morrow","Wood Waste","endOfLife","landfilling",2673.30315520543
+"Morrow","Wood Waste","endOfLife","recycling",28
+"Morrow","Wood Waste","endOfLifeTransport","combustion",218.69
+"Morrow","Wood Waste","endOfLifeTransport","composting",0
+"Morrow","Wood Waste","endOfLifeTransport","landfilling",2673.30315520543
+"Morrow","Wood Waste","endOfLifeTransport","recycling",28
+"Morrow","Yard Debris","endOfLife","anaerobicDigestion",0
+"Morrow","Yard Debris","endOfLife","combustion",0
+"Morrow","Yard Debris","endOfLife","composting",0
+"Morrow","Yard Debris","endOfLife","landfilling",553.295392680767
+"Morrow","Yard Debris","endOfLifeTransport","anaerobicDigestion",0
+"Morrow","Yard Debris","endOfLifeTransport","combustion",0
+"Morrow","Yard Debris","endOfLifeTransport","composting",0
+"Morrow","Yard Debris","endOfLifeTransport","landfilling",553.295392680767
 "Oregon total","Cardboard/Kraft","endOfLife","combustion",0
 "Oregon total","Cardboard/Kraft","endOfLife","landfilling",106729.67164973
 "Oregon total","Cardboard/Kraft","endOfLife","recycling",365903.424
@@ -629,6 +559,76 @@
 "Oregon total","Yard Debris","endOfLifeTransport","combustion",32001.852
 "Oregon total","Yard Debris","endOfLifeTransport","composting",464027.888
 "Oregon total","Yard Debris","endOfLifeTransport","landfilling",96569.4358730847
+"Wasco","Cardboard/Kraft","endOfLife","combustion",0
+"Wasco","Cardboard/Kraft","endOfLife","landfilling",679.422488527089
+"Wasco","Cardboard/Kraft","endOfLife","recycling",2779.163
+"Wasco","Cardboard/Kraft","endOfLifeTransport","combustion",0
+"Wasco","Cardboard/Kraft","endOfLifeTransport","landfilling",679.422488527089
+"Wasco","Cardboard/Kraft","endOfLifeTransport","recycling",2779.163
+"Wasco","Carpeting-used","endOfLife","combustion",0
+"Wasco","Carpeting-used","endOfLife","landfilling",465.0283420602
+"Wasco","Carpeting-used","endOfLife","recycling",0
+"Wasco","Carpeting-used","endOfLifeTransport","combustion",0
+"Wasco","Carpeting-used","endOfLifeTransport","landfilling",465.0283420602
+"Wasco","Carpeting-used","endOfLifeTransport","recycling",0
+"Wasco","Electronics","endOfLife","landfilling",162.23231284065
+"Wasco","Electronics","endOfLife","recycling",91.936
+"Wasco","Electronics","endOfLifeTransport","landfilling",162.23231284065
+"Wasco","Electronics","endOfLifeTransport","recycling",91.936
+"Wasco","FoodWaste","endOfLife","anaerobicDigestion",0
+"Wasco","FoodWaste","endOfLife","composting",1.537
+"Wasco","FoodWaste","endOfLife","landfilling",2896.27915304403
+"Wasco","FoodWaste","endOfLifeTransport","anaerobicDigestion",0
+"Wasco","FoodWaste","endOfLifeTransport","composting",1.537
+"Wasco","FoodWaste","endOfLifeTransport","landfilling",2896.27915304403
+"Wasco","Glass Containers","endOfLife","landfilling",219.59449198261
+"Wasco","Glass Containers","endOfLife","recycling",502.871
+"Wasco","Glass Containers","endOfLife","useAsAggregate",0
+"Wasco","Glass Containers","endOfLifeTransport","landfilling",219.59449198261
+"Wasco","Glass Containers","endOfLifeTransport","recycling",502.871
+"Wasco","Glass Containers","endOfLifeTransport","useAsAggregate",0
+"Wasco","Nonrecyclables","endOfLife","combustion",0
+"Wasco","Nonrecyclables","endOfLife","landfilling",3272.27965446952
+"Wasco","Nonrecyclables","endOfLifeTransport","combustion",0
+"Wasco","Nonrecyclables","endOfLifeTransport","landfilling",3272.27965446952
+"Wasco","Paper Fiber","endOfLife","combustion",0
+"Wasco","Paper Fiber","endOfLife","landfilling",2345.88408657602
+"Wasco","Paper Fiber","endOfLife","recycling",890.974
+"Wasco","Paper Fiber","endOfLifeTransport","combustion",0
+"Wasco","Paper Fiber","endOfLifeTransport","landfilling",2345.88408657602
+"Wasco","Paper Fiber","endOfLifeTransport","recycling",890.974
+"Wasco","Plastic Film","endOfLife","combustion",0
+"Wasco","Plastic Film","endOfLife","landfilling",1025.20426680593
+"Wasco","Plastic Film","endOfLife","recycling",111.164
+"Wasco","Plastic Film","endOfLifeTransport","combustion",0
+"Wasco","Plastic Film","endOfLifeTransport","landfilling",1025.20426680593
+"Wasco","Plastic Film","endOfLifeTransport","recycling",111.164
+"Wasco","Rigid Plastic Cont.","endOfLife","combustion",0
+"Wasco","Rigid Plastic Cont.","endOfLife","landfilling",364.051767449627
+"Wasco","Rigid Plastic Cont.","endOfLife","recycling",143.421
+"Wasco","Rigid Plastic Cont.","endOfLifeTransport","combustion",0
+"Wasco","Rigid Plastic Cont.","endOfLifeTransport","landfilling",364.051767449627
+"Wasco","Rigid Plastic Cont.","endOfLifeTransport","recycling",143.421
+"Wasco","Scrap Metal - Other","endOfLife","landfilling",648.523025195027
+"Wasco","Scrap Metal - Other","endOfLife","recycling",281.537
+"Wasco","Scrap Metal - Other","endOfLifeTransport","landfilling",648.523025195027
+"Wasco","Scrap Metal - Other","endOfLifeTransport","recycling",281.537
+"Wasco","Wood Waste","endOfLife","combustion",144.05
+"Wasco","Wood Waste","endOfLife","composting",1.75
+"Wasco","Wood Waste","endOfLife","landfilling",2970.19933074571
+"Wasco","Wood Waste","endOfLife","recycling",0
+"Wasco","Wood Waste","endOfLifeTransport","combustion",144.05
+"Wasco","Wood Waste","endOfLifeTransport","composting",1.75
+"Wasco","Wood Waste","endOfLifeTransport","landfilling",2970.19933074571
+"Wasco","Wood Waste","endOfLifeTransport","recycling",0
+"Wasco","Yard Debris","endOfLife","anaerobicDigestion",0
+"Wasco","Yard Debris","endOfLife","combustion",0
+"Wasco","Yard Debris","endOfLife","composting",780.145
+"Wasco","Yard Debris","endOfLife","landfilling",614.744198331975
+"Wasco","Yard Debris","endOfLifeTransport","anaerobicDigestion",0
+"Wasco","Yard Debris","endOfLifeTransport","combustion",0
+"Wasco","Yard Debris","endOfLifeTransport","composting",780.145
+"Wasco","Yard Debris","endOfLifeTransport","landfilling",614.744198331975
 "Wheeler","Cardboard/Kraft","endOfLife","combustion",0
 "Wheeler","Cardboard/Kraft","endOfLife","landfilling",12.9952421710581
 "Wheeler","Cardboard/Kraft","endOfLife","recycling",9.69

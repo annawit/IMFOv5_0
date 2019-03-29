@@ -1,0 +1,493 @@
+"material","disposition","LCstage","impactCategory","impactUnits","impactFactor","impliedMiles"
+"Cardboard/Kraft","combustion","endOfLife","Energy demand","MJ",-544.621811110032,NA
+"Cardboard/Kraft","combustion","endOfLife","Eutrophication","kg N eq.",0.0237418734040536,NA
+"Cardboard/Kraft","combustion","endOfLife","Global warming","kg CO2 eq.",566.013742841146,NA
+"Cardboard/Kraft","combustion","endOfLife","Human toxicity","CTUh",2.85951683709566e-08,NA
+"Cardboard/Kraft","combustion","endOfLife","Smog","kg O3 eq.",12.8337980681661,NA
+"Cardboard/Kraft","combustion","endOfLife","Water consumption","kg",-501.034825769893,NA
+"Cardboard/Kraft","landfilling","endOfLife","Energy demand","MJ",358.146600062534,NA
+"Cardboard/Kraft","landfilling","endOfLife","Eutrophication","kg N eq.",1.5836943952776,NA
+"Cardboard/Kraft","landfilling","endOfLife","Global warming","kg CO2 eq.",426.558768844724,NA
+"Cardboard/Kraft","landfilling","endOfLife","Human toxicity","CTUh",2.045595647272e-07,NA
+"Cardboard/Kraft","landfilling","endOfLife","Smog","kg O3 eq.",6.78397738421397,NA
+"Cardboard/Kraft","landfilling","endOfLife","Water consumption","kg",-315.304259435827,NA
+"Cardboard/Kraft","recycling","endOfLife","Energy demand","MJ",-2087.58716894793,NA
+"Cardboard/Kraft","recycling","endOfLife","Eutrophication","kg N eq.",-0.0708213799926024,NA
+"Cardboard/Kraft","recycling","endOfLife","Global warming","kg CO2 eq.",-150.166042785371,NA
+"Cardboard/Kraft","recycling","endOfLife","Human toxicity","CTUh",-2.08992223031169e-07,NA
+"Cardboard/Kraft","recycling","endOfLife","Smog","kg O3 eq.",-11.4387385860775,NA
+"Cardboard/Kraft","recycling","endOfLife","Water consumption","kg",-694.657358965385,NA
+"Cardboard/Kraft","combustion","endOfLifeTransport","Energy demand","MJ",1.8464705568407,180
+"Cardboard/Kraft","combustion","endOfLifeTransport","Eutrophication","kg N eq.",4.33817628990274e-05,180
+"Cardboard/Kraft","combustion","endOfLifeTransport","Global warming","kg CO2 eq.",0.127705403332056,180
+"Cardboard/Kraft","combustion","endOfLifeTransport","Human toxicity","CTUh",6.75005513471328e-11,180
+"Cardboard/Kraft","combustion","endOfLifeTransport","Smog","kg O3 eq.",0.0165991888681978,180
+"Cardboard/Kraft","combustion","endOfLifeTransport","Water consumption","kg",0.217399569849707,180
+"Cardboard/Kraft","landfilling","endOfLifeTransport","Energy demand","MJ",1.8464705568407,180
+"Cardboard/Kraft","landfilling","endOfLifeTransport","Eutrophication","kg N eq.",4.33817628990274e-05,180
+"Cardboard/Kraft","landfilling","endOfLifeTransport","Global warming","kg CO2 eq.",0.127705403332056,180
+"Cardboard/Kraft","landfilling","endOfLifeTransport","Human toxicity","CTUh",6.75005513471328e-11,180
+"Cardboard/Kraft","landfilling","endOfLifeTransport","Smog","kg O3 eq.",0.0165991888681978,180
+"Cardboard/Kraft","landfilling","endOfLifeTransport","Water consumption","kg",0.217399569849707,180
+"Cardboard/Kraft","recycling","endOfLifeTransport","Energy demand","MJ",2.90042600248944,180
+"Cardboard/Kraft","recycling","endOfLifeTransport","Eutrophication","kg N eq.",7.63501046471128e-05,180
+"Cardboard/Kraft","recycling","endOfLifeTransport","Global warming","kg CO2 eq.",0.200513188271367,180
+"Cardboard/Kraft","recycling","endOfLifeTransport","Human toxicity","CTUh",1.06005249883158e-10,180
+"Cardboard/Kraft","recycling","endOfLifeTransport","Smog","kg O3 eq.",0.0307527460080563,180
+"Cardboard/Kraft","recycling","endOfLifeTransport","Water consumption","kg",0.340563929946618,180
+"Cardboard/Kraft","production","production","Energy demand","MJ",37482.194939694,NA
+"Cardboard/Kraft","production","production","Eutrophication","kg N eq.",16.376480739538,NA
+"Cardboard/Kraft","production","production","Global warming","kg CO2 eq.",278.588029764997,NA
+"Cardboard/Kraft","production","production","Human toxicity","CTUh",5.903503467807e-05,NA
+"Cardboard/Kraft","production","production","Smog","kg O3 eq.",85.9010389778924,NA
+"Cardboard/Kraft","production","production","Water consumption","kg",131944.292154649,NA
+"Carpeting-used","combustion","endOfLife","Energy demand","MJ",-544.621811110032,NA
+"Carpeting-used","combustion","endOfLife","Eutrophication","kg N eq.",0.0237418734040536,NA
+"Carpeting-used","combustion","endOfLife","Global warming","kg CO2 eq.",566.013742841146,NA
+"Carpeting-used","combustion","endOfLife","Human toxicity","CTUh",2.85951683709566e-08,NA
+"Carpeting-used","combustion","endOfLife","Smog","kg O3 eq.",12.8337980681661,NA
+"Carpeting-used","combustion","endOfLife","Water consumption","kg",-501.034825769893,NA
+"Carpeting-used","landfilling","endOfLife","Energy demand","MJ",680.431139444944,NA
+"Carpeting-used","landfilling","endOfLife","Eutrophication","kg N eq.",0.00941656922528107,NA
+"Carpeting-used","landfilling","endOfLife","Global warming","kg CO2 eq.",39.7640939025638,NA
+"Carpeting-used","landfilling","endOfLife","Human toxicity","CTUh",1.73132950465102e-07,NA
+"Carpeting-used","landfilling","endOfLife","Smog","kg O3 eq.",3.66087854611398,NA
+"Carpeting-used","landfilling","endOfLife","Water consumption","kg",78.6232995578284,NA
+"Carpeting-used","recycling","endOfLife","Energy demand","MJ",-2087.58716894793,NA
+"Carpeting-used","recycling","endOfLife","Eutrophication","kg N eq.",-0.0708213799926024,NA
+"Carpeting-used","recycling","endOfLife","Global warming","kg CO2 eq.",-150.166042785371,NA
+"Carpeting-used","recycling","endOfLife","Human toxicity","CTUh",-2.08992223031169e-07,NA
+"Carpeting-used","recycling","endOfLife","Smog","kg O3 eq.",-11.4387385860775,NA
+"Carpeting-used","recycling","endOfLife","Water consumption","kg",-694.657358965385,NA
+"Carpeting-used","combustion","endOfLifeTransport","Energy demand","MJ",1.8464705568407,180
+"Carpeting-used","combustion","endOfLifeTransport","Eutrophication","kg N eq.",4.33817628990274e-05,180
+"Carpeting-used","combustion","endOfLifeTransport","Global warming","kg CO2 eq.",0.127705403332056,180
+"Carpeting-used","combustion","endOfLifeTransport","Human toxicity","CTUh",6.75005513471328e-11,180
+"Carpeting-used","combustion","endOfLifeTransport","Smog","kg O3 eq.",0.0165991888681978,180
+"Carpeting-used","combustion","endOfLifeTransport","Water consumption","kg",0.217399569849707,180
+"Carpeting-used","landfilling","endOfLifeTransport","Energy demand","MJ",1.8464705568407,180
+"Carpeting-used","landfilling","endOfLifeTransport","Eutrophication","kg N eq.",4.33817628990274e-05,180
+"Carpeting-used","landfilling","endOfLifeTransport","Global warming","kg CO2 eq.",0.127705403332056,180
+"Carpeting-used","landfilling","endOfLifeTransport","Human toxicity","CTUh",6.75005513471328e-11,180
+"Carpeting-used","landfilling","endOfLifeTransport","Smog","kg O3 eq.",0.0165991888681978,180
+"Carpeting-used","landfilling","endOfLifeTransport","Water consumption","kg",0.217399569849707,180
+"Carpeting-used","recycling","endOfLifeTransport","Energy demand","MJ",2.90042600248944,180
+"Carpeting-used","recycling","endOfLifeTransport","Eutrophication","kg N eq.",7.63501046471128e-05,180
+"Carpeting-used","recycling","endOfLifeTransport","Global warming","kg CO2 eq.",0.200513188271367,180
+"Carpeting-used","recycling","endOfLifeTransport","Human toxicity","CTUh",1.06005249883158e-10,180
+"Carpeting-used","recycling","endOfLifeTransport","Smog","kg O3 eq.",0.0307527460080563,180
+"Carpeting-used","recycling","endOfLifeTransport","Water consumption","kg",0.340563929946618,180
+"Carpeting-used","production","production","Energy demand","MJ",73852.3490903196,NA
+"Carpeting-used","production","production","Eutrophication","kg N eq.",0.500301226383645,NA
+"Carpeting-used","production","production","Global warming","kg CO2 eq.",4686.27962361537,NA
+"Carpeting-used","production","production","Human toxicity","CTUh",2.86908367339473e-05,NA
+"Carpeting-used","production","production","Smog","kg O3 eq.",229.27488958818,NA
+"Carpeting-used","production","production","Water consumption","kg",99330.3607729572,NA
+"Electronics","landfilling","endOfLife","Energy demand","MJ",680.431139444944,NA
+"Electronics","landfilling","endOfLife","Eutrophication","kg N eq.",0.00941656922528107,NA
+"Electronics","landfilling","endOfLife","Global warming","kg CO2 eq.",39.7640939025638,NA
+"Electronics","landfilling","endOfLife","Human toxicity","CTUh",1.73132950465102e-07,NA
+"Electronics","landfilling","endOfLife","Smog","kg O3 eq.",3.66087854611398,NA
+"Electronics","landfilling","endOfLife","Water consumption","kg",78.6232995578284,NA
+"Electronics","recycling","endOfLife","Energy demand","MJ",-30251.2819148879,NA
+"Electronics","recycling","endOfLife","Eutrophication","kg N eq.",-0.207070162810331,NA
+"Electronics","recycling","endOfLife","Global warming","kg CO2 eq.",-2095.08195893509,NA
+"Electronics","recycling","endOfLife","Human toxicity","CTUh",-2.22891933653896e-05,NA
+"Electronics","recycling","endOfLife","Smog","kg O3 eq.",-114.56230985136,NA
+"Electronics","recycling","endOfLife","Water consumption","kg",-72261.2800445482,NA
+"Electronics","landfilling","endOfLifeTransport","Energy demand","MJ",1.8464705568407,180
+"Electronics","landfilling","endOfLifeTransport","Eutrophication","kg N eq.",4.33817628990274e-05,180
+"Electronics","landfilling","endOfLifeTransport","Global warming","kg CO2 eq.",0.127705403332056,180
+"Electronics","landfilling","endOfLifeTransport","Human toxicity","CTUh",6.75005513471328e-11,180
+"Electronics","landfilling","endOfLifeTransport","Smog","kg O3 eq.",0.0165991888681978,180
+"Electronics","landfilling","endOfLifeTransport","Water consumption","kg",0.217399569849707,180
+"Electronics","recycling","endOfLifeTransport","Energy demand","MJ",2.69745443452463,180
+"Electronics","recycling","endOfLifeTransport","Eutrophication","kg N eq.",7.10057638120811e-05,180
+"Electronics","recycling","endOfLifeTransport","Global warming","kg CO2 eq.",0.186481320494688,180
+"Electronics","recycling","endOfLifeTransport","Human toxicity","CTUh",9.85870089900544e-11,180
+"Electronics","recycling","endOfLifeTransport","Smog","kg O3 eq.",0.0285998846077565,180
+"Electronics","recycling","endOfLifeTransport","Water consumption","kg",0.31673120260829,180
+"Electronics","production","production","Energy demand","MJ",73852.3490903196,NA
+"Electronics","production","production","Eutrophication","kg N eq.",0.500301226383645,NA
+"Electronics","production","production","Global warming","kg CO2 eq.",4686.27962361537,NA
+"Electronics","production","production","Human toxicity","CTUh",2.86908367339473e-05,NA
+"Electronics","production","production","Smog","kg O3 eq.",229.27488958818,NA
+"Electronics","production","production","Water consumption","kg",99330.3607729572,NA
+"FoodWaste","anaerobicDigestion","endOfLife","Energy demand","MJ",-5316.37704998353,NA
+"FoodWaste","anaerobicDigestion","endOfLife","Eutrophication","kg N eq.",0.307660669033052,NA
+"FoodWaste","anaerobicDigestion","endOfLife","Global warming","kg CO2 eq.",171.77877067953,NA
+"FoodWaste","anaerobicDigestion","endOfLife","Human toxicity","CTUh",3.85424182861614e-05,NA
+"FoodWaste","anaerobicDigestion","endOfLife","Smog","kg O3 eq.",2.81939810895949,NA
+"FoodWaste","anaerobicDigestion","endOfLife","Water consumption","kg",1304.37897373055,NA
+"FoodWaste","composting","endOfLife","Energy demand","MJ",-3963.41621057697,NA
+"FoodWaste","composting","endOfLife","Eutrophication","kg N eq.",0.0137306156740234,NA
+"FoodWaste","composting","endOfLife","Global warming","kg CO2 eq.",533.786947651242,NA
+"FoodWaste","composting","endOfLife","Human toxicity","CTUh",6.28114029327582e-07,NA
+"FoodWaste","composting","endOfLife","Smog","kg O3 eq.",-0.809296238475857,NA
+"FoodWaste","composting","endOfLife","Water consumption","kg",106.747730603442,NA
+"FoodWaste","landfilling","endOfLife","Energy demand","MJ",358.146600062534,NA
+"FoodWaste","landfilling","endOfLife","Eutrophication","kg N eq.",1.5836943952776,NA
+"FoodWaste","landfilling","endOfLife","Global warming","kg CO2 eq.",426.558768844724,NA
+"FoodWaste","landfilling","endOfLife","Human toxicity","CTUh",2.045595647272e-07,NA
+"FoodWaste","landfilling","endOfLife","Smog","kg O3 eq.",6.78397738421397,NA
+"FoodWaste","landfilling","endOfLife","Water consumption","kg",-315.304259435827,NA
+"FoodWaste","anaerobicDigestion","endOfLifeTransport","Energy demand","MJ",1.8464705568407,180
+"FoodWaste","anaerobicDigestion","endOfLifeTransport","Eutrophication","kg N eq.",4.33817628990274e-05,180
+"FoodWaste","anaerobicDigestion","endOfLifeTransport","Global warming","kg CO2 eq.",0.127705403332056,180
+"FoodWaste","anaerobicDigestion","endOfLifeTransport","Human toxicity","CTUh",6.75005513471328e-11,180
+"FoodWaste","anaerobicDigestion","endOfLifeTransport","Smog","kg O3 eq.",0.0165991888681978,180
+"FoodWaste","anaerobicDigestion","endOfLifeTransport","Water consumption","kg",0.217399569849707,180
+"FoodWaste","composting","endOfLifeTransport","Energy demand","MJ",1.8464705568407,180
+"FoodWaste","composting","endOfLifeTransport","Eutrophication","kg N eq.",4.33817628990274e-05,180
+"FoodWaste","composting","endOfLifeTransport","Global warming","kg CO2 eq.",0.127705403332056,180
+"FoodWaste","composting","endOfLifeTransport","Human toxicity","CTUh",6.75005513471328e-11,180
+"FoodWaste","composting","endOfLifeTransport","Smog","kg O3 eq.",0.0165991888681978,180
+"FoodWaste","composting","endOfLifeTransport","Water consumption","kg",0.217399569849707,180
+"FoodWaste","landfilling","endOfLifeTransport","Energy demand","MJ",1.8464705568407,180
+"FoodWaste","landfilling","endOfLifeTransport","Eutrophication","kg N eq.",4.33817628990274e-05,180
+"FoodWaste","landfilling","endOfLifeTransport","Global warming","kg CO2 eq.",0.127705403332056,180
+"FoodWaste","landfilling","endOfLifeTransport","Human toxicity","CTUh",6.75005513471328e-11,180
+"FoodWaste","landfilling","endOfLifeTransport","Smog","kg O3 eq.",0.0165991888681978,180
+"FoodWaste","landfilling","endOfLifeTransport","Water consumption","kg",0.217399569849707,180
+"FoodWaste","production","production","Energy demand","MJ",37482.194939694,NA
+"FoodWaste","production","production","Eutrophication","kg N eq.",16.376480739538,NA
+"FoodWaste","production","production","Global warming","kg CO2 eq.",278.588029764997,NA
+"FoodWaste","production","production","Human toxicity","CTUh",5.903503467807e-05,NA
+"FoodWaste","production","production","Smog","kg O3 eq.",85.9010389778924,NA
+"FoodWaste","production","production","Water consumption","kg",131944.292154649,NA
+"Glass Containers","landfilling","endOfLife","Energy demand","MJ",680.431139444944,NA
+"Glass Containers","landfilling","endOfLife","Eutrophication","kg N eq.",0.00941656922528107,NA
+"Glass Containers","landfilling","endOfLife","Global warming","kg CO2 eq.",39.7640939025638,NA
+"Glass Containers","landfilling","endOfLife","Human toxicity","CTUh",1.73132950465102e-07,NA
+"Glass Containers","landfilling","endOfLife","Smog","kg O3 eq.",3.66087854611398,NA
+"Glass Containers","landfilling","endOfLife","Water consumption","kg",78.6232995578284,NA
+"Glass Containers","recycling","endOfLife","Energy demand","MJ",-2087.58716894793,NA
+"Glass Containers","recycling","endOfLife","Eutrophication","kg N eq.",-0.0708213799926024,NA
+"Glass Containers","recycling","endOfLife","Global warming","kg CO2 eq.",-150.166042785371,NA
+"Glass Containers","recycling","endOfLife","Human toxicity","CTUh",-2.08992223031169e-07,NA
+"Glass Containers","recycling","endOfLife","Smog","kg O3 eq.",-11.4387385860775,NA
+"Glass Containers","recycling","endOfLife","Water consumption","kg",-694.657358965385,NA
+"Glass Containers","useAsAggregate","endOfLife","Energy demand","MJ",-151.452696307575,NA
+"Glass Containers","useAsAggregate","endOfLife","Eutrophication","kg N eq.",0.0690286154124664,NA
+"Glass Containers","useAsAggregate","endOfLife","Global warming","kg CO2 eq.",18.5462978316261,NA
+"Glass Containers","useAsAggregate","endOfLife","Human toxicity","CTUh",5.80871990318191e-07,NA
+"Glass Containers","useAsAggregate","endOfLife","Smog","kg O3 eq.",0.0363170771851443,NA
+"Glass Containers","useAsAggregate","endOfLife","Water consumption","kg",0.680145322083263,NA
+"Glass Containers","landfilling","endOfLifeTransport","Energy demand","MJ",1.8464705568407,180
+"Glass Containers","landfilling","endOfLifeTransport","Eutrophication","kg N eq.",4.33817628990274e-05,180
+"Glass Containers","landfilling","endOfLifeTransport","Global warming","kg CO2 eq.",0.127705403332056,180
+"Glass Containers","landfilling","endOfLifeTransport","Human toxicity","CTUh",6.75005513471328e-11,180
+"Glass Containers","landfilling","endOfLifeTransport","Smog","kg O3 eq.",0.0165991888681978,180
+"Glass Containers","landfilling","endOfLifeTransport","Water consumption","kg",0.217399569849707,180
+"Glass Containers","recycling","endOfLifeTransport","Energy demand","MJ",2.90042600248944,180
+"Glass Containers","recycling","endOfLifeTransport","Eutrophication","kg N eq.",7.63501046471128e-05,180
+"Glass Containers","recycling","endOfLifeTransport","Global warming","kg CO2 eq.",0.200513188271367,180
+"Glass Containers","recycling","endOfLifeTransport","Human toxicity","CTUh",1.06005249883158e-10,180
+"Glass Containers","recycling","endOfLifeTransport","Smog","kg O3 eq.",0.0307527460080563,180
+"Glass Containers","recycling","endOfLifeTransport","Water consumption","kg",0.340563929946618,180
+"Glass Containers","useAsAggregate","endOfLifeTransport","Energy demand","MJ",26.1038340224049,20
+"Glass Containers","useAsAggregate","endOfLifeTransport","Eutrophication","kg N eq.",0.000687150941824015,20
+"Glass Containers","useAsAggregate","endOfLifeTransport","Global warming","kg CO2 eq.",1.8046186944423,20
+"Glass Containers","useAsAggregate","endOfLifeTransport","Human toxicity","CTUh",9.54047248948425e-10,20
+"Glass Containers","useAsAggregate","endOfLifeTransport","Smog","kg O3 eq.",0.276774714072506,20
+"Glass Containers","useAsAggregate","endOfLifeTransport","Water consumption","kg",3.06507536951956,20
+"Glass Containers","production","production","Energy demand","MJ",14238.2233415662,NA
+"Glass Containers","production","production","Eutrophication","kg N eq.",1.77266548663721,NA
+"Glass Containers","production","production","Global warming","kg CO2 eq.",927.326122775538,NA
+"Glass Containers","production","production","Human toxicity","CTUh",3.40762106385021e-05,NA
+"Glass Containers","production","production","Smog","kg O3 eq.",81.6778060669051,NA
+"Glass Containers","production","production","Water consumption","kg",6826.18496641441,NA
+"Nonrecyclables","combustion","endOfLife","Energy demand","MJ",-544.621811110032,NA
+"Nonrecyclables","combustion","endOfLife","Eutrophication","kg N eq.",0.0237418734040536,NA
+"Nonrecyclables","combustion","endOfLife","Global warming","kg CO2 eq.",566.013742841146,NA
+"Nonrecyclables","combustion","endOfLife","Human toxicity","CTUh",2.85951683709566e-08,NA
+"Nonrecyclables","combustion","endOfLife","Smog","kg O3 eq.",12.8337980681661,NA
+"Nonrecyclables","combustion","endOfLife","Water consumption","kg",-501.034825769893,NA
+"Nonrecyclables","landfilling","endOfLife","Energy demand","MJ",680.431139444944,NA
+"Nonrecyclables","landfilling","endOfLife","Eutrophication","kg N eq.",0.00941656922528107,NA
+"Nonrecyclables","landfilling","endOfLife","Global warming","kg CO2 eq.",39.7640939025638,NA
+"Nonrecyclables","landfilling","endOfLife","Human toxicity","CTUh",1.73132950465102e-07,NA
+"Nonrecyclables","landfilling","endOfLife","Smog","kg O3 eq.",3.66087854611398,NA
+"Nonrecyclables","landfilling","endOfLife","Water consumption","kg",78.6232995578284,NA
+"Nonrecyclables","combustion","endOfLifeTransport","Energy demand","MJ",1.8464705568407,180
+"Nonrecyclables","combustion","endOfLifeTransport","Eutrophication","kg N eq.",4.33817628990274e-05,180
+"Nonrecyclables","combustion","endOfLifeTransport","Global warming","kg CO2 eq.",0.127705403332056,180
+"Nonrecyclables","combustion","endOfLifeTransport","Human toxicity","CTUh",6.75005513471328e-11,180
+"Nonrecyclables","combustion","endOfLifeTransport","Smog","kg O3 eq.",0.0165991888681978,180
+"Nonrecyclables","combustion","endOfLifeTransport","Water consumption","kg",0.217399569849707,180
+"Nonrecyclables","landfilling","endOfLifeTransport","Energy demand","MJ",1.8464705568407,180
+"Nonrecyclables","landfilling","endOfLifeTransport","Eutrophication","kg N eq.",4.33817628990274e-05,180
+"Nonrecyclables","landfilling","endOfLifeTransport","Global warming","kg CO2 eq.",0.127705403332056,180
+"Nonrecyclables","landfilling","endOfLifeTransport","Human toxicity","CTUh",6.75005513471328e-11,180
+"Nonrecyclables","landfilling","endOfLifeTransport","Smog","kg O3 eq.",0.0165991888681978,180
+"Nonrecyclables","landfilling","endOfLifeTransport","Water consumption","kg",0.217399569849707,180
+"Nonrecyclables","production","production","Energy demand","MJ",14238.2233415662,NA
+"Nonrecyclables","production","production","Eutrophication","kg N eq.",1.77266548663721,NA
+"Nonrecyclables","production","production","Global warming","kg CO2 eq.",927.326122775538,NA
+"Nonrecyclables","production","production","Human toxicity","CTUh",3.40762106385021e-05,NA
+"Nonrecyclables","production","production","Smog","kg O3 eq.",81.6778060669051,NA
+"Nonrecyclables","production","production","Water consumption","kg",6826.18496641441,NA
+"Paper Fiber","combustion","endOfLife","Energy demand","MJ",-544.621811110032,NA
+"Paper Fiber","combustion","endOfLife","Eutrophication","kg N eq.",0.0237418734040536,NA
+"Paper Fiber","combustion","endOfLife","Global warming","kg CO2 eq.",566.013742841146,NA
+"Paper Fiber","combustion","endOfLife","Human toxicity","CTUh",2.85951683709566e-08,NA
+"Paper Fiber","combustion","endOfLife","Smog","kg O3 eq.",12.8337980681661,NA
+"Paper Fiber","combustion","endOfLife","Water consumption","kg",-501.034825769893,NA
+"Paper Fiber","landfilling","endOfLife","Energy demand","MJ",358.146600062534,NA
+"Paper Fiber","landfilling","endOfLife","Eutrophication","kg N eq.",1.5836943952776,NA
+"Paper Fiber","landfilling","endOfLife","Global warming","kg CO2 eq.",426.558768844724,NA
+"Paper Fiber","landfilling","endOfLife","Human toxicity","CTUh",2.045595647272e-07,NA
+"Paper Fiber","landfilling","endOfLife","Smog","kg O3 eq.",6.78397738421397,NA
+"Paper Fiber","landfilling","endOfLife","Water consumption","kg",-315.304259435827,NA
+"Paper Fiber","recycling","endOfLife","Energy demand","MJ",-2087.58716894793,NA
+"Paper Fiber","recycling","endOfLife","Eutrophication","kg N eq.",-0.0708213799926024,NA
+"Paper Fiber","recycling","endOfLife","Global warming","kg CO2 eq.",-150.166042785371,NA
+"Paper Fiber","recycling","endOfLife","Human toxicity","CTUh",-2.08992223031169e-07,NA
+"Paper Fiber","recycling","endOfLife","Smog","kg O3 eq.",-11.4387385860775,NA
+"Paper Fiber","recycling","endOfLife","Water consumption","kg",-694.657358965385,NA
+"Paper Fiber","combustion","endOfLifeTransport","Energy demand","MJ",1.8464705568407,180
+"Paper Fiber","combustion","endOfLifeTransport","Eutrophication","kg N eq.",4.33817628990274e-05,180
+"Paper Fiber","combustion","endOfLifeTransport","Global warming","kg CO2 eq.",0.127705403332056,180
+"Paper Fiber","combustion","endOfLifeTransport","Human toxicity","CTUh",6.75005513471328e-11,180
+"Paper Fiber","combustion","endOfLifeTransport","Smog","kg O3 eq.",0.0165991888681978,180
+"Paper Fiber","combustion","endOfLifeTransport","Water consumption","kg",0.217399569849707,180
+"Paper Fiber","landfilling","endOfLifeTransport","Energy demand","MJ",1.8464705568407,180
+"Paper Fiber","landfilling","endOfLifeTransport","Eutrophication","kg N eq.",4.33817628990274e-05,180
+"Paper Fiber","landfilling","endOfLifeTransport","Global warming","kg CO2 eq.",0.127705403332056,180
+"Paper Fiber","landfilling","endOfLifeTransport","Human toxicity","CTUh",6.75005513471328e-11,180
+"Paper Fiber","landfilling","endOfLifeTransport","Smog","kg O3 eq.",0.0165991888681978,180
+"Paper Fiber","landfilling","endOfLifeTransport","Water consumption","kg",0.217399569849707,180
+"Paper Fiber","recycling","endOfLifeTransport","Energy demand","MJ",2.90042600248944,180
+"Paper Fiber","recycling","endOfLifeTransport","Eutrophication","kg N eq.",7.63501046471128e-05,180
+"Paper Fiber","recycling","endOfLifeTransport","Global warming","kg CO2 eq.",0.200513188271367,180
+"Paper Fiber","recycling","endOfLifeTransport","Human toxicity","CTUh",1.06005249883158e-10,180
+"Paper Fiber","recycling","endOfLifeTransport","Smog","kg O3 eq.",0.0307527460080563,180
+"Paper Fiber","recycling","endOfLifeTransport","Water consumption","kg",0.340563929946618,180
+"Paper Fiber","production","production","Energy demand","MJ",37482.194939694,NA
+"Paper Fiber","production","production","Eutrophication","kg N eq.",16.376480739538,NA
+"Paper Fiber","production","production","Global warming","kg CO2 eq.",278.588029764997,NA
+"Paper Fiber","production","production","Human toxicity","CTUh",5.903503467807e-05,NA
+"Paper Fiber","production","production","Smog","kg O3 eq.",85.9010389778924,NA
+"Paper Fiber","production","production","Water consumption","kg",131944.292154649,NA
+"Plastic Film","combustion","endOfLife","Energy demand","MJ",-544.621811110032,NA
+"Plastic Film","combustion","endOfLife","Eutrophication","kg N eq.",0.0237418734040536,NA
+"Plastic Film","combustion","endOfLife","Global warming","kg CO2 eq.",566.013742841146,NA
+"Plastic Film","combustion","endOfLife","Human toxicity","CTUh",2.85951683709566e-08,NA
+"Plastic Film","combustion","endOfLife","Smog","kg O3 eq.",12.8337980681661,NA
+"Plastic Film","combustion","endOfLife","Water consumption","kg",-501.034825769893,NA
+"Plastic Film","landfilling","endOfLife","Energy demand","MJ",680.431139444944,NA
+"Plastic Film","landfilling","endOfLife","Eutrophication","kg N eq.",0.00941656922528107,NA
+"Plastic Film","landfilling","endOfLife","Global warming","kg CO2 eq.",39.7640939025638,NA
+"Plastic Film","landfilling","endOfLife","Human toxicity","CTUh",1.73132950465102e-07,NA
+"Plastic Film","landfilling","endOfLife","Smog","kg O3 eq.",3.66087854611398,NA
+"Plastic Film","landfilling","endOfLife","Water consumption","kg",78.6232995578284,NA
+"Plastic Film","recycling","endOfLife","Energy demand","MJ",-2087.58716894793,NA
+"Plastic Film","recycling","endOfLife","Eutrophication","kg N eq.",-0.0708213799926024,NA
+"Plastic Film","recycling","endOfLife","Global warming","kg CO2 eq.",-150.166042785371,NA
+"Plastic Film","recycling","endOfLife","Human toxicity","CTUh",-2.08992223031169e-07,NA
+"Plastic Film","recycling","endOfLife","Smog","kg O3 eq.",-11.4387385860775,NA
+"Plastic Film","recycling","endOfLife","Water consumption","kg",-694.657358965385,NA
+"Plastic Film","combustion","endOfLifeTransport","Energy demand","MJ",1.8464705568407,180
+"Plastic Film","combustion","endOfLifeTransport","Eutrophication","kg N eq.",4.33817628990274e-05,180
+"Plastic Film","combustion","endOfLifeTransport","Global warming","kg CO2 eq.",0.127705403332056,180
+"Plastic Film","combustion","endOfLifeTransport","Human toxicity","CTUh",6.75005513471328e-11,180
+"Plastic Film","combustion","endOfLifeTransport","Smog","kg O3 eq.",0.0165991888681978,180
+"Plastic Film","combustion","endOfLifeTransport","Water consumption","kg",0.217399569849707,180
+"Plastic Film","landfilling","endOfLifeTransport","Energy demand","MJ",1.8464705568407,180
+"Plastic Film","landfilling","endOfLifeTransport","Eutrophication","kg N eq.",4.33817628990274e-05,180
+"Plastic Film","landfilling","endOfLifeTransport","Global warming","kg CO2 eq.",0.127705403332056,180
+"Plastic Film","landfilling","endOfLifeTransport","Human toxicity","CTUh",6.75005513471328e-11,180
+"Plastic Film","landfilling","endOfLifeTransport","Smog","kg O3 eq.",0.0165991888681978,180
+"Plastic Film","landfilling","endOfLifeTransport","Water consumption","kg",0.217399569849707,180
+"Plastic Film","recycling","endOfLifeTransport","Energy demand","MJ",2.90042600248944,180
+"Plastic Film","recycling","endOfLifeTransport","Eutrophication","kg N eq.",7.63501046471128e-05,180
+"Plastic Film","recycling","endOfLifeTransport","Global warming","kg CO2 eq.",0.200513188271367,180
+"Plastic Film","recycling","endOfLifeTransport","Human toxicity","CTUh",1.06005249883158e-10,180
+"Plastic Film","recycling","endOfLifeTransport","Smog","kg O3 eq.",0.0307527460080563,180
+"Plastic Film","recycling","endOfLifeTransport","Water consumption","kg",0.340563929946618,180
+"Plastic Film","production","production","Energy demand","MJ",37482.194939694,NA
+"Plastic Film","production","production","Eutrophication","kg N eq.",16.376480739538,NA
+"Plastic Film","production","production","Global warming","kg CO2 eq.",278.588029764997,NA
+"Plastic Film","production","production","Human toxicity","CTUh",5.903503467807e-05,NA
+"Plastic Film","production","production","Smog","kg O3 eq.",85.9010389778924,NA
+"Plastic Film","production","production","Water consumption","kg",131944.292154649,NA
+"Rigid Plastic Cont.","combustion","endOfLife","Energy demand","MJ",-544.621811110032,NA
+"Rigid Plastic Cont.","combustion","endOfLife","Eutrophication","kg N eq.",0.0237418734040536,NA
+"Rigid Plastic Cont.","combustion","endOfLife","Global warming","kg CO2 eq.",566.013742841146,NA
+"Rigid Plastic Cont.","combustion","endOfLife","Human toxicity","CTUh",2.85951683709566e-08,NA
+"Rigid Plastic Cont.","combustion","endOfLife","Smog","kg O3 eq.",12.8337980681661,NA
+"Rigid Plastic Cont.","combustion","endOfLife","Water consumption","kg",-501.034825769893,NA
+"Rigid Plastic Cont.","landfilling","endOfLife","Energy demand","MJ",680.431139444944,NA
+"Rigid Plastic Cont.","landfilling","endOfLife","Eutrophication","kg N eq.",0.00941656922528107,NA
+"Rigid Plastic Cont.","landfilling","endOfLife","Global warming","kg CO2 eq.",39.7640939025638,NA
+"Rigid Plastic Cont.","landfilling","endOfLife","Human toxicity","CTUh",1.73132950465102e-07,NA
+"Rigid Plastic Cont.","landfilling","endOfLife","Smog","kg O3 eq.",3.66087854611398,NA
+"Rigid Plastic Cont.","landfilling","endOfLife","Water consumption","kg",78.6232995578284,NA
+"Rigid Plastic Cont.","recycling","endOfLife","Energy demand","MJ",-2087.58716894793,NA
+"Rigid Plastic Cont.","recycling","endOfLife","Eutrophication","kg N eq.",-0.0708213799926024,NA
+"Rigid Plastic Cont.","recycling","endOfLife","Global warming","kg CO2 eq.",-150.166042785371,NA
+"Rigid Plastic Cont.","recycling","endOfLife","Human toxicity","CTUh",-2.08992223031169e-07,NA
+"Rigid Plastic Cont.","recycling","endOfLife","Smog","kg O3 eq.",-11.4387385860775,NA
+"Rigid Plastic Cont.","recycling","endOfLife","Water consumption","kg",-694.657358965385,NA
+"Rigid Plastic Cont.","combustion","endOfLifeTransport","Energy demand","MJ",1.8464705568407,180
+"Rigid Plastic Cont.","combustion","endOfLifeTransport","Eutrophication","kg N eq.",4.33817628990274e-05,180
+"Rigid Plastic Cont.","combustion","endOfLifeTransport","Global warming","kg CO2 eq.",0.127705403332056,180
+"Rigid Plastic Cont.","combustion","endOfLifeTransport","Human toxicity","CTUh",6.75005513471328e-11,180
+"Rigid Plastic Cont.","combustion","endOfLifeTransport","Smog","kg O3 eq.",0.0165991888681978,180
+"Rigid Plastic Cont.","combustion","endOfLifeTransport","Water consumption","kg",0.217399569849707,180
+"Rigid Plastic Cont.","landfilling","endOfLifeTransport","Energy demand","MJ",1.8464705568407,180
+"Rigid Plastic Cont.","landfilling","endOfLifeTransport","Eutrophication","kg N eq.",4.33817628990274e-05,180
+"Rigid Plastic Cont.","landfilling","endOfLifeTransport","Global warming","kg CO2 eq.",0.127705403332056,180
+"Rigid Plastic Cont.","landfilling","endOfLifeTransport","Human toxicity","CTUh",6.75005513471328e-11,180
+"Rigid Plastic Cont.","landfilling","endOfLifeTransport","Smog","kg O3 eq.",0.0165991888681978,180
+"Rigid Plastic Cont.","landfilling","endOfLifeTransport","Water consumption","kg",0.217399569849707,180
+"Rigid Plastic Cont.","recycling","endOfLifeTransport","Energy demand","MJ",2.90042600248944,180
+"Rigid Plastic Cont.","recycling","endOfLifeTransport","Eutrophication","kg N eq.",7.63501046471128e-05,180
+"Rigid Plastic Cont.","recycling","endOfLifeTransport","Global warming","kg CO2 eq.",0.200513188271367,180
+"Rigid Plastic Cont.","recycling","endOfLifeTransport","Human toxicity","CTUh",1.06005249883158e-10,180
+"Rigid Plastic Cont.","recycling","endOfLifeTransport","Smog","kg O3 eq.",0.0307527460080563,180
+"Rigid Plastic Cont.","recycling","endOfLifeTransport","Water consumption","kg",0.340563929946618,180
+"Rigid Plastic Cont.","production","production","Energy demand","MJ",14238.2233415662,NA
+"Rigid Plastic Cont.","production","production","Eutrophication","kg N eq.",1.77266548663721,NA
+"Rigid Plastic Cont.","production","production","Global warming","kg CO2 eq.",927.326122775538,NA
+"Rigid Plastic Cont.","production","production","Human toxicity","CTUh",3.40762106385021e-05,NA
+"Rigid Plastic Cont.","production","production","Smog","kg O3 eq.",81.6778060669051,NA
+"Rigid Plastic Cont.","production","production","Water consumption","kg",6826.18496641441,NA
+"Scrap Metal - Other","landfilling","endOfLife","Energy demand","MJ",680.431139444944,NA
+"Scrap Metal - Other","landfilling","endOfLife","Eutrophication","kg N eq.",0.00941656922528107,NA
+"Scrap Metal - Other","landfilling","endOfLife","Global warming","kg CO2 eq.",39.7640939025638,NA
+"Scrap Metal - Other","landfilling","endOfLife","Human toxicity","CTUh",1.73132950465102e-07,NA
+"Scrap Metal - Other","landfilling","endOfLife","Smog","kg O3 eq.",3.66087854611398,NA
+"Scrap Metal - Other","landfilling","endOfLife","Water consumption","kg",78.6232995578284,NA
+"Scrap Metal - Other","recycling","endOfLife","Energy demand","MJ",-30251.2819148879,NA
+"Scrap Metal - Other","recycling","endOfLife","Eutrophication","kg N eq.",-0.207070162810331,NA
+"Scrap Metal - Other","recycling","endOfLife","Global warming","kg CO2 eq.",-2095.08195893509,NA
+"Scrap Metal - Other","recycling","endOfLife","Human toxicity","CTUh",-2.22891933653896e-05,NA
+"Scrap Metal - Other","recycling","endOfLife","Smog","kg O3 eq.",-114.56230985136,NA
+"Scrap Metal - Other","recycling","endOfLife","Water consumption","kg",-72261.2800445482,NA
+"Scrap Metal - Other","landfilling","endOfLifeTransport","Energy demand","MJ",1.8464705568407,180
+"Scrap Metal - Other","landfilling","endOfLifeTransport","Eutrophication","kg N eq.",4.33817628990274e-05,180
+"Scrap Metal - Other","landfilling","endOfLifeTransport","Global warming","kg CO2 eq.",0.127705403332056,180
+"Scrap Metal - Other","landfilling","endOfLifeTransport","Human toxicity","CTUh",6.75005513471328e-11,180
+"Scrap Metal - Other","landfilling","endOfLifeTransport","Smog","kg O3 eq.",0.0165991888681978,180
+"Scrap Metal - Other","landfilling","endOfLifeTransport","Water consumption","kg",0.217399569849707,180
+"Scrap Metal - Other","recycling","endOfLifeTransport","Energy demand","MJ",2.69745443452463,180
+"Scrap Metal - Other","recycling","endOfLifeTransport","Eutrophication","kg N eq.",7.10057638120811e-05,180
+"Scrap Metal - Other","recycling","endOfLifeTransport","Global warming","kg CO2 eq.",0.186481320494688,180
+"Scrap Metal - Other","recycling","endOfLifeTransport","Human toxicity","CTUh",9.85870089900544e-11,180
+"Scrap Metal - Other","recycling","endOfLifeTransport","Smog","kg O3 eq.",0.0285998846077565,180
+"Scrap Metal - Other","recycling","endOfLifeTransport","Water consumption","kg",0.31673120260829,180
+"Scrap Metal - Other","production","production","Energy demand","MJ",73852.3490903196,NA
+"Scrap Metal - Other","production","production","Eutrophication","kg N eq.",0.500301226383645,NA
+"Scrap Metal - Other","production","production","Global warming","kg CO2 eq.",4686.27962361537,NA
+"Scrap Metal - Other","production","production","Human toxicity","CTUh",2.86908367339473e-05,NA
+"Scrap Metal - Other","production","production","Smog","kg O3 eq.",229.27488958818,NA
+"Scrap Metal - Other","production","production","Water consumption","kg",99330.3607729572,NA
+"Wood Waste","combustion","endOfLife","Energy demand","MJ",-544.621811110032,NA
+"Wood Waste","combustion","endOfLife","Eutrophication","kg N eq.",0.0237418734040536,NA
+"Wood Waste","combustion","endOfLife","Global warming","kg CO2 eq.",566.013742841146,NA
+"Wood Waste","combustion","endOfLife","Human toxicity","CTUh",2.85951683709566e-08,NA
+"Wood Waste","combustion","endOfLife","Smog","kg O3 eq.",12.8337980681661,NA
+"Wood Waste","combustion","endOfLife","Water consumption","kg",-501.034825769893,NA
+"Wood Waste","composting","endOfLife","Energy demand","MJ",-3963.41621057697,NA
+"Wood Waste","composting","endOfLife","Eutrophication","kg N eq.",0.0137306156740234,NA
+"Wood Waste","composting","endOfLife","Global warming","kg CO2 eq.",533.786947651242,NA
+"Wood Waste","composting","endOfLife","Human toxicity","CTUh",6.28114029327582e-07,NA
+"Wood Waste","composting","endOfLife","Smog","kg O3 eq.",-0.809296238475857,NA
+"Wood Waste","composting","endOfLife","Water consumption","kg",106.747730603442,NA
+"Wood Waste","landfilling","endOfLife","Energy demand","MJ",358.146600062534,NA
+"Wood Waste","landfilling","endOfLife","Eutrophication","kg N eq.",1.5836943952776,NA
+"Wood Waste","landfilling","endOfLife","Global warming","kg CO2 eq.",426.558768844724,NA
+"Wood Waste","landfilling","endOfLife","Human toxicity","CTUh",2.045595647272e-07,NA
+"Wood Waste","landfilling","endOfLife","Smog","kg O3 eq.",6.78397738421397,NA
+"Wood Waste","landfilling","endOfLife","Water consumption","kg",-315.304259435827,NA
+"Wood Waste","recycling","endOfLife","Energy demand","MJ",-2087.58716894793,NA
+"Wood Waste","recycling","endOfLife","Eutrophication","kg N eq.",-0.0708213799926024,NA
+"Wood Waste","recycling","endOfLife","Global warming","kg CO2 eq.",-150.166042785371,NA
+"Wood Waste","recycling","endOfLife","Human toxicity","CTUh",-2.08992223031169e-07,NA
+"Wood Waste","recycling","endOfLife","Smog","kg O3 eq.",-11.4387385860775,NA
+"Wood Waste","recycling","endOfLife","Water consumption","kg",-694.657358965385,NA
+"Wood Waste","combustion","endOfLifeTransport","Energy demand","MJ",1.8464705568407,180
+"Wood Waste","combustion","endOfLifeTransport","Eutrophication","kg N eq.",4.33817628990274e-05,180
+"Wood Waste","combustion","endOfLifeTransport","Global warming","kg CO2 eq.",0.127705403332056,180
+"Wood Waste","combustion","endOfLifeTransport","Human toxicity","CTUh",6.75005513471328e-11,180
+"Wood Waste","combustion","endOfLifeTransport","Smog","kg O3 eq.",0.0165991888681978,180
+"Wood Waste","combustion","endOfLifeTransport","Water consumption","kg",0.217399569849707,180
+"Wood Waste","composting","endOfLifeTransport","Energy demand","MJ",1.8464705568407,180
+"Wood Waste","composting","endOfLifeTransport","Eutrophication","kg N eq.",4.33817628990274e-05,180
+"Wood Waste","composting","endOfLifeTransport","Global warming","kg CO2 eq.",0.127705403332056,180
+"Wood Waste","composting","endOfLifeTransport","Human toxicity","CTUh",6.75005513471328e-11,180
+"Wood Waste","composting","endOfLifeTransport","Smog","kg O3 eq.",0.0165991888681978,180
+"Wood Waste","composting","endOfLifeTransport","Water consumption","kg",0.217399569849707,180
+"Wood Waste","landfilling","endOfLifeTransport","Energy demand","MJ",1.8464705568407,180
+"Wood Waste","landfilling","endOfLifeTransport","Eutrophication","kg N eq.",4.33817628990274e-05,180
+"Wood Waste","landfilling","endOfLifeTransport","Global warming","kg CO2 eq.",0.127705403332056,180
+"Wood Waste","landfilling","endOfLifeTransport","Human toxicity","CTUh",6.75005513471328e-11,180
+"Wood Waste","landfilling","endOfLifeTransport","Smog","kg O3 eq.",0.0165991888681978,180
+"Wood Waste","landfilling","endOfLifeTransport","Water consumption","kg",0.217399569849707,180
+"Wood Waste","recycling","endOfLifeTransport","Energy demand","MJ",2.90042600248944,180
+"Wood Waste","recycling","endOfLifeTransport","Eutrophication","kg N eq.",7.63501046471128e-05,180
+"Wood Waste","recycling","endOfLifeTransport","Global warming","kg CO2 eq.",0.200513188271367,180
+"Wood Waste","recycling","endOfLifeTransport","Human toxicity","CTUh",1.06005249883158e-10,180
+"Wood Waste","recycling","endOfLifeTransport","Smog","kg O3 eq.",0.0307527460080563,180
+"Wood Waste","recycling","endOfLifeTransport","Water consumption","kg",0.340563929946618,180
+"Wood Waste","production","production","Energy demand","MJ",37482.194939694,NA
+"Wood Waste","production","production","Eutrophication","kg N eq.",16.376480739538,NA
+"Wood Waste","production","production","Global warming","kg CO2 eq.",278.588029764997,NA
+"Wood Waste","production","production","Human toxicity","CTUh",5.903503467807e-05,NA
+"Wood Waste","production","production","Smog","kg O3 eq.",85.9010389778924,NA
+"Wood Waste","production","production","Water consumption","kg",131944.292154649,NA
+"Yard Debris","anaerobicDigestion","endOfLife","Energy demand","MJ",-5316.37704998353,NA
+"Yard Debris","anaerobicDigestion","endOfLife","Eutrophication","kg N eq.",0.307660669033052,NA
+"Yard Debris","anaerobicDigestion","endOfLife","Global warming","kg CO2 eq.",171.77877067953,NA
+"Yard Debris","anaerobicDigestion","endOfLife","Human toxicity","CTUh",3.85424182861614e-05,NA
+"Yard Debris","anaerobicDigestion","endOfLife","Smog","kg O3 eq.",2.81939810895949,NA
+"Yard Debris","anaerobicDigestion","endOfLife","Water consumption","kg",1304.37897373055,NA
+"Yard Debris","combustion","endOfLife","Energy demand","MJ",-544.621811110032,NA
+"Yard Debris","combustion","endOfLife","Eutrophication","kg N eq.",0.0237418734040536,NA
+"Yard Debris","combustion","endOfLife","Global warming","kg CO2 eq.",566.013742841146,NA
+"Yard Debris","combustion","endOfLife","Human toxicity","CTUh",2.85951683709566e-08,NA
+"Yard Debris","combustion","endOfLife","Smog","kg O3 eq.",12.8337980681661,NA
+"Yard Debris","combustion","endOfLife","Water consumption","kg",-501.034825769893,NA
+"Yard Debris","composting","endOfLife","Energy demand","MJ",-3963.41621057697,NA
+"Yard Debris","composting","endOfLife","Eutrophication","kg N eq.",0.0137306156740234,NA
+"Yard Debris","composting","endOfLife","Global warming","kg CO2 eq.",533.786947651242,NA
+"Yard Debris","composting","endOfLife","Human toxicity","CTUh",6.28114029327582e-07,NA
+"Yard Debris","composting","endOfLife","Smog","kg O3 eq.",-0.809296238475857,NA
+"Yard Debris","composting","endOfLife","Water consumption","kg",106.747730603442,NA
+"Yard Debris","landfilling","endOfLife","Energy demand","MJ",358.146600062534,NA
+"Yard Debris","landfilling","endOfLife","Eutrophication","kg N eq.",1.5836943952776,NA
+"Yard Debris","landfilling","endOfLife","Global warming","kg CO2 eq.",426.558768844724,NA
+"Yard Debris","landfilling","endOfLife","Human toxicity","CTUh",2.045595647272e-07,NA
+"Yard Debris","landfilling","endOfLife","Smog","kg O3 eq.",6.78397738421397,NA
+"Yard Debris","landfilling","endOfLife","Water consumption","kg",-315.304259435827,NA
+"Yard Debris","anaerobicDigestion","endOfLifeTransport","Energy demand","MJ",1.8464705568407,180
+"Yard Debris","anaerobicDigestion","endOfLifeTransport","Eutrophication","kg N eq.",4.33817628990274e-05,180
+"Yard Debris","anaerobicDigestion","endOfLifeTransport","Global warming","kg CO2 eq.",0.127705403332056,180
+"Yard Debris","anaerobicDigestion","endOfLifeTransport","Human toxicity","CTUh",6.75005513471328e-11,180
+"Yard Debris","anaerobicDigestion","endOfLifeTransport","Smog","kg O3 eq.",0.0165991888681978,180
+"Yard Debris","anaerobicDigestion","endOfLifeTransport","Water consumption","kg",0.217399569849707,180
+"Yard Debris","combustion","endOfLifeTransport","Energy demand","MJ",1.8464705568407,180
+"Yard Debris","combustion","endOfLifeTransport","Eutrophication","kg N eq.",4.33817628990274e-05,180
+"Yard Debris","combustion","endOfLifeTransport","Global warming","kg CO2 eq.",0.127705403332056,180
+"Yard Debris","combustion","endOfLifeTransport","Human toxicity","CTUh",6.75005513471328e-11,180
+"Yard Debris","combustion","endOfLifeTransport","Smog","kg O3 eq.",0.0165991888681978,180
+"Yard Debris","combustion","endOfLifeTransport","Water consumption","kg",0.217399569849707,180
+"Yard Debris","composting","endOfLifeTransport","Energy demand","MJ",1.8464705568407,180
+"Yard Debris","composting","endOfLifeTransport","Eutrophication","kg N eq.",4.33817628990274e-05,180
+"Yard Debris","composting","endOfLifeTransport","Global warming","kg CO2 eq.",0.127705403332056,180
+"Yard Debris","composting","endOfLifeTransport","Human toxicity","CTUh",6.75005513471328e-11,180
+"Yard Debris","composting","endOfLifeTransport","Smog","kg O3 eq.",0.0165991888681978,180
+"Yard Debris","composting","endOfLifeTransport","Water consumption","kg",0.217399569849707,180
+"Yard Debris","landfilling","endOfLifeTransport","Energy demand","MJ",1.8464705568407,180
+"Yard Debris","landfilling","endOfLifeTransport","Eutrophication","kg N eq.",4.33817628990274e-05,180
+"Yard Debris","landfilling","endOfLifeTransport","Global warming","kg CO2 eq.",0.127705403332056,180
+"Yard Debris","landfilling","endOfLifeTransport","Human toxicity","CTUh",6.75005513471328e-11,180
+"Yard Debris","landfilling","endOfLifeTransport","Smog","kg O3 eq.",0.0165991888681978,180
+"Yard Debris","landfilling","endOfLifeTransport","Water consumption","kg",0.217399569849707,180
+"Yard Debris","production","production","Energy demand","MJ",37482.194939694,NA
+"Yard Debris","production","production","Eutrophication","kg N eq.",16.376480739538,NA
+"Yard Debris","production","production","Global warming","kg CO2 eq.",278.588029764997,NA
+"Yard Debris","production","production","Human toxicity","CTUh",5.903503467807e-05,NA
+"Yard Debris","production","production","Smog","kg O3 eq.",85.9010389778924,NA
+"Yard Debris","production","production","Water consumption","kg",131944.292154649,NA
