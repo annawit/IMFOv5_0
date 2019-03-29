@@ -26,6 +26,8 @@ ui <- fluidPage(
   useShinyjs(),
   
   navbarPage("Lifecycle Impacts Tool: DRAFT",
+             collapsible = TRUE,
+             # footer = img(src = 'DEQbwhz80.png', height = "50px", align = "center"),
              
              # Introduction tab -------------------------------------------------------
              tabPanel("Introduction",
@@ -52,8 +54,9 @@ ui <- fluidPage(
                                ),
                                br(),
                                br(),
-                               div(style = "width:500px; text-align:center;",
-                                    p(style = "color: rgba(248,245,240)", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
+                               div(style = "width:600px; text-align:center;",
+                                    p(style = "color: rgba(248,245,240)",
+                                      "Watch the video to learn more, or start exploring the data interactively in the tabs above.")
                                )
                         )
                         )
@@ -65,101 +68,156 @@ ui <- fluidPage(
              
 tabPanel("Visualize!",
          fluidPage(
-           column(4,
-                  wellPanel(
-                    # black background
-                    style = "background-color: rgba(0,0,0,0.6);
+           fluidRow(
+             column(4,
+                    wellPanel(
+                      # black background
+                      style = "background-color: rgba(0,0,0,0.7);
                     color: rgba(248,245,240)",
-                    # style = "background-color: rgba(248,245,240,0.9)",
-                    # uiOutput("sliders"),
-                    
-                    # textOutput("vals"),
-                    conditionalPanel(
-                      condition = "input.usermaterial == `Cardboard`",
-                      uiOutput("cardboardpanel")
-                    ),
-                    # conditionalPanel(
-                    #   condition = "input.usermaterial == `Carpet`"
-                    #   # uiOutput("sliders")
-                    #   # uiOutput("carpetpanel"
-                    #            
-                    # ),
-                    conditionalPanel(
-                      condition = "input.usermaterial == `Electronics`",
-                      uiOutput("electronicspanel")
-                    ),
-                    conditionalPanel(
-                      condition = "input.usermaterial == `Food`",
-                      uiOutput("foodpanel")
-                    ),
-                    # conditionalPanel(
-                    #   condition = "input.usermaterial == `Glass`",
-                    #   uiOutput("glasspanel")
-                    # ),
-                    # conditionalPanel(
-                    #   condition = "input.usermaterial == `Trash`",
-                    #   uiOutput("trashpanel")
-                    # ),
-                    # conditionalPanel(
-                    #   condition = "input.usermaterial == `Paper`",
-                    #   uiOutput("paperpanel")
-                    # ),
-                    # conditionalPanel(
-                    #   condition = "input.usermaterial == `Plastic Film`",
-                    #   uiOutput("plasticfilmpanel")
-                    # ),
-                    # conditionalPanel(
-                    #   condition = "input.usermaterial == `Rigid Plastic`",
-                    #   uiOutput("rigidplasticpanel")
-                    # ),
-                    # conditionalPanel(
-                    #   condition = "input.usermaterial == `Scrap Metal`",
-                    #   uiOutput("scrapmetalpanel")
-                    # ),
-                    # conditionalPanel(
-                    #   condition = "input.usermaterial == `Wood`",
-                    #   uiOutput("woodpanel")
-                    # ),
-                    # conditionalPanel(
-                    #   condition = "input.usermaterial == `Yard Debris`",
-                    #   uiOutput("yarddebrispanel")
-                    # ),
-                    selectInput(inputId = "usermaterial",
-                                label = "Select a material:",
-                                choices = c("Cardboard", "Electronics", "Food"),
-                                selected = "Cardboard"),
-                    tableOutput("ttable")
-                  )
+                      # style = "background-color: rgba(248,245,240,0.9)",
+                      # uiOutput("sliders"),
+                      # textOutput("vals"),
+                      conditionalPanel(
+                        condition = "input.usermaterial == `Cardboard`",
+                        uiOutput("cardboardpanel")
+                      ),
+                      # conditionalPanel(
+                      #   condition = "input.usermaterial == `Carpet`"
+                      #   # uiOutput("sliders")
+                      #   # uiOutput("carpetpanel"
+                      #            
+                      # ),
+                      conditionalPanel(
+                        condition = "input.usermaterial == `Electronics`",
+                        uiOutput("electronicspanel")
+                      ),
+                      conditionalPanel(
+                        condition = "input.usermaterial == `Food`",
+                        uiOutput("foodpanel")
+                      ),
+
+# dormant slider panels ----------------------------------------------
+
+                      
+                      # conditionalPanel(
+                      #   condition = "input.usermaterial == `Glass`",
+                      #   uiOutput("glasspanel")
+                      # ),
+                      # conditionalPanel(
+                      #   condition = "input.usermaterial == `Trash`",
+                      #   uiOutput("trashpanel")
+                      # ),
+                      # conditionalPanel(
+                      #   condition = "input.usermaterial == `Paper`",
+                      #   uiOutput("paperpanel")
+                      # ),
+                      # conditionalPanel(
+                      #   condition = "input.usermaterial == `Plastic Film`",
+                      #   uiOutput("plasticfilmpanel")
+                      # ),
+                      # conditionalPanel(
+                      #   condition = "input.usermaterial == `Rigid Plastic`",
+                      #   uiOutput("rigidplasticpanel")
+                      # ),
+                      # conditionalPanel(
+                      #   condition = "input.usermaterial == `Scrap Metal`",
+                      #   uiOutput("scrapmetalpanel")
+                      # ),
+                      # conditionalPanel(
+                      #   condition = "input.usermaterial == `Wood`",
+                      #   uiOutput("woodpanel")
+                      # ),
+                      # conditionalPanel(
+                      #   condition = "input.usermaterial == `Yard Debris`",
+                      #   uiOutput("yarddebrispanel")
+                      # ),
+
+# usermaterial input ------------------------------------------
+
+                      pickerInput(inputId = "usermaterial",
+                                  label = "Select a material:",
+                                  choices = c("Cardboard", "Electronics", "Food"),
+                                  selected = "Cardboard",
+                                  options = list(style = "btn-secondary"))
+                    )
+             ),
+             column(4,
+                    wellPanel(
+                      style = "background-color: rgba(0,0,0,0.65);
+                    color: rgba(248,245,240)",
+                      # style = "background-color: rgba(248,245,240,0.9)",
+                      p("Weights"),
+                      conditionalPanel(
+                        condition = "input.usermaterial == `Cardboard`",
+                        plotlyOutput("massplot")
+                      ),
+                      conditionalPanel(
+                        condition = "input.usermaterial == `Electronics`",
+                        plotlyOutput("elmassplot")
+                      ),
+                      conditionalPanel(
+                        condition = "input.usermaterial == `Food`",
+                        plotlyOutput("foodmassplot")
+                      ),
+                      br(),
+                      pickerInput(inputId = "userregion",
+                                  label = "Select a region:",
+                                  choices = unique(mass$Wasteshed),
+                                  selected = "Oregon total",
+                                  options = list(style = "btn-secondary"))
+                    )
+             ),
+             column(4,
+                    wellPanel(
+                      style = "background-color: rgba(0,0,0,0.65);
+                    color: rgba(248,245,240)",
+                      # style = "background-color: rgba(248,245,240,0.9)",
+                      p("Impacts"),
+                      conditionalPanel(
+                        condition = "input.usermaterial == `Cardboard`",
+                        plotlyOutput("cbplot")
+                      ),
+                      conditionalPanel(
+                        condition = "input.usermaterial == `Electronics`",
+                        plotlyOutput("elplot")
+                      ),
+                      conditionalPanel(
+                        condition = "input.usermaterial == `Food`",
+                        plotlyOutput("foodplot")
+                      ),
+                      br(),
+                      pickerInput(inputId = "userimpact",
+                                  label = "Select an impact:",
+                                  choices = unique(I1$Category),
+                                  selected = "Global warming",
+                                  options = list(style = "btn-secondary"))
+                    )
+             )
            ),
-           column(4,
-                  wellPanel(
-                    style = "background-color: rgba(0,0,0,0.6);
-                    color: rgba(248,245,240)",
-                    # style = "background-color: rgba(248,245,240,0.9)",
-                    plotlyOutput("massplot"),
-                    hr(),
-                    selectInput(inputId = "userregion",
-                                label = "Select a region:",
-                                choices = unique(mass$Wasteshed),
-                                selected = "Oregon total"),
-                  tableOutput("df"),
-                  tableOutput("cbdf")
-                  )
-                  ),
-           column(4,
-                  wellPanel(
-                    style = "background-color: rgba(0,0,0,0.6);
-                    color: rgba(248,245,240)",
-                    # style = "background-color: rgba(248,245,240,0.9)",
-                    plotlyOutput("cbplot"),
-                    hr(),
-                    selectInput(inputId = "userimpact",
-                                label = "Select an impact:",
-                                choices = unique(I1$Category),
-                                selected = "Global warming"),
-                    DT::dataTableOutput("userimpact")
-                  )
-           )
+
+# tables ------------------------------------------------------------------
+
+
+           fluidRow(
+             column(12,
+               wellPanel(
+                 conditionalPanel(
+                   condition = "input.usermaterial == `Cardboard`",
+                   tableOutput("cbdf")
+                 ),
+                 conditionalPanel(
+                   condition = "input.usermaterial == `Electronics`"
+                   
+                 ),
+                 conditionalPanel(
+                   condition = "input.usermaterial == `Food`"
+                   
+                 ),
+                 
+                 tableOutput("ttable"),
+                 tableOutput("df"),
+                 DT::dataTableOutput("userimpact"))))
+           
 )
 ),
 
@@ -172,15 +230,21 @@ tabPanel("Context",
                          wellPanel(
                            style = "background-color: rgba(0,0,0,0.6);
                     color: rgba(248,245,240)",
-                           selectInput(inputId = "contextregion",
+                           pickerInput(inputId = "contextregion",
                                        label = "Select a region:",
                                        choices = unique(context$wasteshed),
-                                       selected = "Global warming")
+                                       selected = "Global warming",
+                                       options = list(style = "btn-secondary"))
                          )),
            column(width = 9, offset = 3, 
              wellPanel(
                style = "background-color: rgba(0,0,0,0.6);
-                    color: rgba(248,245,240)"))
+                    color: rgba(248,245,240)",
+               plotlyOutput("contextplot")
+               ),
+             br(),
+             br(),
+             br())
          )
 ),
 
@@ -222,6 +286,8 @@ server <- function(input, output, session) {
   # filters based on their region and material
   
   usermass <- reactive({
+    req(input$userregion)
+    req(input$usermaterial)
     mass %>% 
       filter(Wasteshed == input$userregion) %>% 
       filter(Material == input$usermaterial)
@@ -253,33 +319,33 @@ server <- function(input, output, session) {
   # initializes the reactive values for the sliders
   # st is for the starting value
   
-  one <- reactiveValues(st = 0)
-  two <- reactiveValues(st = 0)
-  three <- reactiveValues(st = 0)
-  four <- reactiveValues(st = 0)
+  # one <- reactiveValues(st = 0)
+  # two <- reactiveValues(st = 0)
+  # three <- reactiveValues(st = 0)
+  # four <- reactiveValues(st = 0)
   
   # These observe event create the percent values for the sliders
   # The pct/st is left over from when I was trying to create a reset button
   
-  observeEvent(input$usermaterial, {
-    one$st  <- (tweight()[1]/sum(tweight()))*100
-    print(one$st)
-  })
-  
-  observeEvent(input$usermaterial, {
-    two$st <- (tweight()[2]/sum(tweight()))*100
-    print(two$st)
-  })
-  
-  observeEvent(input$usermaterial, {
-    three$st <- (tweight()[3]/sum(tweight()))*100
-    print(three$st)
-  })
-  
-  observeEvent(input$usermaterial, {
-    four$st <- (tweight()[4]/sum(tweight()))*100
-    print(four$st)
-  })
+  # observeEvent(input$usermaterial, {
+  #   one$st  <- (tweight()[1]/sum(tweight()))*100
+  #   print(one$st)
+  # })
+  # 
+  # observeEvent(input$usermaterial, {
+  #   two$st <- (tweight()[2]/sum(tweight()))*100
+  #   print(two$st)
+  # })
+  # 
+  # observeEvent(input$usermaterial, {
+  #   three$st <- (tweight()[3]/sum(tweight()))*100
+  #   print(three$st)
+  # })
+  # 
+  # observeEvent(input$usermaterial, {
+  #   four$st <- (tweight()[4]/sum(tweight()))*100
+  #   print(four$st)
+  # })
   
   #just a test of the output
   output$vals <- renderText({
@@ -316,19 +382,25 @@ server <- function(input, output, session) {
                   min = 0,
                   max = 100,
                   post = " %",
-                  value = one$st),
+                  value = t()$Percent[1]
+                    # one$st
+                  ),
       sliderInput(inputId = "cblslide",
                   label = paste("%", tdisp()[2]),
                   min = 0,
                   max = 100,
                   post = " %",
-                  value = two$st),
+                  value = t()$Percent[2]
+                    # two$st
+                  ),
       sliderInput(inputId = "cbrslide",
                   label = paste("%", tdisp()[3]),
                   min = 0,
                   max = 100,
                   post = " %",
-                  value = three$st)
+                  value = t()$Percent[3]
+                    # three$st
+                    )
     )
   })
   
@@ -368,26 +440,27 @@ server <- function(input, output, session) {
       input$Production)
   })
   
-  cbmassdf <- reactive({
-    
+  cbdf <- reactive({
     Disposition       <- c(tdisp()[1], tdisp()[2], tdisp()[3], "Production")
     `Initial Weight`  <- c(tweight()[1], tweight()[2], tweight()[3], sum(tweight()))
     `Scenario Weight` <- sliderweights()
-    # `Scenario Weight` <- c(input$Production*input$cbcslide,
-    #                        input$Production*input$cblslide,
-    #                        input$Production*input$cbrslide,
-    #                        input$Production)
     
     tibble(Disposition, `Initial Weight`, `Scenario Weight`) %>% 
       left_join(userimpact()) %>% 
       mutate(`Initial Impact` = `Initial Weight`*Factor,
-             `New Scenario Impact` = `Scenario Weight`*Factor) %>% 
+             `New Scenario Impact` = `Scenario Weight`*Factor)
+  })
+  
+  cbmassdf <- reactive({
+    cbdf() %>%
       select(Disposition, `Initial Weight`, `Scenario Weight`, `Initial Impact`, `New Scenario Impact`)
-  # %>% 
-  #     gather(key = `Scenario`, value = "Weight", c(`Initial Weight`, `Scenario Weight`))
+    
   })
   
   cardboarddf <- reactive({
+    if(is.null(cbmassdf())) {
+      return(NULL)
+    }
     cbmassdf() %>% 
       gather(key = "Variable", value = "Value", c(`Initial Weight`, `Scenario Weight`,
                                                   `Initial Impact`, `New Scenario Impact`))
@@ -395,7 +468,7 @@ server <- function(input, output, session) {
   
   
   output$cbdf <- renderTable({
-    cbmassdf()
+    cbdf()
   }, digits = 0)
   
   output$df <- renderTable({
@@ -403,6 +476,8 @@ server <- function(input, output, session) {
   }, digits = 0)
   
   output$massplot <- renderPlotly({
+    req(input$userregion)
+    req(input$usermaterial)
     req(cardboarddf())
     #Add traces with a for loop
     #https://stackoverflow.com/questions/46583282/r-plotly-to-add-traces-conditionally-based-on-available-columns-in-dataframe
@@ -423,7 +498,9 @@ server <- function(input, output, session) {
       layout(barmode = "relative")
     
     massplot %>% 
-      layout(yaxis = list(overlaying = "y",
+      layout(paper_bgcolor = "#f8f5f0",
+             plot_bgcolor = "#f8f5f0",
+             yaxis = list(overlaying = "y",
                           title = "Weight in tons"),
              xaxis = list(title = ""),
              legend = list(orientation = 'h')
@@ -431,6 +508,8 @@ server <- function(input, output, session) {
   })
   
   output$cbplot <- renderPlotly({
+    req(input$userimpact)
+    req(input$usermaterial)
     req(cardboarddf())
     
     p <- plot_ly(cardboarddf() %>% 
@@ -460,7 +539,9 @@ server <- function(input, output, session) {
                 name = "Net impact",
                 marker = list(size = ~log(Sum),
                               color = ("#cf9f35"))) %>% 
-      layout(yaxis = list(overlaying = "y",
+      layout(paper_bgcolor = "#f8f5f0",
+             plot_bgcolor = "#f8f5f0",
+             yaxis = list(overlaying = "y",
                           title = paste("Impact in", userimpact()$Units[[1]])),
              xaxis = list(title = ""),
              legend = list(orientation = 'h')
@@ -532,7 +613,7 @@ server <- function(input, output, session) {
     
     tagList(
       
-      setSliderColor(c("#237698", "#B1CA54", "#564D65", "#248F79"), c(1, 2, 3, 4)),
+      setSliderColor(c("#237698", "#564D65", "#248F79"), c(1, 2, 3)),
       br(),
       sliderInput(inputId = "Production",
                   label = "Total Weight, in Tons",
@@ -560,7 +641,8 @@ server <- function(input, output, session) {
   }, {
     updateSliderInput(session = session,
                       inputId = "ElectricLandfilling",
-                      value = 100*input$ElectricLandfilling/(input$ElectricRecycling + input$ElectricLandfilling))
+                      value = 100*input$ElectricLandfilling/
+                        (input$ElectricRecycling + input$ElectricLandfilling))
   })
   
   observeEvent({
@@ -568,9 +650,93 @@ server <- function(input, output, session) {
   }, {
     updateSliderInput(session = session,
                       inputId = "ElectricRecycling",
-                      value = 100*input$ElectricRecycling/(input$ElectricRecycling + input$ElectricLandfilling))
+                      value = 100*input$ElectricRecycling/
+                        (input$ElectricRecycling + input$ElectricLandfilling))
+  })
+  
+  elsliderweights <- reactive({
+    c(input$Production*input$ElectricLandfilling/100,
+      input$Production*input$ElectricRecycling/100,
+      input$Production)
+  })
+  
+  elmassdf <- reactive({
+    
+    Disposition       <- c(tdisp()[1], tdisp()[2], "Production")
+    `Initial Weight`  <- c(tweight()[1], tweight()[2], sum(tweight()))
+    `Scenario Weight` <- elsliderweights()
+    
+    tibble(Disposition, `Initial Weight`, `Scenario Weight`) %>% 
+      left_join(userimpact()) %>% 
+      mutate(`Initial Impact` = `Initial Weight`*Factor,
+             `New Scenario Impact` = `Scenario Weight`*Factor) %>% 
+      select(Disposition, `Initial Weight`, `Scenario Weight`,
+             `Initial Impact`, `New Scenario Impact`) %>% 
+      gather(key = "Variable", value = "Value",
+             c(`Initial Weight`, `Scenario Weight`,
+               `Initial Impact`, `New Scenario Impact`))
   })
 
+
+  output$elmassplot <- renderPlotly({
+    req(elmassdf())
+    massplot <- plot_ly(elmassdf() %>%
+                          filter(grepl("Weight", Variable)) %>%
+                          spread("Disposition", "Value"),
+                        x = ~Variable,
+                        y = ~Landfilling,
+                        name = "Landfilling weight",
+                        marker = list(color = ("#564D65")),
+                        type = "bar") %>% 
+      add_trace(y = ~Recycling,
+                name = "Recycling weight",
+                marker = list(color = ("#248F79"))) %>% 
+      layout(barmode = "relative")
+    
+    massplot %>% 
+      layout(paper_bgcolor = "#f8f5f0",
+             plot_bgcolor = "#f8f5f0",
+             yaxis = list(overlaying = "y",
+                          title = "Weight in tons"),
+             xaxis = list(title = ""),
+             legend = list(orientation = 'h')
+      )
+  })
+  
+  output$elplot <- renderPlotly({
+    
+    p <- plot_ly(elmassdf() %>% 
+                   filter(grepl("Impact", Variable)) %>% 
+                   spread("Disposition", "Value") %>% 
+                   mutate(Sum = rowSums(.[2:3])),
+                 x = ~Variable,
+                 y = ~Production,
+                 name = "Production impact",
+                 marker = list(color = ("#237698")),
+                 type = "bar") %>% 
+      add_trace(y = ~Landfilling,
+                name = "Landfilling impact",
+                marker = list(color = ("#564D65"))) %>% 
+      add_trace(y = ~Recycling,
+                name = "Recycling impact",
+                marker = list(color = ("#248F79"))) %>% 
+      layout(barmode = "relative")
+    
+    p %>% 
+      add_trace(y = ~Sum,
+                type = "scatter",
+                mode = "line",
+                name = "Net impact",
+                marker = list(size = ~log(Sum),
+                              color = ("#cf9f35"))) %>% 
+      layout(paper_bgcolor = "#f8f5f0",
+             plot_bgcolor = "#f8f5f0",
+             yaxis = list(overlaying = "y",
+                          title = paste("Impact in", userimpact()$Units[[1]])),
+             xaxis = list(title = ""),
+             legend = list(orientation = 'h')
+      )
+  })
 
 # Food Panel --------------------------------------------------------------
 
@@ -607,521 +773,630 @@ server <- function(input, output, session) {
     input$FoodLandfilling
   }, {
     updateSliderInput(session = session,
-                      inputId = "FoodCombustion",
-                      value = 100*input$FoodCombustion/(input$FoodCombustion + input$`FoodAnaerobic Digestion` + input$FoodLandfilling))
+                      inputId = "FoodComposting",
+                      value = 100*input$FoodComposting /
+                        (input$FoodComposting + 
+                           input$`FoodAnaerobic Digestion` + 
+                           input$FoodLandfilling))
   })
   
   observeEvent({
     input$`FoodAnaerobic Digestion`
-    input$FoodCombustion
+    input$FoodComposting
   }, {
     updateSliderInput(session = session,
                       inputId = "FoodLandfilling",
-                      value = 100*input$FoodLandfilling/(input$FoodCombustion + input$`FoodAnaerobic Digestion` + input$FoodLandfilling))
+                      value = 100*input$FoodLandfilling /
+                        (input$FoodComposting + 
+                           input$`FoodAnaerobic Digestion` + 
+                           input$FoodLandfilling))
   })
+  
   observeEvent({
-    input$FoodCombustion
+    input$FoodComposting
     input$FoodLandfilling
   }, {
     updateSliderInput(session = session,
                       inputId = "\`FoodAnaerobic Digestion`",
-                      value = 100*input$`FoodAnaerobic Digestion`/(input$FoodCombustion + input$`FoodAnaerobic Digestion` + input$FoodLandfilling))
+                      value = 100*input$`FoodAnaerobic Digestion`/ 
+                        (input$FoodComposting + 
+                           input$`FoodAnaerobic Digestion` + 
+                           input$FoodLandfilling))
+  })
+  
+  foodsliderweights <- reactive({
+    c(input$Production*input$`FoodAnaerobic Digestion`/100,
+      input$Production*input$FoodComposting/100,
+      input$Production*input$FoodLandfilling/100,
+      input$Production)
+  })
+  
+  foodmassdf <- reactive({
+    
+    Disposition       <- c(tdisp()[1], tdisp()[2], tdisp()[3], "Production")
+    `Initial Weight`  <- c(tweight()[1], tweight()[2], tweight()[3], sum(tweight()))
+    `Scenario Weight` <- sliderweights()
+    
+    tibble(Disposition, `Initial Weight`, `Scenario Weight`) %>% 
+      left_join(userimpact()) %>% 
+      mutate(`Initial Impact` = `Initial Weight`*Factor,
+             `New Scenario Impact` = `Scenario Weight`*Factor) %>% 
+      select(Disposition, `Initial Weight`, `Scenario Weight`,
+             `Initial Impact`, `New Scenario Impact`)
+  })
+  
+  fooddf <- reactive({
+    foodmassdf() %>% 
+      gather(key = "Variable", value = "Value",
+             c(`Initial Weight`, `Scenario Weight`,
+               `Initial Impact`, `New Scenario Impact`))
+  })
+  
+  output$foodmassplot <- renderPlotly({
+    req(input$userregion)
+    req(input$usermaterial)
+    #Add traces with a for loop
+    #https://stackoverflow.com/questions/46583282/r-plotly-to-add-traces-conditionally-based-on-available-columns-in-dataframe
+    massplot <- plot_ly(fooddf() %>%
+                          filter(grepl("Weight", Variable)) %>%
+                          spread("Disposition", "Value"),
+                        x = ~Variable,
+                        y = ~Composting,
+                        name = "Composting weight",
+                        marker = list(color = ("#B1CA54")),
+                        type = "bar") %>% 
+      add_trace(y = ~Landfilling,
+                name = "Landfilling weight",
+                marker = list(color = ("#564D65"))) %>% 
+      add_trace(y = ~`Anaerobic Digestion`,
+                name = "Anaerobic Digestion weight",
+                marker = list(color = ("#248F79"))) %>% 
+      layout(barmode = "relative")
+    
+    massplot %>% 
+      layout(paper_bgcolor = "#f8f5f0",
+             plot_bgcolor = "#f8f5f0",
+             yaxis = list(overlaying = "y",
+                          title = "Weight in tons"),
+             xaxis = list(title = ""),
+             legend = list(orientation = 'h')
+      )
+  })
+  
+  output$foodplot <- renderPlotly({
+    req(input$userimpact)
+    req(input$usermaterial)
+    
+    p <- plot_ly(fooddf() %>% 
+                   filter(grepl("Impact", Variable)) %>% 
+                   spread("Disposition", "Value") %>% 
+                   mutate(Sum = rowSums(.[2:5])),
+                 x = ~Variable,
+                 y = ~Production,
+                 name = "Production impact",
+                 marker = list(color = ("#237698")),
+                 type = "bar") %>% 
+      add_trace(y = ~Composting,
+                name = "Composting impact",
+                marker = list(color = ("#B1CA54"))) %>% 
+      add_trace(y = ~Landfilling,
+                name = "Landfilling impact",
+                marker = list(color = ("#564D65"))) %>% 
+      add_trace(y = ~`Anaerobic Digestion`,
+                name = "Anaerobic Digestion impact",
+                marker = list(color = ("#248F79"))) %>% 
+      layout(barmode = "relative")
+    
+    p %>% 
+      add_trace(y = ~Sum,
+                type = "scatter",
+                mode = "line",
+                name = "Net impact",
+                marker = list(size = ~log(Sum),
+                              color = ("#cf9f35"))) %>% 
+      layout(paper_bgcolor = "#f8f5f0",
+             plot_bgcolor = "#f8f5f0",
+             yaxis = list(overlaying = "y",
+                          title = paste("Impact in", userimpact()$Units[[1]])),
+             xaxis = list(title = ""),
+             legend = list(orientation = 'h')
+      )
   })
 
 # Glass -------------------------------------------------------------------
 
-  output$glasspanel <-  renderUI({
-    
-    tagList(
-      
-      setSliderColor(c("#237698", "#B1CA54", "#564D65", "#248F79"), c(1, 2, 3, 4)),
-      br(),
-      sliderInput(inputId = "Production",
-                  label = "Total Weight, in Tons",
-                  min = 0,
-                  max = sum(tweight())*1.5,
-                  value = sum(tweight())),
-      sliderInput(inputId = "glslide",
-                  label = "% Landfilling",
-                  min = 0,
-                  max = 100,
-                  value = one$st),
-      sliderInput(inputId = "grslide",
-                  label = "% Recycling",
-                  min = 0,
-                  max = 100,
-                  value = two$st),
-      sliderInput(inputId = "guaslide",
-                  label = "% Use as Aggregate",
-                  min = 0,
-                  max = 100,
-                  value = three$st)
-    )
-    
-  })
-  
-  observeEvent({
-    input$grslide
-    input$glslide
-  }, {
-    updateSliderInput(session = session,
-                      inputId = "guaslide",
-                      value = ceiling(100*input$guaslide/(input$guaslide + input$glslide + input$grslide)))
-  })
-  
-  observeEvent({
-    input$guaslide
-    input$grslide
-  }, {
-    updateSliderInput(session = session,
-                      inputId = "glslide",
-                      value = ceiling(100*input$glslide/(input$guaslide + input$glslide + input$grslide)))
-  })
-  observeEvent({
-    input$guaslide
-    input$glslide
-  }, {
-    updateSliderInput(session = session,
-                      inputId = "grslide",
-                      value = ceiling(100*input$grslide/(input$guaslide + input$glslide + input$grslide)))
-  })
-  
-# Trash -------------------------------------------------------------------
-
-  output$trashpanel <-  renderUI({
-    
-    tagList(
-      
-      setSliderColor(c("#237698", "#B1CA54", "#564D65", "#248F79"), c(1, 2, 3, 4)),
-      br(),
-      sliderInput(inputId = "Production",
-                  label = "Total Weight, in Tons",
-                  min = 0,
-                  max = sum(tweight())*1.5,
-                  value = sum(tweight())),
-      sliderInput(inputId = "tcslide",
-                  label = "% Combustion",
-                  min = 0,
-                  max = 100,
-                  value = one$st),
-      sliderInput(inputId = "tlslide",
-                  label = "% Landfilling",
-                  min = 0,
-                  max = 100,
-                  value = two$st)
-    )
-  })
-  
-  observeEvent({
-    input$tcslide
-  }, {
-    updateSliderInput(session = session,
-                      inputId = "tlslide",
-                      value = ceiling(100*input$tlslide/(input$tcslide + input$tlslide)))
-  })
-  
-  observeEvent({
-    input$tlslide
-  }, {
-    updateSliderInput(session = session,
-                      inputId = "tcslide",
-                      value = ceiling(100*input$tcslide/(input$tcslide + input$tlslide)))
-  })
-
-# Paper -------------------------------------------------------------------
-
-  output$paperpanel <-  renderUI({
-    
-    tagList(
-      
-      setSliderColor(c("#237698", "#B1CA54", "#564D65", "#248F79"), c(1, 2, 3, 4)),
-      br(),
-      sliderInput(inputId = "Production",
-                  label = "Total Weight, in Tons",
-                  min = 0,
-                  max = sum(tweight())*1.5,
-                  value = sum(tweight())),
-      sliderInput(inputId = "pcslide",
-                  label = "% Combustion",
-                  min = 0,
-                  max = 100,
-                  value = one$st),
-      sliderInput(inputId = "plslide",
-                  label = "% Landfilling",
-                  min = 0,
-                  max = 100,
-                  value = two$st),
-      sliderInput(inputId = "prslide",
-                  label = "% Recycling",
-                  min = 0,
-                  max = 100,
-                  value = three$st)
-    )
-    
-  })
-  
-  observeEvent({
-    input$prslide
-    input$plslide
-  }, {
-    updateSliderInput(session = session,
-                      inputId = "pcslide",
-                      value = ceiling(100*input$pcslide/(input$pcslide + input$plslide + input$prslide)))
-  })
-  
-  observeEvent({
-    input$pcslide
-    input$prslide
-  }, {
-    updateSliderInput(session = session,
-                      inputId = "plslide",
-                      value = ceiling(100*input$plslide/(input$pcslide + input$plslide + input$prslide)))
-  })
-  observeEvent({
-    input$pcslide
-    input$plslide
-  }, {
-    updateSliderInput(session = session,
-                      inputId = "prslide",
-                      value = ceiling(100*input$prslide/(input$pcslide + input$plslide + input$prslide)))
-  })
-  
-# Plastic Film ------------------------------------------------------------
-
-  output$plasticfilmpanel <-  renderUI({
-    
-    tagList(
-      
-      setSliderColor(c("#237698", "#B1CA54", "#564D65", "#248F79"), c(1, 2, 3, 4)),
-      br(),
-      sliderInput(inputId = "Production",
-                  label = "Total Weight, in Tons",
-                  min = 0,
-                  max = sum(tweight())*1.5,
-                  value = sum(tweight())),
-      sliderInput(inputId = "pfcslide",
-                  label = "% Combustion",
-                  min = 0,
-                  max = 100,
-                  value = one$st),
-      sliderInput(inputId = "oflslide",
-                  label = "% Landfilling",
-                  min = 0,
-                  max = 100,
-                  value = two$st),
-      sliderInput(inputId = "pfrslide",
-                  label = "% Recycling",
-                  min = 0,
-                  max = 100,
-                  value = three$st)
-    )
-  })
-  
-  observeEvent({
-    input$pfrslide
-    input$pflslide
-  }, {
-    updateSliderInput(session = session,
-                      inputId = "pfcslide",
-                      value = floor(100*input$pfcslide/(input$pfcslide + input$pflslide + input$pfrslide)))
-  })
-  
-  observeEvent({
-    input$pfcslide
-    input$pfrslide
-  }, {
-    updateSliderInput(session = session,
-                      inputId = "pflslide",
-                      value = floor(100*input$pflslide/(input$pfcslide + input$pflslide + input$pfrslide)))
-  })
-  observeEvent({
-    input$pfcslide
-    input$pflslide
-  }, {
-    updateSliderInput(session = session,
-                      inputId = "pfrslide",
-                      value = floor(100*input$pfrslide/(input$pfcslide + input$pflslide + input$pfrslide)))
-  })
-
-# Rigid Plastic -----------------------------------------------------------
-
-  output$rigidplasticpanel <-  renderUI({
-
-    tagList(
-      
-      setSliderColor(c("#237698", "#B1CA54", "#564D65", "#248F79"), c(1, 2, 3, 4)),
-      br(),
-      sliderInput(inputId = "Production",
-                  label = "Total Weight, in Tons",
-                  min = 0,
-                  max = sum(tweight())*1.5,
-                  value = sum(tweight())),
-      sliderInput(inputId = "rpcslide",
-                  label = "% Combustion",
-                  min = 0,
-                  max = 100,
-                  value = one$st),
-      sliderInput(inputId = "rplslide",
-                  label = "% Landfilling",
-                  min = 0,
-                  max = 100,
-                  value = two$st),
-      sliderInput(inputId = "rprslide",
-                  label = "% Recycling",
-                  min = 0,
-                  max = 100,
-                  value = three$st)
-    )
-    
-  })
-  
-  observeEvent({
-    input$rprslide
-    input$rplslide
-  }, {
-    updateSliderInput(session = session,
-                      inputId = "rpcslide",
-                      value = floor(100*input$rpcslide/(input$rpcslide + input$rplslide + input$rprslide)))
-  })
-  
-  observeEvent({
-    input$rpcslide
-    input$rprslide
-  }, {
-    updateSliderInput(session = session,
-                      inputId = "rplslide",
-                      value = floor(100*input$rplslide/(input$rpcslide + input$rplslide + input$rprslide)))
-  })
-  observeEvent({
-    input$rpcslide
-    input$rplslide
-  }, {
-    updateSliderInput(session = session,
-                      inputId = "rprslide",
-                      value = floor(100*input$rprslide/(input$rpcslide + input$rplslide + input$rprslide)))
-  })
-  
-# Scrap Metal -------------------------------------------------------------
-
-  output$scrapmetalpanel <-  renderUI({
-    
-    tagList(
-      
-      setSliderColor(c("#237698", "#B1CA54", "#564D65", "#248F79"), c(1, 2, 3, 4)),
-      br(),
-      sliderInput(inputId = "Production",
-                  label = "Total Weight, in Tons",
-                  min = 0,
-                  max = sum(tweight())*1.5,
-                  value = sum(tweight())),
-      sliderInput(inputId = "smlslide",
-                  label = "% Landfilling",
-                  min = 0,
-                  max = 100,
-                  value = one$st),
-      sliderInput(inputId = "smrslide",
-                  label = "% Recycling",
-                  min = 0,
-                  max = 100,
-                  value = two$st)
-    )
-  })
-  
-  observeEvent({
-    input$smlslide
-  }, {
-    updateSliderInput(session = session,
-                      inputId = "smrslide",
-                      value = ceiling(100*input$smrslide/(input$smrslide + input$smlslide)))
-  })
-  
-  observeEvent({
-    input$smrslide
-  }, {
-    updateSliderInput(session = session,
-                      inputId = "smlslide",
-                      value = ceiling(100*input$smlslide/(input$smrslide + input$smlslide)))
-  })
-
-# Wood --------------------------------------------------------------------
-
-  output$woodpanel <-  renderUI({
-    
-    tagList(
-      
-      setSliderColor(c("#237698", "#B1CA54", "#564D65", "#248F79"), c(1, 2, 3, 4)),
-      br(),
-      sliderInput(inputId = "Production",
-                  label = "Total Weight, in Tons",
-                  min = 0,
-                  max = sum(tweight())*1.5,
-                  value = sum(tweight())),
-      sliderInput(inputId = "wcbslide",
-                  label = "% Combustion",
-                  min = 0,
-                  max = 100,
-                  value = one$st),
-      sliderInput(inputId = "wcpslide",
-                  label = "% Composting",
-                  min = 0,
-                  max = 100,
-                  value = two$st),
-      sliderInput(inputId = "wlslide",
-                  label = "% Landfilling",
-                  min = 0,
-                  max = 100,
-                  value = three$st),
-      sliderInput(inputId = "wrslide",
-                  label = "% Recycling",
-                  min = 0,
-                  max = 100,
-                  value = four$st)
-    )
-    
-  })
-  
-  observeEvent({
-    input$wcbslide
-    input$wcpslide
-    input$wlslide
-  }, {
-    updateSliderInput(session = session,
-                      inputId = "wrslide",
-                      value = ceiling(100*input$wrslide/(input$wcbslide +
-                                                         input$wcpslide +
-                                                         input$wlslide +
-                                                           input$wrslide)))
-  })
-  
-  observeEvent({
-    input$wcbslide
-    input$wcpslide
-    input$wrslide
-  }, {
-    updateSliderInput(session = session,
-                      inputId = "wlslide",
-                      value = ceiling(100*input$wlslide/(input$wcbslide +
-                                                           input$wcpslide +
-                                                           input$wlslide +
-                                                           input$wrslide)))
-  })
-  
-  observeEvent({
-    input$wcbslide
-    input$wlslide
-    input$wrslide
-  }, {
-    updateSliderInput(session = session,
-                      inputId = "wcpslide",
-                      value = ceiling(100*input$wcpslide/(input$wcbslide +
-                                                            input$wcpslide +
-                                                            input$wlslide +
-                                                            input$wrslide)))
-  })
-  
-  observeEvent({
-    input$wcpslide
-    input$wlslide
-    input$wrslide
-  }, {
-    updateSliderInput(session = session,
-                      inputId = "wcbslide",
-                      value = ceiling(100*input$wcbslide/(input$wcbslide +
-                                                            input$wcpslide +
-                                                            input$wlslide +
-                                                            input$wrslide)))
-  })
-  
-
-  
-# Yard Debris -------------------------------------------------------------
-
-  output$yarddebrispanel <-  renderUI({
-    
-    tagList(
-      
-      setSliderColor(c("#237698", "#B1CA54", "#564D65", "#248F79"), c(1, 2, 3, 4)),
-      br(),
-      sliderInput(inputId = "Production",
-                  label = "Total Weight, in Tons",
-                  min = 0,
-                  max = sum(tweight())*1.5,
-                  value = sum(tweight())),
-      sliderInput(inputId = "yadslide",
-                  label = "% Anaerobic Digestion",
-                  min = 0,
-                  max = 100,
-                  value = one$st),
-      sliderInput(inputId = "ycbslide",
-                  label = "% Combustion",
-                  min = 0,
-                  max = 100,
-                  value = two$st),
-      sliderInput(inputId = "ycpslide",
-                  label = "% Composting",
-                  min = 0,
-                  max = 100,
-                  value = three$st),
-      sliderInput(inputId = "ylslide",
-                  label = "% Landfilling",
-                  min = 0,
-                  max = 100,
-                  value = four$st)
-    )
-    
-  })
-  
-  observeEvent({
-    input$ycbslide
-    input$ycpslide
-    input$ylslide
-  }, {
-    updateSliderInput(session = session,
-                      inputId = "yadslide",
-                      value = ceiling(100*input$yadslide/(input$ycbslide +
-                                                           input$ycpslide +
-                                                           input$ylslide +
-                                                           input$yadslide)))
-  })
-  
-  observeEvent({
-    input$ycbslide
-    input$ycpslide
-    input$yadslide
-  }, {
-    updateSliderInput(session = session,
-                      inputId = "ylslide",
-                      value = ceiling(100*input$ylslide/(input$ycbslide +
-                                                           input$ycpslide +
-                                                           input$ylslide +
-                                                           input$yadslide)))
-  })
-  
-  observeEvent({
-    input$ycbslide
-    input$ylslide
-    input$yadslide
-  }, {
-    updateSliderInput(session = session,
-                      inputId = "wcpslide",
-                      value = ceiling(100*input$wcpslide/(input$ycbslide +
-                                                            input$ycpslide +
-                                                            input$ylslide +
-                                                            input$yadslide)))
-  })
-  
-  observeEvent({
-    input$wcpslide
-    input$wlslide
-    input$wrslide
-  }, {
-    updateSliderInput(session = session,
-                      inputId = "ycbslide",
-                      value = ceiling(100*input$ycbslide/(input$ycbslide +
-                                                            input$ycpslide +
-                                                            input$ylslide +
-                                                            input$yadslide)))
-  })
+#   output$glasspanel <-  renderUI({
+#     
+#     tagList(
+#       
+#       setSliderColor(c("#237698", "#B1CA54", "#564D65", "#248F79"), c(1, 2, 3, 4)),
+#       br(),
+#       sliderInput(inputId = "Production",
+#                   label = "Total Weight, in Tons",
+#                   min = 0,
+#                   max = sum(tweight())*1.5,
+#                   value = sum(tweight())),
+#       sliderInput(inputId = "glslide",
+#                   label = "% Landfilling",
+#                   min = 0,
+#                   max = 100,
+#                   value = one$st),
+#       sliderInput(inputId = "grslide",
+#                   label = "% Recycling",
+#                   min = 0,
+#                   max = 100,
+#                   value = two$st),
+#       sliderInput(inputId = "guaslide",
+#                   label = "% Use as Aggregate",
+#                   min = 0,
+#                   max = 100,
+#                   value = three$st)
+#     )
+#     
+#   })
+#   
+#   observeEvent({
+#     input$grslide
+#     input$glslide
+#   }, {
+#     updateSliderInput(session = session,
+#                       inputId = "guaslide",
+#                       value = ceiling(100*input$guaslide/(input$guaslide + input$glslide + input$grslide)))
+#   })
+#   
+#   observeEvent({
+#     input$guaslide
+#     input$grslide
+#   }, {
+#     updateSliderInput(session = session,
+#                       inputId = "glslide",
+#                       value = ceiling(100*input$glslide/(input$guaslide + input$glslide + input$grslide)))
+#   })
+#   observeEvent({
+#     input$guaslide
+#     input$glslide
+#   }, {
+#     updateSliderInput(session = session,
+#                       inputId = "grslide",
+#                       value = ceiling(100*input$grslide/(input$guaslide + input$glslide + input$grslide)))
+#   })
+#   
+# # Trash -------------------------------------------------------------------
+# 
+#   output$trashpanel <-  renderUI({
+#     
+#     tagList(
+#       
+#       setSliderColor(c("#237698", "#B1CA54", "#564D65", "#248F79"), c(1, 2, 3, 4)),
+#       br(),
+#       sliderInput(inputId = "Production",
+#                   label = "Total Weight, in Tons",
+#                   min = 0,
+#                   max = sum(tweight())*1.5,
+#                   value = sum(tweight())),
+#       sliderInput(inputId = "tcslide",
+#                   label = "% Combustion",
+#                   min = 0,
+#                   max = 100,
+#                   value = one$st),
+#       sliderInput(inputId = "tlslide",
+#                   label = "% Landfilling",
+#                   min = 0,
+#                   max = 100,
+#                   value = two$st)
+#     )
+#   })
+#   
+#   observeEvent({
+#     input$tcslide
+#   }, {
+#     updateSliderInput(session = session,
+#                       inputId = "tlslide",
+#                       value = ceiling(100*input$tlslide/(input$tcslide + input$tlslide)))
+#   })
+#   
+#   observeEvent({
+#     input$tlslide
+#   }, {
+#     updateSliderInput(session = session,
+#                       inputId = "tcslide",
+#                       value = ceiling(100*input$tcslide/(input$tcslide + input$tlslide)))
+#   })
+# 
+# # Paper -------------------------------------------------------------------
+# 
+#   output$paperpanel <-  renderUI({
+#     
+#     tagList(
+#       
+#       setSliderColor(c("#237698", "#B1CA54", "#564D65", "#248F79"), c(1, 2, 3, 4)),
+#       br(),
+#       sliderInput(inputId = "Production",
+#                   label = "Total Weight, in Tons",
+#                   min = 0,
+#                   max = sum(tweight())*1.5,
+#                   value = sum(tweight())),
+#       sliderInput(inputId = "pcslide",
+#                   label = "% Combustion",
+#                   min = 0,
+#                   max = 100,
+#                   value = one$st),
+#       sliderInput(inputId = "plslide",
+#                   label = "% Landfilling",
+#                   min = 0,
+#                   max = 100,
+#                   value = two$st),
+#       sliderInput(inputId = "prslide",
+#                   label = "% Recycling",
+#                   min = 0,
+#                   max = 100,
+#                   value = three$st)
+#     )
+#     
+#   })
+#   
+#   observeEvent({
+#     input$prslide
+#     input$plslide
+#   }, {
+#     updateSliderInput(session = session,
+#                       inputId = "pcslide",
+#                       value = ceiling(100*input$pcslide/(input$pcslide + input$plslide + input$prslide)))
+#   })
+#   
+#   observeEvent({
+#     input$pcslide
+#     input$prslide
+#   }, {
+#     updateSliderInput(session = session,
+#                       inputId = "plslide",
+#                       value = ceiling(100*input$plslide/(input$pcslide + input$plslide + input$prslide)))
+#   })
+#   observeEvent({
+#     input$pcslide
+#     input$plslide
+#   }, {
+#     updateSliderInput(session = session,
+#                       inputId = "prslide",
+#                       value = ceiling(100*input$prslide/(input$pcslide + input$plslide + input$prslide)))
+#   })
+#   
+# # Plastic Film ------------------------------------------------------------
+# 
+#   output$plasticfilmpanel <-  renderUI({
+#     
+#     tagList(
+#       
+#       setSliderColor(c("#237698", "#B1CA54", "#564D65", "#248F79"), c(1, 2, 3, 4)),
+#       br(),
+#       sliderInput(inputId = "Production",
+#                   label = "Total Weight, in Tons",
+#                   min = 0,
+#                   max = sum(tweight())*1.5,
+#                   value = sum(tweight())),
+#       sliderInput(inputId = "pfcslide",
+#                   label = "% Combustion",
+#                   min = 0,
+#                   max = 100,
+#                   value = one$st),
+#       sliderInput(inputId = "oflslide",
+#                   label = "% Landfilling",
+#                   min = 0,
+#                   max = 100,
+#                   value = two$st),
+#       sliderInput(inputId = "pfrslide",
+#                   label = "% Recycling",
+#                   min = 0,
+#                   max = 100,
+#                   value = three$st)
+#     )
+#   })
+#   
+#   observeEvent({
+#     input$pfrslide
+#     input$pflslide
+#   }, {
+#     updateSliderInput(session = session,
+#                       inputId = "pfcslide",
+#                       value = floor(100*input$pfcslide/(input$pfcslide + input$pflslide + input$pfrslide)))
+#   })
+#   
+#   observeEvent({
+#     input$pfcslide
+#     input$pfrslide
+#   }, {
+#     updateSliderInput(session = session,
+#                       inputId = "pflslide",
+#                       value = floor(100*input$pflslide/(input$pfcslide + input$pflslide + input$pfrslide)))
+#   })
+#   observeEvent({
+#     input$pfcslide
+#     input$pflslide
+#   }, {
+#     updateSliderInput(session = session,
+#                       inputId = "pfrslide",
+#                       value = floor(100*input$pfrslide/(input$pfcslide + input$pflslide + input$pfrslide)))
+#   })
+# 
+# # Rigid Plastic -----------------------------------------------------------
+# 
+#   output$rigidplasticpanel <-  renderUI({
+# 
+#     tagList(
+#       
+#       setSliderColor(c("#237698", "#B1CA54", "#564D65", "#248F79"), c(1, 2, 3, 4)),
+#       br(),
+#       sliderInput(inputId = "Production",
+#                   label = "Total Weight, in Tons",
+#                   min = 0,
+#                   max = sum(tweight())*1.5,
+#                   value = sum(tweight())),
+#       sliderInput(inputId = "rpcslide",
+#                   label = "% Combustion",
+#                   min = 0,
+#                   max = 100,
+#                   value = one$st),
+#       sliderInput(inputId = "rplslide",
+#                   label = "% Landfilling",
+#                   min = 0,
+#                   max = 100,
+#                   value = two$st),
+#       sliderInput(inputId = "rprslide",
+#                   label = "% Recycling",
+#                   min = 0,
+#                   max = 100,
+#                   value = three$st)
+#     )
+#     
+#   })
+#   
+#   observeEvent({
+#     input$rprslide
+#     input$rplslide
+#   }, {
+#     updateSliderInput(session = session,
+#                       inputId = "rpcslide",
+#                       value = floor(100*input$rpcslide/(input$rpcslide + input$rplslide + input$rprslide)))
+#   })
+#   
+#   observeEvent({
+#     input$rpcslide
+#     input$rprslide
+#   }, {
+#     updateSliderInput(session = session,
+#                       inputId = "rplslide",
+#                       value = floor(100*input$rplslide/(input$rpcslide + input$rplslide + input$rprslide)))
+#   })
+#   observeEvent({
+#     input$rpcslide
+#     input$rplslide
+#   }, {
+#     updateSliderInput(session = session,
+#                       inputId = "rprslide",
+#                       value = floor(100*input$rprslide/(input$rpcslide + input$rplslide + input$rprslide)))
+#   })
+#   
+# # Scrap Metal -------------------------------------------------------------
+# 
+#   output$scrapmetalpanel <-  renderUI({
+#     
+#     tagList(
+#       
+#       setSliderColor(c("#237698", "#B1CA54", "#564D65", "#248F79"), c(1, 2, 3, 4)),
+#       br(),
+#       sliderInput(inputId = "Production",
+#                   label = "Total Weight, in Tons",
+#                   min = 0,
+#                   max = sum(tweight())*1.5,
+#                   value = sum(tweight())),
+#       sliderInput(inputId = "smlslide",
+#                   label = "% Landfilling",
+#                   min = 0,
+#                   max = 100,
+#                   value = one$st),
+#       sliderInput(inputId = "smrslide",
+#                   label = "% Recycling",
+#                   min = 0,
+#                   max = 100,
+#                   value = two$st)
+#     )
+#   })
+#   
+#   observeEvent({
+#     input$smlslide
+#   }, {
+#     updateSliderInput(session = session,
+#                       inputId = "smrslide",
+#                       value = ceiling(100*input$smrslide/(input$smrslide + input$smlslide)))
+#   })
+#   
+#   observeEvent({
+#     input$smrslide
+#   }, {
+#     updateSliderInput(session = session,
+#                       inputId = "smlslide",
+#                       value = ceiling(100*input$smlslide/(input$smrslide + input$smlslide)))
+#   })
+# 
+# # Wood --------------------------------------------------------------------
+# 
+#   output$woodpanel <-  renderUI({
+#     
+#     tagList(
+#       
+#       setSliderColor(c("#237698", "#B1CA54", "#564D65", "#248F79"), c(1, 2, 3, 4)),
+#       br(),
+#       sliderInput(inputId = "Production",
+#                   label = "Total Weight, in Tons",
+#                   min = 0,
+#                   max = sum(tweight())*1.5,
+#                   value = sum(tweight())),
+#       sliderInput(inputId = "wcbslide",
+#                   label = "% Combustion",
+#                   min = 0,
+#                   max = 100,
+#                   value = one$st),
+#       sliderInput(inputId = "wcpslide",
+#                   label = "% Composting",
+#                   min = 0,
+#                   max = 100,
+#                   value = two$st),
+#       sliderInput(inputId = "wlslide",
+#                   label = "% Landfilling",
+#                   min = 0,
+#                   max = 100,
+#                   value = three$st),
+#       sliderInput(inputId = "wrslide",
+#                   label = "% Recycling",
+#                   min = 0,
+#                   max = 100,
+#                   value = four$st)
+#     )
+#     
+#   })
+#   
+#   observeEvent({
+#     input$wcbslide
+#     input$wcpslide
+#     input$wlslide
+#   }, {
+#     updateSliderInput(session = session,
+#                       inputId = "wrslide",
+#                       value = ceiling(100*input$wrslide/(input$wcbslide +
+#                                                          input$wcpslide +
+#                                                          input$wlslide +
+#                                                            input$wrslide)))
+#   })
+#   
+#   observeEvent({
+#     input$wcbslide
+#     input$wcpslide
+#     input$wrslide
+#   }, {
+#     updateSliderInput(session = session,
+#                       inputId = "wlslide",
+#                       value = ceiling(100*input$wlslide/(input$wcbslide +
+#                                                            input$wcpslide +
+#                                                            input$wlslide +
+#                                                            input$wrslide)))
+#   })
+#   
+#   observeEvent({
+#     input$wcbslide
+#     input$wlslide
+#     input$wrslide
+#   }, {
+#     updateSliderInput(session = session,
+#                       inputId = "wcpslide",
+#                       value = ceiling(100*input$wcpslide/(input$wcbslide +
+#                                                             input$wcpslide +
+#                                                             input$wlslide +
+#                                                             input$wrslide)))
+#   })
+#   
+#   observeEvent({
+#     input$wcpslide
+#     input$wlslide
+#     input$wrslide
+#   }, {
+#     updateSliderInput(session = session,
+#                       inputId = "wcbslide",
+#                       value = ceiling(100*input$wcbslide/(input$wcbslide +
+#                                                             input$wcpslide +
+#                                                             input$wlslide +
+#                                                             input$wrslide)))
+#   })
+#   
+# 
+#   
+# # Yard Debris -------------------------------------------------------------
+# 
+#   output$yarddebrispanel <-  renderUI({
+#     
+#     tagList(
+#       
+#       setSliderColor(c("#237698", "#B1CA54", "#564D65", "#248F79"), c(1, 2, 3, 4)),
+#       br(),
+#       sliderInput(inputId = "Production",
+#                   label = "Total Weight, in Tons",
+#                   min = 0,
+#                   max = sum(tweight())*1.5,
+#                   value = sum(tweight())),
+#       sliderInput(inputId = "yadslide",
+#                   label = "% Anaerobic Digestion",
+#                   min = 0,
+#                   max = 100,
+#                   value = one$st),
+#       sliderInput(inputId = "ycbslide",
+#                   label = "% Combustion",
+#                   min = 0,
+#                   max = 100,
+#                   value = two$st),
+#       sliderInput(inputId = "ycpslide",
+#                   label = "% Composting",
+#                   min = 0,
+#                   max = 100,
+#                   value = three$st),
+#       sliderInput(inputId = "ylslide",
+#                   label = "% Landfilling",
+#                   min = 0,
+#                   max = 100,
+#                   value = four$st)
+#     )
+#     
+#   })
+#   
+#   observeEvent({
+#     input$ycbslide
+#     input$ycpslide
+#     input$ylslide
+#   }, {
+#     updateSliderInput(session = session,
+#                       inputId = "yadslide",
+#                       value = ceiling(100*input$yadslide/(input$ycbslide +
+#                                                            input$ycpslide +
+#                                                            input$ylslide +
+#                                                            input$yadslide)))
+#   })
+#   
+#   observeEvent({
+#     input$ycbslide
+#     input$ycpslide
+#     input$yadslide
+#   }, {
+#     updateSliderInput(session = session,
+#                       inputId = "ylslide",
+#                       value = ceiling(100*input$ylslide/(input$ycbslide +
+#                                                            input$ycpslide +
+#                                                            input$ylslide +
+#                                                            input$yadslide)))
+#   })
+#   
+#   observeEvent({
+#     input$ycbslide
+#     input$ylslide
+#     input$yadslide
+#   }, {
+#     updateSliderInput(session = session,
+#                       inputId = "wcpslide",
+#                       value = ceiling(100*input$wcpslide/(input$ycbslide +
+#                                                             input$ycpslide +
+#                                                             input$ylslide +
+#                                                             input$yadslide)))
+#   })
+#   
+#   observeEvent({
+#     input$wcpslide
+#     input$wlslide
+#     input$wrslide
+#   }, {
+#     updateSliderInput(session = session,
+#                       inputId = "ycbslide",
+#                       value = ceiling(100*input$ycbslide/(input$ycbslide +
+#                                                             input$ycpslide +
+#                                                             input$ylslide +
+#                                                             input$yadslide)))
+#   })
 
   
 
@@ -1195,30 +1470,82 @@ regionalcontext <- reactive({
     filter(wasteshed %in% input$contextregion)
 }) 
   
-  renderPlotly({
-    tt <- plot_ly(data = regionalcontext,
+output$contextplot <- renderPlotly({
+  
+  sfont <- list(
+    family = "Roboto",
+    color = "#cf9f35"
+  )
+  largefont <- list(
+    family = "Roboto",
+    size = 18,
+    color = "#cf9f35"
+  )
+  xaxlist <- list(
+    title = "Waste, in Tons",
+    titlefont = largefont,
+    showticklabels = TRUE,
+    zerolinecolor = "#cf9f35",
+    # tickangle = 45,
+    tickfont = sfont
+  )
+  xax2list <- list(
+    title = "Global Warming Potential, in kg CO<sub>2</sub> eq.",
+    titlefont = largefont,
+    showticklabels = TRUE,
+    zerolinecolor = "#cf9f35",
+    # tickangle = 45,
+    tickfont = sfont
+  )
+  yaxlist <- list(
+    showticklabels = TRUE,
+    tickfont = sfont
+  )
+  
+    tt <- plot_ly(data = regionalcontext()%>% 
+                    filter(!umbDisp %in% c("Net", "Production")) %>%
+                    select(wasteshed, appMaterial, umbDisp, impact, tons) %>% 
+                    spread(key = umbDisp, value = tons),
                   y = ~appMaterial,
                   x = ~Disposal,
                   name = "Disposal",
+                  color = I("#564D65"),  
                   type = "bar") %>%
       add_trace(x = ~Recovery,
+                color = I("#248F79"),
                 name = "Recovery") %>% 
-      layout(barmode = "relative")
+      layout(barmode = "relative",
+             xaxis = xaxlist)
 
     # Net impact
-    Bakertrnet <- Bakertr %>% 
+    net <- regionalcontext() %>% 
       filter(umbDisp == "Net") %>% 
       select(wasteshed, appMaterial, umbDisp, impact, tons)
     
-    bb <- plot_ly(data = Bakertrnet,
+    bb <- plot_ly(data = net,
                   y = ~appMaterial,
                   x = ~impact,
                   name = "Net Impact",
+                  color = I("#cf9f35"),
                   type = "bar") %>%
-      layout(barmode = "relative")
-    bb
+      layout(barmode = "relative",
+             xaxis = xax2list)
     
-    sub2 <- subplot(tt, bb)
+    sub2 <- subplot(tt, bb, shareY = TRUE, titleX = TRUE, titleY = FALSE) %>% 
+      layout(
+        # paper_bgcolor = "#E2DADB",
+        # plot_bgcolor = "#E2DADB",
+        paper_bgcolor = "#f8f5f0",
+        plot_bgcolor = "#f8f5f0",
+        yaxis = yaxlist,
+        font = sfont,
+        margin = list(b = 80,
+                      l = 100,
+                      r = 30,
+                      t = 30,
+                      pad = 6)
+             # legend = list(orientation = 'h')
+             )
     sub2
   })
   
