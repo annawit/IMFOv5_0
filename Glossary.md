@@ -1,54 +1,6 @@
 General terms
 =============
 
-### Avoided burden approach
-
-A method of recycling allocation, also referred to as system expansion,
-0/100, or End of Life recycling, whereby a share of the burden of
-primary material production is allocated to the subsequent life cycle
-based on the quantity of recovered secondary material. The result is an
-environmental credit at end of life.
-
-### Allocation
-
-“Partitioning the input or output flows of a process or a product system
-between the product system under study and one or more other product
-systems” (ISO 14040:2006, section 3.17).
-
-### Background (secondary) data
-
-Data taken from generic or average life cycle inventories for the energy
-and materials. Can be upstream or downstream in the life cycle. The
-opposite of primary data.
-
-### Background system
-
-“Those processes, where due to the averaging effect across the
-suppliers, a homogenous market with average (or equivalent, generic
-data) can be assumed to appropriately represent the respective process …
-and/or those processes that are operated as part of the system but that
-are not under direct control or decisive influence of the producer of
-the good….” (JRC 2010, pp. 97-98) As a general rule, secondary data are
-appropriate for the background system, particularly where primary data
-are difficult to collect.
-
-### Closed-loop and open-loop allocation of recycled material
-
-“An open-loop allocation procedure applies to open-loop product systems
-where the material is recycled into other product systems and the
-material undergoes a change to its inherent properties.” “A closed-loop
-allocation procedure applies to closed-loop product systems. It also
-applies to open-loop product systems where no changes occur in the
-inherent properties of the recycled material. In such cases, the need
-for allocation is avoided since the use of secondary material displaces
-the use of virgin (primary) materials.” (ISO 14044:2006, section
-4.3.4.3.3).
-
-### Co-products
-
-“Any of two or more products coming from the same unit process or
-product system.” (ISO 14040:2006, section 3.10).
-
 ### Cradle-to-gate
 
 System boundary delineation from raw material extraction through to the
@@ -68,22 +20,6 @@ composting, or incineration) stages of the product or system.
 
 A system boundary delineation that is the same as cradle-to-grave, but
 implies a specific fate (reuse or recycling) at end of life.
-
-### Cut-off approach
-
-A method of recycling allocation in which the burden of the primary
-production is attributed to the first life cycle and the burden
-associated with secondary material recovery and refining is attributed
-to the subsequent life cycle.
-
-### Foreground system
-
-“Those processes of the system that are specific to it … and/or directly
-affected by decisions analyzed in the study.” (JRC 2010, p. 97) This
-typically includes first-tier suppliers, the manufacturer itself and any
-downstream life cycle stages where the manufacturer can exert
-significant influence. As a general rule, specific (primary) data should
-be used for the foreground system.
 
 ### Functional unit
 
@@ -140,13 +76,6 @@ for a product system throughout the life cycle of the product” (ISO
 inventory analysis or the impact assessment, or both, are evaluated in
 relation to the defined goal and scope in order to reach conclusions and
 recommendations” (ISO 14040:2006, section 3.5).
-
-### Primary data
-
-Data collected directly from a manufacturer, producer, vendor, or
-process operators often through process flow diagrams, financial or
-emissions reporting data, equipment specifications, or bills of
-material.
 
 ------------------------------------------------------------------------
 
@@ -223,6 +152,8 @@ considered water consumption." This is not an indicator of environmental
 impact without the addition of information about regional water
 availability. (thinkstep, 2016)
 
+<br> <br>
+
 It is critical to note that the impact categories represent
 potentials—they are approximations of environmental impacts that could
 occur if emissions would follow a specific impact pathway and meet
@@ -254,7 +185,7 @@ or unwaxed) and Kraft paper bags. Excludes converting plant waste paper
 
 ### Carpet
 
-Used carpet fiber used for housing, seaboard, animal bedding, etc.
+Used carpet fiber, used for housing, seaboard, animal bedding, etc.
 
 ### Electronics
 
