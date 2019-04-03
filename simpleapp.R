@@ -32,7 +32,7 @@ ui <- fluidPage(
   # useShinyjs(),
   
   #creates a page with a navigation bar at the top
-  navbarPage("Solid Waste Visualizer (SWaV): DRAFT",
+  navbarPage("Waste Impact Calculator: DRAFT",
              #collabsible optimizes for phones/small screens
              collapsible = TRUE,
              # if we want to have a DEQ footer
@@ -58,7 +58,7 @@ tabPanel("Introduction",
                     # light background
                     # style = "background-color: rgba(248,245,240,0.85)",
                     h3(style = "color: rgba(248,245,240)",
-                       "Welcome to the Solid Waste Visualizer!", align = "center"),
+                       "Welcome to the Waste Impact Calculator!", align = "center"),
                     # To place a picture:
                     # div(img(src = 'greenpic.jpeg', height="50%", width="50%"), style = "text-align: center;"),
                     br(),
@@ -88,28 +88,19 @@ tabPanel("Visualize!",
          fluidPage(
            fluidRow(
              column(4,
+                    # wellPanel(
+                    #   div(style = "text-align:center; height:50px;",
+                    #       p("Choose a region, a material, and an impact category from the dropdown menus.")
+                    #       # p("The sliders to the left are set to Oregon waste weights from 2016."),
+                    #       # p("Move the sliders to create an alternative management scenario.")
+                    #       )),
                     wellPanel(
-                      # style = "background-color: rgba(62,63,58,0.855);",
-                              div(style = "text-align:center; color: rgba(248,245,240)",
-                                  p("The sliders to the left are set to Oregon waste weights from 2016."),
-                                  p("Move the sliders to explore the data.")))),
-             column(4,
-                    wellPanel(style = "background-color: rgba(62,63,58,0.85);",
-                              div(style = "text-align:center; color: rgba(248,245,240)",
-                                  p("The weights of the different end of life treatments are shown below, with 2016 weights on the left and the new slider weights on the right.")))),
-             column(4,
-                    wellPanel(style = "background-color: rgba(62,63,58,0.85);",
-                              div(style = "text-align:center; color: rgba(248,245,240)",
-                                  p("The environmental impacts of the different end-of-life treatments are shown below."))))
-           )
-                    ,
-           fluidRow(
-             column(4,
+                    pickerInput(inputId = "usermaterial",
+                                label = "Select a waste material:",
+                                choices = c("Cardboard", "Electronics", "Food"),
+                                selected = "Cardboard",
+                                options = list(style = "btn-secondary"))),
                     wellPanel(
-                      # black background
-                      style = "background-color: rgba(62,63,58,0.85);
-                    color: rgba(248,245,240)",
-                      # style = "background-color: rgba(248,245,240,0.9)",
                       # uiOutput("sliders"),
                       # textOutput("vals"),
                       conditionalPanel(
@@ -129,10 +120,10 @@ tabPanel("Visualize!",
                       conditionalPanel(
                         condition = "input.usermaterial == `Food`",
                         uiOutput("foodpanel")
-                      ),
-
-# dormant slider panels ----------------------------------------------
-
+                      )
+                      
+                      # dormant slider panels ----------------------------------------------
+                      
                       
                       # conditionalPanel(
                       #   condition = "input.usermaterial == `Glass`",
@@ -166,17 +157,23 @@ tabPanel("Visualize!",
                       #   condition = "input.usermaterial == `Yard Debris`",
                       #   uiOutput("yarddebrispanel")
                       # ),
-
-# usermaterial input ------------------------------------------
-
-                      pickerInput(inputId = "usermaterial",
-                                  label = "Select a waste material:",
-                                  choices = c("Cardboard", "Electronics", "Food"),
-                                  selected = "Cardboard",
-                                  options = list(style = "btn-secondary"))
+                      
+                      # usermaterial input ------------------------------------------
+                      
+                      
                     )
              ),
              column(4,
+                    # wellPanel(
+                    #   div(style = "text-align:center; height:50px",
+                    #   p("The sliders start at the weights and waste management history from 2016.")
+                    #       # p("The weights of the different end of life treatments are shown below, with 2016 weights on the left and the new slider weights on the right.")
+                    #       )),
+                    wellPanel(pickerInput(inputId = "userregion",
+                                          label = "Select a region:",
+                                          choices = unique(mass$Wasteshed),
+                                          selected = "Oregon total",
+                                          options = list(style = "btn-secondary"))),
                     wellPanel(
                       style = "background-color: rgba(62,63,58,0.85);
                     color: rgba(248,245,240)",
@@ -194,20 +191,20 @@ tabPanel("Visualize!",
                       conditionalPanel(
                         condition = "input.usermaterial == `Food`",
                         plotlyOutput("foodmassplot")
-                      ),
-                      br(),
-                      pickerInput(inputId = "userregion",
-                                  label = "Select a region:",
-                                  choices = unique(mass$Wasteshed),
-                                  selected = "Oregon total",
-                                  options = list(style = "btn-secondary"))
+                      )
+                      
                     )
              ),
              column(4,
+                    # wellPanel(
+                    #   div(style = "text-align:center;height:50px",
+                    #       p("Create an alternative management scenario by moving the sliders. Watch the weights and impacts change in the graphs."))),
+                    wellPanel(pickerInput(inputId = "userimpact",
+                                          label = "Select an impact:",
+                                          choices = unique(I1$Category),
+                                          selected = "Energy demand",
+                                          options = list(style = "btn-secondary"))),
                     wellPanel(
-                      style = "background-color: rgba(62,63,58,0.85);
-                    color: rgba(248,245,240)",
-                      # style = "background-color: rgba(248,245,240,0.9)",
                       htmlOutput("impacttext"),
                       br(),
                       conditionalPanel(
@@ -221,57 +218,53 @@ tabPanel("Visualize!",
                       conditionalPanel(
                         condition = "input.usermaterial == `Food`",
                         plotlyOutput("foodplot")
-                      ),
-                      br(),
-                      pickerInput(inputId = "userimpact",
-                                  label = "Select an impact:",
-                                  choices = unique(I1$Category),
-                                  selected = "Energy demand",
-                                  options = list(style = "btn-secondary"))
+                      )
+                      
                     )
              )
            ),
-fluidRow(
-  column(12,
-         wellPanel(style = "background-color: rgba(62,63,58,0.85);",
-                   div(style = "text-align:center; color: rgba(248,245,240)",
-                       p("Explore different materials, regions, and impacts in using the dropdown menus. Additional options will be available in the final version.")
-                       # p("The data from the current view above is shown in the table below."),
-                       #   p("This includes the initial 2016 weight, the new weight given by the slider (including some difference due to rounding), as well as the life cycle stage, the impact category, the units the impact is described in, the factor (i.e., the quantity we used to multiply the weight by to get the overall impact) and the overall impact for the 2016 impact and the new one created with the sliders."),
-                       # p("This table can be downloaded in both Excel and CSV formats. Any plots are also downloadable by hovering over the upper right-hand corner.")
-                       
-         )))),
-
-# tables ------------------------------------------------------------------
-
-
            fluidRow(
              column(12,
-               wellPanel(
-                 # style = "background-color: rgba(62,63,58,0.85);
-                 #    color: rgba(248,245,240)",
-                 style = "background-color: rgba(248,245,240,0.9)",
-                 conditionalPanel(
-                   condition = "input.usermaterial == `Cardboard`",
-                   DT::dataTableOutput("cbdf")
-                 ),
-                 conditionalPanel(
-                   condition = "input.usermaterial == `Electronics`",
-                   DT::dataTableOutput("eldf")
-                   
-                 ),
-                 conditionalPanel(
-                   condition = "input.usermaterial == `Food`",
-                   DT::dataTableOutput("fddf")
-                   
-                 )
-                 
-                 # tableOutput("ttable"),
-                 # tableOutput("df"),
-                 # DT::dataTableOutput("userimpact")
-                 )))
+                    wellPanel(style = "background-color: rgba(62,63,58,0.85);",
+                              div(style = "text-align:center; color: rgba(248,245,240)",
+                                  p("View and download your results below, either in a detailed form or a summary that includes net impact.")
+                                  # p("The data from the current view above is shown in the table below."),
+                                  #   p("This includes the initial 2016 weight, the new weight given by the slider (including some difference due to rounding), as well as the life cycle stage, the impact category, the units the impact is described in, the factor (i.e., the quantity we used to multiply the weight by to get the overall impact) and the overall impact for the 2016 impact and the new one created with the sliders."),
+                                  # p("This table can be downloaded in both Excel and CSV formats. Any plots are also downloadable by hovering over the upper right-hand corner.")
+                                  
+                              )))),
            
-)
+           # tables ------------------------------------------------------------------
+           
+           
+           fluidRow(
+             column(12,
+                    wellPanel(
+                      # style = "background-color: rgba(62,63,58,0.85);
+                      #    color: rgba(248,245,240)",
+                      style = "background-color: rgba(248,245,240,0.9); color: rgba(62,63,58,0.85) ",
+                      conditionalPanel(
+                        condition = "input.usermaterial == `Cardboard`",
+                        DT::dataTableOutput("cbdf"),
+                        DT::dataTableOutput("cbimpact")
+                      ),
+                      conditionalPanel(
+                        condition = "input.usermaterial == `Electronics`",
+                        DT::dataTableOutput("eldf")
+                        
+                      ),
+                      conditionalPanel(
+                        condition = "input.usermaterial == `Food`",
+                        DT::dataTableOutput("fddf")
+                        
+                      )
+                      
+                      # tableOutput("ttable"),
+                      # tableOutput("df"),
+                      # DT::dataTableOutput("userimpact")
+                    )))
+           
+         )
 ),
 
 # Context tab -------------------------------------------------------------
@@ -280,24 +273,33 @@ tabPanel("Context",
          fluidPage(
            fixedPanel(width = "22%",
                       left = "30px",
-                         wellPanel(
-                           style = "background-color: rgba(62,63,58,0.85);
-                    color: rgba(248,245,240)",
-                           pickerInput(inputId = "contextregion",
-                                       label = "Select a region:",
-                                       choices = unique(context$wasteshed),
-                                       selected = "Global warming",
-                                       options = list(style = "btn-secondary"))
-                         )),
+                      wellPanel(
+                        style = "background-color: rgba(62,63,58,0.85);
+                        color: rgba(248,245,240)",
+                        pickerInput(inputId = "contextregion",
+                                    label = "Select a region:",
+                                    choices = unique(context$wasteshed),
+                                    selected = "Global warming",
+                                    options = list(style = "btn-secondary"))
+                      ),
+                      wellPanel(
+                        div(style = "text-align:left; height:200px;",
+                            p("Select a region, above."),
+                            p("The chart shows how tons of waste relate to life
+                              cycle impacts of waste in the region."),
+                            p("Comparing waste to impact may help you decide
+                              which materials to prioritize for action.")
+                      ))
+           ),
            column(width = 9, offset = 3, 
-             wellPanel(
-               style = "background-color: rgba(62,63,58,0.85);
+                  wellPanel(
+                    style = "background-color: rgba(62,63,58,0.85);
                     color: rgba(248,245,240)",
-               plotlyOutput("contextplot")
-               ),
-             br(),
-             br(),
-             br())
+                    plotlyOutput("contextplot")
+                  ),
+                  br(),
+                  br(),
+                  br())
          )
 ),
 
@@ -598,10 +600,11 @@ server <- function(input, output, session) {
     massplot %>% 
       layout(paper_bgcolor = "#f8f5f0",
              plot_bgcolor = "#f8f5f0",
-             yaxis = list(overlaying = "y",
-                          zerolinecolor = "#cf9f35",
-                          title = "Tons",
-                          titlefont = list(size = 18)),
+             yaxis = list(
+               overlaying = "y",
+               zerolinecolor = "#cf9f35",
+               title = "Tons",
+               titlefont = list(size = 18)),
              xaxis = list(title = "",
                           tickfont = list(size = 18)),
              legend = list(orientation = 'h'),
@@ -642,14 +645,14 @@ server <- function(input, output, session) {
       # )
   })
   
+  
+
+  
   output$cbplot <- renderPlotly({
-    req(input$userimpact)
-    req(input$usermaterial)
-    req(cardboarddf())
     
-    p <- plot_ly(cardboarddf() %>% 
-                   filter(grepl("Impact", Variable)) %>% 
-                   spread("Disposition", "Value") %>% 
+    p <- plot_ly(cardboarddf() %>%
+                   filter(grepl("Impact", Variable)) %>%
+                   spread("Disposition", "Value") %>%
                    mutate(Sum = rowSums(.[2:5])),
                  x = ~Variable,
                  y = ~Production,
