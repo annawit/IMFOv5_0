@@ -11,25 +11,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # General terms
 
-###Avoided burden approach
 
-A method of recycling allocation, also referred to as system expansion, 0/100, or End of Life recycling, whereby a share of the burden of primary material production is allocated to the subsequent life cycle based on the quantity of recovered secondary material.  The result is an environmental credit at end of life.
-
-###Allocation
-“Partitioning the input or output flows of a process or a product system between the product system under study and one or more other product systems” (ISO 14040:2006, section 3.17).
-
-###Background (secondary) data
-Data taken from generic or average life cycle inventories for the energy and materials.  Can be upstream or downstream in the life cycle.  The opposite of primary data.
-
-###Background system
-“Those processes, where due to the averaging effect across the suppliers, a homogenous market with average (or equivalent, generic data) can be assumed to appropriately represent the respective process … and/or those processes that are operated as part of the system but that are not under direct control or decisive influence of the producer of the good….” (JRC 2010, pp. 97-98) As a general rule, secondary data are appropriate for the background system, particularly where primary data are difficult to collect.
-
-###Closed-loop and open-loop allocation of recycled material
-“An open-loop allocation procedure applies to open-loop product systems where the material is recycled into other product systems and the material undergoes a change to its inherent properties.” 
-“A closed-loop allocation procedure applies to closed-loop product systems. It also applies to open-loop product systems where no changes occur in the inherent properties of the recycled material. In such cases, the need for allocation is avoided since the use of secondary material displaces the use of virgin (primary) materials.” (ISO 14044:2006, section 4.3.4.3.3).
-
-###Co-products
-“Any of two or more products coming from the same unit process or product system.” (ISO 14040:2006, section 3.10).
 
 ###Cradle-to-gate
 System boundary delineation from raw material extraction through to the so-called “gate” of the manufacturing facility, including upstream energy and material production, all associated transport, and on-site manufacturing.  
@@ -39,12 +21,6 @@ System boundary delineation covering the entire product life cycle, from raw mat
 
 ###Cradle-to-cradle
 A system boundary delineation that is the same as cradle-to-grave, but implies a specific fate (reuse or recycling) at end of life.
-
-###Cut-off approach
-A method of recycling allocation in which the burden of the primary production is attributed to the first life cycle and the burden associated with secondary material recovery and refining is attributed to the subsequent life cycle.
-
-###Foreground system
-“Those processes of the system that are specific to it … and/or directly affected by decisions analyzed in the study.” (JRC 2010, p. 97) This typically includes first-tier suppliers, the manufacturer itself and any downstream life cycle stages where the manufacturer can exert significant influence. As a general rule, specific (primary) data should be used for the foreground system.
 
 ###Functional unit
 “Quantified performance of a product system for use as a reference unit” (ISO 14040:2006, section 3.20).
@@ -73,9 +49,6 @@ A holistic view of a product or system as “consecutive and interlinked stages 
 ###Life cycle interpretation
 “Phase of life cycle assessment in which the findings of either the inventory analysis or the impact assessment, or both, are evaluated in relation to the defined goal and scope in order to reach conclusions and recommendations” (ISO 14040:2006, section 3.5).
 
-###Primary data
-Data collected directly from a manufacturer, producer, vendor, or process operators often through process flow diagrams, financial or emissions reporting data, equipment specifications, or bills of material.
-
 ***
 
 #Impact terms
@@ -92,8 +65,6 @@ Excess nutrients in the environment, known as eutrophication, covers all potenti
 Unit: kg CO2 equivalent
 A measure of greenhouse gas emissions, such as CO2 and methane. These emissions are causing an increase in the absorption of radiation emitted by the earth, increasing the natural greenhouse effect. This may in turn have adverse impacts on ecosystem health, human health and material welfare.  Typically the GWP is calculated based on the energy absorption potential of a given greenhouse gas over a 100 year period, though there are other methods which look at different time periods (20 or 300 years).  This version excludes classification of greenhouse gas emissions (and sequestrations) from biogenic sources.  The underlying climate forcing potentials are based on a 100 year period. (Bare, 2011)
 
-
-
 ###Human Toxicity
 Units: CTUh (Potentially Affected Fraction of species.m^3.day/kg emitted)
 A measure of toxic emissions that are directly harmful to the health of humans. Human effect factors relate the quantity taken in to the potential risk of cancerous and non-cancerous effects expressing cases per kg of chemical emitted. The final unit is comparative toxic units (CTUh).  The interim factors are estimated with a higher degree of uncertainty than the recommended and should be used with caution. If interim factors are dominating the result of a Life Cycle Assessment a sensitivity analysis should be carried out.  This specific category includes only the recommend characterization factors from the USEtox methodology related to carcinogenic toxic emissions. (Bare, 2011)
@@ -106,6 +77,8 @@ A measure of emissions of precursors that contribute to ground level smog format
 Units: kg of water
 A measure of the net intake and release of fresh water across the life of the product system. Blue water refers to surface and ground water only (excluding rain water, green water). Water consumption is typically defined as "water removed from, but not returned to the same drainage basin. Water consumption can be because of evaporation, transpiration, product integration or release into a different drainage basin or the sea. Evaporation from reservoirs is considered water consumption."  This is not an indicator of environmental impact without the addition of information about regional water availability. (thinkstep, 2016)
 
+<br>
+<br>
 
 It is critical to note that the impact categories represent potentials—they are approximations of environmental impacts that could occur if emissions would follow a specific impact pathway and meet certain conditions in the receiving environment.  Additionally, the inventory only captures that fraction of the total environmental burden that corresponds to the functional unit (i.e. the relative approach of LCA).  Results are therefore relative expressions only and do not predict actual impacts.  Nor do they measure the exceedance of thresholds, safety margins, hazards, or risks.
 
@@ -122,7 +95,7 @@ unwaxed) and Kraft paper bags. Excludes converting plant waste paper (i.e.
 DLK clippings and local grocery bag waste).
 
 ###Carpet
-Used carpet fiber used for housing, seaboard, animal bedding, etc.
+Used carpet fiber, used for housing, seaboard, animal bedding, etc.
 
 ###Electronics
 Computers (including notebooks and laptops), monitors (CRTs and flat panel) and
