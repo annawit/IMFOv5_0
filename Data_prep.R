@@ -35,7 +35,7 @@ mass <- m1 %>%
          Disposition = tools::toTitleCase(disposition),
          `2015 Weight` = round(tons, digits = -2)) %>% 
   filter(`Life Cycle Stage` != "EOL Transport") %>%
-  rename(Wasteshed = wasteshed) %>% 
+  mutate(Wasteshed = recode(wasteshed, "Oregon total" = "Oregon")) %>% 
   select(Wasteshed, Material, Disposition, `Life Cycle Stage`, `Umbrella Disposition`, `2015 Weight`)
 write_csv(mass, "mass.csv")
 
@@ -68,3 +68,4 @@ I1 <- I %>%
   select(-`Implied Miles`)
 
 write_csv(I1, "I1.csv")
+
