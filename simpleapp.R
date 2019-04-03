@@ -18,54 +18,68 @@ mass <- read_csv("mass.csv")
 # brings in impact factors
 I1 <- read_csv("I1.csv")
 
+#brings in data for context page
 context <- readRDS("impacts_by_LC_stage_data.Rdata")
 
 
 ui <- fluidPage(
-  # theme = shinytheme("sandstone"),
+  # points to a CSS sheet that customizes the look of the app
+  # based off of the bootstrap shinytheme "Sandstone"
   includeCSS("www/sandstone2.css"),
 
+  #changes look of sliders
   chooseSliderSkin("Modern"),
-  useShinyjs(),
+  # useShinyjs(),
   
+  #creates a page with a navigation bar at the top
   navbarPage("Solid Waste Visualizer (SWaV): DRAFT",
+             #collabsible optimizes for phones/small screens
              collapsible = TRUE,
-             # footer = img(src = 'DEQbwhz80.png', height = "50px", align = "center"),
+             # if we want to have a DEQ footer
+             # footer = img(src = 'DEQbwhz80.png',
+             #              height = "50px", align = "center"),
              
-             # Introduction tab -------------------------------------------------------
-             tabPanel("Introduction",
-                      fluidPage(
-                        # setBackgroundImage("mtthhsfade.jpg"),
-                        # setBackgroundImage("paintedfade.jpg"),
-                        setBackgroundImage("southsilverfade.jpg"),
-                        # setBackgroundColor("darkgreen"),
-                        column(12,
-                               align = "center",
-                               wellPanel(
-                                 # black background
-                                 style = "background-color: rgba(62,63,58,0.85)",
-                                 # smoke background
-                                 # style = "background-color: rgba(248,245,240,0.85)",
-                                 h3(style = "color: rgba(248,245,240)",
-                                    "Welcome to the Solid Waste Visualizer!", align = "center"),
-                               # h2("Interactive Visualizer!", align = "center"),
-                               # div(img(src = 'greenpic.jpeg', height="50%", width="50%"), style = "text-align: center;"),
-                               br(),
-                               div(
-                                 style = "width: 560px; height: 315px; background-color: rgba(0,0,0)",
-                                 h3("Video coming soon")),
-                               #   HTML('<iframe width="560" height="315" src="https://www.youtube.com/embed/roNLC7UbZao?start=309" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
-                               # ),
-                               br(),
-                               br(),
-                               div(style = "width:600px; text-align:center;",
-                                    p(style = "color: rgba(248,245,240)",
-                                      "Watch the video to learn more, or start exploring the data interactively in the tabs above.")
-                               )
-                        )
-                        )
-                      )
-             ),
+# Introduction tab -------------------------------------------------------
+tabPanel("Introduction",
+         fluidPage(
+           # Alternate backgrounds, can be switched out
+           # setBackgroundImage("mtthhsfade.jpg"),
+           # setBackgroundImage("paintedfade.jpg"),
+           setBackgroundImage("southsilverfade.jpg"),
+           # setBackgroundColor("darkgreen"),
+           column(12,
+                  align = "center",
+                  wellPanel(
+                    # background matches nav bar
+                    # using an rgba background allows you to adjust
+                    # opacity of the well panel without it transferring to 
+                    # child divs
+                    # style = "background-color: rgba(62,63,58,0.85)",
+                    # light background
+                    # style = "background-color: rgba(248,245,240,0.85)",
+                    h3(style = "color: rgba(248,245,240)",
+                       "Welcome to the Solid Waste Visualizer!", align = "center"),
+                    # To place a picture:
+                    # div(img(src = 'greenpic.jpeg', height="50%", width="50%"), style = "text-align: center;"),
+                    br(),
+                    div(
+                      style = "width: 560px; height: 315px; background-color: rgba(0,0,0)",
+                      h3("Video coming soon")),
+                    # To place a video:
+                    #   HTML('<iframe width="560" height="315" src="https://www.youtube.com/embed/roNLC7UbZao?start=309" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
+                    # ),
+                    br(),
+                    br(),
+                    div(style = "width:600px; text-align:center;",
+                        p(style = "color: rgba(248,245,240)",
+                          "Watch the video to learn more,
+                          or start exploring the data interactively
+                          in the tabs above.")
+                    )
+                  )
+           )
+         )
+),
 
 # Visualize Tab -----------------------------------------------------------
 
@@ -74,7 +88,8 @@ tabPanel("Visualize!",
          fluidPage(
            fluidRow(
              column(4,
-                    wellPanel(style = "background-color: rgba(62,63,58,0.855);",
+                    wellPanel(
+                      # style = "background-color: rgba(62,63,58,0.855);",
                               div(style = "text-align:center; color: rgba(248,245,240)",
                                   p("The sliders to the left are set to Oregon waste weights from 2016."),
                                   p("Move the sliders to explore the data.")))),

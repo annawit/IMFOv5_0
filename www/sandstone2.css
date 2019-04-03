@@ -5251,7 +5251,8 @@ padding-bottom:75%;
 min-height:20px;
 padding:19px;
 margin-bottom:20px;
-background-color:#f8f5f0;
+/* background-color:#f8f5f0; */
+background-color:rgba(62,63,58,0.85);
 border:1px solid transparent;
 border-radius:4px;
 -webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,0.05);
