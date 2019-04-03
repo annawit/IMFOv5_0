@@ -606,7 +606,7 @@ server <- function(input, output, session) {
                           tickfont = list(size = 18)),
              legend = list(orientation = 'h'),
              font = list(
-               family = "Roboto, sans-serif",
+               family = "Open Sans, sans-serif",
                size = 14,
                color = "#cf9f35"),
              margin = list(b = 100,
@@ -687,7 +687,7 @@ server <- function(input, output, session) {
           titlefont = list(size = 20)
         ),
         legend = list(orientation = 'h'),
-        font = list(family = "Roboto, sans-serif",
+        font = list(family = "Open Sans, sans-serif",
                     size = 14,
                     color = "#cf9f35"),
         margin = list(
@@ -900,7 +900,7 @@ server <- function(input, output, session) {
                           tickfont = list(size = 18)),
              legend = list(orientation = 'h'),
              font = list(
-               family = "Roboto, sans-serif",
+               family = "Open Sans, sans-serif",
                size = 14,
                color = "#cf9f35"),
              margin = list(b = 100,
@@ -962,7 +962,7 @@ server <- function(input, output, session) {
           titlefont = list(size = 20)
         ),
         legend = list(orientation = 'h'),
-        font = list(family = "Roboto, sans-serif",
+        font = list(family = "Open Sans, sans-serif",
                     size = 14,
                     color = "#cf9f35"),
         margin = list(
@@ -1144,7 +1144,7 @@ server <- function(input, output, session) {
                           tickfont = list(size = 18)),
              legend = list(orientation = 'h'),
              font = list(
-               family = "Roboto, sans-serif",
+               family = "Open Sans, sans-serif",
                size = 14,
                color = "#cf9f35"),
              margin = list(b = 100,
@@ -1211,7 +1211,7 @@ server <- function(input, output, session) {
           titlefont = list(size = 20)
         ),
         legend = list(orientation = 'h'),
-        font = list(family = "Roboto, sans-serif",
+        font = list(family = "Open Sans, sans-serif",
                     size = 14,
                     color = "#cf9f35"),
         margin = list(
@@ -1808,12 +1808,12 @@ regionalcontext <- reactive({
 output$contextplot <- renderPlotly({
   
   sfont <- list(
-    family = "Roboto, sans-serif",
+    family = "Open Sans, sans-serif",
     color = "#cf9f35",
     size = 16
   )
   largefont <- list(
-    family = "Roboto, sans-serif",
+    family = "Open Sans, sans-serif",
     size = 18,
     color = "#cf9f35"
   )
