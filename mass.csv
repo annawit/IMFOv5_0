@@ -244,41 +244,41 @@ Morrow,Yard Debris,Anaerobic Digestion,EOL,Recovery,0
 Morrow,Yard Debris,Combustion,EOL,Recovery,0
 Morrow,Yard Debris,Composting,EOL,Recovery,0
 Morrow,Yard Debris,Landfilling,EOL,Disposal,600
-Oregon total,Cardboard,Combustion,EOL,Recovery,0
-Oregon total,Cardboard,Landfilling,EOL,Disposal,106700
-Oregon total,Cardboard,Recycling,EOL,Recovery,365900
-Oregon total,Carpet,Combustion,EOL,Recovery,0
-Oregon total,Carpet,Landfilling,EOL,Disposal,73100
-Oregon total,Carpet,Recycling,EOL,Recovery,0
-Oregon total,Electronics,Landfilling,EOL,Disposal,25500
-Oregon total,Electronics,Recycling,EOL,Recovery,18300
-Oregon total,Food,Anaerobic Digestion,EOL,Recovery,0
-Oregon total,Food,Composting,EOL,Recovery,56100
-Oregon total,Food,Landfilling,EOL,Disposal,455000
-Oregon total,Glass,Landfilling,EOL,Disposal,34500
-Oregon total,Glass,Recycling,EOL,Recovery,107100
-Oregon total,Glass,Use as Aggregate,EOL,Recovery,0
-Oregon total,Trash,Combustion,EOL,Recovery,0
-Oregon total,Trash,Landfilling,EOL,Disposal,514000
-Oregon total,Paper,Combustion,EOL,Recovery,0
-Oregon total,Paper,Landfilling,EOL,Disposal,368500
-Oregon total,Paper,Recycling,EOL,Recovery,267200
-Oregon total,Plastic Film,Combustion,EOL,Recovery,0
-Oregon total,Plastic Film,Landfilling,EOL,Disposal,161000
-Oregon total,Plastic Film,Recycling,EOL,Recovery,15900
-Oregon total,Rigid Plastic,Combustion,EOL,Recovery,0
-Oregon total,Rigid Plastic,Landfilling,EOL,Disposal,57200
-Oregon total,Rigid Plastic,Recycling,EOL,Recovery,24700
-Oregon total,Scrap Metal,Landfilling,EOL,Disposal,101900
-Oregon total,Scrap Metal,Recycling,EOL,Recovery,389300
-Oregon total,Wood,Combustion,EOL,Recovery,234300
-Oregon total,Wood,Composting,EOL,Recovery,21900
-Oregon total,Wood,Landfilling,EOL,Disposal,466600
-Oregon total,Wood,Recycling,EOL,Recovery,32800
-Oregon total,Yard Debris,Anaerobic Digestion,EOL,Recovery,0
-Oregon total,Yard Debris,Combustion,EOL,Recovery,32000
-Oregon total,Yard Debris,Composting,EOL,Recovery,464000
-Oregon total,Yard Debris,Landfilling,EOL,Disposal,96600
+Oregon,Cardboard,Combustion,EOL,Recovery,0
+Oregon,Cardboard,Landfilling,EOL,Disposal,106700
+Oregon,Cardboard,Recycling,EOL,Recovery,365900
+Oregon,Carpet,Combustion,EOL,Recovery,0
+Oregon,Carpet,Landfilling,EOL,Disposal,73100
+Oregon,Carpet,Recycling,EOL,Recovery,0
+Oregon,Electronics,Landfilling,EOL,Disposal,25500
+Oregon,Electronics,Recycling,EOL,Recovery,18300
+Oregon,Food,Anaerobic Digestion,EOL,Recovery,0
+Oregon,Food,Composting,EOL,Recovery,56100
+Oregon,Food,Landfilling,EOL,Disposal,455000
+Oregon,Glass,Landfilling,EOL,Disposal,34500
+Oregon,Glass,Recycling,EOL,Recovery,107100
+Oregon,Glass,Use as Aggregate,EOL,Recovery,0
+Oregon,Trash,Combustion,EOL,Recovery,0
+Oregon,Trash,Landfilling,EOL,Disposal,514000
+Oregon,Paper,Combustion,EOL,Recovery,0
+Oregon,Paper,Landfilling,EOL,Disposal,368500
+Oregon,Paper,Recycling,EOL,Recovery,267200
+Oregon,Plastic Film,Combustion,EOL,Recovery,0
+Oregon,Plastic Film,Landfilling,EOL,Disposal,161000
+Oregon,Plastic Film,Recycling,EOL,Recovery,15900
+Oregon,Rigid Plastic,Combustion,EOL,Recovery,0
+Oregon,Rigid Plastic,Landfilling,EOL,Disposal,57200
+Oregon,Rigid Plastic,Recycling,EOL,Recovery,24700
+Oregon,Scrap Metal,Landfilling,EOL,Disposal,101900
+Oregon,Scrap Metal,Recycling,EOL,Recovery,389300
+Oregon,Wood,Combustion,EOL,Recovery,234300
+Oregon,Wood,Composting,EOL,Recovery,21900
+Oregon,Wood,Landfilling,EOL,Disposal,466600
+Oregon,Wood,Recycling,EOL,Recovery,32800
+Oregon,Yard Debris,Anaerobic Digestion,EOL,Recovery,0
+Oregon,Yard Debris,Combustion,EOL,Recovery,32000
+Oregon,Yard Debris,Composting,EOL,Recovery,464000
+Oregon,Yard Debris,Landfilling,EOL,Disposal,96600
 Wasco,Cardboard,Combustion,EOL,Recovery,0
 Wasco,Cardboard,Landfilling,EOL,Disposal,700
 Wasco,Cardboard,Recycling,EOL,Recovery,2800
