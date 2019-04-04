@@ -2,22 +2,128 @@ library(dplyr)
 library(plotly)
 library(tidyr)
 
-tr <- readRDS("impacts_by_LC_stage_data.RData")
+tr <- readRDS("data/impacts_by_LC_stage_data.RData")
 
 regionalcontextb <- tr %>% 
   filter(wasteshed == "Baker")
 
-
+regionalcontextc <- regionalcontextb %>% 
+  filter(umbDisp == "Net") %>% 
+  mutate(Percent_Impact = impact/sum(impact),
+         Percent_Tons = tons/sum(tons))
 
 p <- plot_ly(data = regionalcontextb %>% filter(umbDisp == "Net"),
-       x = ~appMaterial,
-       y = ~impact,
-       type = "bar") %>%
-  add_trace(y = ~tons, yaxis = "y2") %>%
+             x = ~appMaterial) %>% 
+  add_trace(y = ~impact,
+            type = "bar",
+            name = "Impact") %>%
+  add_trace(y = ~tons,
+            yaxis = "y2", 
+            type = "bar",
+            name = "Weight") %>%
   layout(barmode = "group",
          yaxis2 = list(overlaying = "y",
                        side = "right"))
 p
+
+transparentbars <- plot_ly(data = regionalcontextb %>% filter(umbDisp == "Net"),
+             x = ~appMaterial) %>% 
+  add_trace(y = ~tons,
+            yaxis = "y2", 
+            type = "bar",
+            opacity = 0.5,
+            name = "Weight") %>%
+  add_trace(y = ~impact,
+            type = "bar",
+            opacity = 0.8,
+            name = "Impact") %>%
+  layout(
+    barmode = "group",
+    paper_bgcolor = "#f8f5f0",
+    plot_bgcolor = "#f8f5f0",
+    xaxis = list(title = "",
+                 tickfont = list(size = 18)),
+    yaxis = list(
+      zerolinecolor = "#cf9f35",
+      title = "Impact in MTCO2E",
+      titlefont = list(size = 20)
+    ),
+    yaxis2 = list(title = "Weight in tons",
+                  overlaying = "y",
+                  side = "right"),
+    legend = list(),
+    font = list(family = "Open Sans, sans-serif",
+                size = 14,
+                color = "#cf9f35"),
+    margin = list(
+      b = 100,
+      l = 90,
+      r = 30,
+      t = 30,
+      pad = 5
+    )
+  )
+    
+transparentbars
+
+
+transparentbarspercent <- plot_ly(data = regionalcontextc,
+                           x = ~appMaterial) %>% 
+  add_trace(y = ~Percent_Tons,
+            yaxis = "y2", 
+            type = "bar",
+            opacity = 0.5,
+            name = "Percent Weight") %>%
+  add_trace(y = ~Percent_Impact,
+            type = "bar",
+            opacity = 0.8,
+            name = "Percent Impact") %>%
+  layout(
+    barmode = "group",
+    paper_bgcolor = "#f8f5f0",
+    plot_bgcolor = "#f8f5f0",
+    xaxis = list(title = "",
+                 tickfont = list(size = 18)),
+    yaxis = list(
+      zerolinecolor = "#cf9f35",
+      title = "Impact in MTCO2E",
+      titlefont = list(size = 20)
+    ),
+    yaxis2 = list(title = "Weight in tons",
+                  overlaying = "y",
+                  side = "right"),
+    legend = list(),
+    font = list(family = "Open Sans, sans-serif",
+                size = 14,
+                color = "#cf9f35"),
+    margin = list(
+      b = 100,
+      l = 90,
+      r = 30,
+      t = 30,
+      pad = 5
+    )
+  )
+
+transparentbarspercent
+
+
+
+
+
+
+
+ff <- plot_ly(data = regionalcontextb %>% filter(umbDisp == "Net"),
+             x = ~appMaterial,
+             y = ~impact,
+             type = "bar") %>%
+  add_trace(y = ~tons, yaxis = "y2") %>%
+  layout(barmode = "group",
+         yaxis2 = list(overlaying = "y",
+                       side = "right"))
+ff
+
+
 
 rcn <- regionalcontextb %>%
   filter(umbDisp == "Net")
