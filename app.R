@@ -13,13 +13,13 @@ library(shinyjs)
 library(shinyBS)
 
 # brings in main table of regions/waste types/masses
-mass <- read_csv("mass.csv")
+mass <- read_csv("data/mass.csv")
 
 # brings in impact factors
-I1 <- read_csv("I1.csv")
+I1 <- read_csv("data/I1.csv")
 
 #brings in data for context page
-context <- readRDS("impacts_by_LC_stage_data.Rdata")
+context <- readRDS("data/impacts_by_LC_stage_data.Rdata")
 
 
 ui <- fluidPage(
@@ -293,14 +293,16 @@ tabPanel("Context",
            ),
            column(width = 9, offset = 3, 
                   wellPanel(
-                    style = "background-color: rgba(62,63,58,0.85);
-                    color: rgba(248,245,240)",
-                    plotlyOutput("contextplot")
-                  ),
-                  br(),
-                  br(),
-                  br())
-         )
+                    plotlyOutput("contextplot")),
+                  wellPanel(
+                    plotlyOutput("transparentbars")),
+                  wellPanel(
+                    plotlyOutput("transparentbarspercent")
+                  )
+                 
+         
+)
+)
 ),
 
 # More NavbarMenu ---------------------------------------------------------
@@ -884,11 +886,11 @@ server <- function(input, output, session) {
                           spread("Disposition", "Value"),
                         x = ~Variable,
                         y = ~Landfilling,
-                        name = "Landfilling weight",
+                        name = "Landfilling",
                         marker = list(color = ("#564D65")),
                         type = "bar") %>% 
       add_trace(y = ~Recycling,
-                name = "Recycling weight",
+                name = "Recycling",
                 marker = list(color = ("#587B7F"))) %>% 
       layout(barmode = "relative")
     
@@ -935,14 +937,14 @@ server <- function(input, output, session) {
                    mutate(Sum = rowSums(.[2:3])),
                  x = ~Variable,
                  y = ~Production,
-                 name = "Production impact",
+                 name = "Production",
                  marker = list(color = ("#0B3C49")),
                  type = "bar") %>% 
       add_trace(y = ~Landfilling,
-                name = "Landfilling impact",
+                name = "Landfilling",
                 marker = list(color = ("#564D65"))) %>% 
       add_trace(y = ~Recycling,
-                name = "Recycling impact",
+                name = "Recycling",
                 marker = list(color = ("#587B7F"))) %>% 
       layout(barmode = "relative")
     
@@ -951,7 +953,8 @@ server <- function(input, output, session) {
                 type = "scatter",
                 mode = "line",
                 name = "Net impact",
-                marker = list(size = ~log(Sum),
+                marker = list(size = "18",
+                              # size = ~log(Sum),
                               color = ("#cf9f35"))) %>% 
       layout(
         paper_bgcolor = "#f8f5f0",
@@ -1125,14 +1128,14 @@ server <- function(input, output, session) {
                           spread("Disposition", "Value"),
                         x = ~Variable,
                         y = ~Composting,
-                        name = "Composting weight",
+                        name = "Composting",
                         marker = list(color = ("#A57548")),
                         type = "bar") %>% 
       add_trace(y = ~Landfilling,
-                name = "Landfilling weight",
+                name = "Landfilling",
                 marker = list(color = ("#564D65"))) %>% 
       add_trace(y = ~`Anaerobic Digestion`,
-                name = "Anaerobic Digestion weight",
+                name = "Anaerobic Digestion",
                 marker = list(color = ("#726E60"))) %>% 
       layout(barmode = "relative")
     
@@ -1181,17 +1184,17 @@ server <- function(input, output, session) {
                    mutate(Sum = rowSums(.[2:5])),
                  x = ~Variable,
                  y = ~Production,
-                 name = "Production impact",
+                 name = "Production",
                  marker = list(color = ("#0B3C49")),
                  type = "bar") %>% 
       add_trace(y = ~Composting,
-                name = "Composting impact",
+                name = "Composting",
                 marker = list(color = ("#A57548"))) %>% 
       add_trace(y = ~Landfilling,
-                name = "Landfilling impact",
+                name = "Landfilling",
                 marker = list(color = ("#564D65"))) %>% 
       add_trace(y = ~`Anaerobic Digestion`,
-                name = "Anaerobic Digestion impact",
+                name = "Anaerobic Digestion",
                 marker = list(color = ("#726E60"))) %>% 
       layout(barmode = "relative")
     
@@ -1200,7 +1203,8 @@ server <- function(input, output, session) {
                 type = "scatter",
                 mode = "line",
                 name = "Net impact",
-                marker = list(size = ~log(Sum),
+                marker = list(size = "18",
+                              # size = ~log(Sum),
                               color = ("#cf9f35"))) %>% 
       layout(
         paper_bgcolor = "#f8f5f0",
@@ -1241,6 +1245,9 @@ server <- function(input, output, session) {
              ))
   })
 
+  
+  
+  
 # Glass -------------------------------------------------------------------
 
 #   output$glasspanel <-  renderUI({
@@ -1889,6 +1896,102 @@ output$contextplot <- renderPlotly({
   })
   
   
+output$transparentbars <- renderPlotly({
+  
+  transparentbars <- plot_ly(data = regionalcontext() %>% filter(umbDisp == "Net"),
+                             x = ~appMaterial) %>% 
+    add_trace(y = ~tons,
+              yaxis = "y2", 
+              type = "bar",
+              opacity = 0.6,
+              name = "Weight",
+              color = I("#587079")) %>%
+    add_trace(y = ~impact,
+              type = "bar",
+              opacity = 0.9,
+              name = "Impact",
+              color = I("#cf9f35")) %>%
+    layout(
+      barmode = "group",
+      paper_bgcolor = "#f8f5f0",
+      plot_bgcolor = "#f8f5f0",
+      xaxis = list(title = "",
+                   tickfont = list(size = 18)),
+      yaxis = list(
+        zerolinecolor = "#cf9f35",
+        title = "Impact in MTCO2E",
+        titlefont = list(size = 20)
+      ),
+      yaxis2 = list(title = "Weight in tons",
+                    overlaying = "y",
+                    side = "right"),
+      legend = list(),
+      font = list(family = "Open Sans, sans-serif",
+                  size = 14,
+                  color = "#cf9f35"),
+      margin = list(
+        b = 100,
+        l = 90,
+        r = 90,
+        t = 30,
+        pad = 18
+      )
+    )
+  
+  transparentbars
+})
+
+output$transparentbarspercent <- renderPlotly({
+  
+  transparentbarspercent <- plot_ly(data = regionalcontext() %>% 
+                                      filter(umbDisp == "Net") %>% 
+                                      mutate(Percent_Impact = impact/sum(impact),
+                                             Percent_Tons = tons/sum(tons)),
+                                    x = ~appMaterial) %>% 
+    add_trace(y = ~Percent_Tons,
+              yaxis = "y2", 
+              type = "bar",
+              opacity = 0.5,
+              name = "Percent Weight",
+              color = I("#587079")) %>%
+    add_trace(y = ~Percent_Impact,
+              type = "bar",
+              opacity = 0.8,
+              name = "Percent Impact",
+              color = I("#cf9f35")) %>%
+    layout(
+      barmode = "group",
+      paper_bgcolor = "#f8f5f0",
+      plot_bgcolor = "#f8f5f0",
+      xaxis = list(title = "",
+                   tickfont = list(size = 18)),
+      yaxis = list(
+        zerolinecolor = "#cf9f35",
+        title = "Percent of GHG impact",
+        titlefont = list(size = 20)
+      ),
+      yaxis2 = list(title = "Percent weight",
+                    overlaying = "y",
+                    side = "right"),
+      legend = list(),
+      font = list(family = "Open Sans, sans-serif",
+                  size = 14,
+                  color = "#cf9f35"),
+      margin = list(
+        b = 100,
+        l = 90,
+        r = 30,
+        t = 30,
+        pad = 5
+      )
+    )
+  
+  transparentbarspercent
+  
+  
+  
+})
+
   
 }
 
