@@ -11,6 +11,7 @@ library(shinyWidgets)
 library(viridis)
 library(shinyjs)
 library(shinyBS)
+library(markdown)
 
 # brings in main table of regions/waste types/masses
 mass <- read_csv("data/mass.csv")
@@ -19,7 +20,7 @@ mass <- read_csv("data/mass.csv")
 I1 <- read_csv("data/I1.csv")
 
 #brings in data for context page
-context <- readRDS("data/impacts_by_LC_stage_data.Rdata")
+context <- readRDS("data/impacts_by_LC_stage_data.RData")
 
 
 ui <- fluidPage(
@@ -64,10 +65,10 @@ tabPanel("Introduction",
                     br(),
                     div(
                       style = "width: 560px; height: 315px; background-color: rgba(0,0,0)",
-                      h3("Video coming soon")),
                     # To place a video:
-                    #   HTML('<iframe width="560" height="315" src="https://www.youtube.com/embed/roNLC7UbZao?start=309" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
-                    # ),
+                      HTML('<iframe width="560" height="315" src="https://www.youtube.com/embed/fsSvudgmR-w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
+                    ),
+                    
                     br(),
                     br(),
                     div(style = "width:600px; text-align:center;",
@@ -81,6 +82,43 @@ tabPanel("Introduction",
          )
 ),
 
+# Context -----------------------------------------------------------------
+
+tabPanel("Context",
+         fluidPage(
+           fixedPanel(width = "22%",
+                      left = "30px",
+                      wellPanel(
+                        style = "background-color: rgba(62,63,58,0.85);
+                        color: rgba(248,245,240)",
+                        pickerInput(inputId = "contextregion",
+                                    label = "Select a region:",
+                                    choices = unique(context$wasteshed),
+                                    selected = "Global warming",
+                                    options = list(style = "btn-secondary"))
+                      ),
+                      wellPanel(
+                        div(style = "text-align:left; height:200px;",
+                            p("Select a region, above."),
+                            p("The chart shows how tons of waste relate to life
+                              cycle impacts of waste in the region."),
+                            p("Comparing waste to impact may help you decide
+                              which materials to prioritize for action.")
+                        ))
+           ),
+           column(width = 9, offset = 3, 
+                  wellPanel(
+                    plotlyOutput("contextplot")),
+                  wellPanel(
+                    plotlyOutput("transparentbars")),
+                  wellPanel(
+                    plotlyOutput("transparentbarspercent")
+                  )
+                  
+                  
+           )
+         )
+),
 # Visualize Tab -----------------------------------------------------------
 
              
@@ -267,63 +305,16 @@ tabPanel("Visualize!",
          )
 ),
 
-# Context tab -------------------------------------------------------------
-
-tabPanel("Context",
-         fluidPage(
-           fixedPanel(width = "22%",
-                      left = "30px",
-                      wellPanel(
-                        style = "background-color: rgba(62,63,58,0.85);
-                        color: rgba(248,245,240)",
-                        pickerInput(inputId = "contextregion",
-                                    label = "Select a region:",
-                                    choices = unique(context$wasteshed),
-                                    selected = "Global warming",
-                                    options = list(style = "btn-secondary"))
-                      ),
-                      wellPanel(
-                        div(style = "text-align:left; height:200px;",
-                            p("Select a region, above."),
-                            p("The chart shows how tons of waste relate to life
-                              cycle impacts of waste in the region."),
-                            p("Comparing waste to impact may help you decide
-                              which materials to prioritize for action.")
-                      ))
-           ),
-           column(width = 9, offset = 3, 
-                  wellPanel(
-                    plotlyOutput("contextplot")),
-                  wellPanel(
-                    plotlyOutput("transparentbars")),
-                  wellPanel(
-                    plotlyOutput("transparentbarspercent")
-                  )
-                 
-         
-)
-)
-),
 
 # More NavbarMenu ---------------------------------------------------------
-
-
-             navbarMenu("More",
-                        tabPanel("Glossary",
-                                 fluidPage(
-                                   column(3, wellPanel(
-                                     style = "background-color: rgba(62,63,58,0.85);
-                    color: rgba(248,245,240)"
-                                   )),
-                                   column(9,
-                                          wellPanel(
-                                            style = "background-color: rgba(62,63,58,0.85);
-                    color: rgba(248,245,240)",
-                                            includeMarkdown("Glossary.md")
-                                          )
-                                   )
-                                 )
-                        ),
+navbarMenu("More",
+           tabPanel("Glossary",
+                    fluidPage(
+                      column(3, wellPanel()),
+                      column(9,  wellPanel(
+                        includeMarkdown("Glossary.md")))
+                    )
+           ),
 
 # Resources tab -----------------------------------------------------------
 
@@ -678,6 +669,7 @@ server <- function(input, output, session) {
                 mode = "line",
                 name = "Net impact",
                 marker = list(size = "18",
+                              symbols = "x",
                   # size = ~log(Sum),
                               color = ("#cf9f35"))) %>% 
       layout(
@@ -1036,10 +1028,7 @@ server <- function(input, output, session) {
   }, {
     updateSliderInput(session = session,
                       inputId = "FoodComposting",
-                      value = 100*input$FoodComposting /
-                        (input$FoodComposting + 
-                           input$`FoodAnaerobic Digestion` + 
-                           input$FoodLandfilling))
+                      value = 100 * input$FoodComposting / (input$FoodComposting +  input$`FoodAnaerobic Digestion` +  input$FoodLandfilling))
   })
   
   observeEvent({
@@ -1048,10 +1037,7 @@ server <- function(input, output, session) {
   }, {
     updateSliderInput(session = session,
                       inputId = "FoodLandfilling",
-                      value = 100*input$FoodLandfilling /
-                        (input$FoodComposting + 
-                           input$`FoodAnaerobic Digestion` + 
-                           input$FoodLandfilling))
+                      value = 100 * input$FoodLandfilling / (input$FoodComposting + input$`FoodAnaerobic Digestion` +  input$FoodLandfilling))
   })
   
   observeEvent({
@@ -1060,10 +1046,7 @@ server <- function(input, output, session) {
   }, {
     updateSliderInput(session = session,
                       inputId = "\`FoodAnaerobic Digestion`",
-                      value = 100*input$`FoodAnaerobic Digestion`/ 
-                        (input$FoodComposting + 
-                           input$`FoodAnaerobic Digestion` + 
-                           input$FoodLandfilling))
+                      value = 100 * input$`FoodAnaerobic Digestion` / (input$FoodComposting + input$`FoodAnaerobic Digestion` + input$FoodLandfilling))
   })
   
   foodsliderweights <- reactive({
