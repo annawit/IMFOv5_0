@@ -126,16 +126,10 @@ tabPanel("Visualize!",
          fluidPage(
            fluidRow(
              column(4,
-                    # wellPanel(
-                    #   div(style = "text-align:center; height:50px;",
-                    #       p("Choose a region, a material, and an impact category from the dropdown menus.")
-                    #       # p("The sliders to the left are set to Oregon waste weights from 2016."),
-                    #       # p("Move the sliders to create an alternative management scenario.")
-                    #       )),
                     wellPanel(
                     pickerInput(inputId = "usermaterial",
                                 label = "Select a waste material:",
-                                choices = c("Cardboard", "Electronics", "Food"),
+                                choices = c("Cardboard", "Electronics", "Food", "Glass", "Paper", "Wood"),
                                 selected = "Cardboard",
                                 options = list(style = "btn-secondary"))),
                     wellPanel(
@@ -158,23 +152,25 @@ tabPanel("Visualize!",
                       conditionalPanel(
                         condition = "input.usermaterial == `Food`",
                         uiOutput("foodpanel")
-                      )
+                      ),
                       
                       # dormant slider panels ----------------------------------------------
                       
                       
-                      # conditionalPanel(
-                      #   condition = "input.usermaterial == `Glass`",
-                      #   uiOutput("glasspanel")
-                      # ),
+                      conditionalPanel(
+                        condition = "input.usermaterial == `Glass`"
+                        # ,
+                        # uiOutput("glasspanel")
+                      ),
                       # conditionalPanel(
                       #   condition = "input.usermaterial == `Trash`",
                       #   uiOutput("trashpanel")
                       # ),
-                      # conditionalPanel(
-                      #   condition = "input.usermaterial == `Paper`",
-                      #   uiOutput("paperpanel")
-                      # ),
+                      conditionalPanel(
+                        condition = "input.usermaterial == `Paper`"
+                        # ,
+                        # uiOutput("paperpanel")
+                      ),
                       # conditionalPanel(
                       #   condition = "input.usermaterial == `Plastic Film`",
                       #   uiOutput("plasticfilmpanel")
@@ -187,10 +183,11 @@ tabPanel("Visualize!",
                       #   condition = "input.usermaterial == `Scrap Metal`",
                       #   uiOutput("scrapmetalpanel")
                       # ),
-                      # conditionalPanel(
-                      #   condition = "input.usermaterial == `Wood`",
-                      #   uiOutput("woodpanel")
-                      # ),
+                      conditionalPanel(
+                        condition = "input.usermaterial == `Wood`"
+                        # ,
+                        # uiOutput("woodpanel")
+                      )
                       # conditionalPanel(
                       #   condition = "input.usermaterial == `Yard Debris`",
                       #   uiOutput("yarddebrispanel")
@@ -229,6 +226,21 @@ tabPanel("Visualize!",
                       conditionalPanel(
                         condition = "input.usermaterial == `Food`",
                         plotlyOutput("foodmassplot")
+                      ),
+                      conditionalPanel(
+                        condition = "input.usermaterial == `Glass`"
+                        # ,
+                        # plotlyOutput("glassmassplot")
+                      ),
+                      conditionalPanel(
+                        condition = "input.usermaterial == `Paper`"
+                        # ,
+                        # plotlyOutput("papermassplot")
+                      ),
+                      conditionalPanel(
+                        condition = "input.usermaterial == `Wood`"
+                        # ,
+                        # plotlyOutput("woodmassplot")
                       )
                       
                     )
@@ -256,6 +268,21 @@ tabPanel("Visualize!",
                       conditionalPanel(
                         condition = "input.usermaterial == `Food`",
                         plotlyOutput("foodplot")
+                      ),
+                      conditionalPanel(
+                        condition = "input.usermaterial == `Glass`"
+                        # ,
+                        # plotlyOutput("glassmassplot")
+                      ),
+                      conditionalPanel(
+                        condition = "input.usermaterial == `Paper`"
+                        # ,
+                        # plotlyOutput("papermassplot")
+                      ),
+                      conditionalPanel(
+                        condition = "input.usermaterial == `Wood`"
+                        # ,
+                        # plotlyOutput("woodmassplot")
                       )
                       
                     )
@@ -295,6 +322,21 @@ tabPanel("Visualize!",
                         condition = "input.usermaterial == `Food`",
                         DT::dataTableOutput("fddf")
                         
+                      ),
+                      conditionalPanel(
+                        condition = "input.usermaterial == `Glass`"
+                        # ,
+                        # DT::dataTableOutput("gldf")
+                      ),
+                      conditionalPanel(
+                        condition = "input.usermaterial == `Paper`"
+                        # ,
+                        # DT::dataTableOutput("gldf")
+                      ),
+                      conditionalPanel(
+                        condition = "input.usermaterial == `Wood`"
+                        # ,
+                        # DT::dataTableOutput("gldf")
                       )
                       
                       # tableOutput("ttable"),
