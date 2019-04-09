@@ -17,7 +17,7 @@ library(shinyjs)
 library(shinyBS)
 
 
-m1 <- read_csv("imfoAppMassProfiles.csv")
+m1 <- read_csv("data/imfoAppMassProfiles.csv")
 mass <- m1 %>%
   mutate(`Umbrella Disposition` = ifelse(disposition %in% "landfilling", "Disposal", "Recovery")) %>% 
   mutate(Material = recode(material, "FoodWaste" = "Food",
@@ -37,9 +37,9 @@ mass <- m1 %>%
   filter(`Life Cycle Stage` != "EOL Transport") %>%
   mutate(Wasteshed = recode(wasteshed, "Oregon total" = "Oregon")) %>% 
   select(Wasteshed, Material, Disposition, `Life Cycle Stage`, `Umbrella Disposition`, `2015 Weight`)
-write_csv(mass, "mass.csv")
+write_csv(mass, "data/mass.csv")
 
-I <- read_csv("imfoAppImpactFactors.csv")
+I <- read_csv("data/imfoAppImpactFactors.csv")
 
 I1 <- I %>% 
   mutate(Material = recode(material, "FoodWaste" = "Food",
@@ -67,5 +67,5 @@ I1 <- I %>%
   filter(`Life Cycle Stage` != "EOL Transport") %>% 
   select(-`Implied Miles`)
 
-write_csv(I1, "I1.csv")
+write_csv(I1, "data/I1.csv")
 
