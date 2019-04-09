@@ -1,0 +1,13 @@
+name: IMFOv5_0
+title: IMFOv5_0
+username:
+account: awithington
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 848689
+bundleId: 1996273
+url: https://awithington.shinyapps.io/IMFOv5_0/
+when: 1554766575.55123
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: Data_prep.R|Glossary.Rmd|README.md|data/imfoAppImpactFactors.csv|data/imfoAppMassProfiles.csv|Development/ContextPlots.R|Development/Function test.R|Development/Plot building.R|Development/ReactiveDFExamples.R|Development/Tests.R|Archive
