@@ -66,7 +66,7 @@ tabPanel("Introduction",
                     div(
                       style = "width: 560px; height: 315px; background-color: rgba(0,0,0)",
                     # To place a video:
-                      HTML('<iframe width="560" height="315" src="https://www.youtube.com/embed/fsSvudgmR-w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
+                      HTML('<iframe width="560" height="315" src="https://www.youtube.com/embed/Xd8y73b6Wn8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
                     ),
                     
                     br(),
@@ -110,10 +110,10 @@ tabPanel("Context",
                   wellPanel(
                     plotlyOutput("contextplot")),
                   wellPanel(
-                    plotlyOutput("transparentbars")),
-                  wellPanel(
-                    plotlyOutput("transparentbarspercent")
-                  )
+                    plotlyOutput("transparentbars"))
+                  # wellPanel(
+                  #   plotlyOutput("transparentbarspercent")
+                  # )
                   
                   
            )
@@ -155,9 +155,8 @@ tabPanel("Visualize!",
                       #   uiOutput("trashpanel")
                       # ),
                       conditionalPanel(
-                        condition = "input.usermaterial == `Paper`"
-                        # ,
-                        # uiOutput("paperpanel")
+                        condition = "input.usermaterial == `Paper`",
+                        uiOutput("paperpanel")
                       ),
                       # conditionalPanel(
                       #   condition = "input.usermaterial == `Plastic Film`",
@@ -172,9 +171,8 @@ tabPanel("Visualize!",
                       #   uiOutput("scrapmetalpanel")
                       # ),
                       conditionalPanel(
-                        condition = "input.usermaterial == `Wood`"
-                        # ,
-                        # uiOutput("woodpanel")
+                        condition = "input.usermaterial == `Wood`",
+                        uiOutput("woodpanel")
                       )
                       # conditionalPanel(
                       #   condition = "input.usermaterial == `Yard Debris`",
@@ -187,11 +185,6 @@ tabPanel("Visualize!",
                     )
              ),
              column(4,
-                    # wellPanel(
-                    #   div(style = "text-align:center; height:50px",
-                    #   p("The sliders start at the weights and waste management history from 2016.")
-                    #       # p("The weights of the different end of life treatments are shown below, with 2016 weights on the left and the new slider weights on the right.")
-                    #       )),
                     wellPanel(pickerInput(inputId = "userregion",
                                           label = "Select a region:",
                                           choices = unique(mass$Wasteshed),
@@ -220,22 +213,17 @@ tabPanel("Visualize!",
                         plotlyOutput("glassmassplot")
                       ),
                       conditionalPanel(
-                        condition = "input.usermaterial == `Paper`"
-                        # ,
-                        # plotlyOutput("papermassplot")
+                        condition = "input.usermaterial == `Paper`",
+                        plotlyOutput("papermassplot")
                       ),
                       conditionalPanel(
-                        condition = "input.usermaterial == `Wood`"
-                        # ,
-                        # plotlyOutput("woodmassplot")
+                        condition = "input.usermaterial == `Wood`",
+                        plotlyOutput("woodmassplot")
                       )
                       
                     )
              ),
              column(4,
-                    # wellPanel(
-                    #   div(style = "text-align:center;height:50px",
-                    #       p("Create an alternative management scenario by moving the sliders. Watch the weights and impacts change in the graphs."))),
                     wellPanel(pickerInput(inputId = "userimpact",
                                           label = "Select an impact:",
                                           choices = unique(I1$Category),
@@ -261,14 +249,12 @@ tabPanel("Visualize!",
                         plotlyOutput("glplot")
                       ),
                       conditionalPanel(
-                        condition = "input.usermaterial == `Paper`"
-                        # ,
-                        # plotlyOutput("papermassplot")
+                        condition = "input.usermaterial == `Paper`",
+                        plotlyOutput("ppplot")
                       ),
                       conditionalPanel(
-                        condition = "input.usermaterial == `Wood`"
-                        # ,
-                        # plotlyOutput("woodmassplot")
+                        condition = "input.usermaterial == `Wood`",
+                        plotlyOutput("woodplot")
                       )
                       
                     )
@@ -282,48 +268,44 @@ tabPanel("Visualize!",
                                   
                               )))),
            
-           # tables ------------------------------------------------------------------
+# tables ------------------------------------------------------------------
            
+fluidRow(
+  column(12,
+         wellPanel(
+           style = "background-color: rgba(248,245,240,0.9); color: rgba(62,63,58,0.85) ",
+           conditionalPanel(
+             condition = "input.usermaterial == `Cardboard`",
+             DT::dataTableOutput("cbdf"),
+             DT::dataTableOutput("cbimpact")
+           ),
+           conditionalPanel(
+             condition = "input.usermaterial == `Electronics`",
+             DT::dataTableOutput("eldf")
+             
+           ),
+           conditionalPanel(
+             condition = "input.usermaterial == `Food`",
+             DT::dataTableOutput("fddf")
+             
+           ),
+           conditionalPanel(
+             condition = "input.usermaterial == `Glass`",
+             DT::dataTableOutput("gldf")
+           ),
+           conditionalPanel(
+             condition = "input.usermaterial == `Paper`",
+             DT::dataTableOutput("ppdf")
+           ),
+           conditionalPanel(
+             condition = "input.usermaterial == `Wood`",
+             DT::dataTableOutput("wddf")
+           )
            
-           fluidRow(
-             column(12,
-                    wellPanel(
-                      style = "background-color: rgba(248,245,240,0.9); color: rgba(62,63,58,0.85) ",
-                      conditionalPanel(
-                        condition = "input.usermaterial == `Cardboard`",
-                        DT::dataTableOutput("cbdf"),
-                        DT::dataTableOutput("cbimpact")
-                      ),
-                      conditionalPanel(
-                        condition = "input.usermaterial == `Electronics`",
-                        DT::dataTableOutput("eldf")
-                        
-                      ),
-                      conditionalPanel(
-                        condition = "input.usermaterial == `Food`",
-                        DT::dataTableOutput("fddf")
-                        
-                      ),
-                      conditionalPanel(
-                        condition = "input.usermaterial == `Glass`"
-                        # ,
-                        # DT::dataTableOutput("gldf")
-                      ),
-                      conditionalPanel(
-                        condition = "input.usermaterial == `Paper`"
-                        # ,
-                        # DT::dataTableOutput("gldf")
-                      ),
-                      conditionalPanel(
-                        condition = "input.usermaterial == `Wood`"
-                        # ,
-                        # DT::dataTableOutput("gldf")
-                      )
-                      
-                      # tableOutput("ttable"),
-                      # tableOutput("df"),
-                      # DT::dataTableOutput("userimpact")
-                    )))
+           # tableOutput("ttable"),
+           # tableOutput("df"),
+           # DT::dataTableOutput("userimpact")
+         )))
            
          )
 ),
@@ -531,7 +513,7 @@ server <- function(input, output, session) {
                       )
   })
   
-  sliderweights <- reactive({
+  cardboardsliderweights <- reactive({
     c(input$CardboardProduction*input$cbcslide/100,
       input$CardboardProduction*input$cblslide/100,
       input$CardboardProduction*input$cbrslide/100,
@@ -541,7 +523,7 @@ server <- function(input, output, session) {
   cbdf <- reactive({
     Disposition       <- c(tdisp()[1], tdisp()[2], tdisp()[3], "Production")
     `Initial Weight`  <- c(tweight()[1], tweight()[2], tweight()[3], sum(tweight()))
-    `Scenario Weight` <- sliderweights()
+    `Scenario Weight` <- cardboardsliderweights()
     
     tibble(Disposition, `Initial Weight`, `Scenario Weight`) %>% 
       left_join(userimpact()) %>% 
@@ -619,17 +601,13 @@ server <- function(input, output, session) {
                titlefont = list(size = 18)),
              xaxis = list(title = "",
                           tickfont = list(size = 18)),
-             # legend = list(orientation = 'h'),
+             legend = list(x = 100,
+                           y = 0.5),
              font = list(
                family = "Open Sans, sans-serif",
                size = 14,
                color = "#cf9f35")
-             # ,
-             # margin = list(b = 100,
-             #               l = 70,
-             #               r = 30,
-             #               t = 30,
-             #               pad = 4)
+
              ) %>% 
       # modebar reference
       # https://github.com/plotly/plotly.js/blob/master/src/components/modebar/buttons.js
@@ -682,7 +660,7 @@ server <- function(input, output, session) {
                 type = "scatter",
                 mode = "line",
                 name = "Net impact",
-                marker = list(size = "18",
+                marker = list(size = "22",
                               symbols = "x",
                   # size = ~log(Sum),
                               color = ("#cf9f35"))) %>% 
@@ -697,10 +675,11 @@ server <- function(input, output, session) {
           title = paste("Impact in", userimpact()$Units[[1]]),
           titlefont = list(size = 20)
         ),
-        # legend = list(orientation = 'h'),
+        legend = list(x = 100,
+                      y = 0.5),
         font = list(family = "Open Sans, sans-serif",
                     size = 14,
-                    color = "#cf9f35"),
+                    color = "#cf9f35")
         # margin = list(
         #   b = 100,
         #   l = 90,
@@ -728,61 +707,7 @@ server <- function(input, output, session) {
   
 # Carpet Panel ------------------------------------------------------------
 
-  # output$carpetpanel <-  renderUI({
-  #   
-  #   tagList(
-  #     # 3A6276
-  #     setSliderColor(c("#0B3C49", "#B1CA54", "#564D65", "#587B7F"), c(1, 2, 3, 4)),
-  #     br(),
-  #     sliderInput(inputId = "Production",
-  #                 label = "Total Weight, in Tons",
-  #                 min = 0,
-  #                 max = sum(tweight())*1.5,
-  #                 value = sum(tweight())),
-  #     sliderInput(inputId = "ccslide",
-  #                 label = paste("%", tdisp()[1]),
-  #                 min = 0,
-  #                 max = 100,
-  #                 value = one$st),
-  #     sliderInput(inputId = "clslide",
-  #                 label = paste("%", tdisp()[2]),
-  #                 min = 0,
-  #                 max = 100,
-  #                 value = two$st),
-  #     sliderInput(inputId = "crslide",
-  #                 label = paste("%", tdisp()[3]),
-  #                 min = 0,
-  #                 max = 100,
-  #                 value = three$st)
-  #   )
-  #   
-  # })
-  # 
-  # observeEvent({
-  #   input$ccslide
-  #   input$clslide
-  # }, {
-  #   updateSliderInput(session = session,
-  #                     inputId = "crslide",
-  #                     value = round(100*input$crslide/(input$ccslide + input$clslide + input$crslide)))
-  # })
-  # 
-  # observeEvent({
-  #   input$ccslide
-  #   input$crslide
-  # }, {
-  #   updateSliderInput(session = session,
-  #                     inputId = "clslide",
-  #                     value = round(100*input$clslide/(input$ccslide + input$clslide + input$crslide)))
-  # })
-  # observeEvent({
-  #   input$crslide
-  #   input$clslide
-  # }, {
-  #   updateSliderInput(session = session,
-  #                     inputId = "ccslide",
-  #                     value = round(100*input$ccslide/(input$ccslide + input$clslide + input$crslide)))
-  # })
+  
   
 # Electronics Panel -------------------------------------------------------
 
@@ -902,7 +827,8 @@ server <- function(input, output, session) {
                           titlefont = list(size = 18)),
              xaxis = list(title = "",
                           tickfont = list(size = 18)),
-             legend = list(orientation = 'h'),
+             legend = list(x = 100,
+                           y = 0.5),
              font = list(
                family = "Open Sans, sans-serif",
                size = 14,
@@ -952,7 +878,7 @@ server <- function(input, output, session) {
                 type = "scatter",
                 mode = "line",
                 name = "Net impact",
-                marker = list(size = "18",
+                marker = list(size = "22",
                               # size = ~log(Sum),
                               color = ("#cf9f35"))) %>% 
       layout(
@@ -969,6 +895,8 @@ server <- function(input, output, session) {
         font = list(family = "Open Sans, sans-serif",
                     size = 14,
                     color = "#cf9f35"),
+        legend = list(x = 100,
+                      y = 0.5),
         margin = list(
           b = 100,
           l = 90,
@@ -1143,6 +1071,8 @@ server <- function(input, output, session) {
                family = "Open Sans, sans-serif",
                size = 14,
                color = "#cf9f35"),
+             legend = list(x = 100,
+                           y = 0.5),
              margin = list(b = 100,
                            l = 70,
                            r = 30,
@@ -1193,7 +1123,7 @@ server <- function(input, output, session) {
                 type = "scatter",
                 mode = "line",
                 name = "Net impact",
-                marker = list(size = "18",
+                marker = list(size = "22",
                               # size = ~log(Sum),
                               color = ("#cf9f35"))) %>% 
       layout(
@@ -1210,6 +1140,8 @@ server <- function(input, output, session) {
         font = list(family = "Open Sans, sans-serif",
                     size = 14,
                     color = "#cf9f35"),
+        legend = list(x = 100,
+                      y = 0.5),
         margin = list(
           b = 100,
           l = 90,
@@ -1393,7 +1325,8 @@ server <- function(input, output, session) {
                titlefont = list(size = 18)),
              xaxis = list(title = "",
                           tickfont = list(size = 18)),
-             legend = list(orientation = 'h'),
+             legend = list(x = 100,
+                           y = 0.5),
              font = list(
                family = "Open Sans, sans-serif",
                size = 14,
@@ -1452,7 +1385,7 @@ server <- function(input, output, session) {
                 type = "scatter",
                 mode = "line",
                 name = "Net impact",
-                marker = list(size = "18",
+                marker = list(size = "22",
                               symbols = "x",
                               # size = ~log(Sum),
                               color = ("#cf9f35"))) %>% 
@@ -1467,7 +1400,8 @@ server <- function(input, output, session) {
           title = paste("Impact in", userimpact()$Units[[1]]),
           titlefont = list(size = 20)
         ),
-        legend = list(orientation = 'h'),
+        legend = list(x = 100,
+                      y = 0.5),
         font = list(family = "Open Sans, sans-serif",
                     size = 14,
                     color = "#cf9f35"),
@@ -1496,310 +1430,271 @@ server <- function(input, output, session) {
 
   })
 # # Trash -------------------------------------------------------------------
-# 
-#   output$trashpanel <-  renderUI({
-#     
-#     tagList(
-#       
-#       setSliderColor(c("#0B3C49", "#B1CA54", "#564D65", "#587B7F"), c(1, 2, 3, 4)),
-#       br(),
-#       sliderInput(inputId = "Production",
-#                   label = "Total Weight, in Tons",
-#                   min = 0,
-#                   max = sum(tweight())*1.5,
-#                   value = sum(tweight())),
-#       sliderInput(inputId = "tcslide",
-#                   label = "% Combustion",
-#                   min = 0,
-#                   max = 100,
-#                   value = one$st),
-#       sliderInput(inputId = "tlslide",
-#                   label = "% Landfilling",
-#                   min = 0,
-#                   max = 100,
-#                   value = two$st)
-#     )
-#   })
-#   
-#   observeEvent({
-#     input$tcslide
-#   }, {
-#     updateSliderInput(session = session,
-#                       inputId = "tlslide",
-#                       value = ceiling(100*input$tlslide/(input$tcslide + input$tlslide)))
-#   })
-#   
-#   observeEvent({
-#     input$tlslide
-#   }, {
-#     updateSliderInput(session = session,
-#                       inputId = "tcslide",
-#                       value = ceiling(100*input$tcslide/(input$tcslide + input$tlslide)))
-#   })
-# 
-# # Paper -------------------------------------------------------------------
-# 
-# #   output$cardboardpanel <-  renderUI({
-#   #dynamic number of sliders
-#   #https://stackoverflow.com/questions/35579439/dynamic-number-of-sliders-in-shiny
-#   
-#   tagList(
-#     # https://stackoverflow.com/questions/36906265/how-to-color-sliderbar-sliderinput
-#     # why coloring dynamic sliders doesnt work the second time
-#     # setSliderColor(c("#0B3C49", "#B1CA54", "#564D65", "#587B7F"), c(1, 2, 3, 4)),
-#     sliderInput(inputId = "CardboardProduction",
-#                 label =  paste("Total", input$usermaterial, "Waste for the",
-#                                input$userregion, " region, in Tons"),
-#                 min = 0,
-#                 max = sum(tweight())*1.5,
-#                 post = " tons",
-#                 value = sum(tweight())),
-#     sliderInput(inputId = "cbcslide",
-#                 label = paste("%", tdisp()[1]),
-#                 min = 0,
-#                 max = 100,
-#                 post = " %",
-#                 value = t()$Percent[1]
-#     ),
-#     sliderInput(inputId = "cblslide",
-#                 label = paste("%", tdisp()[2]),
-#                 min = 0,
-#                 max = 100,
-#                 post = " %",
-#                 value = t()$Percent[2]
-#     ),
-#     sliderInput(inputId = "cbrslide",
-#                 label = paste("%", tdisp()[3]),
-#                 min = 0,
-#                 max = 100,
-#                 post = " %",
-#                 value = t()$Percent[3]
-#     )
-#   )
-# })
-# 
-# observeEvent({
-#   input$cbcslide
-#   input$cblslide
-# }, {
-#   updateSliderInput(session = session,
-#                     inputId = "cbrslide",
-#                     value = 100*input$cbrslide/(input$cbcslide + input$cblslide + input$cbrslide)
-#   )
-# })
-# 
-# observeEvent({
-#   input$cbcslide
-#   input$cbrslide
-# }, {
-#   updateSliderInput(session = session,
-#                     inputId = "cblslide",
-#                     value = 100*input$cblslide/(input$cbcslide + input$cblslide + input$cbrslide)
-#   )
-# })
-# observeEvent({
-#   input$cbrslide
-#   input$cblslide
-# }, {
-#   updateSliderInput(session = session,
-#                     inputId = "cbcslide",
-#                     value = 100*input$cbcslide/(input$cbcslide + input$cblslide + input$cbrslide)
-#   )
-# })
-# 
-# sliderweights <- reactive({
-#   c(input$CardboardProduction*input$cbcslide/100,
-#     input$CardboardProduction*input$cblslide/100,
-#     input$CardboardProduction*input$cbrslide/100,
-#     input$CardboardProduction)
-# })
-# 
-# cbdf <- reactive({
-#   Disposition       <- c(tdisp()[1], tdisp()[2], tdisp()[3], "Production")
-#   `Initial Weight`  <- c(tweight()[1], tweight()[2], tweight()[3], sum(tweight()))
-#   `Scenario Weight` <- sliderweights()
-#   
-#   tibble(Disposition, `Initial Weight`, `Scenario Weight`) %>% 
-#     left_join(userimpact()) %>% 
-#     mutate(`Initial Impact` = `Initial Weight`*Factor,
-#            `Scenario Impact` = `Scenario Weight`*Factor)
-# })
-# 
-# cbmassdf <- reactive({
-#   cbdf() %>%
-#     select(Disposition, `Initial Weight`, `Scenario Weight`,
-#            `Initial Impact`, `Scenario Impact`)
-#   
-# })
-# 
-# cardboarddf <- reactive({
-#   if(is.null(cbmassdf())) {
-#     return(NULL)
-#   }
-#   cbmassdf() %>% 
-#     gather(key = "Variable", value = "Value", c(`Initial Weight`, `Scenario Weight`,
-#                                                 `Initial Impact`, `Scenario Impact`))
-# })
-# 
-# 
-# output$cbdf <- DT::renderDataTable({
-#   DT::datatable(
-#     data = cbdf(),
-#     style = "bootstrap",
-#     extensions = "Buttons",
-#     options = list(dom = 'Bfrtip',
-#                    pageLength = 10,
-#                    compact = TRUE,
-#                    nowrap = TRUE,
-#                    scrollX = TRUE,
-#                    buttons = c('excel', 'csv')
-#     ),
-#     rownames = FALSE,
-#     filter = "bottom"
-#   ) %>% 
-#     DT::formatRound(
-#       columns =  c(names(cbdf())),
-#       digits = 0)
-# })
-# 
-# 
-# output$cardboardmassplot <- renderPlotly({
-#   req(input$userregion)
-#   req(input$usermaterial)
-#   req(cardboarddf())
-#   #Add traces with a for loop
-#   #https://stackoverflow.com/questions/46583282/r-plotly-to-add-traces-conditionally-based-on-available-columns-in-dataframe
-#   massplot <- plot_ly(cardboarddf() %>%
-#                         filter(grepl("Weight", Variable)) %>%
-#                         spread("Disposition", "Value"),
-#                       x = ~Variable,
-#                       y = ~Combustion,
-#                       name = "Combustion",
-#                       marker = list(color = ("#898952")),
-#                       type = "bar") %>% 
-#     add_trace(y = ~Landfilling,
-#               name = "Landfilling",
-#               marker = list(color = ("#564D65"))) %>% 
-#     add_trace(y = ~Recycling,
-#               name = "Recycling",
-#               marker = list(color = ("#587B7F"))) %>% 
-#     layout(barmode = "relative")
-#   
-#   massplot %>% 
-#     layout(paper_bgcolor = "#f8f5f0",
-#            plot_bgcolor = "#f8f5f0",
-#            yaxis = list(
-#              overlaying = "y",
-#              zerolinecolor = "#cf9f35",
-#              title = "Tons",
-#              titlefont = list(size = 18)),
-#            xaxis = list(title = "",
-#                         tickfont = list(size = 18)),
-#            # legend = list(orientation = 'h'),
-#            font = list(
-#              family = "Open Sans, sans-serif",
-#              size = 14,
-#              color = "#cf9f35")
-#            # ,
-#            # margin = list(b = 100,
-#            #               l = 70,
-#            #               r = 30,
-#            #               t = 30,
-#            #               pad = 4)
-#     ) %>% 
-#     # modebar reference
-#     # https://github.com/plotly/plotly.js/blob/master/src/components/modebar/buttons.js
-#     config(displaylogo = FALSE,
-#            collaborate = FALSE,
-#            modeBarButtonsToRemove = list(
-#              'sendDataToCloud',
-#              # 'toImage',
-#              'zoom2d',
-#              'pan2d',
-#              'select2d',
-#              'lasso2d',
-#              'zoomIn2d',
-#              'zoomOut2d',
-#              'autoScale2d',
-#              'resetScale2d',
-#              # 'hoverClosestCartesian',
-#              # 'hoverCompareCartesian'
-#              'toggleSpikelines'
-#            ))
-# })
-# 
-# 
-# 
-# 
-# output$cbplot <- renderPlotly({
-#   
-#   p <- plot_ly(cardboarddf() %>%
-#                  filter(grepl("Impact", Variable)) %>%
-#                  spread("Disposition", "Value") %>%
-#                  mutate(Sum = rowSums(.[2:5])),
-#                x = ~Variable,
-#                y = ~Production,
-#                name = "Production",
-#                marker = list(color = ("#0B3C49")),
-#                type = "bar") %>% 
-#     add_trace(y = ~Combustion,
-#               name = "Combustion",
-#               marker = list(color = ("#898952"))) %>% 
-#     add_trace(y = ~Landfilling,
-#               name = "Landfilling",
-#               marker = list(color = ("#564D65"))) %>% 
-#     add_trace(y = ~Recycling,
-#               name = "Recycling",
-#               marker = list(color = ("#587B7F"))) %>% 
-#     layout(barmode = "relative")
-#   
-#   p %>% 
-#     add_trace(y = ~Sum,
-#               type = "scatter",
-#               mode = "line",
-#               name = "Net impact",
-#               marker = list(size = "18",
-#                             symbols = "x",
-#                             # size = ~log(Sum),
-#                             color = ("#cf9f35"))) %>% 
-#     layout(
-#       paper_bgcolor = "#f8f5f0",
-#       plot_bgcolor = "#f8f5f0",
-#       xaxis = list(title = "",
-#                    tickfont = list(size = 18)),
-#       yaxis = list(
-#         overlaying = "y",
-#         zerolinecolor = "#cf9f35",
-#         title = paste("Impact in", userimpact()$Units[[1]]),
-#         titlefont = list(size = 20)
-#       ),
-#       # legend = list(orientation = 'h'),
-#       font = list(family = "Open Sans, sans-serif",
-#                   size = 14,
-#                   color = "#cf9f35"),
-#       # margin = list(
-#       #   b = 100,
-#       #   l = 90,
-#       #   r = 30,
-#       #   t = 30,
-#       #   pad = 5
-#       # )
-#     ) %>% 
-#     config(displaylogo = FALSE,
-#            collaborate = FALSE,
-#            modeBarButtonsToRemove = list(
-#              'sendDataToCloud',
-#              'zoom2d',
-#              'pan2d',
-#              'select2d',
-#              'lasso2d',
-#              'zoomIn2d',
-#              'zoomOut2d',
-#              'autoScale2d',
-#              'resetScale2d',
-#              'toggleSpikelines'
-#            ))
-# })
+
+  
+# Paper -------------------------------------------------------------------
+
+output$paperpanel <-  renderUI({
+
+  tagList(
+    sliderInput(inputId = "PaperProduction",
+                label =  paste("Total", input$usermaterial, "Waste for the",
+                               input$userregion, " region, in Tons"),
+                min = 0,
+                max = sum(tweight())*1.5,
+                post = " tons",
+                value = sum(tweight())
+                ),
+    sliderInput(inputId = "ppcslide",
+                label = paste("%", tdisp()[1]),
+                min = 0,
+                max = 100,
+                post = " %",
+                value = t()$Percent[1]
+                ),
+    sliderInput(inputId = "pplslide",
+                label = paste("%", tdisp()[2]),
+                min = 0,
+                max = 100,
+                post = " %",
+                value = t()$Percent[2]
+                ),
+    sliderInput(inputId = "pprslide",
+                label = paste("%", tdisp()[3]),
+                min = 0,
+                max = 100,
+                post = " %",
+                value = t()$Percent[3]
+                )
+  )
+})
+
+  observeEvent({
+    input$ppcslide
+    input$pplslide
+  }, {
+    updateSliderInput(session = session,
+                      inputId = "pprslide",
+                      value = 100*input$pprslide/(input$ppcslide + input$pplslide + input$pprslide)
+    )
+  })
+
+observeEvent({
+  input$ppcslide
+  input$pprslide
+}, {
+  updateSliderInput(session = session,
+                    inputId = "pplslide",
+                    value = 100*input$pplslide/(input$ppcslide + input$pplslide + input$pprslide)
+  )
+})
+observeEvent({
+  input$pprslide
+  input$pplslide
+}, {
+  updateSliderInput(session = session,
+                    inputId = "ppcslide",
+                    value = 100*input$ppcslide/(input$ppcslide + input$pplslide + input$pprslide)
+  )
+})
+
+papersliderweights <- reactive({
+  c(input$PaperProduction*input$ppcslide/100,
+    input$PaperProduction*input$pplslide/100,
+    input$PaperProduction*input$pprslide/100,
+    input$PaperProduction)
+})
+
+ppdf <- reactive({
+  Disposition       <- c(tdisp()[1], tdisp()[2], tdisp()[3], "Production")
+  `Initial Weight`  <- c(tweight()[1], tweight()[2], tweight()[3], sum(tweight()))
+  `Scenario Weight` <- papersliderweights()
+
+  tibble(Disposition, `Initial Weight`, `Scenario Weight`) %>%
+    left_join(userimpact()) %>%
+    mutate(`Initial Impact` = `Initial Weight`*Factor,
+           `Scenario Impact` = `Scenario Weight`*Factor)
+})
+
+ppmassdf <- reactive({
+  ppdf() %>%
+    select(Disposition, `Initial Weight`, `Scenario Weight`,
+           `Initial Impact`, `Scenario Impact`)
+
+})
+
+paperdf <- reactive({
+  if(is.null(cbmassdf())) {
+    return(NULL)
+  }
+  ppmassdf() %>%
+    gather(key = "Variable",
+           value = "Value",
+           c(`Initial Weight`, `Scenario Weight`,
+             `Initial Impact`, `Scenario Impact`))
+})
+
+
+output$ppdf <- DT::renderDataTable({
+  DT::datatable(
+    data = ppdf(),
+    style = "bootstrap",
+    extensions = "Buttons",
+    options = list(dom = 'Bfrtip',
+                   pageLength = 10,
+                   compact = TRUE,
+                   nowrap = TRUE,
+                   scrollX = TRUE,
+                   buttons = c('excel', 'csv')
+    ),
+    rownames = FALSE,
+    filter = "bottom"
+  ) %>%
+    DT::formatRound(
+      columns =  c(names(ppdf())),
+      digits = 0)
+})
+
+
+output$papermassplot <- renderPlotly({
+  req(input$userregion)
+  req(input$usermaterial)
+  req(paperdf())
+  #Add traces with a for loop
+  #https://stackoverflow.com/questions/46583282/r-plotly-to-add-traces-conditionally-based-on-available-columns-in-dataframe
+  massplot <- plot_ly(paperdf() %>%
+                        filter(grepl("Weight", Variable)) %>%
+                        spread("Disposition", "Value"),
+                      x = ~Variable,
+                      y = ~Combustion,
+                      name = "Combustion",
+                      marker = list(color = ("#898952")),
+                      type = "bar") %>%
+    add_trace(y = ~Landfilling,
+              name = "Landfilling",
+              marker = list(color = ("#564D65"))) %>%
+    add_trace(y = ~Recycling,
+              name = "Recycling",
+              marker = list(color = ("#587B7F"))) %>%
+    layout(barmode = "relative")
+
+  massplot %>%
+    layout(paper_bgcolor = "#f8f5f0",
+           plot_bgcolor = "#f8f5f0",
+           yaxis = list(
+             overlaying = "y",
+             zerolinecolor = "#cf9f35",
+             title = "Tons",
+             titlefont = list(size = 18)),
+           xaxis = list(title = "",
+                        tickfont = list(size = 18)),
+           # legend = list(x = 100,                            y = 0.5),
+           font = list(
+             family = "Open Sans, sans-serif",
+             size = 14,
+             color = "#cf9f35"),
+           legend = list(x = 100,
+                         y = 0.5)
+           # ,
+           # margin = list(b = 100,
+           #               l = 70,
+           #               r = 30,
+           #               t = 30,
+           #               pad = 4)
+    ) %>%
+    config(displaylogo = FALSE,
+           collaborate = FALSE,
+           modeBarButtonsToRemove = list(
+             'sendDataToCloud',
+             # 'toImage',
+             'zoom2d',
+             'pan2d',
+             'select2d',
+             'lasso2d',
+             'zoomIn2d',
+             'zoomOut2d',
+             'autoScale2d',
+             'resetScale2d',
+             # 'hoverClosestCartesian',
+             # 'hoverCompareCartesian'
+             'toggleSpikelines'
+           ))
+})
+
+
+
+
+output$ppplot <- renderPlotly({
+
+  p <- plot_ly(paperdf() %>%
+                 filter(grepl("Impact", Variable)) %>%
+                 spread("Disposition", "Value") %>%
+                 mutate(Sum = rowSums(.[2:5])),
+               x = ~Variable,
+               y = ~Production,
+               name = "Production",
+               marker = list(color = ("#0B3C49")),
+               type = "bar") %>%
+    add_trace(y = ~Combustion,
+              name = "Combustion",
+              marker = list(color = ("#898952"))) %>%
+    add_trace(y = ~Landfilling,
+              name = "Landfilling",
+              marker = list(color = ("#564D65"))) %>%
+    add_trace(y = ~Recycling,
+              name = "Recycling",
+              marker = list(color = ("#587B7F"))) %>%
+    layout(barmode = "relative")
+
+  p %>%
+    add_trace(y = ~Sum,
+              type = "scatter",
+              mode = "line",
+              name = "Net impact",
+              marker = list(size = "22",
+                            symbols = "x",
+                            # size = ~log(Sum),
+                            color = ("#cf9f35"))) %>%
+    layout(
+      paper_bgcolor = "#f8f5f0",
+      plot_bgcolor = "#f8f5f0",
+      xaxis = list(title = "",
+                   tickfont = list(size = 18)),
+      yaxis = list(
+        overlaying = "y",
+        zerolinecolor = "#cf9f35",
+        title = paste("Impact in", userimpact()$Units[[1]]),
+        titlefont = list(size = 20)
+      ),
+      # legend = list(x = 100,                            y = 0.5),
+      font = list(family = "Open Sans, sans-serif",
+                  size = 14,
+                  color = "#cf9f35"),
+      legend = list(x = 100,
+                    y = 0.5)
+      # margin = list(
+      #   b = 100,
+      #   l = 90,
+      #   r = 30,
+      #   t = 30,
+      #   pad = 5
+      # )
+    ) %>%
+    config(displaylogo = FALSE,
+           collaborate = FALSE,
+           modeBarButtonsToRemove = list(
+             'sendDataToCloud',
+             'zoom2d',
+             'pan2d',
+             'select2d',
+             'lasso2d',
+             'zoomIn2d',
+             'zoomOut2d',
+             'autoScale2d',
+             'resetScale2d',
+             'toggleSpikelines'
+           ))
+})
 # 
 # # Rigid Plastic -----------------------------------------------------------
 # 
@@ -1902,6 +1797,291 @@ server <- function(input, output, session) {
 #   })
 # 
 # # Wood --------------------------------------------------------------------
+
+output$woodpanel <-  renderUI({
+  
+  tagList(
+    sliderInput(inputId = "WoodProduction",
+                label = paste("Total", input$usermaterial, "Waste for the",
+                              input$userregion, " region, in Tons"),
+                min = 0,
+                max = sum(tweight())*1.5,
+                value = sum(tweight())
+                ),
+    sliderInput(inputId = "WoodCombustion",
+                label = paste("%", tdisp()[1]),
+                min = 0,
+                max = 100,
+                post = " %",
+                value = t()$Percent[1]
+                ),
+    sliderInput(inputId = "WoodComposting",
+                label = paste("%", tdisp()[2]),
+                min = 0,
+                max = 100,
+                post = " %",
+                value = t()$Percent[2]
+                ),
+    sliderInput(inputId = "WoodLandfilling",
+                label = paste("%", tdisp()[3]),
+                min = 0,
+                max = 100,
+                post = " %",
+                value = t()$Percent[3]
+                ),
+    sliderInput(inputId = "WoodRecycling",
+                label = paste("%", tdisp()[4]),
+                min = 0,
+                max = 100,
+                post = " %",
+                value = t()$Percent[4]
+                )
+    )
+})
+
+observeEvent({
+  input$WoodCombustion
+  input$WoodLandfilling
+  input$WoodRecycling
+}, {
+  updateSliderInput(session = session,
+                    inputId = "WoodComposting",
+                    value = 100 * input$WoodComposting / (input$WoodCombustion +
+                                                            input$WoodComposting +
+                                                            input$WoodLandfilling +
+                                                            input$WoodRecycling))
+  })
+
+observeEvent({
+  input$WoodComposting
+  input$WoodLandfilling
+  input$WoodRecycling
+}, {
+  updateSliderInput(session = session,
+                    inputId = "WoodCombustion",
+                    value = 100 * input$WoodCombustion / (input$WoodCombustion +
+                                                            input$WoodComposting +
+                                                            input$WoodLandfilling +
+                                                            input$WoodRecycling))
+})
+
+observeEvent({
+  input$WoodCombustion
+  input$WoodComposting
+  input$WoodRecycling
+}, {
+  updateSliderInput(session = session,
+                    inputId = "WoodLandfilling",
+                    value = 100 * input$WoodLandfilling / (input$WoodCombustion +
+                                                             input$WoodComposting +
+                                                             input$WoodLandfilling +
+                                                             input$WoodRecycling))
+})
+
+observeEvent({
+  input$WoodCombustion
+  input$WoodComposting
+  input$WoodLandfilling
+
+}, {
+  updateSliderInput(session = session,
+                    inputId = "WoodRecycling",
+                    value = 100 * input$WoodRecycling / (input$WoodCombustion +
+                                                           input$WoodComposting +
+                                                           input$WoodLandfilling +
+                                                           input$WoodRecycling))
+})
+
+woodsliderweights <- reactive({
+  c(input$WoodProduction*input$WoodCombustion/100,
+    input$WoodProduction*input$WoodComposting/100,
+    input$WoodProduction*input$WoodLandfilling/100,
+    input$WoodProduction*input$WoodRecycling/100,
+    input$WoodProduction)
+})
+
+wddf <- reactive({
+  Disposition       <- c(tdisp()[1], tdisp()[2], tdisp()[3], tdisp()[4],
+                         "Production")
+  `Initial Weight`  <- c(tweight()[1], tweight()[2], tweight()[3], tweight()[4],
+                         sum(tweight()))
+  `Scenario Weight` <- woodsliderweights()
+
+  tibble(Disposition, `Initial Weight`, `Scenario Weight`) %>%
+    left_join(userimpact()) %>%
+    mutate(`Initial Impact` = `Initial Weight`*Factor,
+           `Scenario Impact` = `Scenario Weight`*Factor)
+})
+
+
+woodmassdf <- reactive({
+  wddf() %>%
+    select(Disposition, `Initial Weight`, `Scenario Weight`,
+           `Initial Impact`, `Scenario Impact`)
+})
+
+wooddf <- reactive({
+  woodmassdf() %>%
+    gather(key = "Variable", value = "Value",
+           c(`Initial Weight`, `Scenario Weight`,
+             `Initial Impact`, `Scenario Impact`))
+})
+
+output$wddf <- DT::renderDataTable({
+  DT::datatable(
+    data = wddf(),
+    style = "bootstrap",
+    extensions = "Buttons",
+    options = list(dom = 'Bfrtip',
+                   pageLength = 10,
+                   compact = TRUE,
+                   nowrap = TRUE,
+                   scrollX = TRUE,
+                   buttons = c('excel', 'csv')
+    ),
+    rownames = FALSE,
+    filter = "bottom"
+  ) %>%
+    DT::formatRound(
+      columns =  c(names(wddf())),
+      digits = 0)
+})
+
+output$woodmassplot <- renderPlotly({
+  massplot <- plot_ly(wooddf() %>%
+                        filter(grepl("Weight", Variable)) %>%
+                        spread("Disposition", "Value"),
+                      x = ~Variable,
+                      y = ~Composting,
+                      name = "Composting",
+                      marker = list(color = ("#A57548")),
+                      type = "bar") %>%
+    add_trace(y = ~Landfilling,
+              name = "Landfilling",
+              marker = list(color = ("#564D65"))) %>%
+    add_trace(y = ~Combustion,
+              name = "Combustion",
+              marker = list(color = ("#898952"))) %>%
+    add_trace(y = ~Recycling,
+              name = "Recycling",
+              marker = list(color = ("#587B7F"))) %>%
+    layout(barmode = "relative")
+
+  massplot %>%
+    layout(paper_bgcolor = "#f8f5f0",
+           plot_bgcolor = "#f8f5f0",
+           yaxis = list(overlaying = "y",
+                        zerolinecolor = "#cf9f35",
+                        title = "Tons",
+                        titlefont = list(size = 18)),
+           xaxis = list(title = "",
+                        tickfont = list(size = 18)),
+           font = list(
+             family = "Open Sans, sans-serif",
+             size = 14,
+             color = "#cf9f35"),
+           legend = list(x = 100,
+                         y = 0.5),
+           margin = list(b = 100,
+                         l = 70,
+                         r = 30,
+                         t = 30,
+                         pad = 4))%>%
+    config(displaylogo = FALSE,
+           collaborate = FALSE,
+           modeBarButtonsToRemove = list(
+             'sendDataToCloud',
+             'zoom2d',
+             'pan2d',
+             'select2d',
+             'lasso2d',
+             'zoomIn2d',
+             'zoomOut2d',
+             'autoScale2d',
+             'resetScale2d',
+             'toggleSpikelines'
+           ))
+})
+
+output$woodplot <- renderPlotly({
+  req(input$userimpact)
+  req(input$usermaterial)
+
+  p <- plot_ly(wooddf() %>%
+                 filter(grepl("Impact", Variable)) %>%
+                 spread("Disposition", "Value") %>%
+                 mutate(Sum = rowSums(.[2:6])),
+               x = ~Variable,
+               y = ~Production,
+               name = "Production",
+               marker = list(color = ("#0B3C49")),
+               type = "bar") %>%
+    add_trace(y = ~Composting,
+              name = "Composting",
+              marker = list(color = ("#A57548"))) %>%
+    add_trace(y = ~Landfilling,
+              name = "Landfilling",
+              marker = list(color = ("#564D65"))) %>%
+    add_trace(y = ~Combustion,
+              name = "Combustion",
+              marker = list(color = ("#898952"))) %>%
+    add_trace(y = ~Recycling,
+              name = "Recycling",
+              marker = list(color = ("#587B7F"))) %>%
+    layout(barmode = "relative")
+
+  p %>%
+    add_trace(y = ~Sum,
+              type = "scatter",
+              mode = "line",
+              name = "Net impact",
+              marker = list(size = "22",
+                            # size = ~log(Sum),
+                            color = ("#cf9f35"))) %>%
+    layout(
+      paper_bgcolor = "#f8f5f0",
+      plot_bgcolor = "#f8f5f0",
+      xaxis = list(title = "",
+                   tickfont = list(size = 18)),
+      yaxis = list(
+        overlaying = "y",
+        zerolinecolor = "#cf9f35",
+        title = paste("Impact in", userimpact()$Units[[1]]),
+        titlefont = list(size = 20)
+      ),
+      font = list(family = "Open Sans, sans-serif",
+                  size = 14,
+                  color = "#cf9f35"),
+      legend = list(x = 100,
+                    y = 0.5),
+      margin = list(
+        b = 100,
+        l = 90,
+        r = 30,
+        t = 30,
+        pad = 5
+      )
+    )%>%
+    config(displaylogo = FALSE,
+           collaborate = FALSE,
+           modeBarButtonsToRemove = list(
+             'sendDataToCloud',
+             'zoom2d',
+             'pan2d',
+             'select2d',
+             'lasso2d',
+             'zoomIn2d',
+             'zoomOut2d',
+             'autoScale2d',
+             'resetScale2d',
+             'toggleSpikelines'
+           ))
+})
+
+# End Wood Panel ----------------------------------------------------------
+
+
+
 # 
 #   output$woodpanel <-  renderUI({
 #     
@@ -2174,7 +2354,7 @@ output$contextplot <- renderPlotly({
     tickfont = sfont
   )
   xax2list <- list(
-    title = "Global Warming Potential, in kg CO<sub>2</sub> eq.",
+    title = "Global Warming Potential, in MTCO2E",
     titlefont = largefont,
     showticklabels = TRUE,
     zerolinecolor = "#cf9f35",
@@ -2228,7 +2408,7 @@ output$contextplot <- renderPlotly({
                       r = 30,
                       t = 30,
                       pad = 8)
-             # legend = list(orientation = 'h')
+             # legend = list(x = 100,                            y = 0.5),
              )
     sub2
   })
@@ -2263,7 +2443,9 @@ output$transparentbars <- renderPlotly({
       yaxis2 = list(title = "Weight in tons",
                     overlaying = "y",
                     side = "right"),
-      legend = list(),
+      legend = list(x = 0.5,
+                    y = 100,
+                    orientation = 'h'),
       font = list(family = "Open Sans, sans-serif",
                   size = 14,
                   color = "#cf9f35"),
@@ -2311,7 +2493,9 @@ output$transparentbarspercent <- renderPlotly({
       yaxis2 = list(title = "Percent weight",
                     overlaying = "y",
                     side = "right"),
-      legend = list(),
+      legend = list(x = 0.5,
+                    y = 100,
+                    orientation = 'h'),
       font = list(family = "Open Sans, sans-serif",
                   size = 14,
                   color = "#cf9f35"),
