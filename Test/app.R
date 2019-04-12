@@ -1,9 +1,14 @@
 library(shiny)
 library(DT)
+library(dplyr)
+
+mass <- read_csv("mass.csv")
+
 shinyApp(
   ui = fluidPage(
     
-    DTOutput('editableIrisTable')
+    DTOutput('editableTable'),
+    textOutput("p")
   ),
   
   
@@ -11,12 +16,12 @@ shinyApp(
     
     
     #name the dataframe
-    dta <- iris
-    
-    
+    dta <- mass %>% 
+      filter(`2015 Weight` > 400000)
+   
     dta$Date <- Sys.time() + seq_len(nrow(dta))
     
-    output$editableIrisTable <- renderDT(dta, selection = 'none', editable = TRUE)
+    output$editableTable <- renderDT(dta, selection = 'none', editable = TRUE)
     
     proxy <- dataTableProxy('x1')
     
@@ -28,6 +33,10 @@ shinyApp(
       v = info$value
       dta[i, j] <<- DT::coerceValue(v, dta[i, j])
       replaceData(proxy, dta, resetPaging = FALSE)  # important
+    })
+    
+    output$p <- renderText({
+      paste(dta[1, 6])
     })
   }
 )
