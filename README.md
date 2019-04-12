@@ -1,3 +1,3 @@
 # IMFOv5_0
 
-Checkcheck
+A Shiny app to visualize environmental impacts
