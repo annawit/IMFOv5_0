@@ -21,11 +21,15 @@ shinyApp(
    
     dta$Date <- Sys.time() + seq_len(nrow(dta))
     
-    output$editableTable <- renderDT(dta, selection = 'none', editable = TRUE)
+    output$editableTable <- renderDT(dta,
+                                     selection = 'none',
+                                     editable = TRUE)
     
     proxy <- dataTableProxy('x1')
     
-    observeEvent(input$x1_cell_edit, {
+    observeEvent(
+      input$x1_cell_edit, 
+      {
       info <- input$x1_cell_edit
       str(info)
       i = info$row
@@ -36,7 +40,8 @@ shinyApp(
     })
     
     output$p <- renderText({
-      paste(dta[1, 6])
+      input$x1_cell_edit
+      dta[1, 6]
     })
   }
 )
