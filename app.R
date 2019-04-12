@@ -521,6 +521,7 @@ server <- function(input, output, session) {
   })
   
   cbdf <- reactive({
+    input$x1_cell_edit
     Disposition       <- c(tdisp()[1], tdisp()[2], tdisp()[3], "Production")
     `Initial Weight`  <- c(tweight()[1], tweight()[2], tweight()[3], sum(tweight()))
     `Scenario Weight` <- cardboardsliderweights()
@@ -529,7 +530,45 @@ server <- function(input, output, session) {
       left_join(userimpact()) %>% 
       mutate(`Initial Impact` = `Initial Weight`*Factor,
              `Scenario Impact` = `Scenario Weight`*Factor)
+   
   })
+  
+  output$cbdf <- DT::renderDataTable({
+    DT::datatable(
+      data = cbdf(),
+      editable = TRUE,
+      style = "bootstrap",
+      extensions = "Buttons",
+      options = list(dom = 'Bfrtip',
+                     pageLength = 10,
+                     compact = TRUE,
+                     nowrap = TRUE,
+                     scrollX = TRUE,
+                     buttons = c('excel', 'csv')
+      ),
+      rownames = FALSE,
+      filter = "bottom"
+    ) %>% 
+      DT::formatRound(
+        columns =  c(names(cbdf())),
+        digits = 0)
+  })
+  
+  proxy <- dataTableProxy("x1")
+  
+  observeEvent(input$x1_cell_edit, {
+    info <- input$x1_cell_edit
+    str(info)
+    i <- info$row
+    j <- info$column
+    v <- info$value
+    
+    if (j == 2 | j == 3) {
+      cbdf()[i,j] <<- DT::coerceValue(v, cbdf()[i,j])
+      replaceData(proxy, cbdf(), resetPaging = FALSE)
+    } else {}
+  })
+  
   
   cbmassdf <- reactive({
     cbdf() %>%
@@ -545,27 +584,6 @@ server <- function(input, output, session) {
     cbmassdf() %>% 
       gather(key = "Variable", value = "Value", c(`Initial Weight`, `Scenario Weight`,
                                                   `Initial Impact`, `Scenario Impact`))
-  })
-  
-  
-  output$cbdf <- DT::renderDataTable({
-    DT::datatable(
-      data = cbdf(),
-      style = "bootstrap",
-      extensions = "Buttons",
-      options = list(dom = 'Bfrtip',
-                     pageLength = 10,
-                     compact = TRUE,
-                     nowrap = TRUE,
-                     scrollX = TRUE,
-                     buttons = c('excel', 'csv')
-      ),
-      rownames = FALSE,
-      filter = "bottom"
-      ) %>% 
-      DT::formatRound(
-        columns =  c(names(cbdf())),
-        digits = 0)
   })
   
   

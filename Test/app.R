@@ -8,7 +8,7 @@ shinyApp(
   ui = fluidPage(
     
     DTOutput('editableTable'),
-    textOutput("p")
+    uiOutput("p")
   ),
   
   
@@ -16,8 +16,7 @@ shinyApp(
     
     
     #name the dataframe
-    dta <- mass %>% 
-      filter(`2015 Weight` > 400000)
+    dta <- mass
    
     dta$Date <- Sys.time() + seq_len(nrow(dta))
     
@@ -39,9 +38,9 @@ shinyApp(
       replaceData(proxy, dta, resetPaging = FALSE)  # important
     })
     
-    output$p <- renderText({
-      input$x1_cell_edit
-      dta[1, 6]
+    output$p <- renderUI({
+      tagList(input$x1_cell_edit,
+      dta[1, 6])
     })
   }
 )

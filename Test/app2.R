@@ -3,6 +3,8 @@ library(DT)
 
 # Adapted from
 # https://github.com/rstudio/DT/pull/480
+# https://yihui.shinyapps.io/DT-edit/
+# https://stackoverflow.com/questions/52332200/edit-specific-columns-of-datatable-in-r
 
 mass <- read_csv("mass.csv")
 
@@ -51,9 +53,14 @@ shinyApp(
       i <- info$row
       j <- info$col
       v <- info$value
+      
+      #limits editing to columns specified by j
+      if ( j > 1 & j < 4) {
       x[i, j] <<- DT::coerceValue(v, x[i, j])
       replaceData(proxy, x, resetPaging = FALSE)  # important
-    })
+      } else {}
+    
+      })
     
     output$text <- renderText({
       input$x1_cell_edit
