@@ -528,7 +528,8 @@ server <- function(input, output, session) {
     tibble(Disposition, `Initial Weight`, `Scenario Weight`) %>% 
       left_join(userimpact()) %>% 
       mutate(`Initial Impact` = `Initial Weight`*Factor,
-             `Scenario Impact` = `Scenario Weight`*Factor)
+             `Scenario Impact` = `Scenario Weight`*Factor,
+             `Impact Difference` = `Initial Impact` - `Scenario Impact`)
   })
   
   cbmassdf <- reactive({
