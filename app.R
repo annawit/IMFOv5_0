@@ -82,18 +82,21 @@ tabPanel("Introduction",
          )
 ),
 
-# Context -----------------------------------------------------------------
+# Context tab -----------------------------------------------------------------
 
 tabPanel("Context",
          fluidPage(
            fixedPanel(width = "22%",
                       left = "30px",
                       wellPanel(
-                        style = "background-color: rgba(62,63,58,0.85);
-                        color: rgba(248,245,240)",
                         pickerInput(inputId = "contextregion",
                                     label = "Select a region:",
                                     choices = unique(context$wasteshed),
+                                    selected = "Metro",
+                                    options = list(style = "btn-secondary")),
+                        pickerInput(inputId = "contextimpact",
+                                    label = "Select an impact:",
+                                    choices = unique(context$impactCategory),
                                     selected = "Global warming",
                                     options = list(style = "btn-secondary"))
                       ),
@@ -119,20 +122,20 @@ tabPanel("Context",
            )
          )
 ),
+
 # Visualize Tab -----------------------------------------------------------
 
-             
 tabPanel("Visualize!",
          fluidPage(
            fluidRow(
              column(4,
                     wellPanel(
-                    pickerInput(inputId = "usermaterial",
-                                label = "Select a waste material:",
-                                choices = c("Cardboard", "Electronics",
-                                            "Food", "Glass", "Paper", "Wood"),
-                                selected = "Cardboard",
-                                options = list(style = "btn-secondary"))),
+                      pickerInput(inputId = "usermaterial",
+                                  label = "Select a waste material:",
+                                  choices = c("Cardboard", "Electronics",
+                                              "Food", "Glass", "Paper", "Wood"),
+                                  selected = "Cardboard",
+                                  options = list(style = "btn-secondary"))),
                     wellPanel(
                       conditionalPanel(
                         condition = "input.usermaterial == `Cardboard`",
@@ -178,12 +181,10 @@ tabPanel("Visualize!",
                       #   condition = "input.usermaterial == `Yard Debris`",
                       #   uiOutput("yarddebrispanel")
                       # ),
-                      
-                      # usermaterial input ------------------------------------------
-                      
-                      
                     )
              ),
+             
+             # Viz Column 2 ------------------------------------------
              column(4,
                     wellPanel(pickerInput(inputId = "userregion",
                                           label = "Select a region:",
@@ -223,6 +224,10 @@ tabPanel("Visualize!",
                       
                     )
              ),
+             
+             
+             # Viz Column 3 ------------------------------------------------------------
+             
              column(4,
                     wellPanel(pickerInput(inputId = "userimpact",
                                           label = "Select an impact:",
@@ -260,15 +265,16 @@ tabPanel("Visualize!",
                     )
              )
            ),
+           
+           # Text above tables
            fluidRow(
              column(12,
-                    wellPanel(style = "background-color: rgba(62,63,58,0.85);",
-                              div(style = "text-align:center; color: rgba(248,245,240)",
-                                  p("View and download your results below, either in a detailed form or a summary that includes net impact.")
-                                  
-                              )))),
+                    wellPanel(
+                      div(align = "center",
+                        p("View and download your results below, either in a detailed form or a summary that includes net impact."))))
+             ),
            
-# tables ------------------------------------------------------------------
+# Tables ------------------------------------------------------------------
            
 fluidRow(
   column(12,
@@ -311,70 +317,125 @@ fluidRow(
 ),
 
 
-# More NavbarMenu ---------------------------------------------------------
-navbarMenu("More",
-           tabPanel("Glossary",
-                    fluidPage(
-                      column(3, wellPanel()),
-                      column(9,  wellPanel(
-                        includeMarkdown("Glossary.md")))
-                    )
-           ),
+# Glossary tab ---------------------------------------------------------
+
+tabPanel("Glossary",
+         fluidPage(
+           column(3, wellPanel()),
+           column(9,  wellPanel(
+             includeMarkdown("Glossary.md")))
+         )
+),
 
 # Resources tab -----------------------------------------------------------
 
 tabPanel("Resources",
-         wellPanel(
-           style = "background-color: rgba(62,63,58,0.85);
-                    color: rgba(248,245,240)",
-           tags$div(
-             tags$ul(
-               tags$li(a(href = "https://www.epa.gov/warm",
-                         "EPA's Waste Reduction Model (WARM)"),
-                       p("Another environmental impact calculator")),
-               tags$li(a(href = "https://www.footprintcalculator.org/",
-                         "Global Footprint Network's Footprint Calculator"),
-                       p("An ecological footprint calculator for lifestyle choices.")
+         fluidPage(
+           column(5,
+                  
+                  wellPanel(
+                    tags$div(
+                      h3("Other calculators to explore"),
+                      tags$ul(
+                        tags$li(a(href = "https://www.epa.gov/warm",
+                                  "EPA's Waste Reduction Model (WARM)"),
+                                p("Another environmental impact calculator")),
+                        tags$li(a(href = "https://www.footprintcalculator.org/",
+                                  "Global Footprint Network's Footprint Calculator"),
+                                p("An ecological footprint calculator for lifestyle choices.")
+                        ),
+                        tags$li(a(href = "https://www.montgomerycountymd.gov/sws/footprint/",
+                                  "Environmental Footprint Calculator the Department of Environmental Protection in Mongomery County, MD"),
+                                p("An ecological footprint calculator for the recycling of materials.")
+                        ),
+                        tags$li(a(href = "https://c.environmentalpaper.org/home",
+                                  "Environmental Paper Network's Paper Calculator"),
+                                p("A tool to assess and compare different environmental impacts of paper")),
+                        tags$li(a(href = "http://www.gpi.org/recycling/carbon-calculator",
+                                  "Glass Packaging Institute's Savings from Glass Recycling calculator"),
+                                p("")
+                      ))
+                    ))
+                  ),
+           column(5,
+                  wellPanel(
+                    tags$div(
+                      h3("Other"),
+                      tags$ul(
+                        tags$li(a(href = "",
+                                  ""),
+                                p("")),
+                        tags$li(a(href = "",
+                                  ""),
+                                p(""),
+                                br()
+                        )
+                      ))
+                  ))
+         )
+),
+
+
+tabPanel("FAQs",
+  fluidPage(
+    fluidRow(
+      column(8,
+             wellPanel(
+               tags$div(
+                 h2("Frequently Asked Questions"),
+                 br(),
+                 h4("What about the stuff that's not in the solid waste stream?"),
+                 p("This calculator only shows the impacts of things that have entered the solid waste stream at the end of life. It doesn't account for a lot of other things - for example, poured concrete, tennis shows sitting in your closet, or other things we haven't measured in a waste stream."),
+                 h4("What about the use phase?"),
+                 p("We aren't including use phase here, partly because those numbers can vary a lot. We limited the scope of this calculator to the production phase and the end-of-life phase.")
                )
-             )))),
+             ))
+  ))),
 
 # About tab ---------------------------------------------------------------
-
 tabPanel("About",
          fluidPage(
            fluidRow(
              column(4,
                     wellPanel(
-                      style = "background-color: rgba(62,63,58,0.85);
-                    color: rgba(248,245,240)",
                       tags$div(
-                        p("This is placeholder text.")
+                        h3("Materials Management"),
+                        p("Materials management is an approach to serving human needs by using/reusing resources most productively and sustainably throughout their life cycles, generally minimizing the amount of materials involved and all the associated environmental impacts. This approach presents rich and transformative opportunities for DEQ and all Oregonians to better protect our environment."),
+                        p(a(href = "https://www.oregon.gov/deq/mm/Pages/What-is-Materials-Management.aspx",
+                            "Learn more"), "about Oregon DEQ's Materials Management Program.")
                       )
                     )
              ),
              column(4,
                     wellPanel(
-                      style = "background-color: rgba(62,63,58,0.85);
-                    color: rgba(248,245,240)",
                       tags$div(
-                        p("This is placeholder text.")
+                        h3("Oregon Department of Environmental Quality"),
+                        p("The Oregon Department of Environmental Quality is a regulatory agency whose job is to protect the quality of Oregon's environment."),
+                        p(a(href = "https://www.oregon.gov/deq",
+                            "Learn more"), "about the Oregon DEQ and its other work around the state.")
                       )
                     )
              ),
              column(4,
                     wellPanel(
-                      style = "background-color: rgba(62,63,58,0.85);
-                    color: rgba(248,245,240)",
                       tags$div(
-                        p("This is placeholder text.")
+                        h3("Life Cycle Assessment"),
+                        p("This calculator uses environmental impact factors derived from a Life Cycle Assessment (LCA)."),
+                        p("For an overview of Life Cycle Assessments, check out Wikipedia's",
+                          a(href = "https://en.wikipedia.org/wiki/Life-cycle_assessment",
+                            "overview"))
                       )
                     )
              )
-           ))
+           ),
+           fluidRow(
+             column(12)
+           )
+           )
 )
 )
 )
-)
+
 
 
 
