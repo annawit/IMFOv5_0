@@ -98,6 +98,11 @@ tabPanel("Context",
                                     label = "Select an impact:",
                                     choices = unique(context$impactCategory),
                                     selected = "Global warming",
+                                    options = list(style = "btn-secondary")),
+                        pickerInput(inputId = "contextimpact",
+                                    label = "Select an impact:",
+                                    choices = unique(context$impactCategory),
+                                    selected = "Global warming",
                                     options = list(style = "btn-secondary"))
                       ),
                       wellPanel(
