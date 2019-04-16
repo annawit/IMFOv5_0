@@ -51,15 +51,7 @@ tabPanel("Introduction",
            column(12,
                   align = "center",
                   wellPanel(
-                    # background matches nav bar
-                    # using an rgba background allows you to adjust
-                    # opacity of the well panel without it transferring to 
-                    # child divs
-                    # style = "background-color: rgba(62,63,58,0.85)",
-                    # light background
-                    # style = "background-color: rgba(248,245,240,0.85)",
-                    h3(style = "color: rgba(248,245,240)",
-                       "Welcome to the Waste Impact Calculator!", align = "center"),
+                    h3("Welcome to the Waste Impact Calculator!", align = "center"),
                     # To place a picture:
                     # div(img(src = 'greenpic.jpeg', height="50%", width="50%"), style = "text-align: center;"),
                     br(),
@@ -93,11 +85,6 @@ tabPanel("Context",
                                     label = "Select a region:",
                                     choices = unique(context$wasteshed),
                                     selected = "Metro",
-                                    options = list(style = "btn-secondary")),
-                        pickerInput(inputId = "contextimpact",
-                                    label = "Select an impact:",
-                                    choices = unique(context$impactCategory),
-                                    selected = "Global warming",
                                     options = list(style = "btn-secondary")),
                         pickerInput(inputId = "contextimpact",
                                     label = "Select an impact:",
@@ -197,9 +184,6 @@ tabPanel("Visualize!",
                                           selected = "Oregon total",
                                           options = list(style = "btn-secondary"))),
                     wellPanel(
-                      style = "background-color: rgba(62,63,58,0.85);
-                    color: rgba(248,245,240)",
-                      # style = "background-color: rgba(248,245,240,0.9)",
                       htmlOutput("materialtext"),
                       br(),
                       conditionalPanel(
@@ -231,7 +215,7 @@ tabPanel("Visualize!",
              ),
              
              
-             # Viz Column 3 ------------------------------------------------------------
+# Viz Column 3 ------------------------------------------------------------
              
              column(4,
                     wellPanel(pickerInput(inputId = "userimpact",
@@ -362,24 +346,27 @@ tabPanel("Resources",
                       ))
                     ))
                   ),
-           column(5,
-                  wellPanel(
-                    tags$div(
-                      h3("Other"),
-                      tags$ul(
-                        tags$li(a(href = "",
-                                  ""),
-                                p("")),
-                        tags$li(a(href = "",
-                                  ""),
-                                p(""),
-                                br()
-                        )
-                      ))
-                  ))
+           column(5
+                  # wellPanel(
+                  #   tags$div(
+                  #     h3("Other"),
+                  #     tags$ul(
+                  #       tags$li(a(href = "",
+                  #                 ""),
+                  #               p("")),
+                  #       tags$li(a(href = "",
+                  #                 ""),
+                  #               p(""),
+                  #               br()
+                  #       )
+                  #     ))
+                  # )
+           )
          )
 ),
 
+
+# FAQs --------------------------------------------------------------------
 
 tabPanel("FAQs",
   fluidPage(
@@ -389,10 +376,18 @@ tabPanel("FAQs",
                tags$div(
                  h2("Frequently Asked Questions"),
                  br(),
+                 h4("Where are the pre-loaded numbers from?"),
+                 p("The data for the initial scenario weights are the most recent numbers from Oregon's Waste Composition Study."),
+                 br(),
                  h4("What about the stuff that's not in the solid waste stream?"),
-                 p("This calculator only shows the impacts of things that have entered the solid waste stream at the end of life. It doesn't account for a lot of other things - for example, poured concrete, tennis shows sitting in your closet, or other things we haven't measured in a waste stream."),
+                 p("This calculator only shows the impacts of things that have entered the solid waste stream at the end of life. It doesn't account for a lot of other things - for example, poured concrete, the food that you eat, or other things we haven't measured in a waste stream."),
+                 br(),
                  h4("What about the use phase?"),
-                 p("We aren't including use phase here, partly because those numbers can vary a lot. We limited the scope of this calculator to the production phase and the end-of-life phase.")
+                 p("We aren't including use phase here, partly because those numbers can vary a lot. We limited the scope of this calculator to the production phase and the end-of-life phase."),
+                 br(),
+                 h4("What about concrete?"),
+                 p("Concrete is a material with important environmental impacts, and the DEQ measures those in other parts of its program. Concrete doesn't show up in the solid waste stream that we are measuring here, so those numbers aren't included in this model.")
+                 
                )
              ))
   ))),
@@ -403,7 +398,7 @@ tabPanel("About",
            fluidRow(
              column(4,
                     wellPanel(
-                      tags$div(
+                      div(style = "height:200px;",
                         h3("Materials Management"),
                         p("Materials management is an approach to serving human needs by using/reusing resources most productively and sustainably throughout their life cycles, generally minimizing the amount of materials involved and all the associated environmental impacts. This approach presents rich and transformative opportunities for DEQ and all Oregonians to better protect our environment."),
                         p(a(href = "https://www.oregon.gov/deq/mm/Pages/What-is-Materials-Management.aspx",
@@ -413,7 +408,7 @@ tabPanel("About",
              ),
              column(4,
                     wellPanel(
-                      tags$div(
+                      div(style = "height:200px;",
                         h3("Oregon Department of Environmental Quality"),
                         p("The Oregon Department of Environmental Quality is a regulatory agency whose job is to protect the quality of Oregon's environment."),
                         p(a(href = "https://www.oregon.gov/deq",
@@ -423,12 +418,12 @@ tabPanel("About",
              ),
              column(4,
                     wellPanel(
-                      tags$div(
+                      div(style = "height:200px;",
                         h3("Life Cycle Assessment"),
                         p("This calculator uses environmental impact factors derived from a Life Cycle Assessment (LCA)."),
                         p("For an overview of Life Cycle Assessments, check out Wikipedia's",
                           a(href = "https://en.wikipedia.org/wiki/Life-cycle_assessment",
-                            "overview"))
+                            "overview"), ".")
                       )
                     )
              )
@@ -620,13 +615,13 @@ server <- function(input, output, session) {
       data = cbdf(),
       style = "bootstrap",
       extensions = "Buttons",
-      options = list(dom = 'Bfrtip',
+      options = list(dom = 'lBfrtip',
                      pageLength = 10,
                      compact = TRUE,
                      nowrap = TRUE,
                      scrollX = TRUE,
                      buttons = c('excel', 'csv')
-      ),
+                     ),
       rownames = FALSE,
       filter = "bottom"
       ) %>% 

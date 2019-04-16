@@ -74,3 +74,11 @@ for (i in 1:ncol(dd)) {
   
 }
 chart
+
+
+df <- mass %>% 
+  group_by(Material) %>% 
+  distinct(Material, Disposition) %>% 
+  mutate(Weight = 0)
+
+write_csv(df, "df.csv")

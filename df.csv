@@ -1,0 +1,36 @@
+Material,Disposition,Weight
+Cardboard,Combustion,0
+Cardboard,Landfilling,0
+Cardboard,Recycling,0
+Carpet,Combustion,0
+Carpet,Landfilling,0
+Carpet,Recycling,0
+Electronics,Landfilling,0
+Electronics,Recycling,0
+Food,Anaerobic Digestion,0
+Food,Composting,0
+Food,Landfilling,0
+Glass,Landfilling,0
+Glass,Recycling,0
+Glass,Use as Aggregate,0
+Trash,Combustion,0
+Trash,Landfilling,0
+Paper,Combustion,0
+Paper,Landfilling,0
+Paper,Recycling,0
+Plastic Film,Combustion,0
+Plastic Film,Landfilling,0
+Plastic Film,Recycling,0
+Rigid Plastic,Combustion,0
+Rigid Plastic,Landfilling,0
+Rigid Plastic,Recycling,0
+Scrap Metal,Landfilling,0
+Scrap Metal,Recycling,0
+Wood,Combustion,0
+Wood,Composting,0
+Wood,Landfilling,0
+Wood,Recycling,0
+Yard Debris,Anaerobic Digestion,0
+Yard Debris,Combustion,0
+Yard Debris,Composting,0
+Yard Debris,Landfilling,0
