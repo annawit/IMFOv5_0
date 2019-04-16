@@ -98,11 +98,6 @@ tabPanel("Context",
                                     label = "Select an impact:",
                                     choices = unique(context$impactCategory),
                                     selected = "Global warming",
-                                    options = list(style = "btn-secondary")),
-                        pickerInput(inputId = "contextimpact",
-                                    label = "Select an impact:",
-                                    choices = unique(context$impactCategory),
-                                    selected = "Global warming",
                                     options = list(style = "btn-secondary"))
                       ),
                       wellPanel(
@@ -362,21 +357,22 @@ tabPanel("Resources",
                       ))
                     ))
                   ),
-           column(5,
-                  wellPanel(
-                    tags$div(
-                      h3("Other"),
-                      tags$ul(
-                        tags$li(a(href = "",
-                                  ""),
-                                p("")),
-                        tags$li(a(href = "",
-                                  ""),
-                                p(""),
-                                br()
-                        )
-                      ))
-                  ))
+           column(5
+                  # wellPanel(
+                  #   tags$div(
+                  #     h3("Other"),
+                  #     tags$ul(
+                  #       tags$li(a(href = "",
+                  #                 ""),
+                  #               p("")),
+                  #       tags$li(a(href = "",
+                  #                 ""),
+                  #               p(""),
+                  #               br()
+                  #       )
+                  #     ))
+                  # )
+           )
          )
 ),
 
@@ -403,7 +399,7 @@ tabPanel("About",
            fluidRow(
              column(4,
                     wellPanel(
-                      tags$div(
+                      div(style = "height:200px;",
                         h3("Materials Management"),
                         p("Materials management is an approach to serving human needs by using/reusing resources most productively and sustainably throughout their life cycles, generally minimizing the amount of materials involved and all the associated environmental impacts. This approach presents rich and transformative opportunities for DEQ and all Oregonians to better protect our environment."),
                         p(a(href = "https://www.oregon.gov/deq/mm/Pages/What-is-Materials-Management.aspx",
@@ -413,7 +409,7 @@ tabPanel("About",
              ),
              column(4,
                     wellPanel(
-                      tags$div(
+                      div(style = "height:200px;",
                         h3("Oregon Department of Environmental Quality"),
                         p("The Oregon Department of Environmental Quality is a regulatory agency whose job is to protect the quality of Oregon's environment."),
                         p(a(href = "https://www.oregon.gov/deq",
@@ -423,12 +419,12 @@ tabPanel("About",
              ),
              column(4,
                     wellPanel(
-                      tags$div(
+                      div(style = "height:200px;",
                         h3("Life Cycle Assessment"),
                         p("This calculator uses environmental impact factors derived from a Life Cycle Assessment (LCA)."),
                         p("For an overview of Life Cycle Assessments, check out Wikipedia's",
                           a(href = "https://en.wikipedia.org/wiki/Life-cycle_assessment",
-                            "overview"))
+                            "overview"), ".")
                       )
                     )
              )
