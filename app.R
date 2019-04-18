@@ -230,6 +230,7 @@ tabPanel("Visualize!",
                                           selected = "Energy demand",
                                           options = list(style = "btn-secondary"))),
                     wellPanel(
+                      div(style = "height:700px;",
                       htmlOutput("impacttext"),
                       br(),
                       conditionalPanel(
@@ -238,7 +239,7 @@ tabPanel("Visualize!",
                       ),
                       conditionalPanel(
                         condition = "input.usermaterial == `Electronics`",
-                        plotlyOutput("elplot")
+                        plotlyOutput("elplot", height = "600px")
                       ),
                       conditionalPanel(
                         condition = "input.usermaterial == `Food`",
@@ -257,6 +258,7 @@ tabPanel("Visualize!",
                         plotlyOutput("woodplot")
                       )
                       
+                    )
                     )
              )
            ),
@@ -735,11 +737,13 @@ server <- function(input, output, session) {
                   # size = ~log(Sum),
                               color = ("#cf9f35"))) %>% 
       layout(
+        # autosize = FALSE,
         paper_bgcolor = "#f8f5f0",
         plot_bgcolor = "#f8f5f0",
         xaxis = list(title = "",
                      tickfont = list(size = 18)),
         yaxis = list(
+          automargin = FALSE,
           overlaying = "y",
           zerolinecolor = "#cf9f35",
           title = paste("Impact in", userimpact()$Units[[1]]),
@@ -749,14 +753,14 @@ server <- function(input, output, session) {
                       y = 0.5),
         font = list(family = "Open Sans, sans-serif",
                     size = 14,
-                    color = "#cf9f35")
-        # margin = list(
-        #   b = 100,
-        #   l = 90,
-        #   r = 30,
-        #   t = 30,
-        #   pad = 5
-        # )
+                    color = "#cf9f35"),
+        margin = list(
+          b = 0,
+          l = 90,
+          r = 70,
+          t = 30,
+          pad = 20
+        )
       ) %>% 
       config(displaylogo = FALSE,
              collaborate = FALSE,
