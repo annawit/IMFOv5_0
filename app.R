@@ -129,6 +129,12 @@ tabPanel("Visualize!",
                                   selected = "Cardboard",
                                   options = list(style = "btn-secondary"))),
                     wellPanel(
+                      materialSwitch(
+                        inputId = "resetswitch",
+                        label = "Reset weights: ",
+                        status = "warning"
+                      ),
+                      br(),
                       conditionalPanel(
                         condition = "input.usermaterial == `Cardboard`",
                         uiOutput("cardboardpanel")
@@ -459,6 +465,8 @@ server <- function(input, output, session) {
   usermass <- reactive({
     req(input$userregion)
     req(input$usermaterial)
+    input$resetswitch
+    
     mass %>% 
       filter(Wasteshed == input$userregion) %>% 
       filter(Material == input$usermaterial)
