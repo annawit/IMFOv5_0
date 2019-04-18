@@ -12,6 +12,7 @@ library(viridis)
 library(shinyjs)
 library(shinyBS)
 library(markdown)
+library(DT)
 
 # brings in main table of regions/waste types/masses
 mass <- read_csv("data/mass.csv")
