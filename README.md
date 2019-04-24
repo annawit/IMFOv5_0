@@ -29,6 +29,10 @@ The impact data is dummy data that represents realistic environmental impact fac
 + Consider integrating the Impact Visualizer
 + Consider including tab where users can access all impact factors (and maybe mass) in a downloadable DT table
 + Incorporate "Oregon total" or other comparison bar on weight and impact plots, ideally that can be toggled on and off
+<<<<<<< HEAD
 + Consider including different kinds of visualizations, such as scaleable icons
 + Work with target users to create best possible outputs, including plots and tables
 + Take some plotly tools off of plots for usability
+=======
++
+>>>>>>> ae832168c72d518b0eb3e78c45f76f0d7176186d
