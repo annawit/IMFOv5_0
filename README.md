@@ -16,7 +16,18 @@ The impact data is dummy data that represents realistic environmental impact fac
 
 ## Next steps
 
++ Improve package version control
++ Add additional materials
++ Change reset toggle to button only
++ Create summary table that includes net impact, to be included on Visualize page
 + Structural changes: Redefine redundant logic, create functions, improve reactivity, remove hard-coding
 + Create internal links to glossary, FAQs
 + Introduce pre-sets to help user explore and compare maximum recovery, maximum disposal
-+
++ Increase font sizes to improve usability
++ Anchor plotly legends so they don't overlap plots when window is resized
++ Improve glossary, make linked and searchable
++ Consider integrating the Impact Visualizer
++ Consider including tab where users can access all impact factors (and maybe mass) in a downloadable DT table
++ Incorporate "Oregon total" or other comparison bar on weight and impact plots, ideally that can be toggled on and off
++ Consider including different kinds of visualizations, such as scaleable icons
++ Work with target users to create best possible outputs, including plots and tables
