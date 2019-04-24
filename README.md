@@ -31,3 +31,4 @@ The impact data is dummy data that represents realistic environmental impact fac
 + Incorporate "Oregon total" or other comparison bar on weight and impact plots, ideally that can be toggled on and off
 + Consider including different kinds of visualizations, such as scaleable icons
 + Work with target users to create best possible outputs, including plots and tables
++ Take some plotly tools off of plots for usability
