@@ -722,7 +722,6 @@ server <- function(input, output, session) {
       # modebar reference
       # https://github.com/plotly/plotly.js/blob/master/src/components/modebar/buttons.js
       config(displaylogo = FALSE,
-             collaborate = FALSE,
              modeBarButtonsToRemove = list(
                'sendDataToCloud',
                # 'toImage',
@@ -799,7 +798,6 @@ server <- function(input, output, session) {
         # )
       ) %>% 
       config(displaylogo = FALSE,
-             collaborate = FALSE,
              modeBarButtonsToRemove = list(
                'sendDataToCloud',
                'zoom2d',
@@ -947,9 +945,8 @@ server <- function(input, output, session) {
                            l = 70,
                            r = 30,
                            t = 30,
-                           pad = 4))%>% 
+                           pad = 4)) %>% 
       config(displaylogo = FALSE,
-             collaborate = FALSE,
              modeBarButtonsToRemove = list(
                'sendDataToCloud',
                'zoom2d',
@@ -1016,7 +1013,6 @@ server <- function(input, output, session) {
         )
       )%>% 
       config(displaylogo = FALSE,
-             collaborate = FALSE,
              modeBarButtonsToRemove = list(
                'sendDataToCloud',
                'zoom2d',
@@ -1189,7 +1185,6 @@ server <- function(input, output, session) {
                            t = 30,
                            pad = 4))%>% 
       config(displaylogo = FALSE,
-             collaborate = FALSE,
              modeBarButtonsToRemove = list(
                'sendDataToCloud',
                'zoom2d',
@@ -1261,7 +1256,6 @@ server <- function(input, output, session) {
         )
       )%>% 
       config(displaylogo = FALSE,
-             collaborate = FALSE,
              modeBarButtonsToRemove = list(
                'sendDataToCloud',
                'zoom2d',
@@ -1449,7 +1443,6 @@ server <- function(input, output, session) {
       # modebar reference
       # https://github.com/plotly/plotly.js/blob/master/src/components/modebar/buttons.js
       config(displaylogo = FALSE,
-             collaborate = FALSE,
              modeBarButtonsToRemove = list(
                'sendDataToCloud',
                # 'toImage',
@@ -1524,7 +1517,6 @@ server <- function(input, output, session) {
         )
       ) %>% 
       config(displaylogo = FALSE,
-             collaborate = FALSE,
              modeBarButtonsToRemove = list(
                'sendDataToCloud',
                'zoom2d',
@@ -1713,7 +1705,6 @@ output$papermassplot <- renderPlotly({
            #               pad = 4)
     ) %>%
     config(displaylogo = FALSE,
-           collaborate = FALSE,
            modeBarButtonsToRemove = list(
              'sendDataToCloud',
              # 'toImage',
@@ -1791,7 +1782,6 @@ output$ppplot <- renderPlotly({
       # )
     ) %>%
     config(displaylogo = FALSE,
-           collaborate = FALSE,
            modeBarButtonsToRemove = list(
              'sendDataToCloud',
              'zoom2d',
@@ -2522,7 +2512,6 @@ output$woodmassplot <- renderPlotly({
                          t = 30,
                          pad = 4))%>%
     config(displaylogo = FALSE,
-           collaborate = FALSE,
            modeBarButtonsToRemove = list(
              'sendDataToCloud',
              'zoom2d',
@@ -2597,7 +2586,6 @@ output$woodplot <- renderPlotly({
       )
     )%>%
     config(displaylogo = FALSE,
-           collaborate = FALSE,
            modeBarButtonsToRemove = list(
              'sendDataToCloud',
              'zoom2d',
