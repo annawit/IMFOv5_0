@@ -365,21 +365,26 @@ tabPanel("Resources",
                         tags$li(a(href = "https://www.epa.gov/warm",
                                   "EPA's Waste Reduction Model (WARM)"),
                                 p("Another environmental impact calculator")),
+                        
                         tags$li(a(href = "https://www.footprintcalculator.org/",
                                   "Global Footprint Network's Footprint Calculator"),
-                                p("An ecological footprint calculator for lifestyle choices.")
-                        ),
+                                p("An ecological footprint calculator for lifestyle choices.")),
+                        
                         tags$li(a(href = "https://www.montgomerycountymd.gov/sws/footprint/",
                                   "Environmental Footprint Calculator the Department of Environmental Protection in Mongomery County, MD"),
-                                p("An ecological footprint calculator for the recycling of materials.")
-                        ),
+                                p("An ecological footprint calculator for the recycling of materials.")),
+                        
                         tags$li(a(href = "https://c.environmentalpaper.org/home",
                                   "Environmental Paper Network's Paper Calculator"),
                                 p("A tool to assess and compare different environmental impacts of paper")),
+                        
                         tags$li(a(href = "http://www.gpi.org/recycling/carbon-calculator",
                                   "Glass Packaging Institute's Savings from Glass Recycling calculator"),
-                                p("")
-                      ))
+                                p("")),
+                        tags$li(a(href = "https://coolclimate.berkeley.edu/calculator",
+                                  "Cool Climate Network's Carbon Footprint Calculator"),
+                                p(""))
+                        )
                     ))
                   ),
            column(5
